@@ -1,0 +1,25 @@
+			body {
+				font: 11px arial;
+			}
+			.suggest_link {
+				background-color: #FFFFFF;
+				padding: 2px 6px 2px 6px;
+			}
+			.suggest_link_over {
+				background-color: #E8F2FE;
+				padding: 2px 6px 2px 6px;
+			}
+			.search_suggest {
+				
+				font: 11px arial;
+				position: absolute; 
+				text-align: left; 
+				border: 1px solid #000000;
+				width:100px;
+			}	
+			.search {
+				
+				font: 11px arial;
+				position: absolute; 
+				text-align: left; 			
+			}

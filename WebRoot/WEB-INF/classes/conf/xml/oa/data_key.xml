@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+ <tables>
+    <table nick="企业文化" name="oa_culture">
+      <columns>
+	    <column nick="标题" name="subject" />
+		<column nick="分类" name="type" />
+        <column nick="机构编号" name="chain_id" />
+        <column nick="机构名称" name="chain_name" />
+        <column nick="内容" name="content" />
+        <column nick="附件1" name="attachment1" />
+		<column nick="附件2" name="attachment2" />
+		<column nick="备注" name="remark" /> 
+        <column nick="登记人" name="REGISTER" />
+        <column nick="登记人编号" name="REGISTER_ID" />
+        
+		<column nick="审核人" name="CHECKER" />
+        <column nick="审核人编号" name="CHECKER_ID" />
+        <column nick="变更人" name="CHANGER" />
+        <column nick="变更人编号" name="CHANGER_ID" />
+		<column nick="档案变更累计" name="CHANGE_AMOUNT" />
+       </columns>
+    </table>
+
+
+
+	 <table nick="知识" name="oa_knowledge">
+      <columns>
+	    <column nick="标题" name="subject" />
+		<column nick="分类" name="type" />
+        <column nick="机构编号" name="chain_id" />
+        <column nick="机构名称" name="chain_name" />
+        <column nick="内容" name="content" />
+        <column nick="附件1" name="attachment1" />
+		<column nick="附件2" name="attachment2" />
+		<column nick="备注" name="remark" /> 
+        <column nick="登记人" name="REGISTER" />
+        <column nick="登记人编号" name="REGISTER_ID" />
+		<column nick="审核人" name="CHECKER" />
+        <column nick="审核人编号" name="CHECKER_ID" />
+		<column nick="变更人" name="CHANGER" />
+        <column nick="变更人编号" name="CHANGER_ID" />
+		<column nick="档案变更累计" name="CHANGE_AMOUNT" />
+       </columns>
+    </table>
+
+
+
+	<table nick="宣传" name="oa_publicize">
+      <columns>
+	    <column nick="标题" name="subject" />
+		<column nick="分类" name="type" />
+        <column nick="机构编号" name="chain_id" />
+        <column nick="机构名称" name="chain_name" />
+        <column nick="内容" name="content" />
+        <column nick="附件1" name="attachment1" />
+		<column nick="附件2" name="attachment2" />
+		<column nick="备注" name="remark" /> 
+        <column nick="登记人" name="REGISTER" />
+        <column nick="登记人编号" name="REGISTER_ID" />
+        
+		<column nick="审核人" name="CHECKER" />
+        <column nick="审核人编号" name="CHECKER_ID" />
+        
+		<column nick="变更人" name="CHANGER" />
+        <column nick="变更人编号" name="CHANGER_ID" />
+  
+		<column nick="档案变更累计" name="CHANGE_AMOUNT" />
+       </columns>
+    </table>
+
+
+
+	<table nick="制度" name="oa_regulation">
+      <columns>
+	    <column nick="标题" name="subject" />
+		<column nick="分类" name="type" />
+        <column nick="机构编号" name="chain_id" />
+        <column nick="机构名称" name="chain_name" />
+        <column nick="内容" name="content" />
+        <column nick="附件1" name="attachment1" />
+		<column nick="附件2" name="attachment2" />
+		<column nick="备注" name="remark" /> 
+        <column nick="登记人" name="REGISTER" />
+        <column nick="登记人编号" name="REGISTER_ID" />
+       
+		<column nick="审核人" name="CHECKER" />
+        <column nick="审核人编号" name="CHECKER_ID" />
+       
+		<column nick="变更人" name="CHANGER" />
+        <column nick="变更人编号" name="CHANGER_ID" />
+        
+		<column nick="档案变更累计" name="CHANGE_AMOUNT" />
+       </columns>
+    </table>
+
+
+
+	<table nick="内部消息" name="oa_message">
+      <columns>
+	    <column nick="标题" name="subject" />
+		<column nick="分类" name="type" />
+        <column nick="内容" name="content" />
+        <column nick="附件1" name="attachment1" />
+		<column nick="备注" name="remark" /> 
+        <column nick="登记人" name="REGISTER" />
+        <column nick="登记人编号" name="REGISTER_ID" />
+       
+		<column nick="发送人" name="CHECKER" />
+        <column nick="发送人编号" name="CHECKER_ID" />
+      
+		<column nick="发送累计" name="check_AMOUNT" />
+       </columns>
+    </table>
+
+
+
+	<table nick="外部消息" name="oa_intrmessage">
+      <columns>
+	    <column nick="标题" name="subject" />
+		<column nick="分类" name="type" />
+        <column nick="内容" name="content" />
+        <column nick="附件1" name="attachment1" />
+		<column nick="备注" name="remark" /> 
+        <column nick="登记人" name="REGISTER" />
+        <column nick="登记人编号" name="REGISTER_ID" />
+       
+		<column nick="发送人" name="CHECKER" />
+        <column nick="发送人编号" name="CHECKER_ID" />
+       
+		<column nick="发送累计" name="check_AMOUNT" />
+       </columns>
+    </table>
+
+
+
+	<table nick="群发对象" name="oa_messager">
+      <columns>
+		<column nick="分类" name="type" />
+        <column nick="内容" name="content" />
+        <column nick="登记人" name="REGISTER" />
+        <column nick="登记人编号" name="REGISTER_ID" />
+        
+		<column nick="变更人" name="CHANGER" />
+        <column nick="变更人编号" name="CHANGER_ID" />
+        
+       </columns>
+    </table>
+
+
+
+	<table nick="会议" name="oa_meeting">
+      <columns>
+	    <column nick="会议编号" name="meeting_ID" />
+	    <column nick="议题" name="subject" />
+		<column nick="分类" name="type" />
+		
+		<column nick="会议地点" name="PLACE" />
+        <column nick="会议日程" name="SCHEDULE" />
+        <column nick="附件1" name="attachment1" />
+		<column nick="会议纪要" name="content" />
+		<column nick="附件2" name="attachment2" />
+		<column nick="备注" name="remark" /> 
+        <column nick="登记人" name="REGISTER" />
+        <column nick="登记人编号" name="REGISTER_ID" />
+       
+		<column nick="通知人" name="CHECKER" />
+        <column nick="通知人编号" name="CHECKER_ID" />
+       
+		<column nick="纪要整理人" name="dealwith_register" />
+        <column nick="纪要整理人编号" name="dealwith_register_ID" />
+		<column nick="纪要处理人" name="dealwith_CHECKER" />
+        <column nick="纪要处理人编号" name="dealwith_CHECKER_ID" />
+        
+		<column nick="纪要处理方式" name="dealwith_type" />
+       </columns>
+    </table>
+
+
+
+	<table nick="计划" name="oa_planing">
+      <columns>
+	    <column nick="计划编号" name="planing_ID" />
+	    <column nick="标题" name="subject" />
+		<column nick="会议精神" name="meeting_subject" />
+		<column nick="分类" name="type" />
+        <column nick="机构编号" name="chain_id" />
+        <column nick="机构名称" name="chain_name" />
+		<column nick="员工编号" name="HUMAN_ID" />
+        <column nick="员工姓名" name="HUMAN_NAME" />
+		<column nick="计划内容" name="content" />
+		<column nick="附件1" name="attachment1" />
+        <column nick="登记人" name="REGISTER" />
+        <column nick="登记人编号" name="REGISTER_ID" />
+       
+		<column nick="审核人" name="CHECKER" />
+        <column nick="审核人编号" name="CHECKER_ID" />
+       
+		<column nick="执行情况" name="EXEC" />
+		<column nick="附件2" name="attachment2" />
+		<column nick="执行登记人" name="execer" />
+        <column nick="执行登记人编号" name="execer_ID" />
+     
+       </columns>
+    </table>
+   </tables>
+</config>
+

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <table nick="admin" name="nseer_admin" database="ondemand1">
+    <column url="/erp/stock/cell/register_list.jsp" sql="select * from design_file where  check_tag='1' and design_cell_tag='0' and type!='服务型产品' order by register_time" pageno="1" />
+    <column url="/erp/manufacture/design_procedure/register_list.jsp" sql="select * from design_file where  check_tag='1' and design_procedure_tag='0' and (type='商品' or type='部件') order by register_time" pageno="1" />
+  </table>
+</config>

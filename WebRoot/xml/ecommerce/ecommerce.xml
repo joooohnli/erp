@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <table nick="电子商务" name="ecommerce">
+    <column nick="ecommerce_allright" name="ecommerce_allright" service="t" />
+    <column nick="ecommerce_cols_bottom" name="ecommerce_cols_bottom" service="t" />
+    <column nick="ecommerce_cols_top" name="ecommerce_cols_top" service="t" />
+    <column nick="ecommerce_colsa" name="ecommerce_colsa" service="t" />
+    <column nick="ecommerce_colsv" name="ecommerce_colsv" service="t" />
+    <column nick="反馈信息" name="ecommerce_comment" service="b" key="comment_id"/>
+    <column nick="ecommerce_comment_config_third" name="ecommerce_comment_config_third" service="t" />
+    <column nick="ecommerce_comment_file" name="ecommerce_comment_file" service="t" />
+    <column nick="ecommerce_config_cols_first" name="ecommerce_config_cols_first" service="t" />
+    <column nick="ecommerce_config_cols_second" name="ecommerce_config_cols_second" service="t" />
+    <column nick="ecommerce_config_cols_third" name="ecommerce_config_cols_third" service="t" />
+    <column nick="ecommerce_config_news_first" name="ecommerce_config_news_first" service="t" />
+    <column nick="ecommerce_config_news_kind" name="ecommerce_config_news_kind" service="t" />
+    <column nick="ecommerce_config_news_second" name="ecommerce_config_news_second" service="t" />
+    <column nick="ecommerce_config_news_third" name="ecommerce_config_news_third" service="t" />
+    <column nick="ecommerce_config_other_first" name="ecommerce_config_other_first" service="t" />
+    <column nick="ecommerce_config_other_kind" name="ecommerce_config_other_kind" service="t" />
+    <column nick="ecommerce_config_other_second" name="ecommerce_config_other_second" service="t" />
+    <column nick="ecommerce_config_other_third" name="ecommerce_config_other_third" service="t" />
+    <column nick="ecommerce_config_public_char" name="ecommerce_config_public_char" service="t" />
+    <column nick="ecommerce_config_workflow" name="ecommerce_config_workflow" service="t" />
+    <column nick="网站联络" name="ecommerce_contact" service="b" />
+    <column nick="ecommerce_contact_dig" name="ecommerce_contact_dig" service="t" />
+    <column nick="ecommerce_crm_config_third" name="ecommerce_crm_config_third" service="t" />
+    <column nick="ecommerce_crm_file" name="ecommerce_crm_file" service="t" />
+    <column nick="ecommerce_design_config_third" name="ecommerce_design_config_third" service="t" />
+    <column nick="ecommerce_design_file" name="ecommerce_design_file" service="t" />
+    <column nick="ecommerce_engage_config_third" name="ecommerce_engage_config_third" service="t" />
+    <column nick="ecommerce_engage_file" name="ecommerce_engage_file" service="t" />
+    <column nick="ecommerce_intrmanufacture_config_third" name="ecommerce_intrmanufacture_config_third" service="t" />
+    <column nick="ecommerce_intrmanufacture_file" name="ecommerce_intrmanufacture_file" service="t" />
+    <column nick="网站链接" name="ecommerce_link" service="b" />
+    <column nick="ecommerce_link_config_third" name="ecommerce_link_config_third" service="t" />
+    <column nick="ecommerce_link_dig" name="ecommerce_link_dig" service="t" />
+    <column nick="ecommerce_link_file" name="ecommerce_link_file" service="t" />
+    <column nick="ecommerce_logistics_config_third" name="ecommerce_logistics_config_third" service="t" />
+    <column nick="ecommerce_logistics_file" name="ecommerce_logistics_file" service="t" />
+    <column nick="新闻" name="ecommerce_news" service="b" key="news_id"/>
+    <column nick="ecommerce_news_config_third" name="ecommerce_news_config_third" service="t" />
+    <column nick="ecommerce_news_dig" name="ecommerce_news_dig" service="t" />
+    <column nick="ecommerce_news_file" name="ecommerce_news_file" service="t" />
+    <column nick="其他信息" name="ecommerce_other" service="b" key="other_id"/>
+    <column nick="ecommerce_other_config_third" name="ecommerce_other_config_third" service="t" />
+    <column nick="ecommerce_other_dig" name="ecommerce_other_dig" service="t" />
+    <column nick="ecommerce_other_file" name="ecommerce_other_file" service="t" />
+    <column nick="ecommerce_purchase_config_third" name="ecommerce_purchase_config_third" service="t" />
+    <column nick="ecommerce_purchase_file" name="ecommerce_purchase_file" service="t" />
+    <column nick="ecommerce_tree" name="ecommerce_tree" service="t" />
+    <column nick="ecommerce_view" name="ecommerce_view" service="t" />
+    <column nick="ecommerce_web_base" name="ecommerce_web_base" service="t" />
+    <column nick="ecommerce_web_template" name="ecommerce_web_template" service="t" />
+    <column nick="ecommerce_web_template_ii" name="ecommerce_web_template_ii" service="t" />
+    <column nick="ecommerce_workflow" name="ecommerce_workflow" service="t" />
+  </table>
+</config>
+

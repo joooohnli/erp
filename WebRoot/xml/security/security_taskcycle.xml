@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+<table nick="security_taskcycle" name="security_taskcycle">
+	<column nick="id" name="id" type="数值" Ttype="int(10) unsigned" usedTag="s" required="n" validate="n" service="b" id="1">
+	</column>
+	<column nick="cycle" name="cycle" type="数值" Ttype="double(15,2)" usedTag="s" required="n" validate="n" service="b" id="2">
+	</column>
+	<column nick="refresh" name="refresh" type="数值" Ttype="double(15,2)" usedTag="s" required="n" validate="n" service="b" id="3">
+	</column>
+	<column nick="任务周期" name="task_cycle" type="数值" Ttype="double(15,2)" usedTag="s" required="y" validate="y" service="b" id="2">
+	  <depend name="required" />
+      <depend name="decimal" />
+	</column>
+	<column nick="任务调度刷新" name="task_refresh" type="数值" Ttype="double(15,2)" usedTag="s" required="y" validate="y" service="b" id="2">
+	  <depend name="required" />
+      <depend name="decimal" />
+	</column>
+</table>
+</config>

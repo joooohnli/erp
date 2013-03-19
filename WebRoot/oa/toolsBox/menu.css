@@ -1,0 +1,230 @@
+
+#module_first{
+        z-index:400;
+		display:none;
+        width: 12em;
+		border-right: 1px solid #000;
+        padding: 0 0 1em 0;
+        margin-bottom: 1em;
+        font-family: Tahoma, Arial, sans-serif;
+                /*'Trebuchet MS', 'Lucida Grande', Verdana, Arial, sans-serif;*/
+        font-size : 9pt;
+        background-color: #90bade;
+        color: #333;
+		
+        }
+
+        #module_first ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                border: none;
+                }
+
+        #module_first li {
+                height: 20px;
+                border-bottom: 1px solid #90bade;
+                margin: 0;
+                list-style: none;
+                list-style-image: none;
+                }
+
+        #module_first li a {
+		        height: 20px;
+                display: block;
+                padding: 2px 5px 2px 0.5em;
+                border-left: 0px solid #1958b7;
+                border-right: 0px solid #508fc4;
+                background-color: #508fc4;
+                color: #000000;
+                text-decoration: none;
+                width: 100%;
+                }
+
+       
+
+        #module_first li a:hover span{
+                color: red;
+                }
+
+        #module_first li #active {
+                border-left: 10px solid #1c64d1;
+                border-right: 10px solid #5ba3e0;
+                background-color: #508fc4;
+                color: #000000;
+                }
+
+#module_two{
+        z-index:410;
+        width: 12em;
+        border-right: 1px solid #000;
+        padding: 0 0 1em 0;
+        margin-bottom: 1em;
+        font-family: Tahoma, Arial, sans-serif;
+                /*'Trebuchet MS', 'Lucida Grande', Verdana, Arial, sans-serif;*/
+        font-size : 9pt;
+        background-color: #90bade;
+        color: #333;
+        }
+
+        #module_two ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                border: none;
+                }
+
+        #module_two li {
+		      
+                border-bottom: 1px solid #90bade;
+                margin: 0;
+                list-style: none;
+                list-style-image: none;
+                }
+
+        #module_two li a {
+                display: block;
+				padding: 2px 5px 2px 0.5em;
+                border-left: 0px solid #1958b7;
+                border-right: 0px solid #508fc4;
+                background-color: #2175bc;
+                color: #000000;
+                text-decoration: none;
+                width: 100%;
+                }
+
+        html>body #module_two li a {
+                width: auto;
+                }
+
+        #module_two li a:hover {
+                border-left: 0px solid #1c64d1;
+                border-right: 0px solid #5ba3e0;
+                background-color: #2586d7;
+                color: #000000;
+                }
+
+        #module_two li #active {
+                border-left: 0px solid #1c64d1;
+                border-right: 0px solid #5ba3e0;
+                background-color: #2586d7;
+                color: #000000;
+                }
+
+/* CSS Tabs */
+#module_three{
+        z-index:420;
+        width: 12em;
+        border-right: 1px solid #000;
+        padding: 0 0 1em 0;
+        margin-bottom: 1em;
+        font-family: Tahoma, Arial, sans-serif;
+                /*'Trebuchet MS', 'Lucida Grande', Verdana, Arial, sans-serif;*/
+        font-size : 9pt;
+        background-color: #90bade;
+        color: #333;
+        }
+
+        #module_three ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                border: none;
+                }
+
+        #module_three li {
+		       
+                border-bottom: 1px solid #90bade;
+                margin: 0;
+                list-style: none;
+                list-style-image: none;
+                }
+
+        #module_three li a {
+                display: block;
+              padding: 2px 5px 2px 0.5em;
+                border-left: 0px solid #1958b7;
+                border-right: 0px solid #508fc4;
+                background-color: #2175bc;
+                color: #000000;
+                text-decoration: none;
+                width: 100%;
+                }
+
+        html>body #module_three li a {
+                width: auto;
+                }
+
+        #module_three li a:hover {
+                border-left: 0px solid #1c64d1;
+                border-right: 0px solid #5ba3e0;
+                background-color: #2586d7;
+                color: #000000;
+                }
+
+        #module_three li #active {
+                border-left: 0px solid #1c64d1;
+                border-right: 0px solid #5ba3e0;
+                background-color: #2586d7;
+                color: #000000;
+                }
+
+<!--
+/* CSS Tabs */
+#module_four{
+        z-index:450;
+        width: 12em;
+        border-right: 1px solid #000;
+        padding: 0 0 1em 0;
+        margin-bottom: 1em;
+        font-family: Tahoma, Arial, sans-serif;
+                /*'Trebuchet MS', 'Lucida Grande', Verdana, Arial, sans-serif;*/
+        font-size : 9pt;
+        background-color: #90bade;
+        color: #333;
+        }
+
+        #module_four ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                border: none;
+                }
+
+        #module_four li {
+		       
+                border-bottom: 1px solid #90bade;
+                margin: 0;
+                list-style: none;
+                list-style-image: none;
+                }
+
+        #module_four li a {
+                display: block;
+             padding: 2px 5px 2px 0.5em;
+                border-left: 0px solid #1958b7;
+                border-right: 0px solid #508fc4;
+                background-color: #2175bc;
+                color: #000000;
+                text-decoration: none;
+                width: 100%;
+                }
+
+        html>body #module_four li a {
+                width: auto;
+                }
+
+        #module_four li a:hover {
+                border-left: 10px solid #1c64d1;
+                border-right: 10px solid #5ba3e0;
+                background-color: #2586d7;
+                color: #000000;
+                }
+
+        #module_four li #active {
+                border-left: 0px solid #1c64d1;
+                border-right: 0px solid #5ba3e0;
+                background-color: #2586d7;
+                color: #000000;
+                }
+

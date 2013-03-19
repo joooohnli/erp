@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <tables>
+    <table nick="客户档案" name="crm_file">
+      <columns>
+        <column nick="办公电话" name="CONTACT_PERSON2_OFFICE_TEL" />
+        <column nick="家庭电话" name="CONTACT_PERSON2_HOME_TEL" />
+      </columns>
+    </table>
+  </tables>
+</config>
+

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+<table nick="外部消息" name="oa_intrmessage">
+	<column nick="id" name="id" type="数值" usedTag="s" required="n" validate="n" service="t" Ttype="int(10) unsigned" id="1">
+	</column>
+	<column nick="intrmessage_id" name="intrmessage_id" type="字符" usedTag="s" required="n" validate="n" service="t" Ttype="varchar(30)" id="2">
+	</column>
+	<column nick="消息主题" name="subject" type="字符" usedTag="s" required="y" validate="y" service="b" Ttype="varchar(255)" id="3">
+	<depend name="required"/>
+    <depend name="common"/>
+	</column>
+	<column nick="消息类型" name="type" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(100)" id="4">
+	</column>
+	<column nick="消息内容" name="content" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="text" id="5">
+	</column>
+	<column nick="附件" name="attachment1" type="字符" usedTag="s" required="n" validate="n" service="t" Ttype="varchar(100)" id="6">
+	</column>
+	<column nick="备注" name="remark" type="字符" usedTag="s" required="n" validate="y" service="b" Ttype="text" id="7">
+	<depend name="common"/>
+	</column>
+	<column nick="发送方式" name="check_type" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(200)" id="8">
+	</column>
+	<column nick="登记人" name="register" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(60)" id="9">
+	</column>
+	<column nick="登记人编号" name="register_id" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(30)" id="10">
+	</column>
+	<column nick="审核人" name="checker" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(60)" id="11">
+	</column>
+	<column nick="审核人编号" name="checker_id" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(30)" id="12">
+	</column>
+	<column nick="登记时间" name="register_time" type="时间" usedTag="s" required="n" validate="n" service="b" Ttype="datetime" id="13">
+	</column>
+	<column nick="审核时间" name="check_time" type="时间" usedTag="s" required="n" validate="n" service="b" Ttype="datetime" id="14">
+	</column>
+	<column nick="发送次数" name="check_amount" type="数值" usedTag="s" required="n" validate="n" service="b" Ttype="int(10) unsigned" id="15">
+	</column>
+	<column nick="check_tag" name="check_tag" type="数值" usedTag="s" required="n" validate="n" service="t" Ttype="int(1)" id="16">
+	</column>
+	<column nick="excel_batch_tag" name="excel_batch_tag" type="数值" usedTag="s" required="n" validate="n" service="t" Ttype="int(10) unsigned" id="17">
+	</column>
+</table>
+</config>

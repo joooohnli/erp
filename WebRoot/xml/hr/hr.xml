@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <table nick="人力资源" name="hr">
+    <column nick="hr_allright" name="hr_allright" service="t" />
+    <column nick="hr_assign" name="hr_assign" service="t" />
+    <column nick="激励管理" name="hr_bonus" service="b" />
+    <column nick="hr_config_file_first_kind" name="hr_config_file_first_kind" service="t" />
+    <column nick="hr_config_file_kind" name="hr_config_file_kind" service="t" />
+    <column nick="hr_config_file_second_kind" name="hr_config_file_second_kind" service="t" />
+    <column nick="hr_config_file_third_kind" name="hr_config_file_third_kind" service="t" />
+    <column nick="hr_config_human_id_temp" name="hr_config_human_id_temp" service="t" />
+    <column nick="hr_config_major_first_kind" name="hr_config_major_first_kind" service="t" />
+    <column nick="hr_config_major_second_kind" name="hr_config_major_second_kind" service="t" />
+    <column nick="hr_config_public_char" name="hr_config_public_char" service="t" />
+    <column nick="hr_config_question_first_kind" name="hr_config_question_first_kind" service="t" />
+    <column nick="hr_config_question_kind" name="hr_config_question_kind" service="t" />
+    <column nick="hr_config_question_second_kind" name="hr_config_question_second_kind" service="t" />
+    <column nick="hr_config_workflow" name="hr_config_workflow" service="t" />
+    <column nick="人力资源档案" name="hr_file" service="b" key="human_id"/>
+    <column nick="hr_file_dig" name="hr_file_dig" service="t" />
+    <column nick="招聘面试" name="hr_interview" service="b" />
+    <column nick="调动管理" name="hr_major_change" service="b" />
+    <column nick="职位发布" name="hr_major_release" service="b" />
+    <column nick="试题" name="hr_questiones" service="b" />
+    <column nick="简历" name="hr_resume" service="b" />
+    <column nick="薪酬发放" name="hr_salary" service="b" key="salary_id"/>
+    <column nick="hr_salary_human_details" name="hr_salary_human_details" service="t" />
+    <column nick="hr_salary_human_details_details" name="hr_salary_human_details_details" service="t" />
+    <column nick="薪酬标准" name="hr_salary_standard" service="b" key="standard_id"/>
+    <column nick="hr_salary_standard_details" name="hr_salary_standard_details" service="t" />
+    <column nick="hr_salary_unit_details" name="hr_salary_unit_details" service="t" />
+    <column nick="试卷" name="hr_test" service="b" />
+    <column nick="hr_test_details" name="hr_test_details" service="t" />
+    <column nick="hr_tester" name="hr_tester" service="t" />
+    <column nick="hr_tester_answer_details" name="hr_tester_answer_details" service="t" />
+    <column nick="培训" name="hr_training" service="b" />
+    <column nick="hr_tree" name="hr_tree" service="t" />
+    <column nick="hr_view" name="hr_view" service="t" />
+    <column nick="hr_workflow" name="hr_workflow" service="t" />
+  </table>
+</config>
+

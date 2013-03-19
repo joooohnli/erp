@@ -1,0 +1,88 @@
+.hand{
+  cursor: hand;
+}
+.tree_a{
+  COLOR: #000000;
+  TEXT-DECORATION: none;
+  FONT-SIZE: 12px;
+  FONT-FAMILY: 宋体;
+}
+.tree_a:hover {
+  COLOR: #000000;
+  TEXT-DECORATION: none;
+  FONT-FAMILY: 宋体;
+  FONT-SIZE: 12px;
+}
+.tree_node {
+  CURSOR: default;
+  FONT-SIZE: 12px;
+  FONT-FAMILY: 宋体;
+}
+.tree_node_onblur{
+  TEXT-DECORATION: none;
+  background-color:;
+  FONT-SIZE: 12px;
+  FONT-FAMILY: 宋体;
+  color:black;
+}
+.tree_node_onfocus{
+  TEXT-DECORATION: none;
+  background-color: highlight;
+  FONT-SIZE: 12px;
+  FONT-FAMILY: 宋体;
+  color:white;
+}
+.tree_node {
+  CURSOR: default;
+  FONT-SIZE: 12px;
+  FONT-FAMILY: 宋体;
+}
+
+ 
+div.rightMenu{
+  
+background:#B7D5E6;
+ 
+display:none;   
+ 
+position:absolute;   
+ 
+z-index:111;   
+  
+width:100px;   
+
+height:150px;   
+
+border:1px   solid   silver;   
+ 
+}
+ 
+.menuItem {
+ 
+padding-top:5px;
+ 
+padding-left:15px;
+
+  padding-right:10px;
+ 
+font-size:12px;
+  
+}
+  
+.tranDivBack{
+position:absolute;
+background-color:#B5EF59;
+filter:alpha(opacity=80);
+-moz-opacity:0.8; /* Moz + FF */
+opacity: 0.8; /* 支持CSS3的浏览器（FF 1.5也支持）*/ 
+top:10px;
+left:200px;
+display:none;
+}
+.treeButton{
+position:absolute;
+top:1%;
+left:65%;
+width:100px;
+height:200px;
+}

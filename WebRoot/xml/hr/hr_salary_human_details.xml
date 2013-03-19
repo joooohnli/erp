@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+<table nick="hr_salary_human_details" name="hr_salary_human_details">
+	<column nick="id" name="id" type="数值" Ttype="int(10) unsigned" usedTag="s" required="n" validate="n" service="t" id="1">
+	</column>
+	<column nick="薪酬单编号" name="salary_id" type="字符" Ttype="varchar(30)" usedTag="s" required="n" validate="n" service="b" id="2">
+	</column>
+	<column nick="档案编号" name="human_id" type="字符" Ttype="varchar(30)" usedTag="s" required="n" validate="n" service="b" id="9">
+	</column>
+	<column nick="姓名" name="human_name" type="字符" Ttype="varchar(60)" usedTag="s" required="n" validate="n" service="b" id="10">
+	</column>
+	<column nick="序号" name="details_number" type="数值" Ttype="int(10)" usedTag="s" required="n" validate="n" service="b" id="11">
+	</column>
+	<column nick="薪酬标准编号" name="salary_standard_id" type="字符" Ttype="varchar(30)" usedTag="s" required="n" validate="n" service="b" id="12">
+	</column>
+	<column nick="薪酬标准金额" name="standard_salary_sum" type="数值" Ttype="double(15,2)" usedTag="s" required="n" validate="n" service="b" id="13">
+	</column>
+	<column nick="应扣金额" name="deduct_sum" type="数值" Ttype="double(15,2)" usedTag="s" required="n" validate="n" service="b" id="14">
+	</column>
+	<column nick="奖励金额" name="bonus_sum" type="数值" Ttype="double(15,2)" usedTag="s" required="n" validate="n" service="b" id="15">
+	</column>
+	<column nick="薪酬总额" name="salary_sum" type="数值" Ttype="double(15,2)" usedTag="s" required="n" validate="n" service="b" id="16">
+	</column>
+	<column nick="销售绩效金额" name="sale_bonus_sum" type="数值" Ttype="double(15,2)" usedTag="s" required="n" validate="n" service="b" id="17">
+	</column>
+</table>
+</config>

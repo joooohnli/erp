@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <table nick="采购管理" name="purchase">
+    <column nick="purchase_alarm_contact_expiry" name="purchase_alarm_contact_expiry" service="t" />
+    <column nick="purchase_alarm_gather_expiry" name="purchase_alarm_gather_expiry" service="t" />
+    <column nick="purchase_alarm_gather_sum_limit" name="purchase_alarm_gather_sum_limit" service="t" />
+    <column nick="purchase_alarm_order_check_expiry" name="purchase_alarm_order_check_expiry" service="t" />
+    <column nick="purchase_alarm_return_sum_limit" name="purchase_alarm_return_sum_limit" service="t" />
+    <column nick="purchase_allright" name="purchase_allright" service="t" />
+    <column nick="purchase_analyse" name="purchase_analyse" service="t" />
+    <column nick="purchase_analyse_gather_period" name="purchase_analyse_gather_period" service="t" />
+    <column nick="采购计划" name="purchase_apply" service="b" key="apply_id"/>
+    <column nick="purchase_config_public_char" name="purchase_config_public_char" service="t" />
+    <column nick="purchase_config_public_double" name="purchase_config_public_double" service="t" />
+    <column nick="purchase_config_public_int" name="purchase_config_public_int" service="t" />
+    <column nick="purchase_config_purchaser" name="purchase_config_purchaser" service="t" />
+    <column nick="purchase_config_workflow" name="purchase_config_workflow" service="t" />
+    <column nick="供应商联络" name="purchase_contact" service="b" key="contact_id"/>
+    <column nick="purchase_details" name="purchase_details" service="t" />
+    <column nick="供应商报价单" name="purchase_discussion" service="b" key="discussion_id"/>
+    <column nick="purchase_discussion_details" name="purchase_discussion_details" service="t" />
+    <column nick="供应商档案" name="purchase_file" service="b" key="provider_id"/>
+    <column nick="purchase_file_dig" name="purchase_file_dig" service="t" />
+    <column nick="供应商推荐" name="purchase_product_providers_recommend" service="b" />
+    <column nick="purchase_product_providers_recommend_details" name="purchase_product_providers_recommend_details" service="t" />
+    <column nick="采购执行单" name="purchase_purchase" service="b" key="purchase_id"/>
+    <column nick="purchase_purchasecredit_balance_details" name="purchase_purchasecredit_balance_details" service="t" />
+    <column nick="purchase_purchasing" name="purchase_purchasing" service="t" />
+    <column nick="purchase_tree" name="purchase_tree" service="t" />
+    <column nick="purchase_view" name="purchase_view" service="t" />
+    <column nick="purchase_workflow" name="purchase_workflow" service="t" />
+  </table>
+</config>
+

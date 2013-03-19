@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+<table nick="manufacture_procedure" name="manufacture_procedure">
+	<column nick="id" name="id" type="数值" Ttype="int(10) unsigned" usedTag="s" required="n" validate="n" service="t" id="1">
+	</column>
+	<column nick="派工单编号" name="manufacture_id" type="字符" Ttype="varchar(30)" usedTag="s" required="n" validate="n" service="b" id="2">
+	</column>
+	<column nick="序号" name="details_number" type="数值" Ttype="int(10)" usedTag="s" required="n" validate="n" service="b" id="3">
+	</column>
+	<column nick="工序编号" name="procedure_id" type="字符" Ttype="varchar(30)" usedTag="s" required="n" validate="n" service="b" id="4">
+	</column>
+	<column nick="工序名称" name="procedure_name" type="字符" Ttype="varchar(60)" usedTag="s" required="n" validate="n" service="b" id="5">
+	</column>
+	<column nick="设计工时数" name="labour_hour_amount" type="数值" Ttype="double(15,2)" usedTag="s" required="n" validate="y" service="b" id="6">
+	 <depend name="decimal" />
+	</column>
+	<column nick="实际工时数" name="real_labour_hour_amount" type="数值" Ttype="double(15,2)" usedTag="s" required="n" validate="n" service="b" id="7">
+	</column>
+	<column nick="工序描述" name="procedure_describe" type="字符" Ttype="varchar(255)" usedTag="s" required="n" validate="n" service="b" id="8">
+	</column>
+	<column nick="单位" name="amount_unit" type="字符" Ttype="varchar(30)" usedTag="s" required="n" validate="n" service="b" id="9">
+	</column>
+	<column nick="工时单价" name="cost_price" type="数值" Ttype="double(15,2)" usedTag="s" required="n" validate="n" service="b" id="10">
+	</column>
+	<column nick="设计工时费小计" name="subtotal" type="数值" Ttype="double(15,2)" usedTag="s" required="n" validate="n" service="b" id="11">
+	</column>
+	<column nick="实际工时费小计" name="real_subtotal" type="数值" Ttype="double(15,2)" usedTag="s" required="n" validate="n" service="b" id="12">
+	</column>
+	<column nick="设计物料费小计" name="module_subtotal" type="数值" Ttype="double(15,2)" usedTag="s" required="n" validate="n" service="b" id="13">
+	</column>
+	<column nick="实际物料费小计" name="real_module_subtotal" type="数值" Ttype="double(15,2)" usedTag="s" required="n" validate="n" service="b" id="14">
+	</column>
+	<column nick="应合格数量" name="demand_amount" type="数值" Ttype="double(15,2)" usedTag="s" required="n" validate="n" service="b" id="15">
+	</column>
+	<column nick="实际合格数量" name="real_amount" type="数值" Ttype="double(15,2)" usedTag="s" required="n" validate="n" service="b" id="16">
+	</column>
+	<column nick="procedure_check_tag" name="procedure_check_tag" type="数值" Ttype="int(1)" usedTag="s" required="n" validate="n" service="t" id="17">
+	</column>
+	<column nick="procedure_transfer_tag" name="procedure_transfer_tag" type="数值" Ttype="int(1)" usedTag="s" required="n" validate="n" service="t" id="18">
+	</column>
+	<column nick="procedure_finish_tag" name="procedure_finish_tag" type="数值" Ttype="int(1)" usedTag="s" required="n" validate="n" service="t" id="19">
+	</column>
+	<column nick="procedure_details_tag" name="procedure_details_tag" type="数值" Ttype="int(1) unsigned" usedTag="s" required="n" validate="n" service="t" id="20">
+	</column>
+	<column nick="qcs_apply_tag" name="qcs_apply_tag" type="数值" Ttype="int(1) unsigned" usedTag="s" required="n" validate="n" service="t" id="21">
+	</column>
+	<column nick="qcs_tag" name="qcs_tag" type="数值" Ttype="int(1) unsigned" usedTag="s" required="n" validate="n" service="t" id="22">
+	</column>
+	<column nick="本次数量 " name="amount" type="数值" usedTag="s" required="y" validate="y" service="b" Ttype="double(15,2)" id="23">
+		<depend name="required" />
+        <depend name="decimal" />
+	</column>
+</table>
+</config>

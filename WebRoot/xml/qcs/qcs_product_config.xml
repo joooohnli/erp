@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+<table nick="产品质检方式配置" name="qcs_product_config">
+	<column nick="id" name="id" type="数值" usedTag="s" required="n" validate="n" service="t" Ttype="int(10) unsigned" id="1">
+	</column>
+	<column nick="配置单编号" name="qcs_id" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(30)" id="2">
+	</column>
+	<column nick="产品编号" name="product_id" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(60)" id="3">
+	</column>
+	<column nick="产品名称" name="product_name" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(60)" id="4">
+	</column>
+	<column nick="采购质检方式" name="purchase_qcs_way" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(60)" id="5">
+	</column>
+	<column nick="委外质检方式" name="intrmanu_qcs_way" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(60)" id="6">
+	</column>
+	<column nick="发货质检方式" name="crm_deliver_qcs_way" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(60)" id="7">
+	</column>
+	<column nick="crm_return_qcs_way" name="crm_return_qcs_way" type="字符" usedTag="s" required="n" validate="n" service="t" Ttype="varchar(60)" id="8">
+	</column>
+	<column nick="生产入库质检方式" name="manu_product_qcs_way" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(60)" id="9">
+	</column>
+	<column nick="生产工序质检方式" name="manu_procedure_qcs_way" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(60)" id="10">
+	</column>
+	<column nick="库存质检方式" name="stock_qcs_way" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(60)" id="11">
+	</column>
+	<column nick="其他质检方式" name="other_qcs_way" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(60)" id="12">
+	</column>
+	<column nick="登记人" name="register" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(60)" id="13">
+	</column>
+	<column nick="登记人编号" name="register_id" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(60)" id="14">
+	</column>
+	<column nick="审核人" name="checker" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(30)" id="15">
+	</column>
+	<column nick="审核人编号" name="checker_id" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(30)" id="16">
+	</column>
+	<column nick="变更人" name="changer" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(60)" id="17">
+	</column>
+	<column nick="变更人编号" name="changer_id" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(30)" id="18">
+	</column>
+	<column nick="审核时间" name="check_time" type="时间" usedTag="s" required="n" validate="n" service="b" Ttype="datetime" id="19">
+	</column>
+	<column nick="登记时间" name="register_time" type="时间" usedTag="s" required="n" validate="n" service="b" Ttype="datetime" id="20">
+	</column>
+	<column nick="变更时间" name="change_time" type="时间" usedTag="s" required="n" validate="n" service="b" Ttype="datetime" id="21">
+	</column>
+	<column nick="check_tag" name="check_tag" type="数值" usedTag="s" required="n" validate="n" service="t" Ttype="int(1)" id="22">
+	</column>
+	<column nick="excel_tag" name="excel_tag" type="数值" usedTag="s" required="n" validate="n" service="t" Ttype="int(1)" id="23">
+	</column>
+	<column nick="change_tag" name="change_tag" type="数值" usedTag="s" required="n" validate="n" service="t" Ttype="int(1)" id="24">
+	</column>
+	<column nick="附件" name="attachment1" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(100)" id="25">
+	</column>
+	<column nick="备注" name="remark" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="text" id="26">
+	</column>
+	<column nick="gar_tag" name="gar_tag" type="数值" usedTag="s" required="n" validate="n" service="t" Ttype="int(10) unsigned" id="27">
+	</column>
+	<column nick="used_tag" name="used_tag" type="数值" usedTag="s" required="n" validate="n" service="t" Ttype="int(10) unsigned" id="28">
+	</column>
+	<column nick="excel_batch_tag" name="excel_batch_tag" type="数值" usedTag="s" required="n" validate="n" service="t" Ttype="int(10) unsigned" id="29">
+	</column>
+</table>
+</config>

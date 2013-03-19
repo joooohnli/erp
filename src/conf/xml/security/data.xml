@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+ <tables nick="ts1" name="TS1">
+
+<table nick="快捷方式" name="drag_img" id="file">
+      <columns nick="col1" name="COL1">
+	  		<column nick="快捷方式名称" name="drag_text" usedTag="y" required="n" listTag="y"/>		
+		<column nick="简称" name="nickname" usedTag="y" required="n" listTag="y"/>		
+<column nick="第一工作界面" name="firstworkname" usedTag="y" required="y"  listTag="y"/>
+<column nick="变更" name="change_char" usedTag="y" required="y"  listTag="y"/>		
+
+       </columns>
+    </table>
+    <table nick="访问查询" name="security_alive_access">
+      <columns>
+        <column nick="I级机构名称" name="FIRST_KIND_NAME" />
+        <column nick="II级机构名称" name="SECOND_KIND_NAME" />
+        <column nick="III级机构名称" name="THIRD_KIND_NAME" />
+        <column nick="员工姓名" name="HUMAN_NAME" />
+        <column nick="用户名" name="EDITOR" />
+        <column nick="IP地址" name="MODULEI" />
+        <column nick="员工编号" name="HUMAN_ID" />
+        <column nick="登陆时间" name="TIME1" />
+        <column nick="退出时间" name="TIME2" /> 
+        
+       </columns>
+    </table>
+
+	 <table nick="许可证管理" name="security_license">
+      <columns>
+        <column nick="I级机构名称" name="FIRST_KIND_NAME" />
+        <column nick="II级机构名称" name="SECOND_KIND_NAME" />
+        <column nick="III级机构名称" name="THIRD_KIND_NAME" />
+        <column nick="员工编号" name="HUMAN_ID" />
+	   <column nick="员工名称" name="HUMAN_NAME" />
+        <column nick="职位分类" name="HUMAN_MAJOR_FIRST_KIND_NAME" />
+        <column nick="职位" name="HUMAN_MAJOR_SECOND_KIND_NAME" /> 
+          <column nick="发放时间" name="REGISTER_TIME" /> 
+     
+    
+       </columns>
+    </table>
+<table nick="用户管理" name="security_users">
+      <columns>
+        <column nick="I级机构名称" name="FIRST_KIND_NAME" />
+        <column nick="II级机构名称" name="SECOND_KIND_NAME" />
+        <column nick="III级机构名称" name="THIRD_KIND_NAME" />
+        <column nick="员工编号" name="HUMAN_ID" />
+	   <column nick="员工名称" name="HUMAN_NAME" />
+        <column nick="职位分类" name="HUMAN_MAJOR_FIRST_KIND_NAME" />
+        <column nick="职位" name="HUMAN_MAJOR_SECOND_KIND_NAME" /> 
+     
+    
+       </columns>
+    </table>
+   </tables>
+</config>

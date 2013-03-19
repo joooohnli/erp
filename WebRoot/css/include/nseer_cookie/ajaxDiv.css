@@ -1,0 +1,12 @@
+.select_div_l{
+cursor:hand;padding-top:3px;left:405px;width:15px;position:absolute;background-image:url(/erp/images/selectArrow.gif);
+}
+.select_div_r{
+cursor:hand;padding-top:3px;left:787px;width:15px;position:absolute;background-image:url(/erp/images/selectArrow.gif);
+}
+.select_div_r0{
+cursor:hand;left:360px;height:18px;width:15px;position:absolute;background-image:url(/erp/images/selectArrow.gif);
+}
+.result_div1{
+position:absolute;background:yellow;height:80px; filter:alpha(opacity=80); overflow-y: auto; overflow-x: hidden;z-index:100
+}

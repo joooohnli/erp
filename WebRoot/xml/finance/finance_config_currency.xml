@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+<table nick="finance_config_currency" name="finance_config_currency">
+	<column nick="id" name="id" type="数值" Ttype="int(10) unsigned" usedTag="s" required="n" validate="n" service="t" id="1" >
+	</column>
+	<column nick="币种编号" name="currency_id" type="字符" Ttype="varchar(255)" usedTag="s" required="n" validate="y" service="b" id="2" >
+    <depend name="required" />
+    <depend name="integer" />
+	</column>
+	<column nick="币种名" name="currency_name" type="字符" Ttype="varchar(255)" usedTag="s" required="n" validate="y" service="b" id="3" >
+    <depend name="required" />
+    <depend name="common" />
+	</column>
+	<column nick="币符" name="currency_mark" type="字符" Ttype="varchar(255)" usedTag="s" required="n" validate="y" service="b" id="4" >
+    <depend name="required" />
+    <depend name="common" />
+	</column>
+	<column nick="汇率" name="currency_rate" type="数值" Ttype="decimal(15,2)" usedTag="s" required="n" validate="n" service="b" id="5" >
+    <depend name="common" />
+	</column>
+	<column nick="折算方式" name="way_tag" type="字符" Ttype="varchar(255)" usedTag="s" required="n" validate="y" service="b" id="6" >
+    <depend name="required" />
+    <depend name="common" />
+	</column>
+	<column nick="小数位" name="currency_decimal" type="字符" Ttype="varchar(255)" usedTag="s" required="n" validate="y" service="b" id="7" >
+    <depend name="required" />
+    <depend name="integer" />
+	</column>
+	<column nick="调整时间" name="currency_time" type="时间" Ttype="date" usedTag="s" required="n" validate="y" service="b" id="8" >
+    <depend name="required" />
+    <depend name="date" param0="yyyy-mm-dd"/>
+	</column>
+	<column nick="汇率" name="conversion_way" type="数值" Ttype="decimal(15,2)" usedTag="s" required="y" validate="y" service="p" id="9" >
+    <depend name="required" />
+	<depend name="common" />
+	</column>
+</table>
+</config>

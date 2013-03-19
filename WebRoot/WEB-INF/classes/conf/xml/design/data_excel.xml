@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+ <tables>
+    <table nick="产品档案" name="design_file">
+      <columns>
+        <column nick="产品编号" name="PRODUCT_ID" />
+        <column nick="产品名称" name="PRODUCT_NAME" />
+		<column nick="产品简称" name="PRODUCT_NICK" />
+		<column nick="优质级别" name="PRODUCT_CLASS" /> 
+        <column nick="用途类型" name="TYPE" />  
+		<column nick="单位" name="AMOUNT_UNIT" />
+        <column nick="产品特性描述" name="PRODUCT_DESCRIBE" /> 
+         <column nick="制造商" name="FACTORY_NAME" />
+        <column nick="供应商集合" name="PROVIDER_GROUP" />
+        <column nick="保修期" name="WARRANTY" />
+        <column nick="市场单价" name="LIST_PRICE" />
+		<column nick="计划成本单价" name="COST_PRICE" />
+		<column nick="生命周期" name="LIFECYCLE" />
+		<column nick="计量单位" name="PERSONAL_UNIT" />
+        <column nick="计量值" name="PERSONAL_VALUE" />
+		<column nick="替代品" name="TWIN_NAME" />
+		<column nick="替代品编号" name="TWIN_ID" />
+        <column nick="备注" name="REMARK" /> 
+        <column nick="档案变更累计" name="FILE_CHANGE_AMOUNT" />
+	    <column nick="产品经理" name="RESPONSIBLE_PERSON_NAME" />
+        <column nick="产品经理编号" name="RESPONSIBLE_PERSON_ID" />
+        <column nick="登记人" name="REGISTER" />
+        <column nick="登记人编号" name="REGISTER_ID" />
+        <column nick="建档时间" name="REGISTER_TIME" />
+       </columns>
+    </table>
+
+
+
+	
+   </tables>
+</config>
+

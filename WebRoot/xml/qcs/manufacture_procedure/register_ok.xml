@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<div-config title="⊙⊙⊙恩信科技开源ERP⊙⊙⊙">
+<div id="apply_ok" class="nseer_div" nseerDef="dragAble">
+<div class="cssDiv1">
+<div class="cssDiv2">⊙⊙⊙恩信科技开源ERP⊙⊙⊙
+</div>
+</div>
+<div class="cssDiv3"  onclick="closeDiv('hidden')"  onmouseover="mmcMouseStyle(this);"></div>
+<div id="expand" class="cssDiv4" onclick="maxDiv()"  onmouseover="mmcMouseStyle(this);"></div>
+<div id="collapse" class="cssDiv5" onclick="minDiv(40)"  onmouseover="mmcMouseStyle(this);"></div>
+<div class="cssDiv6"></div>
+<div class="cssDiv7"></div>
+<div class="cssDiv8">
+<table id="table1" class="table1">
+	<tr class="div_tr1"><td></td><td></td></tr>
+	<tr id="tr1">
+		<td id="td1">			
+		</td>
+		<td id="td1" align="center">
+			　⊙⊙⊙不合格数大于拒收数,您确定质检结果为合格吗?⊙⊙⊙
+		</td>
+	</tr>
+	<tr class="div_tr1"><td></td><td></td></tr>
+	<tr id="tr1">
+		<td id="td1">			
+		</td>
+		<td id="td2" align="center">
+		    <input class="BUTTON_STYLE1" type="button"  value="⊙⊙⊙确定⊙⊙⊙" onclick="formSubmit();" />
+			<input class="BUTTON_STYLE1" type="button"  value="⊙⊙⊙取消⊙⊙⊙" onclick="closeDiv('hidden');"/>
+		</td>
+	</tr>	
+</table>
+</div>
+</div>
+</div-config>

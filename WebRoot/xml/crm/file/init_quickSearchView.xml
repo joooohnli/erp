@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<div-config title="恩信科技">
+<div id="dialogQuery" class="nseer_div" nseerDef="dragAble">
+<div class="cssDiv1">
+<div class="cssDiv2">⊙⊙⊙恩信科技开源ERP⊙⊙⊙
+</div>
+</div>
+<div class="cssDiv3"  onclick="n_D.closeDiv('remove')"  onmouseover="n_D.mmcMouseStyle(this);"></div>
+<div id="expand" class="cssDiv4" onclick="n_D.maxDiv()"  onmouseover="n_D.mmcMouseStyle(this);"></div>
+<div id="collapse" class="cssDiv5" onclick="n_D.minDiv(40)"  onmouseover="n_D.mmcMouseStyle(this);"></div>
+<div class="cssDiv6" height="7px"></div>
+<div class="cssDiv7"></div>
+<div class="cssDiv8">
+
+
+
+<table width="100%" id="theObjTable">
+<tr>
+<td><input type="button" class="BUTTON_STYLE1" value="⊙⊙⊙查询⊙⊙⊙" onclick="quickSearchNode('Nseer_tree1');"/>
+     <input type="button" class="BUTTON_STYLE1" value="⊙⊙⊙取消⊙⊙⊙" onclick="n_D.closeDiv('remove');"/>
+</td>
+</tr>
+<tr>
+<td>⊙⊙⊙请输入关键字：⊙⊙⊙</td> 
+<td><input type="text" id="keyword" name="keyword" autocomplete="off"/></td>
+</tr>
+</table>
+
+</div>
+</div>
+</div-config>

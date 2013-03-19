@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE validation-config SYSTEM "validation-config.dtd">
+<validation-config lang="auto">
+  <table name="mutiValidation" show-error="alert" onfail="" show-type="first">
+      <field name="standard_name" display-name="标准名称" onfail="">
+      <depend name="required" />
+      </field>
+      <field name="method_name" display-name="抽样方法" onfail="">
+      <depend name="required" />
+      </field>
+  </table>
+  </validation-config>

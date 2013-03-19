@@ -1,0 +1,25 @@
+.thData{
+BACKGROUND:0a6846;
+}
+.tableData {
+BACKGROUND: white; BORDER-BOTTOM: white 1px dashed; BORDER-LEFT: white 1px dashed; BORDER-RIGHT: white 1px dashed; BORDER-TOP: white 1px dashed; COLOR: black; CURSOR: hand; FONT-FAMILY: verdana,arial,helvetica; FONT-SIZE: 12px
+}
+.inputTableData {
+BACKGROUND: white; BORDER-BOTTOM: white 1px dashed; BORDER-LEFT: white 1px dashed; BORDER-RIGHT: white 1px dashed; BORDER-TOP: white 1px dashed; COLOR: black; CURSOR: hand; FONT-FAMILY: verdana,arial,helvetica; FONT-SIZE: 12px;width:100%;
+}
+.tableDataSel {
+BACKGROUND: #6090d0; BORDER-BOTTOM: #6090d0 1px dashed; BORDER-LEFT: #6090d0 1px dashed; BORDER-RIGHT: #6090d0 1px dashed; BORDER-TOP: #6090d0 1px dashed; COLOR: white; CURSOR: hand; FONT-FAMILY: verdana,arial,helvetica; FONT-SIZE: 12px
+}
+.tableDataHit {
+BACKGROUND: #d0e0ff; BORDER-BOTTOM: #d0e0ff 1px dashed; BORDER-LEFT: #d0e0ff 1px dashed; BORDER-RIGHT: #d0e0ff 1px dashed; BORDER-TOP: #d0e0ff 1px dashed; COLOR: black; CURSOR: hand; FONT-FAMILY: verdana,arial,helvetica; FONT-SIZE: 12px
+}
+.inputTableDataHit {
+BACKGROUND: #d0e0ff; BORDER-BOTTOM: #d0e0ff 1px dashed; BORDER-LEFT: #d0e0ff 1px dashed; BORDER-RIGHT: #d0e0ff 1px dashed; BORDER-TOP: #d0e0ff 1px dashed; COLOR: black; CURSOR: hand; FONT-FAMILY: verdana,arial,helvetica; FONT-SIZE: 12px;width:100%
+}
+.tableDataOver {
+BACKGROUND: #d0e0ff; BORDER-BOTTOM: #d0e0ff 1px dashed; BORDER-LEFT: #d0e0ff 1px dashed; BORDER-RIGHT: #d0e0ff 1px dashed; BORDER-TOP: #d0e0ff 1px dashed; COLOR: black; CURSOR: hand; FONT-FAMILY: verdana,arial,helvetica; FONT-SIZE: 12px
+}
+.scheduleButtonVisible {
+BACKGROUND: silver; BORDER-BOTTOM: gray 1px dashed; BORDER-LEFT: white 1px dashed; BORDER-RIGHT: gray 1px dashed; BORDER-TOP: white 1px dashed; COLOR: black; CURSOR: hand; FONT-FAMILY: webdings; FONT-SIZE: 12px
+}
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <table nick="物流配送" name="logistics">
+    <column nick="logistics_allright" name="logistics_allright" service="t" />
+    <column nick="logistics_config_public_char" name="logistics_config_public_char" service="t" />
+    <column nick="logistics_config_workflow" name="logistics_config_workflow" service="t" />
+    <column nick="物流单位联络" name="logistics_contact" service="b" key="contact_id"/>
+    <column nick="logistics_details" name="logistics_details" service="t" />
+    <column nick="logistics_details_details" name="logistics_details_details" service="t" />
+    <column nick="物流单位报价单" name="logistics_discussion" service="b" key="discussion_id"/>
+    <column nick="logistics_discussion_details" name="logistics_discussion_details" service="t" />
+    <column nick="物流单位档案" name="logistics_file" service="b" key="provider_id"/>
+    <column nick="logistics_file_dig" name="logistics_file_dig" service="t" />
+    <column nick="配送单" name="logistics_logistics" service="b" key="logistics_id"/>
+    <column nick="配送单位推荐单" name="logistics_product_providers_recommend" service="b" />
+    <column nick="logistics_product_providers_recommend_details" name="logistics_product_providers_recommend_details" service="t" />
+    <column nick="logistics_tree" name="logistics_tree" service="t" />
+    <column nick="logistics_view" name="logistics_view" service="t" />
+    <column nick="logistics_workflow" name="logistics_workflow" service="t" />
+  </table>
+</config>
+

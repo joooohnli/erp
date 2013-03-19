@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tree-config css="../../css/include/nseer_cookie/xml-css.css">
+<table display-name="固定资产分类" name="finance_config_assets_kind" tree-name="Nseer_tree1" div-name="nseer1_0"
+		add-brother-node="div-add1.xml,div-add2.xml" 
+		add-child-node="div-add1.xml,div-add2.xml" 
+		delete-node="div-delete.xml"
+		change-node="div-change1.xml,div-change2.xml"
+		select-node-into="true"
+		step-length="2">
+		<field display-name="序号" name="id">
+		</field>
+		<field display-name="节点ID" name="CATEGORY_ID" depend="required">
+		</field>
+		<field display-name="父节点ID" name="PARENT_CATEGORY_ID" depend="required">
+		</field>
+        <field display-name="节点显示文字" name="CATEGORY_NAME" depend="required">
+		</field>
+        <field display-name="是否有下级" name="DETAILS_TAG" depend="required">
+		</field>
+        <field display-name="资产分类编号" name="FILE_ID" depend="required">
+		<depend name="required" />
+		<depend name="duplicate" param0="finance_config_assets_kind@file_id@parent_category_id"/>
+		<depend name="stepNum" param0="2"/>
+		</field>
+        <field display-name="资产分类名称" name="FILE_NAME" depend="required"><!--以上六个字段为tree必须，名称可变上下顺序不能变-->	
+        <depend name="common"/>
+		<depend name="required" />
+		<depend name="duplicate" param0="finance_config_assets_kind@file_name@parent_category_id"/>
+		</field>
+		<field display-name="是否可删除" name="DELETE_TAG" depend="required">
+		</field>
+        <field display-name="资产使用年限" name="LIFECYCLE" depend="nodeAttribute">
+		<depend name="required" />
+        <depend name="common"/>
+        <depend name="decimal" />
+		</field>
+        <field display-name="资产净残值率" name="REMNANT_VALUE_RATE" depend="nodeAttribute">
+		<depend name="required" />
+        <depend name="common"/>
+        <depend name="decimal" />
+        <depend name="doubleRange" param0="0" param1="100"/>
+		</field>
+</table>
+</tree-config>

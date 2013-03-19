@@ -1,0 +1,164 @@
+<div id="dialogAddI" class="nseer_div" nseerDef="dragAble" style="width:500px;height:500px;">
+<iframe src="javascript:false" style="position:absolute;visibility:inherit;top:0px;left:0px;width:100%;height:100%;z-index:-1;filter='progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=0)';"></iframe>
+
+<TABLE width="100%" height="100%" border="0" align="center" cellPadding="0" cellSpacing="0">
+  <TBODY>
+    <TR>
+      <TD width="1%" height="1%"><IMG  src="../../images/bg_0ltop.gif"  ></TD>
+      <TD width="100%" background="../../images/bg_01.gif"></TD>
+      <TD width="1%" height="1%"><IMG  src="../../images/bg_0rtop.gif"></TD>
+    </TR>
+    <TR>
+      <TD  background="../../images/bg_03.gif"></TD>
+ <TD>
+
+<div class="cssDiv1">
+<div class="cssDiv2">⊙⊙⊙恩信科技开源ERP⊙⊙⊙
+</div>
+</div>
+<div class="cssDiv3"  onclick="n_D.closeDiv('remove')"  onmouseover="n_D.mmcMouseStyle(this);"></div>
+<div id="expand" class="cssDiv4" onclick="n_D.maxDiv()"  onmouseover="n_D.mmcMouseStyle(this);"></div>
+<div id="collapse" class="cssDiv5" onclick="n_D.minDiv(40)"  onmouseover="n_D.mmcMouseStyle(this);"></div>
+<div style="width:100%;height:100%;background:#E8E8E8">
+<div id="tabsF">
+<ul>
+<li id="current"><a href="javascript:void(0);"><span align="center">⊙⊙⊙添加同级⊙⊙⊙</span></a></li>
+</ul>
+</div>
+<div class="cssDiv8">
+<table id="table1" class="nseer_table1" width="100%" border="0" cellspacing="1" cellpadding="1" >
+<tr id="tr1">
+		<td id="td1">
+		</td>
+		<td id="td2">
+		</td>
+	</tr>
+	<tr id="tr1">
+		<td id="td1">			
+		</td>
+		<td id="td2"><div align="right">
+		<INPUT class="BUTTON_STYLE1" type="button" value="⊙⊙⊙确定⊙⊙⊙" onclick="addTreeNode('Nseer_tree3');">
+		<INPUT class="BUTTON_STYLE1" type="button" value="⊙⊙⊙取消⊙⊙⊙" onclick="n_D.closeDiv('remove');">
+		</div>
+		</td>
+	</tr>
+<tr>
+<td style="background-image:url(/erp/images/line7.gif);" width="35%">⊙⊙⊙科目编号⊙⊙⊙</td>
+<td><input style="WIDTH: 98%" type="text" id="file_id" name="file_id" value=""/>
+</td>
+</tr>
+<tr style="height:23px;">
+<td style="background-image:url(/erp/images/line7.gif);" width="35%">⊙⊙⊙科目名称⊙⊙⊙</td> 
+<td><input style="WIDTH: 98%" type="text" id="file_name" name="file_name" value=""/>
+</td>
+</tr>
+<tr style="height:23px;">
+<td style="background-image:url(/erp/images/line7.gif);" width="35%">⊙⊙⊙助记码⊙⊙⊙</td> 
+<td><input style="WIDTH: 98%" type="text" id="nick_name" name="nick_name" value=""/></td>
+</tr>
+<tr style="height:23px;">
+<td style="background-image:url(/erp/images/line7.gif);" width="35%">⊙⊙⊙科目类型⊙⊙⊙</td> 
+<td><select id="kind_tag" name="kind_tag" style="WIDTH: 98%">
+<option value="1">⊙⊙⊙资产⊙⊙⊙</option>
+<option value="2">⊙⊙⊙负债⊙⊙⊙</option>
+<option value="3">⊙⊙⊙权益⊙⊙⊙</option>
+<option value="4">⊙⊙⊙成本⊙⊙⊙</option>
+<option value="5">⊙⊙⊙损益⊙⊙⊙</option>
+</select>
+</td>
+</tr>
+<tr style="height:23px;">
+<td style="background-image:url(/erp/images/line7.gif);" width="35%">⊙⊙⊙多栏账⊙⊙⊙</td>
+<td><select id="muti_field_type" name="muti_field_type" style="WIDTH: 98%">
+<option value="否">⊙⊙⊙否⊙⊙⊙</option> 
+<option value="是">⊙⊙⊙是⊙⊙⊙</option> 
+</select>
+</td>
+</tr>
+<tr style="height:23px;">
+<td style="background-image:url(/erp/images/line7.gif);" width="35%">⊙⊙⊙科目性质(余额方向)⊙⊙⊙</td> 
+<td><select id="debit_or_loan" name="debit_or_loan" style="WIDTH: 98%">
+<option value="借">⊙⊙⊙借⊙⊙⊙</option>
+<option value="贷">⊙⊙⊙贷⊙⊙⊙</option>
+</select>
+</td>
+</tr>
+<tr style="height:23px;">
+<td style="background-image:url(/erp/images/line7.gif);" width="35%">⊙⊙⊙资产负债表所属项目⊙⊙⊙</td> 
+<td><select id="itema_name" name="itema_name" style="WIDTH: 98%">
+<option value=""></option>
+</select>
+</td>
+</tr>
+<tr style="height:23px;">
+<td style="background-image:url(/erp/images/line7.gif);" width="35%">⊙⊙⊙损益表所属项目⊙⊙⊙</td> 
+<td><select id="itemb_name" name="itemb_name" style="WIDTH: 98%">
+<option value=""></option>
+</select>
+</td>
+</tr>
+<tr style="height:23px;">
+<td style="background-image:url(/erp/images/line7.gif);" width="35%">⊙⊙⊙现金流量表补充资料所属项目⊙⊙⊙</td> 
+<td><select id="itemd_name" name="itemd_name" style="WIDTH: 98%">
+<option value=""></option>
+</select>
+</td>
+</tr>
+<tr style="height:23px;">
+<td style="background-image:url(/erp/images/line7.gif);" width="35%">⊙⊙⊙期末结转⊙⊙⊙</td> 
+<td><select id="profit_or_cost" name="profit_or_cost" style="WIDTH: 98%">
+<option value=""></option>
+<option value="1">⊙⊙⊙转本年利润⊙⊙⊙</option>
+<option value="0">⊙⊙⊙转利润并依此生成销售成本⊙⊙⊙</option>
+</select>
+</td>
+</tr>
+<tr style="height:23px;">
+<td style="background-image:url(/erp/images/line7.gif);" width="35%">⊙⊙⊙数量核算⊙⊙⊙</td> 
+<td><select id="corr_stock_tag" name="corr_stock_tag" style="WIDTH: 98%">
+<option value="否">⊙⊙⊙否⊙⊙⊙</option>
+<option value="是">⊙⊙⊙是⊙⊙⊙</option>
+</select>
+</td>
+</tr>
+<tr style="height:23px;">
+<td style="background-image:url(/erp/images/line7.gif);" width="35%">⊙⊙⊙现金流量⊙⊙⊙</td> 
+<td><select id="cash_tag" name="cash_tag" style="WIDTH: 98%">
+<option value="0">⊙⊙⊙否⊙⊙⊙</option>
+<option value="1">⊙⊙⊙是⊙⊙⊙</option>
+</select>
+</td>
+</tr>
+<tr style="height:23px;">
+<td style="background-image:url(/erp/images/line7.gif);" width="35%">⊙⊙⊙是否外币⊙⊙⊙</td> 
+<td><select id="currency_tag" name="currency_tag" style="WIDTH: 30%" onchange="showCurrency(this.id,'currency')">
+<option value="0">⊙⊙⊙否⊙⊙⊙</option>
+<option value="1">⊙⊙⊙是⊙⊙⊙</option>
+</select>&nbsp;<select id="currency" name="currency" style="WIDTH: 66%">
+<option value="0"></option>
+</select>
+</td>
+</tr>
+<tr>
+<td style="background-image:url(/erp/images/line4.gif);" width="35%">⊙⊙⊙辅助核算⊙⊙⊙</td> 
+<td><input type="checkbox" id="part" />⊙⊙⊙部门核算⊙⊙⊙<input type="checkbox" id="personal" />⊙⊙⊙个人往来⊙⊙⊙<input type="checkbox" id="customer" />⊙⊙⊙客户往来⊙⊙⊙<input type="checkbox" id="purchaser" />⊙⊙⊙供应商往来⊙⊙⊙<input type="checkbox" id="programme" />⊙⊙⊙项目核算⊙⊙⊙<input type="hidden" id="assistance" name="assistance" /></td>
+</tr>
+<tr style="height:23px;">
+<td style="background-image:url(/erp/images/line7.gif);" width="35%"></td> 
+<td><input type="checkbox" id="daily_tag" name="daily_tag" />⊙⊙⊙日记账⊙⊙⊙<input type="checkbox" id="bank_tag" name="bank_tag" />⊙⊙⊙银行账⊙⊙⊙</td>
+</tr>
+</table> 
+</div>
+</div>
+
+ </TD>
+<TD  background="../../images/bg_04.gif"></TD>
+    </TR>
+    <TR>
+      <TD width="1%" height="1%"><IMG  src="../../images/bg_0lbottom.gif" ></TD>
+      <TD background="../../images/bg_02.gif"></TD>
+      <TD width="1%" height="1%"><IMG  src="../../images/bg_0rbottom.gif"></TD>
+    </TR>    
+  </TBODY>
+</TABLE>
+</div>

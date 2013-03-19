@@ -1,0 +1,114 @@
+/*- Menu Tabs F--------------------------- */
+#Tabs0 {
+	  position:absolute;
+      float:left;
+      width:100%;
+	  top:26px;
+	  font-size:100%;
+      line-height:normal;
+    
+      }
+#Tabs0 ul {
+        margin:0;
+        padding:0px 10px 0 0px;
+        list-style:none;
+      }
+
+#Tabs0 li {
+      display:inline;
+      margin:0;
+      padding:0;
+      }
+#Tabs0 a {
+	  float:left;
+      background:url("/erp/images/tableftF.gif") no-repeat left top;
+      margin:0;
+      padding:0 0 0 4px;
+      text-decoration:none;
+      }
+#Tabs0 a span {
+      float:left;
+	  width:100px;
+      display:block;
+	  text-align:center;
+      background:url("/erp/images/tabrightF.gif") no-repeat right top;
+      padding:5px 15px 4px 6px;
+      color:#666;
+      }
+    /* Commented Backslash Hack hides rule from IE5-Mac \*/
+#Tabs0 a span {float:none;}
+    /* End IE5-Mac hack */
+#Tabs0 a:hover span {
+      color:#000;
+      }
+#Tabs0 a:hover {
+      background-position:0% -42px;
+      }
+#Tabs0 a:hover span {
+      background-position:100% -42px;
+      }
+
+#Tabs0 #main_cur a {
+                background-position:0% -42px;
+       }
+#Tabs0 #main_cur a span {
+	text-align:center;
+	background-position:100% -42px;
+     }
+/******************************************************************************************************************/
+#Tabs1 {
+	  position:absolute;
+      float:left;
+      width:100%;
+	  top:2px;
+      font-size:93%;
+      line-height:normal;
+      border-bottom:1px solid #666;
+      }
+#Tabs1 ul {
+        margin:0;
+        padding:0px 10px 0 50px;
+        list-style:none;
+      }
+
+#Tabs1 li {
+      display:inline;
+      margin:0;
+      padding:0;
+      }
+#Tabs1 a {
+	  float:left;
+      background:url("/erp/images/tableftF.gif") no-repeat left top;
+      margin:0;
+      padding:0 0 0 4px;
+      text-decoration:none;
+      }
+#Tabs1 a span {
+      float:left;
+	  width:70px;
+      display:block;
+	  text-align:center;
+      background:url("/erp/images/tabrightF.gif") no-repeat right top;
+      padding:5px 15px 4px 6px;
+      color:#666;
+      }
+    /* Commented Backslash Hack hides rule from IE5-Mac \*/
+#Tabs1 a span {float:none;}
+    /* End IE5-Mac hack */
+#Tabs1 a:hover span {
+      color:#000;
+      }
+#Tabs1 a:hover {
+      background-position:0% -42px;
+      }
+#Tabs1 a:hover span {
+      background-position:100% -42px;
+      }
+
+#Tabs1 #main_cur a {
+                background-position:0% -42px;
+       }
+#Tabs1 #main_cur a span {
+	text-align:center;
+	background-position:100% -42px;
+     }

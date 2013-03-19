@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tree-config css="../../css/include/nseer_cookie/xml-css.css">
+<table display-name="全部科目" name="finance_config_file_kind" tree-name="Nseer_tree1"  div-name="nseer1"
+		add-brother-node="div-add1.xml,div-add2.xml" 
+		add-child-node="div-add1.xml,div-add2.xml" 
+		delete-node="div-delete.xml"
+		change-node="div-change1.xml,div-change2.xml"
+		select-node-into="true"
+		step-length="3">
+		<field display-name="序号" name="id">
+		</field>
+		<field display-name="节点ID" name="CATEGORY_ID" depend="required">
+		</field>
+		<field display-name="父节点ID" name="PARENT_CATEGORY_ID" depend="required">
+		</field>
+        <field display-name="节点显示文字" name="CATEGORY_NAME" depend="required">
+		</field>
+        <field display-name="是否有下级" name="DETAILS_TAG" depend="required">
+		</field>
+        <field display-name="科目编号" name="FILE_ID" depend="required">
+        	<depend name="required" />
+			<depend name="duplicate" param0="finance_config_file_kind@file_id@parent_category_id"/>
+			<depend name="stepNum" param0="4"/>
+		</field>
+        <field display-name="科目名称" name="FILE_NAME" depend="required">
+        	<depend name="required" />
+			<depend name="duplicate" param0="finance_config_file_kind@file_name@parent_category_id"/>
+		</field>
+		<field display-name="是否可删除" name="DELETE_TAG" depend="required">
+		</field>
+        <field display-name="助记码" name="NICK_NAME" depend="nodeAttribute">
+		</field>
+		<field display-name="科目类型" name="KIND_TAG" depend="nodeAttribute">
+		</field>
+		<field display-name="多栏账" name="MUTI_FIELD_TYPE" depend="nodeAttribute">
+		</field>
+		<field display-name="科目性质(余额方向)" name="DEBIT_OR_LOAN" depend="nodeAttribute">
+		</field>
+		<field display-name="资产负债表所属项目" name="ITEMA_NAME" depend="nodeAttribute">
+		</field>
+		<field display-name="损益表所属项目" name="ITEMB_NAME" depend="nodeAttribute">
+		</field>
+		<field display-name="现金流量表补充资料所属项目" name="ITEMD_NAME" depend="nodeAttribute">
+		</field>
+		<field display-name="期末结转" name="PROFIT_OR_COST" depend="nodeAttribute">
+		</field>
+		<field display-name="数量核算" name="CORR_STOCK_TAG" depend="nodeAttribute">
+		</field>
+		<field display-name="现金流量" name="CASH_TAG" depend="nodeAttribute">
+		</field>
+		<field display-name="是否外币" name="CURRENCY_TAG" depend="nodeAttribute">
+		</field>
+		<field display-name="外币" name="CURRENCY" depend="nodeAttribute">
+		</field>
+		<field display-name="日记账" name="DAILY_TAG" depend="nodeAttribute">
+		</field>
+		<field display-name="银行帐" name="BANK_TAG" depend="nodeAttribute">
+		</field>
+		<field display-name="辅助核算" name="ASSISTANCE" depend="nodeAttribute">
+		</field>
+</table>
+</tree-config>

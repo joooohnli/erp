@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <tables>    
+	<table nick="收付执行单" name="fund_fund">
+      <columns>
+      	<column nick="收款执行单编号" name="FUND_ID" />
+		<column nick="理由" name="REASON" /> 
+        <column nick="详细理由" name="REASONEXACT" />
+        <column nick="I级分类名称" name="FIRST_KIND_NAME" />
+        <column nick="II级分类名称" name="SECOND_KIND_NAME" />
+        <column nick="III级分类名称" name="THIRD_KIND_NAME" />
+		<column nick="付款人" name="FUNDER" />
+        <column nick="I级科目名称" name="FILE_FIRST_KIND_NAME" />
+		<column nick="应收总额" name="DEMAND_COST_PRICE_SUM" />
+		<column nick="已收总额" name="EXECUTED_COST_PRICE_SUM" />
+		<column nick="币种" name="CURRENCY_NAME" />
+		<column nick="备注" name="REMARK" />
+        <column nick="审核时间" name="CHECK_TIME" />
+        <column nick="登记时间" name="REGISTER_TIME" />
+        <column nick="完成时间" name="FINISH_TIME" />
+        <column nick="登记人" name="REGISTER" />
+		<column nick="登记人编号" name="REGISTER_ID" />
+	    <column nick="审核人" name="CHECKER" />        
+	    <column nick="审核人编号" name="CHECKER_ID" />
+	  </columns>
+	</table>	 
+  </tables>
+</config>

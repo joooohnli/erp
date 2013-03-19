@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+<table nick="fund_config_file_kind" name="fund_config_file_kind">
+	<column nick="id" name="id" type="数值" Ttype="int(10) unsigned" usedTag="s" required="n" validate="n" service="t" >
+	</column>
+	<column nick="category_id" name="category_id" type="数值" Ttype="int(10)" usedTag="s" required="n" validate="n" service="t" >
+	</column>
+	<column nick="parent_category_id" name="parent_category_id" type="数值" Ttype="int(10)" usedTag="s" required="n" validate="n" service="t" >
+	</column>
+	<column nick="category_name" name="category_name" type="字符" Ttype="varchar(255)" usedTag="s" required="n" validate="n" service="t" >
+	</column>
+	<column nick="科目编号" name="file_id" type="字符" Ttype="text" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="科目名称" name="file_name" type="字符" Ttype="text" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="科目简称" name="nick_name" type="字符" Ttype="varchar(255)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="备注" name="remark" type="字符" Ttype="varchar(255)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="delete_tag" name="delete_tag" type="数值" Ttype="int(1)" usedTag="s" required="n" validate="n" service="t" >
+	</column>
+	<column nick="details_tag" name="details_tag" type="数值" Ttype="int(1) unsigned" usedTag="s" required="n" validate="n" service="t" >
+	</column>
+	<column nick="科目全编号" name="chain_id" type="字符" Ttype="varchar(255)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="科目全名称" name="chain_name" type="字符" Ttype="varchar(255)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="describe2" name="describe2" type="字符" Ttype="mediumtext" usedTag="s" required="n" validate="n" service="t" >
+	</column>
+	<column nick="describe1" name="describe1" type="字符" Ttype="mediumtext" usedTag="s" required="n" validate="n" service="t" >
+	</column>
+	<column nick="describe3" name="describe3" type="字符" Ttype="mediumtext" usedTag="s" required="n" validate="n" service="t" >
+	</column>
+	<column nick="describe4" name="describe4" type="字符" Ttype="mediumtext" usedTag="s" required="n" validate="n" service="t" >
+	</column>
+	<column nick="counter" name="counter" type="字符" Ttype="varchar(255)" usedTag="s" required="n" validate="n" service="t" >
+	</column>
+</table>
+</config>

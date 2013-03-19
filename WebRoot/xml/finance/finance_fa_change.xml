@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+<table nick="finance_fa_change" name="finance_fa_change">
+	<column nick="id" name="id" type="数值" Ttype="int(10) unsigned" usedTag="s" required="n" validate="n" service="t" >
+	</column>
+	<column nick="变更单编号" name="changebill_id" type="字符" Ttype="varchar(30)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="固定资产编号" name="file_id" type="字符" Ttype="varchar(30)" usedTag="s" required="y" validate="y" service="b" >
+		<depend name="required" />
+		<depend name="common" />
+	</column>
+	<column nick="固定资产名称" name="file_name" type="字符" Ttype="varchar(100)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="开始使用日期" name="start_time" type="时间" Ttype="date" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="变动类型名称" name="type_name" type="字符" Ttype="varchar(100)" usedTag="s" required="n" validate="n" service="t" >
+	</column>
+	<column nick="规格型号" name="specification" type="字符" Ttype="varchar(100)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="变动金额" name="change_sub" type="字符" Ttype="varchar(100)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="币种" name="currency" type="字符" Ttype="varchar(30)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="汇率" name="exchange_rate" type="字符" Ttype="varchar(30)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="变动的净残值" name="cremnant_value" type="字符" Ttype="varchar(30)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="变动的净残值率" name="cremnant_value_rate" type="字符" Ttype="varchar(30)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="变动前原值" name="cb_original_value" type="字符" Ttype="varchar(30)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="变动后原值" name="ca_original_value" type="字符" Ttype="varchar(30)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="变动前净残值" name="cb_remnant_value" type="字符" Ttype="varchar(30)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="变动前机构编号" name="cb_kind_id" type="字符" Ttype="varchar(100)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="变动前机构名称" name="cb_kind_name" type="字符" Ttype="varchar(100)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="变动后机构编号" name="ca_kind_id" type="字符" Ttype="varchar(100)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="变动后机构名称" name="ca_kind_name" type="字符" Ttype="varchar(100)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="变动前存放地址" name="cb_deposit_place" type="字符" Ttype="varchar(100)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="变动后存放地址" name="ca_deposit_place" type="字符" Ttype="varchar(100)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="变动原因" name="change_reason" type="字符" Ttype="text" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="变动日期" name="change_time" type="时间" Ttype="datetime" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="变动人" name="changer" type="字符" Ttype="varchar(30)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="变动类型" name="change_kind" type="字符" Ttype="varchar(30)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="变动后使用状态" name="ca_status_id" type="字符" Ttype="varchar(100)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="变动前使用状态" name="cb_status_id" type="字符" Ttype="varchar(100)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="变动前累计折旧" name="cb_caled_sum" type="字符" Ttype="varchar(100)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="变动后累计折旧" name="ca_caled_sum" type="字符" Ttype="varchar(100)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="变动前使用年限" name="cb_lifecycle" type="字符" Ttype="varchar(30)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="变动后使用年限" name="ca_lifecycle" type="字符" Ttype="varchar(30)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="变动前工作总量" name="cb_work_total" type="字符" Ttype="varchar(45)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="变动后工作总量" name="ca_work_total" type="字符" Ttype="varchar(45)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="净值" name="cb_net_value" type="字符" Ttype="varchar(45)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="变动后净残值" name="ca_remnant_value" type="字符" Ttype="varchar(45)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="变动前净残值率" name="cb_remnant_value_rate" type="字符" Ttype="varchar(45)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="变动后净残值率" name="ca_remnant_value_rate" type="字符" Ttype="varchar(45)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="变动前类别" name="cb_type" type="字符" Ttype="varchar(100)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="变动后类别" name="ca_type" type="字符" Ttype="varchar(100)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="可回收市值" name="ca_net_value" type="字符" Ttype="varchar(45)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="累计减值准备金额" name="sum_presub" type="字符" Ttype="varchar(45)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="累计转回准备金额" name="sum_re_presub" type="字符" Ttype="varchar(45)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="减值准备金额" name="pre_sub" type="字符" Ttype="varchar(45)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="转回减值准备金额" name="re_pre_sub" type="字符" Ttype="varchar(45)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="变动前折旧方法" name="cb_calway" type="字符" Ttype="varchar(100)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="变动后折旧方法" name="ca_calway" type="字符" Ttype="varchar(100)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="累计工作量" name="ca_work_sum" type="字符" Ttype="varchar(45)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="工作量单位" name="ca_work_unit" type="字符" Ttype="varchar(100)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="变动金额" name="change_amount" type="字符" Ttype="varchar(100)" usedTag="s" required="y" validate="y" service="p" >
+		<depend name="required" />
+		<depend name="decimal" />
+	</column>
+</table>
+</config>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE taglib PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN"
+
+"http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd">
+
+
+    
+<taglib>
+   <tlibversion>1.0</tlibversion>
+   <jspversion>1.1</jspversion>
+   <shortname>/mytag.tld</shortname>
+   <uri>/mytag.tld</uri>
+   
+   <tag>
+    <name>pages</name>
+    <tagclass>include.list_page.pages</tagclass>
+    <attribute>
+    <name>strPage</name>
+    <required>true</required>
+    <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+    <name>rs</name>
+    <required>true</required>
+    <rtexprvalue>true</rtexprvalue>
+    </attribute> 
+       </tag>  
+       
+ <tag>
+    <name>pageFourty</name>
+    <tagclass>include.list_page.pagesFourty</tagclass>
+    <attribute>
+    <name>strPage</name>
+    <required>true</required>
+    <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+    <name>rs</name>
+    <required>true</required>
+    <rtexprvalue>true</rtexprvalue>
+    </attribute> 
+       </tag>  
+
+
+
+  <tag>
+    <name>updowntag</name>
+    <tagclass>include.list_page.updownPage</tagclass>
+    <attribute>
+    <name>file</name>
+    <required>true</required>
+    <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+    <name>num</name>
+    <rtexprvalue>true</rtexprvalue>
+    </attribute>    
+   </tag>
+   
+
+
+
+
+
+
+  <tag>
+    <name>updowntagpa</name>
+    <tagclass>include.list_page.updownPagePa</tagclass>
+
+    <attribute>
+    <name>file</name>
+    <required>true</required>
+    <rtexprvalue>true</rtexprvalue>
+    </attribute>
+
+    <attribute>
+    <name>num</name>
+    <rtexprvalue>true</rtexprvalue>
+    </attribute>  
+    
+    <attribute>
+    <name>para</name>
+    <rtexprvalue>true</rtexprvalue>
+    </attribute>    
+
+   </tag>
+
+
+    <tag>
+    <name>updowntaghibernate</name>
+    <tagclass>include.list_page.updownHibernate</tagclass>
+    <attribute>
+    <name>file</name>
+    <required>true</required>
+    <rtexprvalue>true</rtexprvalue>
+    </attribute>
+
+    <attribute>
+    <name>num</name>
+    <rtexprvalue>true</rtexprvalue>
+    </attribute>
+
+    <attribute>
+    <name>intPage</name>
+    <rtexprvalue>true</rtexprvalue>
+    </attribute>
+
+    <attribute>
+    <name>pageRow</name>
+    <rtexprvalue>true</rtexprvalue>
+    </attribute>
+
+    <attribute>
+    <name>sql</name>
+    <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+   </tag>
+</taglib>

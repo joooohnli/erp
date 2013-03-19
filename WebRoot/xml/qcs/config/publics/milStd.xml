@@ -1,0 +1,179 @@
+<div id="addRecords" class="nseer_div" nseerDef="dragAble" style="width:500px;height:600px;">
+<TABLE width="100%" height="100%" border="0" align="center" cellPadding="0" cellSpacing="0">
+  <TBODY>
+    <TR>
+      <TD width="1%" height="1%"><IMG  src="../../../images/bg_0ltop.gif"></TD>
+      <TD width="100%" background="../../../images/bg_01.gif"></TD>
+      <TD width="1%" height="1%"><IMG  src="../../../images/bg_0rtop.gif"></TD>
+    </TR>
+    <TR>
+      <TD  background="../../../images/bg_03.gif"></TD>
+ <TD> 
+<div class="cssDiv1">
+<div class="cssDiv2">⊙⊙⊙恩信科技开源ERP⊙⊙⊙
+</div>
+</div>
+<div class="cssDiv3"  onclick="n_D.closeDiv('remove')"  onmouseover="n_D.mmcMouseStyle(this);"></div>
+<div id="expand" class="cssDiv4" onclick="n_D.maxDiv()"  onmouseover="n_D.mmcMouseStyle(this);"></div>
+<div id="collapse" class="cssDiv5" onclick="n_D.minDiv(40)"  onmouseover="n_D.mmcMouseStyle(this);"></div>
+
+<div style="width:100%;height:100%;background:#E8E8E8">
+<div id="tabsF">
+<ul>
+<li id="current"><a href="javascript:void(0);"><span style="width:130px;text-align:center">⊙⊙⊙MIL-STD-105E表设置⊙⊙⊙</span></a></li>
+</ul>
+</div>
+<div class="cssDiv8" align="center">
+	
+<table class="milstd" border="1" width="100%" height="100%">
+	
+	<tr>
+		<td></td>
+		<td>AC</td>
+		<td>RE</td>
+	</tr>
+	<tr id="tr0" >
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr id="tr1">
+		<td id="td1"></td>
+		<td id="td2"></td>
+		<td id="td3"></td>
+	</tr>
+	<tr id="tr2">
+		<td id="td4"></td>
+		<td id="td5"></td>
+		<td id="td6"></td>
+	</tr>
+	<tr id="tr3">
+		<td id="td7"></td>
+		<td id="td8"></td>
+		<td id="td9"></td>
+	</tr>
+	<tr id="tr4">
+		<td id="td10"></td>
+		<td id="td11"></td>
+		<td id="td12"></td>
+	</tr>
+	<tr id="tr5">
+		<td id="td13"></td>
+		<td id="td14"></td>
+		<td id="td15"></td>
+	</tr>
+	<tr id="tr6">
+		<td id="td16"></td>
+		<td id="td17"></td>
+		<td id="td18"></td>
+	</tr>
+	<tr id="tr7">
+		<td id="td19"></td>
+		<td id="td20"></td>
+		<td id="td21"></td>
+	</tr>
+	<tr id="tr8">
+		<td id="td22"></td>
+		<td id="td23"></td>
+		<td id="td24"></td>
+	</tr>
+	<tr id="tr9">
+		<td id="td25"></td>
+		<td id="td26"></td>
+		<td id="td27"></td>
+	</tr>
+	<tr id="tr10">
+		<td id="td28"></td>
+		<td id="td29"></td>
+		<td id="td30"></td>
+	</tr>
+	<tr id="tr11">
+		<td id="td31"></td>
+		<td id="td32"></td>
+		<td id="td33"></td>
+	</tr>
+	<tr id="tr12">
+		<td id="td34"></td>
+		<td id="td35"></td>
+		<td id="td36"></td>
+	</tr>
+	<tr id="tr13">
+		<td id="td37"></td>
+		<td id="td2"></td>
+		<td id="td3"></td>
+	</tr>
+	<tr id="tr14">
+		<td id="td1"></td>
+		<td id="td2"></td>
+		<td id="td3"></td>
+	</tr>
+	<tr id="tr15">
+		<td id="td1"></td>
+		<td id="td2"></td>
+		<td id="td3"></td>
+	</tr>
+	<tr id="tr16">
+		<td id="td1"></td>
+		<td id="td2"></td>
+		<td id="td3"></td>
+	</tr>
+	<tr id="tr17">
+		<td id="td1"></td>
+		<td id="td2"></td>
+		<td id="td3"></td>
+	</tr>
+	<tr id="tr18">
+		<td id="td1"></td>
+		<td id="td2"></td>
+		<td id="td3"></td>
+	</tr>
+	<tr id="tr19">
+		<td id="td1"></td>
+		<td id="td2"></td>
+		<td id="td3"></td>
+	</tr>
+	<tr id="tr20">
+		<td id="td1"></td>
+		<td id="td2"></td>
+		<td id="td3"></td>
+	</tr>
+	<tr id="tr21">
+		<td id="td1"></td>
+		<td id="td2"></td>
+		<td id="td3"></td>
+	</tr>
+	<tr id="tr22">
+		<td id="td1"></td>
+		<td id="td2"></td>
+		<td id="td3"></td>
+	</tr>
+	<tr id="tr23">
+		<td id="td1"></td>
+		<td id="td2"></td>
+		<td id="td3"></td>
+	</tr>
+	<tr id="tr24">
+		<td id="td1"></td>
+		<td id="td2"></td>
+		<td id="td3"></td>
+	</tr>
+	<tr id="tr25">
+		<td id="td1"></td>
+		<td id="td2"></td>
+		<td id="td3"></td>
+	</tr>
+</table>
+</div>
+</div>
+</TD>
+<TD  background="../../../images/bg_04.gif"></TD>
+    </TR>
+    <TR>
+      <TD width="1%" height="1%"><IMG  src="../../../images/bg_0lbottom.gif" ></TD>
+      <TD background="../../../images/bg_02.gif"></TD>
+      <TD width="1%" height="1%"><IMG  src="../../../images/bg_0rbottom.gif"></TD>
+    </TR>    
+  </TBODY>
+</TABLE>
+</div>
+</div-config>

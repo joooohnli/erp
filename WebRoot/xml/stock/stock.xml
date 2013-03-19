@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <table nick="库存管理" name="stock">
+    <column nick="stock_allright" name="stock_allright" service="t" />
+    <column nick="stock_apply" name="stock_apply" service="t" />
+    <column nick="stock_apply_details" name="stock_apply_details" service="t" />
+    <column nick="入库申请" name="stock_apply_gather" service="b" key="gather_id"/>
+    <column nick="stock_apply_gather_details" name="stock_apply_gather_details" service="t" />
+    <column nick="出库申请" name="stock_apply_pay" service="b" key="pay_id"/>
+    <column nick="stock_apply_pay_details" name="stock_apply_pay_details" service="t" />
+    <column nick="动态库存" name="stock_balance" service="b" />
+    <column nick="stock_balance_details" name="stock_balance_details" service="t" />
+    <column nick="stock_balance_details_details" name="stock_balance_details_details" service="t" />
+    <column nick="stock_balance_details_details_for_cost" name="stock_balance_details_details_for_cost" service="t" />
+    <column nick="stock_balance_static_report" name="stock_balance_static_report" service="t" />
+    <column nick="stock_balance_static_report_details" name="stock_balance_static_report_details" service="t" />
+    <column nick="stock_balance_static_report_details_details" name="stock_balance_static_report_details_details" service="t" />
+    <column nick="安全库存配置" name="stock_cell" service="b" key="design_id"/>
+    <column nick="stock_cell_details" name="stock_cell_details" service="t" />
+    <column nick="stock_config_cell_first_kind" name="stock_config_cell_first_kind" service="t" />
+    <column nick="stock_config_cell_second_kind" name="stock_config_cell_second_kind" service="t" />
+    <column nick="stock_config_cell_third_kind" name="stock_config_cell_third_kind" service="t" />
+    <column nick="stock_config_public_char" name="stock_config_public_char" service="t" />
+    <column nick="stock_config_workflow" name="stock_config_workflow" service="t" />
+    <column nick="入库单" name="stock_gather" service="b" key="gather_id"/>
+    <column nick="stock_gather_details" name="stock_gather_details" service="t" />
+    <column nick="stock_gathering" name="stock_gathering" service="t" />
+    <column nick="出库单" name="stock_pay" service="b" key="pay_id"/>
+    <column nick="stock_pay_details" name="stock_pay_details" service="t" />
+    <column nick="stock_paying" name="stock_paying" service="t" />
+    <column nick="出入库明细" name="stock_paying_gathering" service="b" />
+    <column nick="stock_paying_temp" name="stock_paying_temp" service="t" />
+    <column nick="stock_pre_gathering" name="stock_pre_gathering" service="t" />
+    <column nick="stock_pre_paying" name="stock_pre_paying" service="t" />
+    <column nick="stock_serial_number_temp" name="stock_serial_number_temp" service="t" />
+    <column nick="内部调入申请" name="stock_transfer_gather" service="b" key="gather_id"/>
+    <column nick="stock_transfer_gather_details" name="stock_transfer_gather_details" service="t" />
+    <column nick="内部调出申请" name="stock_transfer_pay" service="b" key="pay_id"/>
+    <column nick="stock_transfer_pay_details" name="stock_transfer_pay_details" service="t" />
+    <column nick="stock_tree" name="stock_tree" service="t" />
+    <column nick="stock_view" name="stock_view" service="t" />
+    <column nick="stock_workflow" name="stock_workflow" service="t" />
+  </table>
+</config>
+

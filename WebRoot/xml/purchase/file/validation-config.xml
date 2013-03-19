@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE validation-config SYSTEM "validation-config.dtd">
+<validation-config lang="auto">
+
+  <form id="mutiValidation" show-error="alert" onfail="" show-type="first">
+      <field name="provider_name" display-name="供应商名称" onfail="">
+        <depend name="required" />
+		<depend name="common" />
+      </field>
+      <field name="provider_address" display-name="供应商地址" onfail="">
+        <depend name="common" />
+      </field>
+      <field name="select1" display-name="I类产品" onfail="">
+              <depend name="required" />
+      </field>
+      <field name="select2" display-name="II类产品" onfail="">
+              <depend name="required" />
+      </field>
+      <field name="select3" display-name="III类产品" onfail="">
+              <depend name="required" />
+      </field>
+	  <field name="used_provider_name" display-name="供应商曾用名" onfail="">
+              <depend name="common" />
+      </field>
+	  <field name="provider_bank" display-name="开户银行" onfail="">
+              <depend name="common" />
+      </field>
+	  <field name="provider_account" display-name="银行账号" onfail="">
+              <depend name="common" />
+      </field>
+	  <field name="provider_web" display-name="网址" onfail="">
+              <depend name="common" />
+      </field>
+      <field name="provider_tel1" display-name="电话" onfail="">
+        <depend name="required" />
+		<depend name="common" />
+      </field>
+	  <field name="provider_fax" display-name="传真" onfail="">
+              <depend name="common" />
+      </field>
+	  <field name="provider_postcode" display-name="邮政编码" onfail="">
+              <depend name="common" />
+      </field>
+	  <field name="invoice_info" display-name="开票信息" onfail="">
+              <depend name="common" />
+      </field>
+      <field name="purchaser" display-name="采购人" onfail="">
+              <depend name="common" />
+      </field>
+      <field name="contact_person1" display-name="第一联系人" onfail="">
+              <depend name="common" />
+      </field>
+	  <field name="contact_person1_department" display-name="第一联系人部门" onfail="">
+              <depend name="common" />
+      </field>
+	  <field name="contact_person1_duty" display-name="第一联系人职务" onfail="">
+              <depend name="common" />
+      </field>
+      <field name="contact_person1_office_tel" display-name="第一联系人办公电话" onfail="">
+              <depend name="common" />
+      </field>
+	  <field name="contact_person1_mobile" display-name="第一联系人手机" onfail="">
+              <depend name="common" />
+      </field>
+	  <field name="contact_person1_home_tel" display-name="第一联系人家庭电话" onfail="">
+              <depend name="common" />
+      </field>
+	  <field name="contact_person1_email" display-name="第一联系人EMAIL" onfail="">
+              <depend name="email" />
+      </field>
+	  <field name="contact_person2" display-name="第二联系人" onfail="">
+              <depend name="common" />
+      </field>
+	  <field name="contact_person2_department" display-name="第二联系人部门" onfail="">
+              <depend name="common" />
+      </field>
+	  <field name="contact_person2_duty" display-name="第二联系人职务" onfail="">
+              <depend name="common" />
+      </field>
+	  <field name="contact_person2_office_tel" display-name="第二联系人办公电话" onfail="">
+              <depend name="common" />
+      </field>
+	  <field name="contact_person2_mobile" display-name="第二联系人手机" onfail="">
+              <depend name="common" />
+      </field>
+	  <field name="contact_person2_home_tel" display-name="第二联系人家庭电话" onfail="">
+              <depend name="common" />
+      </field>
+	  <field name="contact_person2_email" display-name="第二联系人EMAIL" onfail="">
+              <depend name="email" />
+      </field>
+	  <field name="demand_products" display-name="可供应产品集合" onfail="">
+              <depend name="common" />
+      </field>
+	  <field name="recommend_products" display-name="推荐供应产品集合" onfail="">
+              <depend name="common" />
+      </field>
+	  <field name="register" display-name="登记人" onfail="">
+              <depend name="common" />
+      </field>
+	  <field name="checker" display-name="审核人" onfail="">
+        <depend name="common" />
+      </field>
+	  <field name="changer" display-name="变更人" onfail="">
+        <depend name="common" />
+      </field>
+  </form>
+
+<form id="timeLocateValidation" show-error="alert" onfail="" show-type="first">
+<field name="select" display-name="客户端EXCEL版本" onfail="">
+<depend name="required" />
+</field>
+<field name="timea" display-name="时间" onfail="">
+        <depend name="date" param0="yyyy-mm-dd"/>
+      </field>
+	  <field name="timeb" display-name="时间" onfail="">
+        <depend name="date" param0="yyyy-mm-dd"/>
+      </field>
+</form>
+</validation-config>
+

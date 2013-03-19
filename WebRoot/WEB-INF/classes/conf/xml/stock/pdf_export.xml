@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <tables>
+    <table nick="动态库存" name="stock_balance">
+      <columns>
+        <column nick="产品分类编号" name="chain_id" />
+        <column nick="产品分类名称" name="chain_name" />
+        <column nick="产品编号" name="PRODUCT_ID" />
+        <column nick="产品名称" name="PRODUCT_NAME" />
+        <column nick="产品描述" name="PRODUCT_DESCRIBE" />
+        <column nick="成本总价" name="COST_PRICE_SUM" />
+        <column nick="数量" name="AMOUNT" />
+        <column nick="成本单价" name="COST_PRICE" />
+        <column nick="库存地址集合" name="ADDRESS_GROUP" />
+      </columns>
+    </table>
+  </tables>
+</config>
+

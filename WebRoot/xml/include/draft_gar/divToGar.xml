@@ -1,0 +1,67 @@
+<div id="prompt" class="nseer_div" nseerDef="dragonly" style="width:430px;height:250px;">
+<TABLE width="100%" height="100%" border="0" align="center" cellPadding="0" cellSpacing="0">
+  <TBODY>
+    <TR>
+      <TD width="1%" height="1%"><IMG  src="../../images/bg_0ltop.gif"></TD>
+      <TD width="100%" background="../../images/bg_01.gif"></TD>
+      <TD width="1%" height="1%"><IMG  src="../../images/bg_0rtop.gif"></TD>
+    </TR>
+    <TR>
+      <TD  background="../../images/bg_03.gif"></TD>
+ <TD> 
+<div class="cssDiv1">
+<div class="cssDiv2">⊙⊙⊙恩信科技开源ERP⊙⊙⊙
+</div>
+</div>
+<div class="cssDiv3"  onclick="n_D.closeDiv('remove')"  onmouseover="n_D.mmcMouseStyle(this);"></div>
+
+<div style="width:100%;height:100%;background:#E8E8E8">
+<div id="tabsF">
+<ul>
+<li id="current"><a href="javascript:void(0);"><span align="center">⊙⊙⊙转入垃圾箱⊙⊙⊙</span></a></li>
+</ul>
+</div>
+
+<div class="cssDiv8">
+ 
+<table id="table1" class="nseer_table1" width="100%" border="0" cellspacing="1" cellpadding="1" >
+	<tr id="tr1">
+		<td id="td1">
+		</td>
+		<td id="td2">
+		</td>
+	</tr>
+	
+	<tr id="tr1">
+		<td id="td1">			
+		</td>
+		
+		<td id="td2">
+		<div align="right">
+		<INPUT class="BUTTON_STYLE1" type="button" value="⊙⊙⊙确定⊙⊙⊙" onclick="sendToGar('../../include_draft_gar_querySendToGar_ok');"><input type="hidden" name="" id="div_rows_num"><input type="hidden" name="" id="tableName">&nbsp;<INPUT class="BUTTON_STYLE1" type="button" value="⊙⊙⊙退出⊙⊙⊙" onclick="n_D.closeDiv('remove')">
+		</div>
+		</td>
+	</tr>
+	
+	<tr id="tr2">
+		<td id="td3" style="" width="80%">
+			⊙⊙⊙您确认转入垃圾箱吗？⊙⊙⊙
+		</td>
+	</tr>
+	
+</table>
+</div>
+</div> 
+ 
+ </TD>
+<TD  background="../../images/bg_04.gif"></TD>
+    </TR>
+    <TR>
+      <TD width="1%" height="1%"><IMG  src="../../images/bg_0lbottom.gif" ></TD>
+      <TD background="../../images/bg_02.gif"></TD>
+      <TD width="1%" height="1%"><IMG  src="../../images/bg_0rbottom.gif"></TD>
+    </TR>    
+  </TBODY>
+</TABLE>
+</div>
+</div-config>

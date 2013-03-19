@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<div-config title="恩信科技">
+<div id="item" class="nseer_div" nseerDef="dragAble" onmousemove="mouseStyle();">
+<div class="cssDiv1">
+<div class="cssDiv2">demo.getLang("erp","恩信科技")
+</div>
+</div>
+<div class="cssDiv3"  onclick="closeDiv('remove')"  onmouseover="mmcMouseStyle(this);"></div>
+<div id="expand" class="cssDiv4" onclick="maxDiv()"  onmouseover="mmcMouseStyle(this);"></div>
+<div id="collapse" class="cssDiv5" onclick="minDiv(40)"  onmouseover="mmcMouseStyle(this);"></div>
+<div class="cssDiv6" height="7px"></div>
+<div class="cssDiv7"></div>
+<div class="cssDiv8">
+<table id="table1" border="1px" class="QV_table1">
+	<tr id="tr1">
+		<td id="td1">
+		</td>
+		<td id="td2">
+		</td>
+	</tr>
+	<tr id="tr1">		
+		<td id="td2" colspan="2">
+		demo.getLang("erp","质检值")
+		</td>
+	</tr>
+	<tr id="tr1">
+		<td id="td1">
+		demo.getLang("erp","编号")		
+		</td>
+		<td id="td2">
+		    demo.getLang("erp","名称")
+		</td>
+	</tr>
+	<tr id="tr1">
+		<td id="td1">
+		demo.getLang("erp","编号")		
+		</td>
+		<td id="td2">
+		    demo.getLang("erp","名称")
+		</td>
+	</tr>
+	<tr id="tr1">
+		<td id="td1">
+		demo.getLang("erp","编号")		
+		</td>
+		<td id="td2">
+		    demo.getLang("erp","名称")
+		</td>
+	</tr>
+	<tr id="tr1">
+		<td id="td1">
+		demo.getLang("erp","编号")		
+		</td>
+		<td id="td2">
+		    demo.getLang("erp","名称")
+		</td>
+	</tr>
+</table>
+</div>
+</div>
+</div-config>

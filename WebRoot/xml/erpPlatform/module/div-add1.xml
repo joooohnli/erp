@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<div-config title="恩信科技">
+<div id="dialogAddI" class="nseer_div" style="background:green;width:550;height:350" nseerDef="dragAble">
+<div class="cssDiv1">
+<div class="cssDiv2">⊙⊙⊙恩信科技开源ERP⊙⊙⊙
+</div>
+</div>
+<div class="cssDiv3"  onclick="closeDiv('remove')"  onmouseover="mmcMouseStyle(this);"></div>
+<div id="expand" class="cssDiv4" onclick="maxDiv()"  onmouseover="mmcMouseStyle(this);"></div>
+<div id="collapse" class="cssDiv5" onclick="minDiv(40)"  onmouseover="mmcMouseStyle(this);"></div>
+<div class="cssDiv6" height="7px"></div>
+<div class="cssDiv7"></div>
+<div class="cssDiv8">
+<table id="table1" width="100%">
+	<tr id="tr1">
+		<td id="td1">
+		</td>
+		<td id="td2">
+		</td>
+	</tr>
+	<tr id="tr1">
+		<td id="td1">			
+		</td>
+		<td id="td2">
+		    <div align="right"><input type="button" class="BUTTON_STYLE1" value="确定" onclick="addTreeNode('Nseer_tree1');" />
+			<input type="button" class="BUTTON_STYLE1" value="取消" onclick="closeDiv('remove');"/></div>
+		</td>
+	</tr>
+	<tr id="tr1">
+		<td id="td1">
+			⊙⊙⊙模块编号⊙⊙⊙
+		</td>
+		<td id="td2">
+			<input type="text" id="file_id" name="file_id" value=""/>
+		</td>
+	</tr>
+	<tr id="tr2">
+		<td id="td3">
+		⊙⊙⊙中文模块名称⊙⊙⊙
+		</td>
+		<td id="td4">
+			<input type="text" id="file_name" name="file_name" value=""/>
+		</td>
+	</tr>
+	<tr id="tr2">
+		<td id="td3"><input type="radio" name="file_radio_id" onclick="select_radio(1)" 
+       TABINDEX="1" ID="oCtrlID" checked>
+		<LABEL FOR="oCtrlID" ACCESSKEY="1">
+    <SPAN >⊙⊙⊙英文模块名称⊙⊙⊙</SPAN>
+</LABEL>
+		</td>
+		<td id="td4">
+			<input type="text" id="reason" name="reason" value="" />
+		</td>
+	</tr>
+	<tr id="tr2">
+		<td id="td3"><input type="radio" name="file_radio_id" TABINDEX="1" ID="oCtrlID1" onclick="select_radio(2)">
+
+		<LABEL FOR="oCtrlID1" ACCESSKEY="1">
+    <SPAN >模块初始文件名称（.jsp文件)</SPAN>
+</LABEL>
+		
+		</td>
+		<td id="td4">
+			<input type="text" id=" " name="hreflink" value="" style="background:#E6E6D9" disabled>
+		</td>
+	</tr>
+</table>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <table nick="质量控制" name="qcs">
+    <column nick="质量事故" name="qcs_accident" service="b" key="accident_id"/>
+    <column nick="qcs_allright" name="qcs_allright" service="t" />
+    <column nick="质检申请" name="qcs_apply" service="b" key="apply_id"/>
+    <column nick="qcs_apply_details" name="qcs_apply_details" service="t" />
+    <column nick="投诉" name="qcs_complain" service="b" key="complain_id"/>
+    <column nick="qcs_config_mil_std" name="qcs_config_mil_std" service="t" />
+    <column nick="qcs_config_public_char" name="qcs_config_public_char" service="t" />
+    <column nick="qcs_config_sample_code" name="qcs_config_sample_code" service="t" />
+    <column nick="qcs_config_workflow" name="qcs_config_workflow" service="t" />
+    <column nick="发货质检" name="qcs_crm_deliver" service="b" />
+    <column nick="qcs_crm_deliver_details" name="qcs_crm_deliver_details" service="t" />
+    <column nick="委外质检" name="qcs_intrmanufacture" service="b" />
+    <column nick="qcs_intrmanufacture_details" name="qcs_intrmanufacture_details" service="t" />
+    <column nick="质检项目" name="qcs_item" service="b" />
+    <column nick="生产工序质检" name="qcs_manufacture_procedure" service="b" />
+    <column nick="qcs_manufacture_procedure_details" name="qcs_manufacture_procedure_details" service="t" />
+    <column nick="生产入库质检" name="qcs_manufacture_product" service="b" />
+    <column nick="qcs_manufacture_product_details" name="qcs_manufacture_product_details" service="t" />
+    <column nick="其他质检" name="qcs_other" service="b" />
+    <column nick="qcs_other_details" name="qcs_other_details" service="t" />
+    <column nick="产品质检方式配置" name="qcs_product_config" service="b" />
+    <column nick="采购质检" name="qcs_purchase" service="b" />
+    <column nick="qcs_purchase_details" name="qcs_purchase_details" service="t" />
+    <column nick="质量标准" name="qcs_quality_standard" service="b" />
+    <column nick="qcs_quality_standard_details" name="qcs_quality_standard_details" service="t" />
+    <column nick="样品" name="qcs_sample" service="b" />
+    <column nick="qcs_sample_details" name="qcs_sample_details" service="t" />
+    <column nick="qcs_sample_view" name="qcs_sample_view" service="t" />
+    <column nick="qcs_sample_view_details" name="qcs_sample_view_details" service="t" />
+    <column nick="抽样标准" name="qcs_sampling_standard" service="b" />
+    <column nick="qcs_sampling_standard_details" name="qcs_sampling_standard_details" service="t" />
+    <column nick="质检方案" name="qcs_solution" service="b" />
+    <column nick="qcs_solution_details" name="qcs_solution_details" service="t" />
+    <column nick="库存质检" name="qcs_stock" service="b" />
+    <column nick="qcs_stock_details" name="qcs_stock_details" service="t" />
+    <column nick="qcs_tree" name="qcs_tree" service="t" />
+    <column nick="qcs_view" name="qcs_view" service="t" />
+    <column nick="qcs_workflow" name="qcs_workflow" service="t" />
+  </table>
+</config>
+

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<div id="dialogDelete" class="nseer_div" nseerDef="dragAble" style="width:350px;height:200px;">
+<TABLE width="100%" height="100%" border=0 align="center" cellPadding=0 cellSpacing=0>
+  <TBODY>
+    <TR>
+      <TD width="1%" height="1%"><IMG  src="../../images/bg_0ltop.gif"  ></TD>
+      <TD width="100%" background="../../images/bg_01.gif"></TD>
+      <TD width="1%" height="1%"><IMG  src="../../images/bg_0rtop.gif"></TD>
+    </TR>
+    <TR>
+      <TD  background="../../images/bg_03.gif"></TD>
+ <TD> 
+<div class="cssDiv1">
+<div class="cssDiv2">⊙⊙⊙恩信科技开源ERP⊙⊙⊙
+</div>
+</div>
+<div class="cssDiv3"  onclick="n_D.closeDiv('remove')"  onmouseover="n_D.mmcMouseStyle(this);"></div>
+<div id="expand" class="cssDiv4" onclick="n_D.maxDiv()"  onmouseover="n_D.mmcMouseStyle(this);"></div>
+<div id="collapse" class="cssDiv5" onclick="n_D.minDiv(40)"  onmouseover="n_D.mmcMouseStyle(this);"></div>
+
+
+
+
+<div style="width:100%;height:100%;background:#E8E8E8">
+<div id="tabsF">
+<ul>
+<li id="current"><a href="javascript:void(0);"><span align="center">⊙⊙⊙删除所选⊙⊙⊙</span></a></li>
+</ul>
+</div>
+
+<div class="cssDiv8">
+<table width="100%" id="theObjTable">
+<tr>
+<td><div align="right"><input type="button" class="BUTTON_STYLE1" value="⊙⊙⊙确定⊙⊙⊙" onclick="deleteNode('Nseer_tree1');"/>
+     <input type="button" class="BUTTON_STYLE1" value="⊙⊙⊙取消⊙⊙⊙" onclick="n_D.closeDiv('remove');"/></div>
+</td>
+</tr>
+<tr>
+<td>⊙⊙⊙您确认删除所选吗？⊙⊙⊙</td> 
+</tr>
+</table>

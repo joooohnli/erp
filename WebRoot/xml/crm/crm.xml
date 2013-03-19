@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <table nick="客户关系" name="crm">
+    <column nick="客户档案" name="crm_file" service="b" key="customer_id"/>
+    <column nick="销售订单" name="crm_order" service="b" key="order_id"/>
+    <column nick="客户联络" name="crm_contact" service="b" key="contact_id"/>
+    <column nick="销售日志" name="crm_sales_daily_work" service="b" />
+    <column nick="客户报价单" name="crm_discussion" service="b" key="discussion_id"/>
+    <column nick="crm_alarm_contact_expiry" name="crm_alarm_contact_expiry" service="t" />
+    <column nick="crm_alarm_gather_expiry" name="crm_alarm_gather_expiry" service="t" />
+    <column nick="crm_alarm_gather_sum_limit" name="crm_alarm_gather_sum_limit" service="t" />
+    <column nick="crm_alarm_order_check_expiry" name="crm_alarm_order_check_expiry" service="t" />
+    <column nick="crm_alarm_return_sum_limit" name="crm_alarm_return_sum_limit" service="t" />
+    <column nick="crm_analyse" name="crm_analyse" service="t" />
+    <column nick="crm_analyse_gather_period" name="crm_analyse_gather_period" service="t" />
+    <column nick="crm_config_file_kind" name="crm_config_file_kind" service="t" />
+    <column nick="crm_config_human_id_temp" name="crm_config_human_id_temp" service="t" />
+    <column nick="字符类客户化设置" name="crm_config_public_char" service="b" />
+    <column nick="实数类客户化设置" name="crm_config_public_double" service="b" />
+    <column nick="crm_config_public_int" name="crm_config_public_int" service="t" />
+    <column nick="crm_config_sales" name="crm_config_sales" service="t" />
+    <column nick="crm_config_workflow" name="crm_config_workflow" service="t" />
+    <column nick="crm_discussion_details" name="crm_discussion_details" service="t" />
+    <column nick="crm_file_dig" name="crm_file_dig" service="t" />
+    <column nick="crm_order_details" name="crm_order_details" service="t" />
+    <column nick="crm_order_retail_details_temp" name="crm_order_retail_details_temp" service="t" />
+    <column nick="crm_order_retail_temp" name="crm_order_retail_temp" service="t" />
+    <column nick="订单发票" name="crm_ordering" service="b" />
+    <column nick="赊货明细" name="crm_salecredit_balance_details" service="b" />
+    <column nick="crm_tree" name="crm_tree" service="t" />
+    <column nick="crm_view" name="crm_view" service="t" />
+    <column nick="crm_workflow" name="crm_workflow" service="t" />
+  </table>
+</config>
+

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+<table nick="stock_paying_gathering" name="stock_paying_gathering">
+	<column nick="id" name="id" type="数值" Ttype="int(10) unsigned" usedTag="s" required="n" validate="n" service="t" id="1">
+	</column>
+	<column nick="入库单编号" name="gather_id" type="字符" Ttype="varchar(30)" usedTag="s" required="n" validate="n" service="b" id="2">
+	</column>
+	<column nick="出库单编号" name="pay_id" type="字符" Ttype="varchar(30)" usedTag="s" required="n" validate="n" service="b" id="3">
+	</column>
+	<column nick="序号" name="details_number" type="数值" Ttype="int(10)" usedTag="s" required="n" validate="n" service="b" id="4">
+	</column>
+	<column nick="产品编号" name="product_id" type="字符" Ttype="varchar(30)" usedTag="s" required="n" validate="n" service="b" id="5">
+	</column>
+	<column nick="产品名称" name="product_name" type="字符" Ttype="varchar(60)" usedTag="s" required="n" validate="n" service="b" id="6">
+	</column>
+	<column nick="描述" name="product_describe" type="字符" Ttype="varchar(255)" usedTag="s" required="n" validate="n" service="b" id="7">
+	</column>
+	<column nick="成本单价" name="cost_price" type="数值" Ttype="double(15,2)" usedTag="s" required="n" validate="n" service="b" id="8">
+	</column>
+	<column nick="最大存储量" name="max_capacity_amount" type="数值" Ttype="double(15,2)" usedTag="s" required="n" validate="n" service="b" id="9">
+	</column>
+	<column nick="应出入库数量" name="demand_amount" type="数值" Ttype="double(15,2)" usedTag="s" required="n" validate="n" service="b" id="10">
+	</column>
+	<column nick="本次出入库数量" name="amount" type="数值" Ttype="double(15,2)" usedTag="s" required="y" validate="y" service="b" id="11">
+		<depend name="required" />
+        <depend name="decimal" />
+	</column>
+	<column nick="已入库数量" name="gathered_amount" type="数值" Ttype="double(15,2)" usedTag="s" required="n" validate="n" service="b" id="12">
+	</column>
+	<column nick="已出库数量" name="paid_amount" type="数值" Ttype="double(15,2)" usedTag="s" required="n" validate="n" service="b" id="13">
+	</column>
+	<column nick="单位" name="amount_unit" type="字符" Ttype="varchar(30)" usedTag="s" required="n" validate="n" service="b" id="14">
+	</column>
+	<column nick="本次出入库小计" name="subtotal" type="数值" Ttype="double(15,2)" usedTag="s" required="n" validate="n" service="b" id="15">
+	</column>
+	<column nick="已入库小计" name="gathered_subtotal" type="数值" Ttype="double(15,2)" usedTag="s" required="n" validate="n" service="b" id="16">
+	</column>
+	<column nick="已出库小计" name="paid_subtotal" type="数值" Ttype="double(15,2)" usedTag="s" required="n" validate="n" service="b" id="17">
+	</column>
+	<column nick="库房编号" name="stock_id" type="字符" Ttype="varchar(30)" usedTag="s" required="n" validate="n" service="b" id="18">
+	</column>
+	<column nick="库房名称" name="stock_name" type="字符" Ttype="varchar(60)" usedTag="s" required="n" validate="n" service="b" id="19">
+	</column>
+	<column nick="库存地址简称" name="nick_name" type="字符" Ttype="varchar(60)" usedTag="s" required="n" validate="n" service="b" id="20">
+	</column>
+	<column nick="登记时间" name="register_time" type="时间" Ttype="datetime" usedTag="s" required="n" validate="n" service="b" id="27">
+	</column>
+	<column nick="审核时间" name="check_time" type="时间" Ttype="datetime" usedTag="s" required="n" validate="n" service="b" id="28">
+	</column>
+	<column nick="登记人" name="register" type="字符" Ttype="varchar(60)" usedTag="s" required="n" validate="n" service="b" id="29">
+	</column>
+	<column nick="登记人编号" name="register_id" type="字符" Ttype="varchar(30)" usedTag="s" required="n" validate="n" service="b" id="30">
+	</column>
+	<column nick="审核人" name="checker" type="字符" Ttype="varchar(60)" usedTag="s" required="n" validate="n" service="b" id="31">
+	</column>
+	<column nick="审核人编号" name="checker_id" type="字符" Ttype="varchar(30)" usedTag="s" required="n" validate="n" service="b" id="32">
+	</column>
+	<column nick="备注" name="remark" type="字符" Ttype="varchar(255)" usedTag="s" required="n" validate="n" service="b" id="33">
+	</column>
+	<column nick="check_tag" name="check_tag" type="数值" Ttype="int(1)" usedTag="s" required="n" validate="n" service="t" id="34">
+	</column>
+	<column nick="批号或串号" name="serial_number" type="字符" Ttype="text" usedTag="s" required="n" validate="n" service="b" id="35">
+	</column>
+	<column nick="stock_gather_group_id" name="stock_gather_group_id" type="字符" Ttype="varchar(60)" usedTag="s" required="n" validate="n" service="t" id="36">
+	</column>
+	<column nick="stock_pay_group_id" name="stock_pay_group_id" type="字符" Ttype="varchar(60)" usedTag="s" required="n" validate="n" service="t" id="37">
+	</column>
+	<column nick="各批号数量" name="amount_number" type="字符" Ttype="text" usedTag="s" required="n" validate="n" service="b" id="38">
+	</column>
+	<column nick="市场单价" name="list_price" type="数值" Ttype="double(15,2)" usedTag="s" required="n" validate="n" service="b" id="39">
+	</column>
+	<column nick="库存数量" name="balance_amount" type="数值" Ttype="double(15,2)" usedTag="s" required="n" validate="n" service="b" id="40">
+	</column>
+	<column nick="出库或入库" name="paying_or_gathering" type="字符" Ttype="varchar(60)" usedTag="s" required="n" validate="n" service="b" id="41">
+	</column>
+	<column nick="当前入库次数" name="gathering_time" type="数值" Ttype="int(10) unsigned" usedTag="s" required="n" validate="n" service="b" id="42">
+	</column>
+	<column nick="当前出库次数" name="paying_time" type="数值" Ttype="int(10) unsigned" usedTag="s" required="n" validate="n" service="b" id="43">
+	</column>
+</table>
+</config>

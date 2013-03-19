@@ -1,0 +1,86 @@
+
+#nseergrid {
+	BORDER-RIGHT: 1px inset; PADDING-RIGHT: 0px; BORDER-TOP: 1px inset; PADDING-LEFT: 0px; BACKGROUND: white; PADDING-BOTTOM: 0px; MARGIN: 0px; OVERFLOW: hidden; BORDER-LEFT: 1px inset; WIDTH: 500px; PADDING-TOP: 0px; BORDER-BOTTOM: 1px inset; POSITION: relative; HEIGHT: 400px; moz-user-select: none;border:1px solid #12D608;
+
+}
+.nseergrid TABLE {
+	TABLE-LAYOUT: fixed; MARGIN: 0px
+}
+
+#nseergrid TABLE TD {
+	BORDER-RIGHT: buttonface 1px solid; FONT-SIZE: 12px; OVERFLOW: hidden; CURSOR: default; WORD-BREAK: keep-all; TEXT-INDENT: 2px; BORDER-BOTTOM: buttonface 1px solid #BCE089;BORDER-RIGHT: buttonface 1px solid #BCE089; FONT-FAMILY: verdana; WHITE-SPACE: nowrap; HEIGHT: 21px
+
+}
+.nseergrid TABLE TD .arrow {
+	FONT-SIZE: 8px; COLOR: #808080
+}
+
+.nseergrid TABLE .title_div {
+FONT-SIZE: 12px; width:900;height:25px;COLOR: #000000;padding:7px 0px 0px 5px;BORDER-RIGHT: #069DE6 1px solid;BORDER-LEFT: #43BEFA 1px solid;BORDER-BOTTOM: #43BEFA 1px solid;
+
+ background-image:url(images/white-top-bottom.gif)
+}
+.nseergrid TABLE .lastdata {
+	BORDER-RIGHT: medium none
+}
+.nseergrid TABLE .column {
+	BORDER-RIGHT: #404040 1px solid; BORDER-TOP: #fff 1px solid; background-image:url(images/grid3-hrow-over.gif); BORDER-LEFT: #fff 1px solid; WIDTH: 150px; CURSOR: default; BORDER-BOTTOM: #404040 1px solid;
+
+}
+.nseergrid TABLE .over {
+	BORDER-RIGHT: #404040 1px solid; BORDER-TOP: #fff 1px solid; background-image:url(images/grid3-hrow-over.gif); BORDER-LEFT: #fff 1px solid; WIDTH: 120px; CURSOR: default; BORDER-BOTTOM: #404040 1px solid
+}
+.nseergrid TABLE .sortdown {
+	BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #404040 1px solid;  background-image:url(images/grid3-hrow-over.gif); LEFT: 1px; BORDER-LEFT: #404040 1px solid; WIDTH: 120px; CURSOR: default; BORDER-BOTTOM: #ffffff 1px solid; POSITION: relative
+}
+.nseergrid TABLE .dataover {
+background-image:url(images/toolbar.gif);	
+}
+.nseergrid TABLE .firstcolumn {
+	BORDER-RIGHT: #404040 1px solid; BORDER-TOP: #fff 1px solid; BACKGROUND: buttonface; BORDER-LEFT: #000000 1px solid; WIDTH: 0px; TEXT-INDENT: 0px; BORDER-BOTTOM: #404040 1px solid; TEXT-ALIGN: center
+}
+.nseergrid TABLE .lastcolumn {
+	BORDER-RIGHT: #404040 1px solid; BORDER-TOP: #fff 1px solid; background-image:url(images/grid3-hrow-over.gif); BORDER-LEFT: #fff 1px solid; BORDER-BOTTOM: #404040 1px solid
+}
+.nseergrid TABLE .selectedrow {
+	background-image:url(images/win-bg.gif);COLOR: white;
+}
+.nseergrid TABLE .selectedrow #DIV{
+	BACKGROUND: highlight; COLOR: white
+}
+
+.nseergrid TABLE .selectedcell {
+	BACKGROUND: red; BORDER: red 1px solid;BORDER-LEFT: red 2px solid;BORDER-RIGHT: red 2px solid;
+}
+
+.nseergrid TABLE .overrow {
+	BACKGROUND: #D6E6F8;
+}
+.nseergrid .titlecolumn {
+	Z-INDEX: 2; LEFT: 0px; WIDTH: 100%; POSITION: absolute; TOP: 25px
+}
+.nseergrid .slidecolumn {
+	Z-INDEX: 1; LEFT: 0px; WIDTH: 100%;HEIGHT:25px; POSITION: absolute; TOP: 0px;
+}
+.nseergrid .slidecolumn TD {
+	BORDER-RIGHT: #43BEFA 1px solid; background-image:url(images/white-top-bottom.gif); BORDER-LEFT: #fff 1px solid;WIDTH: 100%;TEXT-INDENT: 0px; BORDER-BOTTOM: #43BEFA 1px solid; TEXT-ALIGN: left;padding:5px 0px 0px 5px;font-weight: bold ;
+}
+.nseergrid .datacolumn {
+	LEFT: 0px; WIDTH: 100%; POSITION: absolute; TOP: 25px;
+}
+.nseergrid .zero {
+	BORDER-RIGHT: #000000 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #fff 1px solid; PADDING-LEFT: 0px; FONT-SIZE: 10px; Z-INDEX: 10; BACKGROUND: buttonface; LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: #fff 1px solid; WIDTH: 30px; COLOR: #a19f92; PADDING-TOP: 0px; BORDER-BOTTOM: #404040 1px solid; POSITION: absolute; TOP: 0px; HEIGHT: 21px; TEXT-ALIGN: center;background-image:url(images/grid3-hrow-over.gif);
+}
+.point_div_t {
+background-image:url(images/arrow-down.gif);position:absolute;width:14px;height:15px;
+}
+.point_div_b {
+position:absolute;width:10px;height:10px;background-image:url(images/col-move-bottom.gif);background-repeat:no-repeat;
+}
+.drag_div{
+ position:absolute;width:120px;height:21px;background-image:url(images/grid3-hrow-over.gif);BORDER: #404040 1px solid;FONT-SIZE: 9pt;
+}
+.nseergrid #S_R {
+	color: #ffffff;
+	BACKGROUND: red;
+}

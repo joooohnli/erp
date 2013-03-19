@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <tables>
+<table nick="开发人员档案管理" name="document_techFile">
+      <columns>
+        <column nick="I级机构名称" name="FIRST_KIND_NAME" />
+        <column nick="II级机构名称" name="SECOND_KIND_NAME" />
+        <column nick="III级机构名称" name="THIRD_KIND_NAME" />    
+		<column nick="档案编号" name="HUMAN_ID" />   
+		<column nick="姓名" name="HUMAN_NAME" />
+		<column nick="住址" name="HUMAN_ADDRESS" />
+		<column nick="邮编" name="HUMAN_POSTCODE" />
+		<column nick="职称" name="HUMAN_TITLE_CLASS" />
+        <column nick="职位分类名称" name="HUMAN_MAJOR_FIRST_KIND_NAME" />
+        <column nick="职位名称" name="HUMAN_MAJOR_SECOND_KIND_NAME" />
+		<column nick="开户银行" name="HUMAN_BANK" />
+        <column nick="银行账户" name="HUMAN_ACCOUNT" />
+		<column nick="电话" name="HUMAN_TEL" />
+		<column nick="家庭电话" name="HUMAN_HOME_TEL" />
+		<column nick="手机" name="HUMAN_CELLPHONE" />
+		<column nick="email" name="HUMAN_EMAIL" />
+		<column nick="爱好" name="HOBBY" />
+		<column nick="特长" name="SPECIALITY" />
+		<column nick="性别" name="SEX" />
+		<column nick="宗教信仰" name="RELIGION" />
+		<column nick="政治面貌" name="PARTY" />
+		<column nick="国籍" name="NATIONALITY" /> 
+		<column nick="民族" name="RACE" /> 
+		<column nick="生日" name="BIRTHDAY" />
+		<column nick="出生地" name="BIRTHPLACE" />
+		<column nick="年龄" name="AGE" />
+		<column nick="学历" name="EDUCATED_DEGREE" />
+		<column nick="教育年限" name="EDUCATED_YEARS" />
+		<column nick="专业" name="EDUCATED_MAJOR" />
+		<column nick="社会保障号码" name="SIN" />
+		<column nick="身份证号" name="IDCARD" />
+		<column nick="薪酬类别" name="MAJOR_TYPE" />
+		<column nick="薪酬标准编号" name="SALARY_STANDARD_ID" />
+		<column nick="薪酬标准" name="SALARY_STANDARD_NAME" />
+		<column nick="基本薪酬总额" name="DEMAND_SALARY_SUM" />
+		<column nick="实发薪酬总额" name="PAID_SALARY_SUM" />
+		<column nick="调动次数" name="MAJOR_CHANGE_AMOUNT" />
+		<column nick="激励次数" name="BONUS_AMOUNT" />
+		<column nick="培训次数" name="TRAINING_AMOUNT" />
+		<column nick="个人履历" name="HISTORY_RECORDS" />
+		<column nick="家庭关系信息" name="FAMILY_MEMBERSHIP" />
+		<column nick="备注" name="REMARK" />
+		<column nick="档案变更累计" name="FILE_CHANGE_AMOUNT" />
+        <column nick="登记人" name="REGISTER" />
+        <column nick="登记人编号" name="REGISTER_ID" />
+       
+	  </columns>
+	</table>
+
+
+	<table nick="维护人员档案管理" name="document_supportFile">
+      <columns>
+        <column nick="I级机构名称" name="FIRST_KIND_NAME" />
+        <column nick="II级机构名称" name="SECOND_KIND_NAME" />
+        <column nick="III级机构名称" name="THIRD_KIND_NAME" />    
+		<column nick="档案编号" name="HUMAN_ID" />   
+		<column nick="姓名" name="HUMAN_NAME" />
+		<column nick="住址" name="HUMAN_ADDRESS" />
+		<column nick="邮编" name="HUMAN_POSTCODE" />
+		<column nick="职称" name="HUMAN_TITLE_CLASS" />
+        <column nick="职位分类名称" name="HUMAN_MAJOR_FIRST_KIND_NAME" />
+        <column nick="职位名称" name="HUMAN_MAJOR_SECOND_KIND_NAME" />
+		<column nick="开户银行" name="HUMAN_BANK" />
+        <column nick="银行账户" name="HUMAN_ACCOUNT" />
+		<column nick="电话" name="HUMAN_TEL" />
+		<column nick="家庭电话" name="HUMAN_HOME_TEL" />
+		<column nick="手机" name="HUMAN_CELLPHONE" />
+		<column nick="email" name="HUMAN_EMAIL" />
+		<column nick="爱好" name="HOBBY" />
+		<column nick="特长" name="SPECIALITY" />
+		<column nick="性别" name="SEX" />
+		<column nick="宗教信仰" name="RELIGION" />
+		<column nick="政治面貌" name="PARTY" />
+		<column nick="国籍" name="NATIONALITY" /> 
+		<column nick="民族" name="RACE" /> 
+		<column nick="生日" name="BIRTHDAY" />
+		<column nick="出生地" name="BIRTHPLACE" />
+		<column nick="年龄" name="AGE" />
+		<column nick="学历" name="EDUCATED_DEGREE" />
+		<column nick="教育年限" name="EDUCATED_YEARS" />
+		<column nick="专业" name="EDUCATED_MAJOR" />
+		<column nick="社会保障号码" name="SIN" />
+		<column nick="身份证号" name="IDCARD" />
+		<column nick="薪酬类别" name="MAJOR_TYPE" />
+		<column nick="薪酬标准编号" name="SALARY_STANDARD_ID" />
+		<column nick="薪酬标准" name="SALARY_STANDARD_NAME" />
+		<column nick="基本薪酬总额" name="DEMAND_SALARY_SUM" />
+		<column nick="实发薪酬总额" name="PAID_SALARY_SUM" />
+		<column nick="调动次数" name="MAJOR_CHANGE_AMOUNT" />
+		<column nick="激励次数" name="BONUS_AMOUNT" />
+		<column nick="培训次数" name="TRAINING_AMOUNT" />
+		<column nick="个人履历" name="HISTORY_RECORDS" />
+		<column nick="家庭关系信息" name="FAMILY_MEMBERSHIP" />
+		<column nick="备注" name="REMARK" />
+		<column nick="档案变更累计" name="FILE_CHANGE_AMOUNT" />
+        <column nick="登记人" name="REGISTER" />
+        <column nick="登记人编号" name="REGISTER_ID" />
+        
+	  </columns>
+	</table>
+
+	<table nick="多语种配置管理" name="document_multilanguage">
+      <columns>
+		<column nick="单词" name="NAME" />
+		<column nick="组名" name="TABLENAME" />
+        <column nick="登记人" name="REGISTER" />
+        <column nick="变更人" name="CHANGER" />
+        
+	  </columns>
+	</table>
+
+  </tables>
+</config>
+
+
+ 
+
+   
+   
+
+  

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+<table nick="fund_apply_gather" name="fund_apply_gather">
+	<column nick="id" name="id" type="数值" usedTag="s" required="n" validate="n" service="t" Ttype="int(10) unsigned" id="1">
+	</column>
+	<column nick="apply_gather_id" name="apply_gather_id" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(30)" id="2">
+	</column>
+	<column nick="reason" name="reason" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(60)" id="3">
+	</column>
+	<column nick="reasonexact" name="reasonexact" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(60)" id="4">
+	</column>
+	<column nick="fund_first_kind_id" name="fund_first_kind_id" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(30)" id="5">
+	</column>
+	<column nick="fund_first_kind_name" name="fund_first_kind_name" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(60)" id="6">
+	</column>
+	<column nick="fund_second_kind_id" name="fund_second_kind_id" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(30)" id="7">
+	</column>
+	<column nick="fund_second_kind_name" name="fund_second_kind_name" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(60)" id="8">
+	</column>
+	<column nick="demand_cost_price_sum" name="demand_cost_price_sum" type="数值" usedTag="s" required="n" validate="n" service="b" Ttype="double(15,2)" id="9">
+	</column>
+	<column nick="currency_name" name="currency_name" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(30)" id="10">
+	</column>
+	<column nick="personal_unit" name="personal_unit" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(30)" id="11">
+	</column>
+	<column nick="remark" name="remark" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="text" id="12">
+	</column>
+	<column nick="check_time" name="check_time" type="时间" usedTag="s" required="n" validate="n" service="b" Ttype="datetime" id="13">
+	</column>
+	<column nick="register_time" name="register_time" type="时间" usedTag="s" required="n" validate="n" service="b" Ttype="datetime" id="14">
+	</column>
+	<column nick="demand_return_time" name="demand_return_time" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="date" id="15">
+	</column>
+	<column nick="accomplish_time" name="accomplish_time" type="时间" usedTag="s" required="n" validate="n" service="b" Ttype="datetime" id="16">
+	</column>
+	<column nick="登记人" name="register" type="字符" usedTag="s" required="n" validate="y" service="b" Ttype="varchar(60)" id="17">
+	<depend name="common" />
+	</column>
+	<column nick="register_id" name="register_id" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(30)" id="18">
+	</column>
+	<column nick="审核人" name="checker" type="字符" usedTag="s" required="n" validate="y" service="b" Ttype="varchar(60)" id="19">
+	<depend name="common" />
+	</column>
+	<column nick="checker_id" name="checker_id" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(30)" id="20">
+	</column>
+	<column nick="check_tag" name="check_tag" type="数值" usedTag="s" required="n" validate="n" service="b" Ttype="int(1)" id="21">
+	</column>
+	<column nick="excel_tag" name="excel_tag" type="数值" usedTag="s" required="n" validate="n" service="b" Ttype="int(1)" id="22">
+	</column>
+	<column nick="gather_tag" name="gather_tag" type="数值" usedTag="s" required="n" validate="n" service="b" Ttype="int(1)" id="23">
+	</column>
+	<column nick="return_tag" name="return_tag" type="数值" usedTag="s" required="n" validate="n" service="b" Ttype="int(1)" id="24">
+	</column>
+	<column nick="apply_tag" name="apply_tag" type="数值" usedTag="s" required="n" validate="n" service="b" Ttype="int(1)" id="25">
+	</column>
+	<column nick="excel_batch_tag" name="excel_batch_tag" type="数值" Ttype="int(10) unsigned" usedTag="s" required="n" validate="n" service="t" id="26">
+	</column>
+</table>
+</config>

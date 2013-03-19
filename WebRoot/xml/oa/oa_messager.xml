@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+<table nick="内部消息" name="oa_message">
+	<column nick="id" name="id" type="数值" usedTag="s" required="n" validate="n" service="t" Ttype="int(10) unsigned" id="1">
+	</column>
+	<column nick="对象类型" name="type" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(255)" id="2">
+	</column>
+	<column nick="群发工具类型" name="tool_type" type="字符" usedTag="s" required="y" validate="y" service="b" Ttype="varchar(255)" id="3">
+	</column>
+	<column nick="内容" name="content" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(255)" id="4">
+	</column>
+	<column nick="登记人" name="register" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(255)" id="5">
+	</column>
+	<column nick="登记人编号" name="register_id" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(255)" id="6">
+	</column>
+	<column nick="变更人" name="changer" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(255)" id="7">
+	</column>
+	<column nick="变更人编号" name="changer_id" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(255)" id="8">
+	</column>
+	<column nick="登记时间" name="register_time" type="时间" usedTag="s" required="n" validate="n" service="b" Ttype="datetime" id="9">
+	</column>
+	<column nick="变更时间" name="change_time" type="时间" usedTag="s" required="n" validate="n" service="b" Ttype="datetime" id="10">
+	</column>
+</table>
+</config>

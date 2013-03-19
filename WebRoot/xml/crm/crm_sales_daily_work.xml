@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+<table nick="销售日志" name="crm_sales_daily_work">
+	<column nick="id" name="id" type="数值" usedTag="s" required="n" validate="n" service="t" Ttype="int(10) unsigned" id="1">
+	</column>
+	<column nick="日志编号" name="daily_work_id" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(30)" id="2">
+	</column>
+	<column nick="档案编号" name="human_id" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(30)" id="3">
+	</column>
+	<column nick="姓名" name="human_name" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(100)" id="4">
+	</column>
+	<column nick="登记人" name="register" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(60)" id="5">
+	</column>
+	<column nick="登记人编号" name="register_id" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(30)" id="6">
+	</column>
+	<column nick="登记时间" name="register_time" type="时间" usedTag="s" required="n" validate="n" service="b" Ttype="datetime" id="7">
+	</column>
+	<column nick="详细内容" name="content" type="字符" usedTag="s" required="y" validate="y" service="b" Ttype="text" id="8">
+	<depend name="common" />
+	</column>
+	<column nick="审核人" name="checker" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(60)" id="9">
+	</column>
+	<column nick="审核人编号" name="checker_id" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(30)" id="10">
+	</column>
+	<column nick="审核时间" name="check_time" type="时间" usedTag="s" required="n" validate="n" service="b" Ttype="datetime" id="11">
+	</column>
+	<column nick="check_tag" name="check_tag" type="数值" usedTag="s" required="n" validate="n" service="t" Ttype="int(10)" id="12">
+	</column>
+	<column nick="excel_tag" name="excel_tag" type="数值" usedTag="s" required="n" validate="n" service="t" Ttype="int(10)" id="13">
+	</column>
+	<column nick="备注" name="remark" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="text" id="14">
+	</column>
+	<column nick="日志类型" name="type" type="字符" usedTag="s" required="y" validate="y" service="b" Ttype="varchar(60)" id="15">
+	<depend name="required" />
+	</column>
+	<column nick="email_remark" name="email_remark" type="字符" usedTag="s" required="n" validate="n" service="t" Ttype="text" id="16">
+	</column>
+	<column nick="message" name="message" type="字符" usedTag="s" required="n" validate="n" service="t" Ttype="text" id="17">
+	</column>
+	<column nick="chain_id" name="chain_id" type="字符" usedTag="s" required="n" validate="n" service="t" Ttype="text" id="18">
+	</column>
+	<column nick="chain_name" name="chain_name" type="字符" usedTag="s" required="n" validate="n" service="t" Ttype="text" id="19">
+	</column>
+	<column nick="excel_batch_tag" name="excel_batch_tag" type="数值" Ttype="int(10) unsigned" usedTag="s" required="n" validate="n" service="t" id="20">
+	</column>
+</table>
+</config>

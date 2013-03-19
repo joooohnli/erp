@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+ <tables>
+    <table nick="访问查询" name="security_alive_access">
+      <columns>
+        <column nick="I级机构名称" name="FIRST_KIND_NAME" />
+        <column nick="II级机构名称" name="SECOND_KIND_NAME" />
+        <column nick="III级机构名称" name="THIRD_KIND_NAME" />
+        <column nick="员工姓名" name="HUMAN_NAME" />
+        <column nick="用户名" name="EDITOR" />
+        <column nick="IP地址" name="MODULEI" />
+        <column nick="员工编号" name="HUMAN_ID" />
+       
+        
+       </columns>
+    </table>
+
+	 <table nick="许可证管理" name="security_license">
+      <columns>
+        <column nick="I级机构名称" name="FIRST_KIND_NAME" />
+        <column nick="II级机构名称" name="SECOND_KIND_NAME" />
+        <column nick="III级机构名称" name="THIRD_KIND_NAME" />
+        <column nick="员工编号" name="HUMAN_ID" />
+	   <column nick="员工名称" name="HUMAN_NAME" />
+        <column nick="职位分类" name="HUMAN_MAJOR_FIRST_KIND_NAME" />
+        <column nick="职位" name="HUMAN_MAJOR_SECOND_KIND_NAME" /> 
+          
+    
+       </columns>
+    </table>
+<table nick="用户管理" name="security_users">
+      <columns>
+        <column nick="I级机构名称" name="FIRST_KIND_NAME" />
+        <column nick="II级机构名称" name="SECOND_KIND_NAME" />
+        <column nick="III级机构名称" name="THIRD_KIND_NAME" />
+        <column nick="员工编号" name="HUMAN_ID" />
+	   <column nick="员工名称" name="HUMAN_NAME" />
+        <column nick="职位分类" name="HUMAN_MAJOR_FIRST_KIND_NAME" />
+        <column nick="职位" name="HUMAN_MAJOR_SECOND_KIND_NAME" /> 
+     
+    
+       </columns>
+    </table>
+
+
+   </tables>
+</config>
+

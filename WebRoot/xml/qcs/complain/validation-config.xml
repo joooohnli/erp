@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE validation-config SYSTEM "validation-config.dtd">
+<validation-config lang="auto">
+  <table name="mutiValidation" show-error="alert" onfail="" show-type="first">
+      <field name="complain_time" display-name="投诉日期" onfail="">
+      <depend name="required" />
+      <depend name="date" param0="yyyy-mm-dd"/>
+      </field>
+      <field name="product_id" display-name="产品编号" onfail="">
+      <depend name="required" />
+	  <depend name="common" />
+      </field>
+      <field name="product_name" display-name="产品名称" onfail="">
+      <depend name="common" />
+      </field>
+      <field name="complainant" display-name="投诉人姓名" onfail="">
+      <depend name="required" />
+      </field>
+      <field name="tel" display-name="投诉人电话" onfail="">
+      <depend name="required" />
+      <depend name="common" />
+      </field>
+      <field name="email" display-name="投诉人Email" onfail="">
+      <depend name="required" />
+      <depend name="common" />
+      <depend name="email" />
+      </field>
+	  <field name="complain_way" display-name="投诉方式" onfail="">
+      <depend name="required" />
+      <depend name="common" />
+      </field>
+	  <field name="complain_type" display-name="投诉类型" onfail="">
+      <depend name="required" />
+      <depend name="common" />
+      </field>
+      <field name="content" display-name="投诉内容" onfail="">
+      <depend name="required" />
+      <depend name="common" />
+      </field>
+  </table>
+  </validation-config>

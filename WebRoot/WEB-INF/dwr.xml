@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://www.getahead.ltd.uk/dwr/dwr20.dtd">
+<dwr>
+	<allow>
+		<create creator="new" javascript="NseerTreeDB">
+			<param name="class" value="include.nseerTree.NseerTreeDB" />
+		</create>
+		<create creator="new" javascript="getNameFromID">
+			<param name="class" value="include.get_name_from_ID.getNameFromID" />
+			</create>
+		<create creator="new" javascript="validateV7">
+			<param name="class" value="include.validator.validateV7" />
+		</create>
+		<create creator="new" javascript="multiLangValidate">
+			<param name="class" value="include.validator.multiLangValidate" />
+		</create>
+		<create creator="new" javascript="milStd">
+			<param name="class" value="qcs.config.publics.milStd" />
+		</create>
+		<create creator="new" javascript="Multi">
+			<param name="class" value="include.nseer_cookie.ReadXml" />
+		</create>
+		
+		<create creator="new" javascript="ShortModuleTreeNode">
+			<param name="class" value="include.nseer_cookie.ShortModuleTreeNode" />
+		</create>
+		
+		<create creator="new" javascript="NseerModuleTreeNode">
+			<param name="class" value="include.NseerModuleTreeNode" />
+		</create>
+		
+		<create creator="new" javascript="TestReflect">
+			<param name="class" value="zip.TestReflect" />
+		</create>
+		<create creator="new" javascript="NseerFileTree">
+			<param name="class" value="filetree.NseerFileTree" />
+		</create>
+		<create creator="new" javascript="FileMove">
+			<param name="class" value="filetree.FileMove" />
+		</create>
+		<create creator="new" javascript="FileUpdate">
+			<param name="class" value="filetree.FileUpdate" />
+		</create>
+		<create creator="new" javascript="NseerModuleTree">
+			<param name="class" value="include.nseerTree.NseerModuleTree" />
+		</create>
+		<create creator="new" javascript="NseerUnZip">
+			<param name="class" value="zip.NseerUnZip" />
+		</create>
+		<create creator="new" javascript="SaveFile">
+			<param name="class" value="include.nseer_cookie.SaveFile" />
+		</create>
+		<create creator="new" javascript="NseerModuleTreeDB">
+			<param name="class" value="include.nseerTree.NseerModuleTreeDB" />
+		</create>
+		<create creator="new" javascript="kindCounter">
+			<param name="class" value="include.nseer_cookie.kindCounter" />
+		</create>
+		<create creator="new" javascript="ResultKey">
+			<param name="class" value="include.operateDB.ResultKey" />
+		</create>
+		<create creator="new" javascript="OperateXML">
+			<param name="class" value="include.nseer_cookie.OperateXML" />
+		</create>
+		<create creator="new" javascript="AddMsgHref">
+			<param name="class" value="include.nseer_cookie.AddMsgHref" />
+		</create>
+	</allow>
+</dwr>

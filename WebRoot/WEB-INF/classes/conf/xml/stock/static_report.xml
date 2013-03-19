@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <tables>
+    <table nick="动态库存盘点表" name="stock_balance_static_report">
+      <columns>
+	    <column nick="盘点单号" name="static_report_ID" />
+		<column nick="盘点时间" name="static_report_time" />
+        <column nick="产品分类编号" name="chain_id" />
+        <column nick="产品分类名称" name="chain_name" />
+        <column nick="产品编号" name="PRODUCT_ID" />
+        <column nick="产品名称" name="PRODUCT_NAME" />
+        <column nick="产品描述" name="PRODUCT_DESCRIBE" />
+        <column nick="成本总价" name="COST_PRICE_SUM" />
+        <column nick="数量" name="AMOUNT" />
+        <column nick="成本单价" name="COST_PRICE" />
+        <column nick="库存地址集合" name="ADDRESS_GROUP" />
+      </columns>
+    </table>
+	<table nick="动态库存盘点表明细" name="stock_balance_static_report_details">
+      <columns>
+	    <column nick="盘点单号" name="static_report_ID" />
+		<column nick="盘点时间" name="static_report_time" />
+        <column nick="产品分类编号" name="chain_id" />
+        <column nick="产品分类名称" name="chain_name" />
+        <column nick="产品编号" name="PRODUCT_ID" />
+        <column nick="产品名称" name="PRODUCT_NAME" />
+        <column nick="产品描述" name="PRODUCT_DESCRIBE" />
+        <column nick="成本小计" name="subtotal" />
+        <column nick="数量" name="AMOUNT" />
+        <column nick="成本单价" name="COST_PRICE" />
+        <column nick="库房编号" name="stock_id" />
+		<column nick="库房名称" name="stock_name" />
+		<column nick="I级存储区域名称" name="stock_name" />
+		<column nick="II级存储区域名称" name="stock_name" />
+		<column nick="III级存储区域名称" name="stock_name" />
+      </columns>
+    </table>
+  </tables>
+</config>
+

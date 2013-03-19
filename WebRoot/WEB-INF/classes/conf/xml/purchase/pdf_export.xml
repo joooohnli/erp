@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <tables>
+    <table nick="供应商档案" name="purchase_file">
+      <columns>
+        <column nick="产品分类编号" name="chain_id" />
+        <column nick="产品分类名称" name="chain_name" />
+        <column nick="档案编号" name="PROVIDER_ID" />
+        <column nick="供应商名称" name="PROVIDER_NAME" />
+        <column nick="地址" name="PROVIDER_ADDRESS" />
+        <column nick="优质级别" name="PROVIDER_CLASS" />
+        <column nick="所属行业" name="TYPE" />
+        <column nick="开户银行" name="PROVIDER_BANK" />
+        <column nick="银行账号" name="PROVIDER_ACCOUNT" />
+        <column nick="网址" name="PROVIDER_WEB" />
+        <column nick="电话1" name="PROVIDER_TEL1" />
+        <column nick="电话2" name="PROVIDER_TEL2" />
+        <column nick="email" name="PROVIDER_EMAIL" />
+        <column nick="fax" name="PROVIDER_FAX" />
+        <column nick="邮编" name="PROVIDER_POSTCODE" />
+        <column nick="第一联系人" name="CONTACT_PERSON1" />
+        <column nick="部门1" name="CONTACT_PERSON1_DEPARTMENT" />
+        <column nick="职务1" name="CONTACT_PERSON1_DUTY" />
+        <column nick="性别1" name="CONTACT_PERSON1_SEX" />
+        <column nick="办公电话1" name="CONTACT_PERSON1_OFFICE_TEL" />
+        <column nick="家庭电话1" name="CONTACT_PERSON1_HOME_TEL" />
+        <column nick="手机1" name="CONTACT_PERSON1_MOBILE" />
+        <column nick="fax1" name="CONTACT_PERSON1_FAX" />
+        <column nick="email1" name="CONTACT_PERSON1_EMAIL" />
+        <column nick="爱好1" name="CONTACT_PERSON1_FAVORITE" />
+        <column nick="第二联系人" name="CONTACT_PERSON2" />
+        <column nick="部门2" name="CONTACT_PERSON2_DEPARTMENT" />
+        <column nick="职务2" name="CONTACT_PERSON2_DUTY" />
+        <column nick="性别2" name="CONTACT_PERSON2_SEX" />
+        <column nick="办公电话2" name="CONTACT_PERSON2_OFFICE_TEL" />
+        <column nick="家庭电话2" name="CONTACT_PERSON2_HOME_TEL" />
+        <column nick="手机2" name="CONTACT_PERSON2_MOBILE" />
+        <column nick="fax2" name="CONTACT_PERSON2_FAX" />
+        <column nick="email2" name="CONTACT_PERSON2_EMAIL" />
+        <column nick="爱好2" name="CONTACT_PERSON2_FAVORITE" />
+        <column nick="开票信息" name="INVOICE_INFO" />
+        <column nick="可供应产品集合" name="DEMAND_PRODUCTS" />
+        <column nick="推荐供应产品集合" name="RECOMMEND_PRODUCTS" />
+        <column nick="联络次数累计" name="CONTACT_AMOUNT" />
+        <column nick="供货额累计" name="ACHIEVEMENT_SUM" />
+        <column nick="交易次数累计" name="TRADE_AMOUNT" />
+        <column nick="退货额累计" name="RETURN_SUM" />
+        <column nick="退货次数累计" name="RETURN_AMOUNT" />
+        <column nick="档案变更累计" name="FILE_CHANGE_AMOUNT" />
+        <column nick="供应商曾用名" name="USED_PROVIDER_NAME" />
+        <column nick="登记人" name="REGISTER" />
+        <column nick="登记人编号" name="REGISTER_ID" />
+        <column nick="建档时间" name="REGISTER_TIME" />
+        <column nick="采购人" name="PURCHASER" />
+        <column nick="采购人编号" name="PURCHASER_ID" />
+      </columns>
+    </table>
+  </tables>
+</config>
+

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+<table nick="security_alive_access" name="security_alive_access">
+	<column nick="id" name="id" type="数值" Ttype="int(10) unsigned" usedTag="s" required="n" validate="n" service="t" id="1">
+	</column>
+	<column nick="机构编号" name="chain_id" type="字符" Ttype="text" usedTag="s" required="n" validate="n" service="b" id="2">
+	</column>
+	<column nick="机构名称" name="chain_name" type="字符" Ttype="text" usedTag="s" required="n" validate="n" service="b" id="3">
+	</column>
+	<column nick="档案编号" name="human_id" type="字符" Ttype="varchar(30)" usedTag="s" required="n" validate="n" service="b" id="10">
+	</column>
+	<column nick="用户名" name="human_name" type="字符" Ttype="varchar(20)" usedTag="s" required="n" validate="n" service="b" id="11">
+	</column>
+	<column nick="姓名" name="editor" type="字符" Ttype="varchar(20)" usedTag="s" required="n" validate="n" service="b" id="12">
+	</column>
+	<column nick="modulec" name="modulec" type="字符" Ttype="varchar(5)" usedTag="s" required="n" validate="n" service="t" id="13">
+	</column>
+	<column nick="登录时间" name="time1" type="时间" Ttype="datetime" usedTag="s" required="n" validate="n" service="b" id="14">
+	</column>
+	<column nick="退出时间" name="time2" type="时间" Ttype="datetime" usedTag="s" required="n" validate="n" service="b" id="15">
+	</column>
+	<column nick="IP地址" name="modulei" type="字符" Ttype="varchar(60)" usedTag="s" required="n" validate="n" service="b" id="16">
+	</column>
+	<column nick="tag" name="tag" type="数值" Ttype="int(1)" usedTag="s" required="n" validate="n" service="t" id="17">
+	</column>
+</table>
+</config>

@@ -1,0 +1,102 @@
+package include.validator;
+
+import java.io.*;
+import java.util.*;
+import org.jdom.*;
+import org.jdom.input.SAXBuilder;
+import org.jdom.output.*;
+
+
+public class Factory extends XmlFile{
+
+  private HashMap config=null;
+
+  public Factory() {
+    super("validation-config.xml");
+  }
+
+  public HashMap getAllConfig() {
+    if (config==null) {
+      config=new HashMap();
+      List forms=root.getChildren("form");
+      Iterator it=forms.iterator();
+      while (it.hasNext()) {
+	Element element=(Element)it.next();
+	String id=element.getAttributeValue("id");
+        ValidatorForm form=getValidatorForm(element);
+        config.put(form);
+      } // end of while ()
+    }
+    return config;
+  }
+
+  public ValidatorForm getValidatorFormById(String id) {
+    if (config==null) {
+      getAllConfig();
+    }
+    return (ValidatorForm)config.get(id);
+  }
+
+  private ValidatorForm getValidatorForm(Element element) {
+    ValidatorForm form=new ValidatorForm();
+    String id=element.getAttributeValue("id");
+    form.setName(id);
+    List fields=element.getChildren("field");
+    ValidatorField[] fieldsArray=new ValidatorField[fields.size()];
+    Iterator it=fields.iterator();
+    int i=0;
+    while (it.hasNext()) {
+      Element field=(Element)it.next();
+      fieldsArray[i++]=getValidatorField(field);
+    }
+    form.setFields(fieldsArray);
+    return form;
+  }
+
+  private ValidatorField getValidatorField(Element element) {
+    ValidatorField field=new ValidatorField();
+    String name=element.getAttributeValue("name");
+    String displayName=element.getAttributeValue("display-name");
+    field.setName(name);
+    field.setDisplayName(displayName);
+    List depends=element.getChildren("depend");
+    ValidatorDepend[] dependsArray=new ValidatorDepend[depends.size()];
+    Iterator it=depends.iterator();
+    int i=0;
+    while (it.hasNext()) {
+      Element depend=(Element)it.next();
+      dependsArray[i++]=getValidatorDepend(depend);
+    }
+    field.setDepends(dependsArray);
+    return field;
+  }
+
+  private ValidatorDepend getValidatorDepend(Element element) {
+    ValidatorDepend depend=new ValidatorDepend();
+    String name=element.getAttributeValue("name");
+    String[] param=new String[2];
+    depend.setName(name);
+    param[0]=element.getAttributeValue("param0");
+    param[1]=element.getAttributeValue("param1");
+    depend.setParameters(param);
+    return depend;
+  }
+
+  public static void main(String[] args) {
+    Factory factory=new Factory();
+    HashMap config=factory.getAllConfig();
+    ValidatorForm form=(ValidatorForm)config.get("myform");
+    ValidatorField[] fields=form.getFields();
+    for (int i=0;i<fields.length;i++) {
+      System.out.println(fields[i].getName());      
+      ValidatorDepend[] depends=fields[i].getDepends();
+      for (int j=0;j<depends.length;j++) {
+	System.out.println(depends[j].getName());
+      } // end of for ()
+      
+    } // end of for ()
+    
+  } // end of main()
+  
+
+}

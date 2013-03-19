@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<div-config title="恩信科技">
+<div id="dialogAddII" class="nseer_div" nseerDef="dragAble" style="width:500px;height:250px;">
+<iframe src="javascript:false" style="position:absolute;visibility:inherit;top:0px;left:0px;width:100%;height:100%;z-index:-1;filter='progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=0)';"></iframe>
+
+<TABLE width="100%" height="100%" border="0" align="center" cellPadding="0" cellSpacing="0">
+  <TBODY>
+    <TR>
+      <TD width="1%" height="1%"><IMG  src="../../images/bg_0ltop.gif"  ></TD>
+      <TD width="100%" background="../../images/bg_01.gif"></TD>
+      <TD width="1%" height="1%"><IMG  src="../../images/bg_0rtop.gif"></TD>
+    </TR>
+    <TR>
+      <TD  background="../../images/bg_03.gif"></TD>
+ <TD>
+
+<div class="cssDiv1">
+<div class="cssDiv2">⊙⊙⊙恩信科技开源ERP⊙⊙⊙
+</div>
+</div>
+<div class="cssDiv3"  onclick="n_D.closeDiv('remove')"  onmouseover="n_D.mmcMouseStyle(this);"></div>
+<div id="expand" class="cssDiv4" onclick="n_D.maxDiv()"  onmouseover="n_D.mmcMouseStyle(this);"></div>
+<div id="collapse" class="cssDiv5" onclick="n_D.minDiv(40)"  onmouseover="n_D.mmcMouseStyle(this);"></div>
+
+
+<div style="width:100%;height:100%;background:#E8E8E8">
+<div id="tabsF">
+<ul>
+<li id="current"><a href="javascript:void(0);"><span align="center">⊙⊙⊙添加下级⊙⊙⊙</span></a></li>
+</ul>
+</div>
+
+
+<div class="cssDiv8">
+<table id="table1" class="nseer_table1" width="100%" border="0" cellspacing="1" cellpadding="1" >
+	<tr id="tr1">
+		<td id="td1">
+		</td>
+		<td id="td2">
+		</td>
+	</tr>
+	<tr id="tr1">
+		<td id="td1">			
+		</td>
+		<td id="td2"><div align="right">
+		<INPUT class="BUTTON_STYLE1" type="button" value="⊙⊙⊙确定⊙⊙⊙" onclick="addTreeNode('Nseer_tree2');">
+		<INPUT class="BUTTON_STYLE1" type="button" value="⊙⊙⊙取消⊙⊙⊙" onclick="n_D.closeDiv('remove');">
+		</div>
+		</td>
+	</tr>
+		<tr id="tr2">
+		<td id="td3" style="background-image:url(/erp/images/line7.gif);" width="30%">
+			⊙⊙⊙科目名称⊙⊙⊙
+		</td>
+		<td id="td4">
+			<input type="text" id="file_name" name="file_name" value="" style="WIDTH: 98%"/>
+			<input type="hidden" id="file_id" name="file_id" value=""/>
+		</td>
+	</tr>
+	<tr id="tr3">
+		<td id="td5" style="background-image:url(/erp/images/line7.gif);" width="30%">
+			⊙⊙⊙助记码⊙⊙⊙
+		</td>
+		<td id="td6">
+			<input type="text" id="nick_name" name="nick_name" value="" style="WIDTH: 98%"/>
+			<input id="kind_tag" name="kind_tag" type="hidden">
+			<input id="muti_field_type" name="muti_field_type" type="hidden">
+			<input id="debit_or_loan" name="debit_or_loan" type="hidden">
+			<input id="itema_name" name="itema_name" type="hidden">
+			<input id="itemb_name" name="itemb_name" type="hidden">
+			<input id="itemd_name" name="itemd_name" type="hidden">
+			<input id="profit_or_cost" name="profit_or_cost" type="hidden">
+			<input id="corr_stock_tag" name="corr_stock_tag" type="hidden">
+			<input id="cash_tag" name="cash_tag" type="hidden">
+			<input id="daily_tag" name="daily_tag" type="hidden">
+			<input id="bank_tag" name="bank_tag" type="hidden">
+			<input id="assistance" name="assistance" type="hidden">
+		</td>
+	</tr>
+	<tr style="height:23px;">
+		<td style="background-image:url(/erp/images/line7.gif);" width="30%">⊙⊙⊙是否外币⊙⊙⊙</td> 
+		<td><select id="currency_tag" name="currency_tag" style="WIDTH: 30%" onchange="showCurrency(this.id,'currency')">
+				<option value="0">⊙⊙⊙否⊙⊙⊙</option>
+				<option value="1">⊙⊙⊙是⊙⊙⊙</option>
+			</select>&nbsp;<select id="currency" name="currency" style="WIDTH: 67%">
+				<option value="0"></option>
+			</select>
+		</td>
+	</tr>
+</table>
+</div>
+</div>
+
+ </TD>
+<TD  background="../../images/bg_04.gif"></TD>
+    </TR>
+    <TR>
+      <TD width="1%" height="1%"><IMG  src="../../images/bg_0lbottom.gif" ></TD>
+      <TD background="../../images/bg_02.gif"></TD>
+      <TD width="1%" height="1%"><IMG  src="../../images/bg_0rbottom.gif"></TD>
+    </TR>    
+  </TBODY>
+</TABLE>
+</div>

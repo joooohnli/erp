@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+ <tables>
+    <table nick="生产派工单" name="manufacture_manufacture">
+      <columns>
+		<column nick="生产派工单编号" name="MANUFACTURE_ID" />
+		<column nick="产品编号" name="PRODUCT_ID" />   
+		<column nick="产品名称" name="PRODUCT_NAME" />
+		<column nick="数量" name="AMOUNT" />
+		<column nick="合格数量" name="TESTED_AMOUNT" />
+		<column nick="产品描述" name="PRODUCT_DESCRIBE" /> 
+		<column nick="物料设计成本" name="MODULE_COST_PRICE_SUM" />
+		<column nick="物料实际成本" name="REAL_MODULE_COST_PRICE_SUM" />
+		<column nick="工时设计成本" name="LABOUR_COST_PRICE_SUM" />
+		<column nick="工时实际成本" name="REAL_LABOUR_COST_PRICE_SUM" />
+        <column nick="制定人" name="DESIGNER" />
+		<column nick="登记人" name="REGISTER" />
+		<column nick="登记人编码" name="REGISTER_ID" />
+		<column nick="登记时间" name="REGISTER_TIME" />
+		<column nick="审核人" name="CHECKER" />
+		<column nick="审核人编码" name="CHECKER_ID" />
+        <column nick="审核时间" name="CHECK_TIME" />
+		<column nick="备注" name="REMARK" />
+	  </columns>
+	</table>
+
+	 
+	
+  </tables>
+</config>
+
+     
+  

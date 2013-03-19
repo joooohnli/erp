@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+<table nick="finance_config_public_char" name="finance_config_public_char">
+	<column nick="时间" name="timea" type="时间" Ttype="date" usedTag="s" required="y" validate="y" service="p" id="1">
+		<depend name="date" param0="yyyy-mm-dd"/>
+	</column>
+	<column nick="时间" name="timeb" type="时间" Ttype="date" usedTag="s" required="y" validate="y" service="p" id="2">
+		<depend name="date" param0="yyyy-mm-dd"/>
+	</column>
+	<column nick="报表单位" name="report_unit" type="字符" Ttype="varchar(100)" usedTag="s" required="y" validate="y" service="p" id="3">
+		<depend name="required" />
+	</column>
+</table>
+</config>

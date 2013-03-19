@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE validation-config SYSTEM "validation-config.dtd">
+<validation-config lang="auto">
+  <form id="mutiValidation" show-error="alert" onfail="" show-type="first">
+	  <field name="demand_contact_person_tel" display-name="电话" onfail="">
+		<depend name="common" />
+      </field>
+	  <field name="demand_pay_time" display-name="预提货时间" onfail="">
+        <depend name="date" param0="yyyy-mm-dd"/>
+      </field>
+	  <field name="sales_name" display-name="销售人" onfail="">
+        <depend name="common" />
+      </field>
+	  <field name="sales_ID" display-name="销售人编号" onfail="">
+        <depend name="common" />
+      </field>
+	  <field name="register" display-name="登记人" onfail="">
+        <depend name="common" />
+      </field>
+	  <field name="register_ID" display-name="登记人编号" onfail="">
+        <depend name="common" />
+      </field>
+	  <field name="checker" display-name="审核人" onfail="">
+        <depend name="common" />
+      </field>
+	  <field name="checker_ID" display-name="审核人编号" onfail="">
+        <depend name="common" />
+      </field>
+	  <field name="changer" display-name="变更人" onfail="">
+        <depend name="common" />
+      </field>
+	  <field name="changer_ID" display-name="变更人编号" onfail="">
+        <depend name="common" />
+      </field>
+	  <field name="remark" display-name="备注" onfail="">
+        <depend name="common" />
+      </field>
+  </form>
+
+ <form id="timeLocateValidation" show-error="alert" onfail="" show-type="first">
+<field name="select" display-name="客户端EXCEL版本" onfail="">
+<depend name="required" />
+</field>
+<field name="timea" display-name="时间" onfail="">
+        <depend name="date" param0="yyyy-mm-dd"/>
+      </field>
+	  <field name="timeb" display-name="时间" onfail="">
+        <depend name="date" param0="yyyy-mm-dd"/>
+      </field>
+</form>
+  
+  </validation-config>
+

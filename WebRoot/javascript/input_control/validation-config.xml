@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE validation-config SYSTEM "validation-config.dtd">
+<validation-config lang="auto">
+
+  <form id="register1" show-error="alert" onfail="" show-type="first">
+      <field name="customer_name" display-name="客户名称" onfail="">
+        <depend name="required" />
+      </field>
+      <field name="customer_address" display-name="客户地址" onfail="">
+        <depend name="commonChar" />
+      </field>
+      <field name="select1" display-name="客户所在I级市场区域名称" onfail="">
+              <depend name="required" />
+      </field>
+      <field name="select2" display-name="客户所在II级市场区域名称" onfail="">
+              <depend name="required" />
+      </field>
+      <field name="select3" display-name="客户所在III级市场区域名称" onfail="">
+              <depend name="required" />
+      </field>
+      <field name="select4" display-name="销售人员" onfail="">
+              <depend name="required" />
+      </field>
+      <field name="customer_tel1" display-name="电话" onfail="">
+        <depend name="required" />
+      </field>
+      <field name="contact_person1" display-name="第一联系人" onfail="">
+              <depend name="required" />
+      </field>
+      <field name="contact_person1_office_tel" display-name="第一联系人办公电话" onfail="">
+                    <depend name="required" />
+                    <depend name="commonChar" />
+      </field>
+  </form>
+  <form id="check" show-error="alert" onfail="" show-type="first">
+      <field name="customer_name" display-name="客户名称" onfail="">
+        <depend name="required" />
+      </field>
+      <field name="customer_address" display-name="客户地址" onfail="">
+        <depend name="required" />
+      </field>
+      <field name="select1" display-name="客户所在I级市场区域名称" onfail="">
+              <depend name="required" />
+      </field>
+      <field name="select2" display-name="客户所在II级市场区域名称" onfail="">
+              <depend name="required" />
+      </field>
+      <field name="select3" display-name="客户所在III级市场区域名称" onfail="">
+              <depend name="required" />
+      </field>
+      <field name="select4" display-name="销售人员" onfail="">
+              <depend name="required" />
+      </field>
+      <field name="customer_tel1" display-name="电话" onfail="">
+        <depend name="required" />
+      </field>
+      <field name="contact_person1" display-name="第一联系人" onfail="">
+              <depend name="required" />
+      </field>
+      <field name="contact_person1_office_tel" display-name="第一联系人办公电话" onfail="">
+                    <depend name="required" />
+                    <depend name="commonChar" />
+      </field>
+  </form>
+  <form id="change" show-error="alert" onfail="" show-type="first">
+      <field name="customer_name" display-name="客户名称" onfail="">
+        <depend name="required" />
+      </field>
+      <field name="customer_address" display-name="客户地址" onfail="">
+        <depend name="required" />
+      </field>
+      <field name="select1" display-name="客户所在I级市场区域名称" onfail="">
+              <depend name="required" />
+      </field>
+      <field name="select2" display-name="客户所在II级市场区域名称" onfail="">
+              <depend name="required" />
+      </field>
+      <field name="select3" display-name="客户所在III级市场区域名称" onfail="">
+              <depend name="required" />
+      </field>
+      <field name="select4" display-name="销售人员" onfail="">
+              <depend name="required" />
+      </field>
+      <field name="customer_tel1" display-name="电话" onfail="">
+        <depend name="required" />
+      </field>
+      <field name="contact_person1" display-name="第一联系人" onfail="">
+              <depend name="required" />
+      </field>
+      <field name="contact_person1_office_tel" display-name="第一联系人办公电话" onfail="">
+                    <depend name="required" />
+                    <depend name="commonChar" />
+      </field>
+  </form>
+</validation-config>
+

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <table nick="财务系统" name="finance">
+    <column nick="finance_account_finished" name="finance_account_finished" service="t" />
+    <column nick="finance_account_period" name="finance_account_period" service="t" />
+    <column nick="finance_allright" name="finance_allright" service="t" />
+    <column nick="finance_bill" name="finance_bill" service="t" />
+    <column nick="finance_cash_table" name="finance_cash_table" service="t" />
+    <column nick="finance_cheque" name="finance_cheque" service="t" />
+    <column nick="finance_config_assets_fluctuationway" name="finance_config_assets_fluctuationway" service="t" />
+    <column nick="finance_config_assets_kind" name="finance_config_assets_kind" service="t" />
+    <column nick="finance_config_calitem" name="finance_config_calitem" service="t" />
+    <column nick="finance_config_calway" name="finance_config_calway" service="t" />
+    <column nick="finance_config_currency" name="finance_config_currency" service="t" />
+    <column nick="finance_config_file_kind" name="finance_config_file_kind" service="t" />
+    <column nick="finance_config_public_char" name="finance_config_public_char" service="t" />
+    <column nick="finance_config_report_itema" name="finance_config_report_itema" service="t" />
+    <column nick="finance_config_report_itemb" name="finance_config_report_itemb" service="t" />
+    <column nick="finance_config_report_itemc" name="finance_config_report_itemc" service="t" />
+    <column nick="finance_config_report_itemd" name="finance_config_report_itemd" service="t" />
+    <column nick="finance_config_summary" name="finance_config_summary" service="t" />
+    <column nick="finance_config_tax" name="finance_config_tax" service="t" />
+    <column nick="finance_currency" name="finance_currency" service="t" />
+    <column nick="finance_fa_caled" name="finance_fa_caled" service="t" />
+    <column nick="finance_fa_calway" name="finance_fa_calway" service="t" />
+    <column nick="finance_fa_change" name="finance_fa_change" service="t" />
+    <column nick="finance_fa_file" name="finance_fa_file" service="t" />
+    <column nick="finance_fa_file_dig" name="finance_fa_file_dig" service="t" />
+    <column nick="finance_fa_work_details" name="finance_fa_work_details" service="t" />
+    <column nick="finance_gl" name="finance_gl" service="t" />
+    <column nick="finance_report_01" name="finance_report_01" service="t" />
+    <column nick="finance_report_02" name="finance_report_02" service="t" />
+    <column nick="finance_report_03" name="finance_report_03" service="t" />
+    <column nick="finance_tree" name="finance_tree" service="t" />
+    <column nick="finance_view" name="finance_view" service="t" />
+    <column nick="凭证" name="finance_voucher" service="b" />
+  </table>
+</config>
+

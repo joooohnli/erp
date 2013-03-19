@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+<table nick="qcs_apply_details" name="qcs_apply_details">
+	<column nick="id" name="id" type="数值" Ttype="int(10) unsigned" usedTag="s" required="n" validate="n" service="t" id="1">
+	</column>
+	<column nick="申请单编号" name="apply_id" type="字符" Ttype="varchar(30)" usedTag="s" required="n" validate="n" service="b" id="2">
+	</column>
+	<column nick="产品编号" name="product_id" type="字符" Ttype="varchar(30)" usedTag="s" required="n" validate="n" service="b" id="3">
+	</column>
+	<column nick="产品名称" name="product_name" type="字符" Ttype="varchar(60)" usedTag="s" required="n" validate="n" service="b" id="4">
+	</column>
+	<column nick="单位" name="amount_unit" type="字符" Ttype="varchar(60)" usedTag="s" required="n" validate="n" service="b" id="5">
+	</column>
+	<column nick="数量" name="demand_amount" type="字符" Ttype="varchar(30)" usedTag="s" required="n" validate="n" service="b" id="6">
+	</column>
+	<column nick="标签号" name="label" type="字符" Ttype="varchar(60)" usedTag="s" required="n" validate="n" service="b" id="7">
+	</column>
+	<column nick="采购时间" name="purchase_time" type="时间" Ttype="datetime" usedTag="s" required="n" validate="n" service="b" id="8">
+	</column>
+	<column nick="qcs_tag" name="qcs_tag" type="数值" Ttype="int(1)" usedTag="s" required="n" validate="n" service="t" id="9">
+	</column>
+	<column nick="质检类型" name="reason" type="数值" Ttype="int(1) unsigned" usedTag="s" required="n" validate="n" service="b" id="10">
+	</column>
+	<column nick="stock_area_id" name="stock_area_id" type="字符" Ttype="varchar(45)" usedTag="s" required="n" validate="n" service="t" id="11">
+	</column>
+	<column nick="stock_area_name" name="stock_area_name" type="字符" Ttype="varchar(45)" usedTag="s" required="n" validate="n" service="t" id="12">
+	</column>
+	<column nick="存放地编号" name="stock_id" type="字符" Ttype="varchar(45)" usedTag="s" required="n" validate="n" service="b" id="13">
+	</column>
+	<column nick="存放地" name="stock_name" type="字符" Ttype="varchar(45)" usedTag="s" required="n" validate="n" service="b" id="14">
+	</column>
+	<column nick="质检详细因由" name="other_reason" type="字符" Ttype="text" usedTag="s" required="n" validate="n" service="b" id="15">
+	</column>
+	<column nick="附件" name="attachment1" type="字符" Ttype="varchar(45)" usedTag="s" required="n" validate="n" service="b" id="16">
+	</column>
+	<column nick="生产执行单编号" name="manufacture_id" type="字符" Ttype="varchar(60)" usedTag="s" required="n" validate="n" service="b" id="17">
+	</column>
+	<column nick="工序名称" name="procedure_name" type="字符" Ttype="varchar(60)" usedTag="s" required="n" validate="n" service="b" id="18">
+	</column>
+	<column nick="简称" name="nick_name" type="字符" Ttype="varchar(255)" usedTag="s" required="n" validate="n" service="b" id="19">
+	</column>
+</table>
+</config>

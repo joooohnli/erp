@@ -1,0 +1,60 @@
+.nseer_div{
+position:absolute;
+top:200px;
+left:300px;
+width:250px;
+height:150px;
+background: url(/erp/javascript/include/div/images/gradient-bg.gif) repeat-x 0 -82px;
+}
+.cssDiv1{
+position:absolute;
+top:0px;
+width:100%;
+height:24px;
+background: url(/erp/javascript/include/div/images/hd-sprite.gif) repeat-x 0 -82px;
+}
+.cssDiv2{
+position:absolute;
+top:5px;
+left:3px;
+color:white;
+}
+.cssDiv3{
+position:absolute;top:2px;right:5px;width:15px;height:15px;background-image:url(/erp/javascript/include/div/images/close.gif);
+}
+.cssDiv4{
+position:absolute;top:2px;right:25px;width:15px;height:15px;background-image:url(/erp/javascript/include/div/images/expand.gif);
+}
+.cssDiv5{
+position:absolute;top:2px;right:45px;width:15px;height:15px;background-image:url(/erp/javascript/include/div/images/collapse.gif);
+}
+.cssDiv6{
+position:absolute;bottom:0px;left:3px;width:7px;height:7px;background-image:url(/erp/javascript/include/div/images/sw-handle-dark1.gif);
+}
+.cssDiv7{
+position:absolute;bottom:0px;right:3px;width:7px;height:7px;background-image:url(/erp/javascript/include/div/images/se-handle-dark1.gif);
+}
+.cssDiv8{
+position:absolute;top:25px;width:100%;height:100%;
+}
+.table1{
+width: 90%;
+}
+.div_tr1{
+height:25%;
+}
+.select_div_l{
+cursor:hand;padding-top:3px;left:405px;width:15px;position:absolute;background-image:url(/erp/images/selectArrow.gif);
+}
+.select_div_r{
+cursor:hand;padding-top:3px;left:789px;width:15px;position:absolute;background-image:url(/erp/images/selectArrow.gif);
+}
+.select_div_r0{
+cursor:hand;left:360px;height:18px;width:15px;position:absolute;background-image:url(/erp/images/selectArrow.gif);
+}
+.result_div1{
+position:absolute;background:yellow;height:80px; filter:alpha(opacity=80); overflow-y: auto; overflow-x: hidden;z-index:100
+}
+.note_div{
+	position:absolute;top:-100px;right:50px;width:350px;
+}

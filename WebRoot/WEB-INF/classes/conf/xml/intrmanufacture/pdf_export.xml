@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <tables>
+    <table nick="委外执行单" name="intrmanufacture_intrmanufacture">
+      <columns>
+        <column nick="委外单编号" name="intrmanufacture_ID" />
+        <column nick="委外单状态" name="intrmanufacture_STATUS" />
+        <column nick="产品编号" name="PRODUCT_ID" />
+        <column nick="产品名称" name="PRODUCT_NAME" />
+        <column nick="委外数量" name="DEMAND_AMOUNT" />
+        <column nick="委外单价" name="DEMAND_PRICE" />
+        <column nick="委外入库数量" name="REAL_GATHERED_AMOUNT" />
+        <column nick="委外总价" name="DEMAND_COST_PRICE_SUM" />
+        <column nick="已收发票总额" name="INVOICED_SUM" />
+        <column nick="登记人" name="REGISTER" />
+        <column nick="登记人编号" name="REGISTER_ID" />
+        <column nick="复核人" name="CHECKER" />
+        <column nick="复核人编号" name="CHECKER_ID" />
+        <column nick="变更人" name="CHANGER" />
+        <column nick="变更人编号" name="CHANGER_ID" />
+        <column nick="登记时间" name="REGISTER_TIME" />
+        <column nick="审核时间" name="CHECK_TIME" />
+      </columns>
+    </table>
+  </tables>
+</config>
+

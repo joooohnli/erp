@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <table nick="生产管理" name="manufacture">
+    <column nick="manufacture_allright" name="manufacture_allright" service="t" />
+    <column nick="生产计划" name="manufacture_apply" service="b" key="apply_id"/>
+    <column nick="manufacture_cell" name="manufacture_cell" service="t" />
+    <column nick="manufacture_config_public_char" name="manufacture_config_public_char" service="t" />
+    <column nick="manufacture_config_public_double" name="manufacture_config_public_double" service="t" />
+    <column nick="manufacture_config_workflow" name="manufacture_config_workflow" service="t" />
+    <column nick="生产工序设计" name="manufacture_design_procedure" service="b" key="design_id"/>
+    <column nick="manufacture_design_procedure_details" name="manufacture_design_procedure_details" service="t" />
+    <column nick="manufacture_design_procedure_module_details" name="manufacture_design_procedure_module_details" service="t" />
+    <column nick="生产派工单" name="manufacture_manufacture" service="b" key="manufacture_id"/>
+    <column nick="物料损益" name="manufacture_module_balance" service="b" />
+    <column nick="manufacture_module_balance_details" name="manufacture_module_balance_details" service="t" />
+    <column nick="manufacture_procedure" name="manufacture_procedure" service="t" />
+    <column nick="manufacture_procedure_module" name="manufacture_procedure_module" service="t" />
+    <column nick="manufacture_procedure_moduling" name="manufacture_procedure_moduling" service="t" />
+    <column nick="manufacture_proceduring" name="manufacture_proceduring" service="t" />
+    <column nick="manufacture_tree" name="manufacture_tree" service="t" />
+    <column nick="manufacture_view" name="manufacture_view" service="t" />
+    <column nick="manufacture_workflow" name="manufacture_workflow" service="t" />
+  </table>
+</config>
+

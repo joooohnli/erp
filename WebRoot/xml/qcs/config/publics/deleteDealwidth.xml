@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<div-config title="恩信科技">
+<div id="deleteRecords" class="nseer_div" nseerDef="dragAble">
+<div class="cssDiv1">
+<div class="cssDiv2">demo.getLang("erp","恩信科技")
+</div>
+</div>
+<div class="cssDiv3"  onclick="closeDiv('remove')"  onmouseover="mmcMouseStyle(this);"></div>
+<div id="expand" class="cssDiv4" onclick="maxDiv()"  onmouseover="mmcMouseStyle(this);"></div>
+<div id="collapse" class="cssDiv5" onclick="minDiv(40)"  onmouseover="mmcMouseStyle(this);"></div>
+<div class="cssDiv6" height="7px"></div>
+<div class="cssDiv7"></div>
+<div class="cssDiv8">
+<table id="table1">
+	<tr id="tr1">
+		<td id="td1">
+		</td>
+		<td id="td2">
+		</td>
+	</tr>
+	<tr id="tr1">
+		<td id="td1">			
+		</td>
+		<td id="td2">
+		    <input type="button"  value="确定" onclick="del();" />
+			<input type="button"  value="取消" onclick="closeDiv('remove');"/>
+		</td>
+	</tr>
+	<tr id="tr1">
+		<td id="td1">
+			demo.getLang("erp","您确认删除所选记录吗?")
+		</td>
+	</tr>	
+</table>
+</div>
+</div>
+</div-config>

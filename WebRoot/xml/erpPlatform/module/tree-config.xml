@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tree-config css="../../css/include/nseer_cookie/xml-css.css">
+<table display-name="全部机构" name="Interface_config_file_kind" tree-name="Nseer_tree1"
+		add-brother-node="div-add1.xml,div-add2.xml" 
+		add-child-node="div-add1.xml,div-add2.xml" 
+		delete-node="div-delete.xml"
+		change-node="div-change1.xml,div-change2.xml"
+		search-node="init_quickSearchView.xml"
+		step-length="2">
+		<field display-name="序号" name="id">
+		</field>
+		<field display-name="节点ID" name="CATEGORY_ID" depend="required">
+		</field>
+		<field display-name="父节点ID" name="PARENT_CATEGORY_ID" depend="required">
+		</field>
+        <field display-name="节点显示文字" name="MODULE_NAME" depend="required">
+		</field>
+        <field display-name="是否有下级" name="DETAILS_TAG" depend="required">
+		</field>
+        <field display-name="模块编号" name="FILE_ID" depend="required">	
+        <depend name="common"/>
+		<depend name="required" />
+		<depend name="duplicate" param0="Interface_config_file_kind@file_id@parent_category_id"/>
+		</field>
+        <field display-name="模块名称" name="FILE_NAME" depend="required"><!--以上六个字段为tree必须，名称可变上下顺序不能变-->	
+        <depend name="common"/>
+		</field>
+		<field display-name="是否可删除" name="DELETE_TAG" depend="required">
+		</field>
+        <field display-name="英文模块名称" name="reason" depend="nodeAttribute">	
+        <depend name="common"/>
+		</field>
+		<field display-name="模块初始文件名称" name="HREFLINK" depend="nodeAttribute">	
+        <depend name="common"/>
+		</field>
+</table>
+</tree-config>

@@ -1,0 +1,63 @@
+form{
+	margin: 0px auto;
+	
+	
+}
+
+.bo{
+	border-bottom: solid 1px #CCCCCC;
+}
+
+label{
+	float: left;
+	
+}
+
+input{
+	padding: 1px;
+}
+
+input,textarea{
+	border: 1px solid #CCCCCC;
+	
+}
+
+textarea{
+	padding: 2px;
+}
+
+.bt{
+	width: 38px;
+	height: 20px;
+	font-size: 11px;
+	border: solid 1px #CCCCCC;
+	background: #FBFBFB;
+	text-align: center;
+}
+
+.btcenter{
+	text-align: center;
+	clear: left;
+	
+}
+
+.sffocus {
+	background: pink; /*----for IE----*/
+	border: 1px solid #1D95C7;
+}
+
+textarea:focus, input:focus {
+	background: pink; /*----for firefox......----*/
+	border: 1px solid #1D95C7;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #666666;
+	
+} 
+
+.dd{
+word-break:break-all;
+}

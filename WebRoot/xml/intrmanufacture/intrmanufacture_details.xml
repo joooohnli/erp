@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+<table nick="intrmanufacture_details" name="intrmanufacture_details">
+	<column nick="id" name="id" type="数值" Ttype="int(10) unsigned" usedTag="s" required="n" validate="n" service="t" id="1">
+	</column>
+	<column nick="委外执行单编号" name="intrmanufacture_id" type="字符" Ttype="varchar(30)" usedTag="s" required="n" validate="n" service="b" id="2">
+	</column>
+	<column nick="序号" name="details_number" type="数值" Ttype="int(10)" usedTag="s" required="n" validate="n" service="b" id="3">
+	</column>
+	<column nick="委外厂商编号" name="provider_id" type="字符" Ttype="varchar(30)" usedTag="s" required="n" validate="n" service="b" id="4">
+	</column>
+	<column nick="委外厂商名称" name="provider_name" type="字符" Ttype="varchar(100)" usedTag="s" required="n" validate="n" service="b" id="5">
+	</column>
+	<column nick="执行单制定人" name="designer" type="字符" Ttype="varchar(60)" usedTag="s" required="n" validate="n" service="b" id="6">
+	</column>
+	<column nick="demand_contact_person" name="demand_contact_person" type="字符" Ttype="varchar(60)" usedTag="s" required="n" validate="n" service="t" id="7">
+	</column>
+	<column nick="demand_contact_person_tel" name="demand_contact_person_tel" type="字符" Ttype="varchar(60)" usedTag="s" required="n" validate="n" service="t" id="8">
+	</column>
+	<column nick="demand_pay_time" name="demand_pay_time" type="时间" Ttype="date" usedTag="s" required="n" validate="n" service="t" id="9">
+	</column>
+	<column nick="demand_pay_type" name="demand_pay_type" type="字符" Ttype="varchar(60)" usedTag="s" required="n" validate="n" service="t" id="10">
+	</column>
+	<column nick="demand_pay_method" name="demand_pay_method" type="字符" Ttype="varchar(60)" usedTag="s" required="n" validate="n" service="t" id="11">
+	</column>
+	<column nick="demand_gather_type" name="demand_gather_type" type="字符" Ttype="varchar(60)" usedTag="s" required="n" validate="n" service="t" id="12">
+	</column>
+	<column nick="要求供货时间" name="demand_gather_time" type="字符" Ttype="varchar(30)" usedTag="s" required="n" validate="n" service="b" id="13">
+	</column>
+	<column nick="demand_gather_shipfee_type" name="demand_gather_shipfee_type" type="字符" Ttype="varchar(60)" usedTag="s" required="n" validate="n" service="t" id="14">
+	</column>
+	<column nick="demand_gather_shipfee_sum" name="demand_gather_shipfee_sum" type="数值" Ttype="double(15,2)" usedTag="s" required="n" validate="n" service="t" id="15">
+	</column>
+	<column nick="demand_invoice_type" name="demand_invoice_type" type="字符" Ttype="varchar(60)" usedTag="s" required="n" validate="n" service="t" id="16">
+	</column>
+	<column nick="加工数量" name="demand_amount" type="数值" Ttype="double(15,2)" usedTag="s" required="n" validate="n" service="b" id="17">
+	</column>
+	<column nick="加工单价" name="demand_price" type="数值" Ttype="double(15,2)" usedTag="s" required="n" validate="n" service="b" id="18">
+	</column>
+	<column nick="gathered_amount" name="gathered_amount" type="数值" Ttype="double(15,2)" usedTag="s" required="n" validate="n" service="t" id="19">
+	</column>
+	<column nick="stock_gathered_amount" name="stock_gathered_amount" type="数值" Ttype="double(15,2)" usedTag="s" required="n" validate="n" service="t" id="20">
+	</column>
+	<column nick="ungather_amount" name="ungather_amount" type="数值" Ttype="double(15,2)" usedTag="s" required="n" validate="n" service="t" id="21">
+	</column>
+	<column nick="加工费总计" name="demand_cost_price_sum" type="数值" Ttype="double(15,2)" usedTag="s" required="n" validate="n" service="b" id="22">
+	</column>
+	<column nick="gathered_cost_price_sum" name="gathered_cost_price_sum" type="数值" Ttype="double(15,2)" usedTag="s" required="n" validate="n" service="t" id="23">
+	</column>
+	<column nick="credit_period" name="credit_period" type="数值" Ttype="double(15,2)" usedTag="s" required="n" validate="n" service="t" id="24">
+	</column>
+	<column nick="gather_period" name="gather_period" type="数值" Ttype="int(10)" usedTag="s" required="n" validate="n" service="t" id="25">
+	</column>
+	<column nick="已开票金额" name="invoiced_sum" type="数值" Ttype="double(15,2)" usedTag="s" required="n" validate="n" service="b" id="26">
+	</column>
+	<column nick="未开票金额" name="uninvoice_sum" type="数值" Ttype="double(15,2)" usedTag="s" required="n" validate="n" service="b" id="27">
+	</column>
+	<column nick="invoice_group" name="invoice_group" type="字符" Ttype="text" usedTag="s" required="n" validate="n" service="t" id="28">
+	</column>
+	<column nick="intrmanufacturer" name="intrmanufacturer" type="字符" Ttype="varchar(60)" usedTag="s" required="n" validate="n" service="t" id="29">
+	</column>
+	<column nick="intrmanufacturer_id" name="intrmanufacturer_id" type="字符" Ttype="varchar(30)" usedTag="s" required="n" validate="n" service="t" id="30">
+	</column>
+	<column nick="备注" name="remark" type="字符" Ttype="text" usedTag="s" required="n" validate="n" service="b" id="31">
+	</column>
+	<column nick="附件" name="attachment_name" type="字符" Ttype="varchar(255)" usedTag="s" required="n" validate="n" service="b" id="32">
+	</column>
+	<column nick="check_tag" name="check_tag" type="数值" Ttype="int(1)" usedTag="s" required="n" validate="n" service="t" id="33">
+	</column>
+	<column nick="gather_tag" name="gather_tag" type="数值" Ttype="int(1)" usedTag="s" required="n" validate="n" service="t" id="34">
+	</column>
+	<column nick="gather_check_tag" name="gather_check_tag" type="数值" Ttype="int(1)" usedTag="s" required="n" validate="n" service="t" id="35">
+	</column>
+	<column nick="invoice_tag" name="invoice_tag" type="数值" Ttype="int(1)" usedTag="s" required="n" validate="n" service="t" id="36">
+	</column>
+	<column nick="invoice_check_tag" name="invoice_check_tag" type="数值" Ttype="int(1)" usedTag="s" required="n" validate="n" service="t" id="37">
+	</column>
+	<column nick="stock_gather_tag" name="stock_gather_tag" type="数值" Ttype="int(1)" usedTag="s" required="n" validate="n" service="t" id="38">
+	</column>
+	<column nick="module_cost_price_sum" name="module_cost_price_sum" type="数值" Ttype="double(15,2)" usedTag="s" required="n" validate="n" service="t" id="39">
+	</column>
+	<column nick="qcs_apply_tag" name="qcs_apply_tag" type="数值" Ttype="int(1)" usedTag="s" required="n" validate="n" service="t" id="40">
+	</column>
+	<column nick="qcs_dealwith_tag" name="qcs_dealwith_tag" type="数值" Ttype="int(11)" usedTag="s" required="n" validate="n" service="t" id="41">
+	</column>
+	<column nick="折扣" name="price_percent" type="字符" Ttype="varchar(60)" usedTag="s" required="n" validate="n" service="b" id="42">
+	</column>
+	<column nick="change_tag" name="change_tag" type="数值" Ttype="int(11)" usedTag="s" required="n" validate="n" service="t" id="43">
+	</column>
+	<column nick="变更人" name="changer" type="字符" Ttype="varchar(45)" usedTag="s" required="n" validate="n" service="b" id="44">
+	</column>
+	<column nick="变更人编号" name="changer_id" type="字符" Ttype="varchar(45)" usedTag="s" required="n" validate="n" service="b" id="45">
+	</column>
+	<column nick="变更时间" name="change_time" type="时间" Ttype="datetime" usedTag="s" required="n" validate="n" service="b" id="46">
+	</column>
+</table>
+</config>

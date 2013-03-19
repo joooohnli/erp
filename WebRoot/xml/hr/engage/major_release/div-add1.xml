@@ -1,0 +1,100 @@
+<div id="dialogAddI" class="nseer_div" nseerDef="dragAble" style="width:500px;height:250px;">
+<iframe src="javascript:false" style="position:absolute;visibility:inherit;top:0px;left:0px;width:100%;height:100%;z-index:-1;filter='progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=0)';"></iframe>
+
+<TABLE width="100%" height="100%" border="0" align="center" cellPadding="0" cellSpacing="0">
+  <TBODY>
+    <TR>
+      <TD width="1%" height="1%"><IMG  src="../../../images/bg_0ltop.gif"  ></TD>
+      <TD width="100%" background="../../../images/bg_01.gif"></TD>
+      <TD width="1%" height="1%"><IMG  src="../../../images/bg_0rtop.gif"></TD>
+    </TR>
+    <TR>
+      <TD  background="../../../images/bg_03.gif"></TD>
+ <TD> 
+<div class="cssDiv1">
+<div class="cssDiv2">⊙⊙⊙恩信科技开源ERP⊙⊙⊙
+</div>
+</div>
+<div class="cssDiv3"  onclick="n_D.closeDiv('remove')"  onmouseover="n_D.mmcMouseStyle(this);"></div>
+<div id="expand" class="cssDiv4" onclick="n_D.maxDiv()"  onmouseover="n_D.mmcMouseStyle(this);"></div>
+<div id="collapse" class="cssDiv5" onclick="n_D.minDiv(40)"  onmouseover="n_D.mmcMouseStyle(this);"></div>
+
+<div style="width:100%;height:100%;background:#E8E8E8">
+<div id="tabsF">
+<ul>
+<li id="current"><a href="javascript:void(0);"><span align="center">⊙⊙⊙添加同级⊙⊙⊙</span></a></li>
+</ul>
+</div>
+
+<div class="cssDiv8">
+ 
+<table id="table1" class="nseer_table1" width="100%" border="0" cellspacing="1" cellpadding="1" >
+	<tr id="tr1">
+		<td id="td1">
+		</td>
+		<td id="td2">
+		</td>
+	</tr>
+	<tr id="tr1">
+		<td id="td1">			
+		</td>
+		<td id="td2"><div align="right">
+		<INPUT class="BUTTON_STYLE1" type="button" value="⊙⊙⊙确定⊙⊙⊙" onclick="addTreeNode('Nseer_tree1');">
+		<INPUT class="BUTTON_STYLE1" type="button" value="⊙⊙⊙取消⊙⊙⊙" onclick="n_D.closeDiv('remove');">
+		</div>
+		</td>
+	</tr>
+	<tr id="tr2">
+		<td id="td3" style="background-image:url(/erp/images/line7.gif);" width="30%">
+			⊙⊙⊙机构编号⊙⊙⊙
+		</td>
+		<td id="td4">
+		<INPUT class="textinput" id="file_id" style="WIDTH: 95%" type="text" value="" name="file_id">
+		</td>
+	</tr>
+	<tr id="tr2">
+		<td id="td3" style="background-image:url(/erp/images/line7.gif);" width="30%">
+			⊙⊙⊙机构名称：⊙⊙⊙
+		</td>
+		<td id="td4">
+		<INPUT class="textinput" id="file_name" style="WIDTH: 95%" type="text" value="" name="file_name">
+		</td>
+	</tr>
+	<tr id="tr2">
+		<td id="td3" style="background-image:url(/erp/images/line7.gif);" width="30%">
+			⊙⊙⊙机构简称：⊙⊙⊙
+		</td>
+		<td id="td4">
+		    <INPUT class="textinput" id="nick_name" style="WIDTH: 95%" type="text" value="" name="nick_name">
+			
+		</td>
+	</tr>
+	<tr id="tr2">
+		<td id="td3" style="  background-image:url(/erp/images/line4.gif);" width="30%">
+			⊙⊙⊙责任人编号（多个编号之间请用“半角逗号”加“一个空格”隔开，如“, ”）：⊙⊙⊙
+		</td>
+		<td id="td4">
+		<DIV class="txtarea" style="WIDTH: 100%; HEIGHT: 60px">
+		<DIV class="tr"></DIV>
+		<DIV class="cntr">
+		<DIV class="cntr_l" style="HEIGHT: 20px"></DIV><TEXTAREA id="describe1" style="WIDTH: 95%; HEIGHT: 50px" name="describe1" rows="4"></TEXTAREA></DIV>
+		<DIV class="br"></DIV></DIV>
+		<!-- <textarea  id="describe1" name="describe1" value="" rows="4" style="width:100%"></textarea> -->
+		</td>
+	</tr>
+</table>
+</div>
+</div> 
+ 
+ </TD>
+<TD  background="../../../images/bg_04.gif"></TD>
+    </TR>
+    <TR>
+      <TD width="1%" height="1%"><IMG  src="../../../images/bg_0lbottom.gif" ></TD>
+      <TD background="../../../images/bg_02.gif"></TD>
+      <TD width="1%" height="1%"><IMG  src="../../../images/bg_0rbottom.gif"></TD>
+    </TR>    
+  </TBODY>
+</TABLE>
+</div>
+</div-config>

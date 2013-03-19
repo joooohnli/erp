@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <tables>
+    <table nick="客户档案" name="crm_file">
+      <columns>
+        <column nick="产品分类编号" name="chain_id" />
+        <column nick="产品分类名称" name="chain_name" />
+        <column nick="档案编号" name="CUSTOMER_ID" />
+        <column nick="客户名称" name="CUSTOMER_NAME" />
+        <column nick="地址" name="CUSTOMER_ADDRESS" />
+        <column nick="优质级别" name="CUSTOMER_CLASS" />
+        <column nick="所属行业" name="TYPE" />
+        <column nick="开户银行" name="CUSTOMER_BANK" />
+        <column nick="银行账号" name="CUSTOMER_ACCOUNT" />
+        <column nick="网址" name="CUSTOMER_WEB" />
+        <column nick="电话1" name="CUSTOMER_TEL1" />
+        <column nick="电话2" name="CUSTOMER_TEL2" />
+        <column nick="email" name="CUSTOMER_EMAIL" />
+        <column nick="fax" name="CUSTOMER_FAX" />
+        <column nick="邮编" name="CUSTOMER_POSTCODE" />
+        <column nick="第一联系人" name="CONTACT_PERSON1" />
+        <column nick="联系人部门" name="CONTACT_PERSON1_DEPARTMENT" />
+        <column nick="联系人职务" name="CONTACT_PERSON1_DUTY" />
+        <column nick="联系人性别" name="CONTACT_PERSON1_SEX" />
+        <column nick="联系人办公电话" name="CONTACT_PERSON1_OFFICE_TEL" />
+        <column nick="联系人家庭电话" name="CONTACT_PERSON1_HOME_TEL" />
+        <column nick="联系人手机" name="CONTACT_PERSON1_MOBILE" />
+        <column nick="联系人fax" name="CONTACT_PERSON1_FAX" />
+        <column nick="联系人1email" name="CONTACT_PERSON1_EMAIL" />
+        <column nick="联系人爱好" name="CONTACT_PERSON1_FAVORITE" />
+        <column nick="第二联系人" name="CONTACT_PERSON2" />
+        <column nick="部门" name="CONTACT_PERSON2_DEPARTMENT" />
+        <column nick="职务" name="CONTACT_PERSON2_DUTY" />
+        <column nick="性别" name="CONTACT_PERSON2_SEX" />
+        <column nick="办公电话" name="CONTACT_PERSON2_OFFICE_TEL" />
+        <column nick="家庭电话" name="CONTACT_PERSON2_HOME_TEL" />
+        <column nick="手机" name="CONTACT_PERSON2_MOBILE" />
+        <column nick="fax" name="CUSTOMER_FAX" />
+        <column nick="联系人2email" name="CONTACT_PERSON2_EMAIL" />
+        <column nick="爱好" name="CONTACT_PERSON2_FAVORITE" />
+        <column nick="开票信息" name="INVOICE_INFO" />
+        <column nick="最新需求" name="DEMAND" />
+        <column nick="备注" name="REMARK" />
+        <column nick="联络次数累计" name="CONTACT_AMOUNT" />
+        <column nick="销售额累计" name="ACHIEVEMENT_SUM" />
+		<column nick="交易次数累计" name="TRADE_AMOUNT" />
+        <column nick="退货额累计" name="RETURN_SUM" />
+        <column nick="退货次数累计" name="RETURN_AMOUNT" />
+        <column nick="回款周期累计" name="GATHER_PERIOD_SUM" />
+        <column nick="档案变更累计" name="FILE_CHANGE_AMOUNT" />
+        <column nick="欠款期限" name="GATHER_PERIOD_LIMIT" />
+        <column nick="欠款额度" name="GATHER_SUM_LIMIT" />
+        <column nick="跟进期限" name="CONTACT_PERIOD_LIMIT" />
+        <column nick="客户曾用名" name="USED_CUSTOMER_NAME" />
+        <column nick="登记人" name="REGISTER" />
+        <column nick="登记人编号" name="REGISTER_ID" />
+        <column nick="建档时间" name="REGISTER_TIME" />
+        <column nick="客户经理" name="SALES_NAME" />
+        <column nick="客户经理编号" name="SALES_ID" />
+      </columns>
+    </table>
+	<table nick="销售订单" name="crm_order">
+      <columns>
+		<column nick="订单编号" name="ORDER_ID" />
+		<column nick="订单状态" name="ORDER_STATUS" />
+        <column nick="产品分类编号" name="chain_id" />
+        <column nick="产品分类名称" name="chain_name" />
+        <column nick="客户编号" name="CUSTOMER_ID" />
+        <column nick="客户名称" name="CUSTOMER_NAME" />
+        <column nick="电话" name="DEMAND_CONTACT_PERSON_TEL" />
+        <column nick="预提货时间" name="DEMAND_PAY_TIME" />
+    	<column nick="销售总价" name="SALE_PRICE_SUM" />
+        <column nick="成本总价" name="COST_PRICE_SUM" />
+        <column nick="订单登记时间" name="REGISTER_TIME" />
+		<column nick="订单审核时间" name="CHECK_TIME" />
+        <column nick="销售人" name="SALES_NAME" />
+        <column nick="订单登记人" name="REGISTER" />
+        <column nick="订单审核人" name="CHECKER" />
+		<column nick="销售人编号" name="SALES_ID" />
+        <column nick="订单登记人编号" name="REGISTER_ID" />
+        <column nick="订单审核人编号" name="CHECKER_ID" />
+        <column nick="备注" name="REMARK" />
+      </columns>
+    </table>
+	<table nick="客户报价单" name="crm_discussion">
+      <columns>
+		<column nick="报价单编号" name="discussion_ID" />
+		<column nick="报价单状态" name="discussion_STATUS" />
+        <column nick="产品分类编号" name="chain_id" />
+        <column nick="产品分类名称" name="chain_name" />
+        <column nick="客户编号" name="CUSTOMER_ID" />
+        <column nick="客户名称" name="CUSTOMER_NAME" />
+        <column nick="电话" name="DEMAND_CONTACT_PERSON_TEL" />
+        <column nick="拟订货时间" name="DEMAND_PAY_TIME" />
+    	<column nick="销售总价" name="SALE_PRICE_SUM" />
+        <column nick="成本总价" name="COST_PRICE_SUM" />
+        <column nick="报价单登记时间" name="REGISTER_TIME" />
+		<column nick="报价单审核时间" name="CHECK_TIME" />
+        <column nick="销售人" name="SALES_NAME" />
+        <column nick="报价单登记人" name="REGISTER" />
+        <column nick="报价单审核人" name="CHECKER" />
+		<column nick="销售人编号" name="SALES_ID" />
+        <column nick="报价单登记人编号" name="REGISTER_ID" />
+        <column nick="报价单审核人编号" name="CHECKER_ID" />
+        <column nick="备注" name="REMARK" />
+      </columns>
+    </table>
+  </tables>
+</config>
+

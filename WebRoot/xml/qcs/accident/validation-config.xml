@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE validation-config SYSTEM "validation-config.dtd">
+<validation-config lang="auto">
+  <table name="mutiValidation" show-error="alert" onfail="" show-type="first">
+      <field name="accident_time" display-name="发生日期" onfail="">
+      <depend name="required" />
+      <depend name="date" param0="yyyy-mm-dd"/>
+      </field>
+      <field name="accident_name" display-name="事故名称" onfail="">
+      <depend name="required" />
+      </field>
+      <field name="product_id" display-name="产品编号" onfail="">
+      <depend name="required" />
+	  <depend name="common" />
+      </field>
+      <field name="product_name" display-name="产品名称" onfail="">
+      <depend name="common" />
+      </field>
+      <field name="accident_outlines" display-name="事故概述" onfail="">
+      <depend name="required" />
+      </field>
+      <field name="explanation" display-name="详细说明" onfail="">
+      <depend name="required" />
+      </field>
+	   <field name="survey_result" display-name="调查结果" onfail="">
+      <depend name="required" />
+      </field>
+	   <field name="scene_measure" display-name="现场采取措施" onfail="">
+      <depend name="required" />
+      </field> 
+  </table>
+  </validation-config>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <table nick="资金控制" name="fund">
+    <column nick="fund_allright" name="fund_allright" service="t" />
+    <column nick="fund_apply_gather" name="fund_apply_gather" service="t" />
+    <column nick="fund_apply_gather_details" name="fund_apply_gather_details" service="t" />
+    <column nick="fund_apply_gather_transfer" name="fund_apply_gather_transfer" service="t" />
+    <column nick="fund_apply_gather_transfer_details" name="fund_apply_gather_transfer_details" service="t" />
+    <column nick="费用申请审批" name="fund_apply_pay" service="b" />
+    <column nick="fund_apply_pay_details" name="fund_apply_pay_details" service="t" />
+    <column nick="fund_apply_pay_transfer" name="fund_apply_pay_transfer" service="t" />
+    <column nick="fund_apply_pay_transfer_details" name="fund_apply_pay_transfer_details" service="t" />
+    <column nick="fund_config_file_first_kind" name="fund_config_file_first_kind" service="t" />
+    <column nick="fund_config_file_kind" name="fund_config_file_kind" service="t" />
+    <column nick="fund_config_file_second_kind" name="fund_config_file_second_kind" service="t" />
+    <column nick="fund_config_file_transfer_first_kind" name="fund_config_file_transfer_first_kind" service="t" />
+    <column nick="fund_config_file_transfer_second_kind" name="fund_config_file_transfer_second_kind" service="t" />
+    <column nick="fund_config_fund_currency" name="fund_config_fund_currency" service="t" />
+    <column nick="fund_config_fund_first_kind" name="fund_config_fund_first_kind" service="t" />
+    <column nick="fund_config_fund_kind" name="fund_config_fund_kind" service="t" />
+    <column nick="fund_config_fund_second_kind" name="fund_config_fund_second_kind" service="t" />
+    <column nick="fund_config_public_char" name="fund_config_public_char" service="t" />
+    <column nick="fund_config_workflow" name="fund_config_workflow" service="t" />
+    <column nick="fund_details" name="fund_details" service="t" />
+    <column nick="fund_executing" name="fund_executing" service="t" />
+    <column nick="收付执行单" name="fund_fund" service="b" key="fund_id"/>
+    <column nick="fund_tree" name="fund_tree" service="t" />
+    <column nick="fund_view" name="fund_view" service="t" />
+    <column nick="fund_workflow" name="fund_workflow" service="t" />
+  </table>
+</config>
+

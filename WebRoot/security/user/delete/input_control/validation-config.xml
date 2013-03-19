@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE validation-config SYSTEM "validation-config.dtd">
+<validation-config lang="auto">
+  <form id="mutiValidation" show-error="alert" onfail="" show-type="first">
+      <field name="human_ID" display-name="员工档案编号" onfail="">
+        <depend name="common" />
+      </field>
+      <field name="keyword" display-name="关键字" onfail="">
+        <depend name="common" />
+      </field>
+  </form>
+</validation-config>

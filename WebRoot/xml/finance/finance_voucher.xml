@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+<table nick="凭证" name="finance_voucher">
+	<column nick="id" name="id" type="数值" usedTag="s" required="n" validate="n" service="t" id="1">
+	</column>
+	<column nick="凭证号" name="voucher_in_month_id" type="字符" usedTag="s" required="n" validate="n" service="b" id="2">
+	</column>
+	<column nick="科目编号" name="chain_id" type="字符" usedTag="s" required="n" validate="n" service="b" id="3">
+	</column>
+	<column nick="科目名称" name="chain_name" type="字符" usedTag="s" required="n" validate="n" service="b" id="4">
+	</column>
+	<column nick="凭证类型" name="voucher_type" type="字符" usedTag="s" required="n" validate="n" service="b" id="5">
+	</column>
+	<column nick="借方合计" name="debit_sum" type="字符" usedTag="s" required="n" validate="n" service="b" id="6">
+	</column>
+	<column nick="贷方合计" name="loan_sum" type="字符" usedTag="s" required="n" validate="n" service="b" id="7">
+	</column>
+	<column nick="附件数" name="attachment_amount" type="数值" usedTag="s" required="n" validate="n" service="b" id="8">
+	</column>
+	<column nick="摘要" name="summary" type="字符" usedTag="s" required="n" validate="n" service="b" id="9">
+	</column>
+	<column nick="票号" name="attachment_id" type="字符" usedTag="s" required="n" validate="n" service="b" id="10">
+	</column>
+	<column nick="借方金额" name="debit_subtotal" type="字符" usedTag="s" required="n" validate="n" service="b" id="11">
+	</column>
+	<column nick="贷方金额" name="loan_subtotal" type="字符" usedTag="s" required="n" validate="n" service="b" id="12">
+	</column>
+	<column nick="借或贷" name="debit_or_loan" type="字符" usedTag="s" required="n" validate="n" service="b" id="13">
+	</column>
+	<column nick="产品数量" name="product_amount" type="字符" usedTag="s" required="n" validate="n" service="b" id="14">
+	</column>
+	<column nick="产品单价" name="product_price" type="字符" usedTag="s" required="n" validate="n" service="b" id="15">
+	</column>
+	<column nick="number_in_cash_table" name="number_in_cash_table" type="字符" usedTag="s" required="n" validate="n" service="t" id="16">
+	</column>
+	<column nick="备注" name="remark" type="字符" usedTag="s" required="n" validate="n" service="b" id="17">
+	</column>
+	<column nick="外币" name="currency" type="字符" usedTag="s" required="n" validate="n" service="b" id="18">
+	</column>
+	<column nick="汇率" name="currency_rate" type="字符" usedTag="s" required="n" validate="n" service="b" id="19">
+	</column>
+	<column nick="部门" name="department" type="字符" usedTag="s" required="n" validate="n" service="b" id="20">
+	</column>
+	<column nick="项目" name="project" type="字符" usedTag="s" required="n" validate="n" service="b" id="21">
+	</column>
+	<column nick="往来单位" name="customer" type="字符" usedTag="s" required="n" validate="n" service="b" id="22">
+	</column>
+	<column nick="货品" name="product" type="字符" usedTag="s" required="n" validate="n" service="b" id="23">
+	</column>
+	<column nick="订单" name="order_id" type="字符" usedTag="s" required="n" validate="n" service="b" id="24">
+	</column>
+	<column nick="自定义属性1" name="c_define1" type="字符" usedTag="n" required="n" validate="n" service="b" id="25">
+	</column>
+	<column nick="自定义属性2" name="c_define2" type="字符" usedTag="n" required="n" validate="n" service="b" id="26">
+	</column>
+	<column nick="自定义属性3" name="c_define3" type="字符" usedTag="n" required="n" validate="n" service="b" id="27">
+	</column>
+	<column nick="自定义属性4" name="c_define4" type="字符" usedTag="n" required="n" validate="n" service="b" id="28">
+	</column>
+	<column nick="自定义属性5" name="c_define5" type="字符" usedTag="n" required="n" validate="n" service="b" id="29">
+	</column>
+	<column nick="自定义属性6" name="c_define6" type="字符" usedTag="n" required="n" validate="n" service="b" id="30">
+	</column>
+	<column nick="自定义属性7" name="c_define7" type="字符" usedTag="n" required="n" validate="n" service="b" id="31">
+	</column>
+	<column nick="自定义属性8" name="c_define8" type="字符" usedTag="n" required="n" validate="n" service="b" id="32">
+	</column>
+	<column nick="自定义属性9" name="c_define9" type="字符" usedTag="n" required="n" validate="n" service="b" id="33">
+	</column>
+	<column nick="自定义属性10" name="c_define10" type="字符" usedTag="n" required="n" validate="n" service="b" id="34">
+	</column>
+	<column nick="会计主管" name="accountant" type="字符" usedTag="s" required="n" validate="n" service="b" id="35">
+	</column>
+	<column nick="会计主管编号" name="accountant_id" type="字符" usedTag="s" required="n" validate="n" service="b" id="36">
+	</column>
+	<column nick="记账" name="accounter" type="字符" usedTag="s" required="n" validate="n" service="b" id="37">
+	</column>
+	<column nick="记账人编号" name="accounter_id" type="字符" usedTag="s" required="n" validate="n" service="b" id="38">
+	</column>
+	<column nick="出纳" name="cashier" type="字符" usedTag="s" required="n" validate="n" service="b" id="39">
+	</column>
+	<column nick="出纳编号" name="cashier_id" type="字符" usedTag="s" required="n" validate="n" service="b" id="40">
+	</column>
+	<column nick="审核" name="checker" type="字符" usedTag="s" required="n" validate="n" service="b" id="41">
+	</column>
+	<column nick="审核人编号" name="checker_id" type="字符" usedTag="s" required="n" validate="n" service="b" id="42">
+	</column>
+	<column nick="制单" name="register" type="字符" usedTag="s" required="n" validate="n" service="b" id="43">
+	</column>
+	<column nick="制单人编号" name="register_id" type="字符" usedTag="s" required="n" validate="n" service="b" id="44">
+	</column>
+	<column nick="check_tag" name="check_tag" type="数值" usedTag="s" required="n" validate="n" service="t" id="45">
+	</column>
+	<column nick="change_tag" name="change_tag" type="数值" usedTag="s" required="n" validate="n" service="t" id="46">
+	</column>
+	<column nick="account_tag" name="account_tag" type="数值" usedTag="s" required="n" validate="n" service="t" id="47">
+	</column>
+	<column nick="制单时间" name="register_time" type="时间" usedTag="s" required="n" validate="n" service="b" id="48">
+	</column>
+	<column nick="记账时间" name="account_time" type="时间" usedTag="s" required="n" validate="n" service="b" id="49">
+	</column>
+	<column nick="审核时间" name="check_time" type="时间" usedTag="s" required="n" validate="n" service="b" id="50">
+	</column>
+	<column nick="序号" name="details_number" type="字符" usedTag="s" required="n" validate="n" service="b" id="51">
+	</column>
+	<column nick="对方科目" name="chain_mate_id" type="字符" usedTag="s" required="n" validate="n" service="b" id="52">
+	</column>
+	<column nick="税率" name="tax_rate" type="字符" usedTag="s" required="n" validate="n" service="b" id="53">
+	</column>
+	<column nick="会计期间" name="account_period" type="数值" usedTag="s" required="n" validate="n" service="b" id="54">
+	</column>
+	<column nick="profit_or_cost" name="profit_or_cost" type="字符" usedTag="s" required="n" validate="n" service="t" id="55">
+	</column>
+	<column nick="cost_tag" name="cost_tag" type="数值" usedTag="s" required="n" validate="n" service="t" id="56">
+	</column>
+	<column nick="profit_tag" name="profit_tag" type="数值" usedTag="s" required="n" validate="n" service="t" id="57">
+	</column>
+	<column nick="itema_name" name="itema_name" type="字符" usedTag="s" required="n" validate="n" service="t" id="58">
+	</column>
+	<column nick="itemb_name" name="itemb_name" type="字符" usedTag="s" required="n" validate="n" service="t" id="59">
+	</column>
+	<column nick="itemc_name" name="itemc_name" type="字符" usedTag="s" required="n" validate="n" service="t" id="60">
+	</column>
+	<column nick="itemd_name" name="itemd_name" type="字符" usedTag="s" required="n" validate="n" service="t" id="61">
+	</column>
+	<column nick="结算方式" name="settle_way" type="字符" usedTag="s" required="n" validate="n" service="b" id="62">
+	</column>
+	<column nick="attachment_time" name="attachment_time" type="时间" usedTag="s" required="n" validate="n" service="b" id="63">
+	</column>
+	<column nick="checkup_tag" name="checkup_tag" type="数值" usedTag="s" required="n" validate="n" service="t" id="64">
+	</column>
+	<column nick="delete_tag" name="delete_tag" type="数值" usedTag="s" required="n" validate="n" service="t" id="65">
+	</column>
+	<column nick="bank_tag" name="bank_tag" type="数值" usedTag="s" required="n" validate="n" service="t" id="66">
+	</column>
+	<column nick="cash_tag" name="cash_tag" type="数值" usedTag="s" required="n" validate="n" service="t" id="67">
+	</column>
+	<column nick="corr_stock_tag" name="corr_stock_tag" type="字符" usedTag="s" required="n" validate="n" service="t" id="68">
+	</column>
+	<column nick="票据日期" name="settle_time" type="时间" usedTag="s" required="n" validate="n" service="t" id="69">
+	</column>
+	<column nick="cash_direct" name="cash_direct" type="字符" usedTag="s" required="n" validate="n" service="t" id="70">
+	</column>
+	<column nick="stock_direct" name="stock_direct" type="字符" usedTag="s" required="n" validate="n" service="t" id="71">
+	</column>
+	<column nick="现金总计" name="cash_sum" type="字符" usedTag="s" required="n" validate="n" service="b" id="72">
+	</column>
+	<column nick="外币借方金额" name="debit_subtotal_c" type="字符" usedTag="s" required="n" validate="n" service="b" id="73">
+	</column>
+	<column nick="外币贷方金额" name="loan_subtotal_c" type="字符" usedTag="s" required="n" validate="n" service="b" id="74">
+	</column>
+	<column nick="excel_batch_tag" name="excel_batch_tag" type="数值" Ttype="int(10) unsigned" usedTag="s" required="n" validate="n" service="t" id="75">
+	</column>
+</table>
+</config>

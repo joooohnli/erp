@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+<table nick="hr_config_major_second_kind" name="hr_config_major_second_kind">
+	<column nick="id" name="id" type="数值" usedTag="s" required="n" validate="n" service="t" id="1">
+	</column>
+	<column nick="职位分类编号" name="first_kind_id" type="数值" usedTag="s" required="n" validate="n" service="b" id="2">
+	</column>
+	<column nick="职位分类名称" name="first_kind_name" type="字符" usedTag="s" required="n" validate="n" service="b" id="3">
+	</column>
+	<column nick="职位编号" name="second_kind_id" type="数值" usedTag="s" required="n" validate="n" service="b" id="4">
+	</column>
+	<column nick="职位名称" name="second_kind_name" type="字符" usedTag="s" required="n" validate="n" service="b" id="5">
+	</column>
+	<column nick="describe1" name="describe1" type="字符" usedTag="s" required="n" validate="n" service="t" id="6">
+	</column>
+	<column nick="describe2" name="describe2" type="字符" usedTag="s" required="n" validate="n" service="t" id="7">
+	</column>
+	<column nick="试卷数量" name="test_amount" type="数值" usedTag="s" required="n" validate="n" service="b" id="8">
+	</column>
+	<column nick="excel_batch_tag" name="excel_batch_tag" type="数值" Ttype="int(10) unsigned" usedTag="s" required="n" validate="n" service="t" id="9">
+	</column>
+</table>
+</config>

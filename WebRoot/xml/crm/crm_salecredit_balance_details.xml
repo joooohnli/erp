@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+<table nick="crm_salecredit_balance_details" name="crm_salecredit_balance_details">
+	<column nick="id" name="id" type="数值" Ttype="int(10) unsigned" usedTag="s" required="n" validate="n" service="t" id="1">
+	</column>
+	<column nick="产品编号" name="product_id" type="字符" Ttype="varchar(255)" usedTag="s" required="n" validate="n" service="b" id="2">
+	</column>
+	<column nick="产品名称" name="product_name" type="字符" Ttype="varchar(255)" usedTag="s" required="n" validate="n" service="b" id="3">
+	</column>
+	<column nick="描述" name="product_describe" type="字符" Ttype="text" usedTag="s" required="n" validate="n" service="b" id="4">
+	</column>
+	<column nick="单位" name="amount_unit" type="字符" Ttype="varchar(30)" usedTag="s" required="n" validate="n" service="b" id="5">
+	</column>
+	<column nick="数量" name="amount" type="数值" Ttype="double(15,2)" usedTag="s" required="n" validate="n" service="b" id="6">
+	</column>
+	<column nick="max_capacity_amount" name="max_capacity_amount" type="数值" Ttype="double(15,2)" usedTag="s" required="n" validate="n" service="t" id="7">
+	</column>
+	<column nick="max_amount" name="max_amount" type="数值" Ttype="double(15,2)" usedTag="s" required="n" validate="n" service="t" id="8">
+	</column>
+	<column nick="min_amount" name="min_amount" type="数值" Ttype="double(15,2)" usedTag="s" required="n" validate="n" service="t" id="9">
+	</column>
+	<column nick="成本单价" name="cost_price" type="数值" Ttype="double(15,2)" usedTag="s" required="n" validate="n" service="b" id="10">
+	</column>
+	<column nick="小计" name="subtotal" type="数值" Ttype="double(15,2)" usedTag="s" required="n" validate="n" service="b" id="11">
+	</column>
+	<column nick="赊货人编号" name="crediter_id" type="字符" Ttype="varchar(30)" usedTag="s" required="n" validate="n" service="b" id="12">
+	</column>
+	<column nick="赊货人" name="crediter_name" type="字符" Ttype="varchar(60)" usedTag="s" required="n" validate="n" service="b" id="13">
+	</column>
+	<column nick="check_tag" name="check_tag" type="数值" Ttype="int(10)" usedTag="s" required="n" validate="n" service="t" id="14">
+	</column>
+	<column nick="unique_tag" name="unique_tag" type="数值" Ttype="int(10)" usedTag="s" required="n" validate="n" service="t" id="15">
+	</column>
+	<column nick="登记时间" name="register_time" type="时间" Ttype="datetime" usedTag="s" required="n" validate="n" service="b" id="16">
+	</column>
+	<column nick="type" name="type" type="字符" Ttype="varchar(30)" usedTag="s" required="n" validate="n" service="t" id="17">
+	</column>
+	<column nick="balance_type" name="balance_type" type="字符" Ttype="varchar(60)" usedTag="s" required="n" validate="t" service="t" id="18">
+	</column>
+	<column nick="市场单价" name="list_price" type="数值" Ttype="double(15,2)" usedTag="s" required="n" validate="n" service="b" id="19">
+	</column>
+	<column nick="市场单价小计" name="list_price_subtotal" type="数值" Ttype="double(15,2)" usedTag="s" required="n" validate="n" service="b" id="20">
+	</column>
+	<column nick="产品分类编号" name="chain_id" type="字符" Ttype="text" usedTag="s" required="n" validate="n" service="b" id="21">
+	</column>
+	<column nick="产品分类名称" name="chain_name" type="字符" Ttype="text" usedTag="s" required="n" validate="n" service="b" id="22">
+	</column>
+	<column nick="客户分类编号" name="crediter_chain_id" type="字符" Ttype="text" usedTag="s" required="n" validate="n" service="b" id="23">
+	</column>
+	<column nick="客户分类名称" name="crediter_chain_name" type="字符" Ttype="text" usedTag="s" required="n" validate="n" service="b" id="24">
+	</column>
+</table>
+</config>

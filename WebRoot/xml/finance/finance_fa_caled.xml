@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+<table nick="finance_fa_caled" name="finance_fa_caled">
+	<column nick="id" name="id" type="数值" Ttype="int(10) unsigned" usedTag="s" required="n" validate="n" service="t" >
+	</column>
+	<column nick="类别编号" name="file_id" type="字符" Ttype="varchar(30)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="类别名称" name="file_name" type="字符" Ttype="varchar(100)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="变动类型编号" name="type_id" type="字符" Ttype="varchar(30)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="变动类型名称" name="type_name" type="字符" Ttype="varchar(100)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="部门编号" name="department_id" type="字符" Ttype="varchar(100)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="部门名称" name="department_name" type="字符" Ttype="varchar(100)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="开始使用日期" name="start_time" type="时间" Ttype="date" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="使用年限" name="lifecycle" type="字符" Ttype="varchar(100)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="计提时间" name="caled_time" type="时间" Ttype="date" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="原值" name="original_value" type="字符" Ttype="varchar(30)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="累计折旧" name="caled_sum" type="字符" Ttype="varchar(30)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="工作总量" name="work_total" type="字符" Ttype="varchar(100)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="累计工作量" name="work_sum" type="字符" Ttype="varchar(100)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="工作量单位" name="work_unit" type="字符" Ttype="varchar(100)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="本月工作量" name="work_month" type="字符" Ttype="varchar(100)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="本月折旧额" name="cal_subtotal_month" type="字符" Ttype="varchar(30)" usedTag="s" required="n" validate="n" service="b" >
+	</column>
+	<column nick="voucher_tag" name="voucher_tag" type="字符" Ttype="varchar(30)" usedTag="s" required="n" validate="n" service="t" >
+	</column>
+</table>
+</config>

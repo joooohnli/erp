@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <tables>
+    <table nick="产品档案" name="design_file">
+      <columns>
+        <column nick="II级分类名称" name="SECOND_KIND_NAME" />
+      </columns>
+    </table>
+  </tables>
+</config>
+

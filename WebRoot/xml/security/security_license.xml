@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+<table nick="security_license" name="security_license">
+	<column nick="id" name="id" type="数值" Ttype="int(10) unsigned" usedTag="s" required="n" validate="n" service="t" id="1">
+	</column>
+	<column nick="职位分类编号" name="human_major_first_kind_id" type="字符" Ttype="varchar(30)" usedTag="s" required="n" validate="n" service="b" id="8">
+	</column>
+	<column nick="职位分类名称" name="human_major_first_kind_name" type="字符" Ttype="varchar(60)" usedTag="s" required="n" validate="n" service="b" id="9">
+	</column>
+	<column nick="职位编号" name="human_major_second_kind_id" type="字符" Ttype="varchar(30)" usedTag="s" required="n" validate="n" service="b" id="10">
+	</column>
+	<column nick="职位名称" name="human_major_second_kind_name" type="字符" Ttype="varchar(60)" usedTag="s" required="n" validate="n" service="b" id="11">
+	</column>
+	<column nick="档案编号" name="human_id" type="字符" Ttype="varchar(30)" usedTag="s" required="n" validate="n" service="b" id="12">
+	</column>
+	<column nick="姓名" name="human_name" type="字符" Ttype="varchar(20)" usedTag="s" required="n" validate="n" service="b" id="13">
+	</column>
+	<column nick="许可证号" name="license_code" type="字符" Ttype="varchar(30)" usedTag="s" required="n" validate="n" service="b" id="14">
+	</column>
+	<column nick="发放时间" name="register_time" type="时间" Ttype="datetime" usedTag="s" required="n" validate="n" service="b" id="15">
+	</column>
+	<column nick="有效期" name="expiry_period" type="数值" Ttype="int(11)" usedTag="s" required="y" validate="y" service="b" id="16">
+	<depend name="required" />
+    <depend name="common" />
+	</column>
+	<column nick="enrollment_tag" name="enrollment_tag" type="数值" Ttype="int(1)" usedTag="s" required="n" validate="n" service="t" id="17">
+	</column>
+	<column nick="注册时间" name="active_time" type="时间" Ttype="datetime" usedTag="s" required="n" validate="n" service="b" id="18">
+	</column>
+	<column nick="type" name="type" type="数值" Ttype="int(11) unsigned" usedTag="s" required="n" validate="n" service="t" id="19">
+	</column>
+	<column nick="单位简称" name="unit_id" type="字符" Ttype="varchar(100)" usedTag="s" required="n" validate="n" service="b" id="20">
+	</column>
+	<column nick="机构编号" name="chain_id" type="字符" Ttype="text" usedTag="s" required="n" validate="n" service="b" id="21">
+	</column>
+	<column nick="机构名称" name="chain_name" type="字符" Ttype="text" usedTag="s" required="n" validate="n" service="b" id="22">
+	</column>
+</table>
+</config>

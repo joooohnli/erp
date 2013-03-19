@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+<table nick="供应商档案" name="purchase_file">
+	<column nick="id" name="id" type="数值" usedTag="s" required="n" validate="n" service="t" Ttype="int(10) unsigned" id="1">
+	</column>
+	<column nick="chain_id" name="chain_id" type="字符" usedTag="s" required="n" validate="n" service="t" Ttype="char(2)" id="3">
+	</column>
+	<column nick="chain_name" name="chain_name" type="字符" usedTag="s" required="n" validate="n" service="t" Ttype="varchar(60)" id="4">
+	</column>
+	<column nick="供应商编号" name="provider_id" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(30)" id="8">
+	</column>
+	<column nick="供应商名称" name="provider_name" type="字符" usedTag="s" required="y" validate="y" service="b" Ttype="varchar(100)" id="9">
+	<depend name="required" />
+	<depend name="common" />
+	</column>
+	<column nick="产品分类" name="fileKind_chain" usedTag="s" required="y" type="字符" validate="y" service="p" id="109">
+    <depend name="required" />
+    <depend name="common" />
+	</column>
+	<column nick="provider_nick" name="provider_nick" type="字符" usedTag="s" required="n" validate="n" service="t" Ttype="varchar(100)" id="10">
+	</column>
+	<column nick="地址" name="provider_address" type="字符" usedTag="s" required="y" validate="y" service="b" Ttype="varchar(200)" id="11">
+	<depend name="common" />
+	</column>
+	<column nick="优质级别" name="provider_class" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(60)" id="12">
+	</column>
+	<column nick="所在区域" name="type" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(60)" id="13">
+	</column>
+	<column nick="开户银行" name="provider_bank" type="字符" usedTag="s" required="n" validate="y" service="b" Ttype="varchar(60)" id="14">
+	<depend name="common" />
+	</column>
+	<column nick="银行账号" name="provider_account" type="字符" usedTag="s" required="n" validate="y" service="b" Ttype="varchar(60)" id="15">
+	<depend name="common" />
+	</column>
+	<column nick="网址" name="provider_web" type="字符" usedTag="s" required="n" validate="y" service="b" Ttype="varchar(60)" id="16">
+	<depend name="common" />
+	</column>
+	<column nick="电话" name="provider_tel1" type="字符" usedTag="s" required="y" validate="y" service="b" Ttype="varchar(60)" id="17">
+	<depend name="required" />
+	<depend name="common" />
+	</column>
+	<column nick="provider_tel2" name="provider_tel2" type="字符" usedTag="s" required="n" validate="n" service="t" Ttype="varchar(60)" id="18">
+	</column>
+	<column nick="provider_email" name="provider_email" type="字符" usedTag="s" required="n" validate="n" service="t" Ttype="varchar(60)" id="19">
+	</column>
+	<column nick="传真" name="provider_fax" type="字符" usedTag="s" required="n" validate="y" service="b" Ttype="varchar(60)" id="20">
+	<depend name="common" />
+	</column>
+	<column nick="邮政编码" name="provider_postcode" type="字符" usedTag="s" required="n" validate="y" service="b" Ttype="varchar(10)" id="21">
+	<depend name="common" />
+	</column>
+	<column nick="第一联系人" name="contact_person1" type="字符" usedTag="s" required="n" validate="y" service="b" Ttype="varchar(60)" id="22">
+	<depend name="common" />
+	</column>
+	<column nick="部门" name="contact_person1_department" type="字符" usedTag="s" required="n" validate="y" service="b" Ttype="varchar(60)" id="23">
+	<depend name="common" />
+	</column>
+	<column nick="职务" name="contact_person1_duty" type="字符" usedTag="s" required="n" validate="y" service="b" Ttype="varchar(60)" id="24">
+	<depend name="common" />
+	</column>
+	<column nick="性别" name="contact_person1_sex" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(10)" id="25">
+	</column>
+	<column nick="办公电话" name="contact_person1_office_tel" type="字符" usedTag="s" required="n" validate="y" service="b" Ttype="varchar(60)" id="26">
+	<depend name="common" />
+	</column>
+	<column nick="家庭电话" name="contact_person1_home_tel" type="字符" usedTag="s" required="y" validate="n" service="b" Ttype="varchar(60)" id="27">
+	<depend name="common" />
+	</column>
+	<column nick="手机" name="contact_person1_mobile" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(60)" id="28">
+	<depend name="common" />
+	</column>
+	<column nick="contact_person1_fax" name="contact_person1_fax" type="字符" usedTag="s" required="n" validate="n" service="t" Ttype="varchar(60)" id="29">
+	</column>
+	<column nick="EMAIL" name="contact_person1_email" type="字符" usedTag="s" required="n" validate="y" service="b" Ttype="varchar(100)" id="30">
+	<depend name="email" />
+	</column>
+	<column nick="contact_person1_favorite" name="contact_person1_favorite" type="字符" usedTag="s" required="n" validate="n" service="t" Ttype="varchar(200)" id="31">
+	</column>
+	<column nick="第二联系人" name="contact_person2" type="字符" usedTag="s" required="n" validate="y" service="b" Ttype="varchar(60)" id="32">
+	<depend name="common" />
+	</column>
+	<column nick="部门" name="contact_person2_department" type="字符" usedTag="s" required="n" validate="y" service="b" Ttype="varchar(60)" id="33">
+	<depend name="common" />
+	</column>
+	<column nick="职务" name="contact_person2_duty" type="字符" usedTag="s" required="n" validate="y" service="b" Ttype="varchar(60)" id="34">
+	<depend name="common" />
+	</column>
+	<column nick="性别" name="contact_person2_sex" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(10)" id="35">
+	</column>
+	<column nick="办公电话" name="contact_person2_office_tel" type="字符" usedTag="s" required="n" validate="y" service="b" Ttype="varchar(60)" id="36">
+	<depend name="common" />
+	</column>
+	<column nick="家庭电话" name="contact_person2_home_tel" type="字符" usedTag="s" required="n" validate="y" service="b" Ttype="varchar(60)" id="37">
+	<depend name="common" />
+	</column>
+	<column nick="手机" name="contact_person2_mobile" type="字符" usedTag="s" required="n" validate="y" service="b" Ttype="varchar(60)" id="38">
+	<depend name="common" />
+	</column>
+	<column nick="contact_person2_fax" name="contact_person2_fax" type="字符" usedTag="s" required="n" validate="n" service="t" Ttype="varchar(60)" id="39">
+	</column>
+	<column nick="EMAIL" name="contact_person2_email" type="字符" usedTag="s" required="n" validate="y" service="b" Ttype="varchar(100)" id="40">
+	<depend name="email" />
+	</column>
+	<column nick="contact_person2_favorite" name="contact_person2_favorite" type="字符" usedTag="s" required="n" validate="n" service="t" Ttype="varchar(200)" id="41">
+	</column>
+	<column nick="开票信息" name="invoice_info" type="字符" usedTag="s" required="n" validate="y" service="b" Ttype="varchar(255)" id="42">
+	<depend name="common" />
+	</column>
+	<column nick="可供应产品集合" name="demand_products" type="字符" usedTag="s" required="n" validate="y" service="b" Ttype="mediumtext" id="43">
+	<depend name="common" />
+	</column>
+	<column nick="推荐供应产品集合" name="recommend_products" type="字符" usedTag="s" required="n" validate="y" service="b" Ttype="mediumtext" id="44">
+	<depend name="common" />
+	</column>
+	<column nick="check_tag" name="check_tag" type="数值" usedTag="s" required="n" validate="n" service="t" Ttype="int(1)" id="45">
+	</column>
+	<column nick="联络次数累计" name="contact_amount" type="数值" usedTag="s" required="n" validate="n" service="b" Ttype="int(11)" id="46">
+	</column>
+	<column nick="供货额累计" name="achievement_sum" type="数值" usedTag="s" required="n" validate="n" service="b" Ttype="double(15,2)" id="47">
+	</column>
+	<column nick="档案附件" name="attachment_name" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(255)" id="48">
+	</column>
+	<column nick="交易次数累计" name="trade_amount" type="数值" usedTag="s" required="n" validate="n" service="b" Ttype="int(11)" id="49">
+	</column>
+	<column nick="退货额累计" name="return_sum" type="数值" usedTag="s" required="n" validate="n" service="b" Ttype="double(15,2)" id="50">
+	</column>
+	<column nick="退货次数累计" name="return_amount" type="数值" usedTag="s" required="n" validate="n" service="b" Ttype="int(11)" id="51">
+	</column>
+	<column nick="gather_period_sum" name="gather_period_sum" type="数值" usedTag="s" required="n" validate="n" service="t" Ttype="int(11)" id="52">
+	</column>
+	<column nick="gather_period_average" name="gather_period_average" type="数值" usedTag="s" required="n" validate="n" service="t" Ttype="double(15,2)" id="53">
+	</column>
+	<column nick="档案变更累计" name="file_change_amount" type="数值" usedTag="s" required="n" validate="n" service="b" Ttype="int(11)" id="54">
+	</column>
+
+	<column nick="gather_period_limit" name="gather_period_limit" type="数值" usedTag="s" required="n" validate="n" service="t" Ttype="int(11)" id="55">
+	</column>
+	<column nick="gather_sum_limit" name="gather_sum_limit" type="数值" usedTag="s" required="n" validate="n" service="t" Ttype="double(15,2)" id="56">
+	</column>
+	<column nick="contact_period_limit" name="contact_period_limit" type="数值" usedTag="s" required="n" validate="n" service="t" Ttype="int(11)" id="57">
+	</column>
+	<column nick="供应商曾用名" name="used_provider_name" type="字符" usedTag="s" required="n" validate="y" service="b" Ttype="varchar(100)" id="58">
+	<depend name="common" />
+	</column>
+	<column nick="登记人" name="register" type="字符" usedTag="s" required="n" validate="y" service="b" Ttype="varchar(60)" id="59">
+	<depend name="common" />
+	</column>
+	<column nick="审核人" name="checker" type="字符" usedTag="s" required="n" validate="y" service="b" Ttype="varchar(60)" id="60">
+	<depend name="common" />
+	</column>
+	<column nick="变更人" name="changer" type="字符" usedTag="s" required="n" validate="y" service="b" Ttype="varchar(60)" id="61">
+	<depend name="common" />
+	</column>
+	<column nick="登记人编号" name="register_id" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(30)" id="62">
+	</column>
+	<column nick="审核人编号" name="checker_id" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(30)" id="63">
+	</column>
+	<column nick="变更人编号" name="changer_id" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(30)" id="64">
+	</column>
+	<column nick="登记时间" name="register_time" type="时间" usedTag="s" required="n" validate="n" service="b" Ttype="datetime" id="65">
+	</column>
+	<column nick="审核时间" name="check_time" type="时间" usedTag="s" required="n" validate="n" service="b" Ttype="datetime" id="66">
+	</column>
+	<column nick="变更时间" name="change_time" type="时间" usedTag="s" required="n" validate="n" service="b" Ttype="datetime" id="67">
+	</column>
+	<column nick="最近变更时间" name="lately_change_time" type="时间" usedTag="s" required="n" validate="n" service="b" Ttype="datetime" id="68">
+	</column>
+	<column nick="最近交易时间" name="lately_trade_time" type="时间" usedTag="s" required="n" validate="n" service="b" Ttype="datetime" id="69">
+	</column>
+	<column nick="最近联络时间" name="lately_contact_time" type="时间" usedTag="s" required="n" validate="n" service="b" Ttype="datetime" id="70">
+	</column>
+	<column nick="临时删除时间" name="delete_time" type="时间" usedTag="s" required="n" validate="n" service="b" Ttype="datetime" id="71">
+	</column>
+	<column nick="恢复时间" name="recovery_time" type="时间" usedTag="s" required="n" validate="n" service="b" Ttype="datetime" id="72">
+	</column>
+	<column nick="采购人" name="purchaser" type="字符" usedTag="s" required="n" validate="y" service="b" Ttype="varchar(60)" id="73">
+	<depend name="common" />
+	</column>
+	<column nick="purchaser_id" name="purchaser_id" type="字符" usedTag="s" required="n" validate="n" service="t" Ttype="varchar(30)" id="74">
+	</column>
+	<column nick="modify_tag" name="modify_tag" type="数值" usedTag="s" required="n" validate="n" service="t" Ttype="int(1)" id="75">
+	</column>
+	<column nick="excel_tag" name="excel_tag" type="数值" usedTag="s" required="n" validate="n" service="t" Ttype="int(1)" id="76">
+	</column>
+	<column nick="remind_contact_tag" name="remind_contact_tag" type="数值" usedTag="s" required="n" validate="n" service="t" Ttype="int(1)" id="77">
+	</column>
+	<column nick="remind_gather_tag" name="remind_gather_tag" type="数值" usedTag="s" required="n" validate="n" service="t" Ttype="int(1)" id="78">
+	</column>
+	<column nick="remind_return_tag" name="remind_return_tag" type="数值" usedTag="s" required="n" validate="n" service="t" Ttype="int(1)" id="79">
+	</column>
+	<column nick="credit_yes_or_not_tag" name="credit_yes_or_not_tag" type="数值" usedTag="s" required="n" validate="n" service="t" Ttype="int(1)" id="80">
+	</column>
+	<column nick="purchasecredit_cost_price_sum" name="purchasecredit_cost_price_sum" type="数值" usedTag="s" required="n" validate="n" service="t" Ttype="double(15,2)" id="81">
+	</column>
+	<column nick="opinion" name="opinion" type="字符" usedTag="s" required="n" validate="n" service="t" Ttype="mediumtext" id="82">
+	</column>
+	<column nick="promotion" name="promotion" type="字符" usedTag="s" required="n" validate="n" service="t" Ttype="mediumtext" id="83">
+	</column>
+	<column nick="分类编号" name="chain_id" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="text" id="84">
+	</column>
+	<column nick="分类名称" name="chain_name" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="text" id="85">
+	</column>
+	<column nick="自定义属性1" name="c_define1" type="字符" usedTag="n" required="n" validate="n" service="b" Ttype="text" id="86">
+	</column>
+	<column nick="自定义属性2" name="c_define2" type="字符" usedTag="n" required="n" validate="n" service="b" Ttype="text" id="87">
+	</column>
+	<column nick="自定义属性3" name="c_define3" type="字符" usedTag="n" required="n" validate="n" service="b" Ttype="text" id="88">
+	</column>
+	<column nick="自定义属性4" name="c_define4" type="字符" usedTag="n" required="n" validate="n" service="b" Ttype="text" id="89">
+	</column>
+	<column nick="自定义属性5" name="c_define5" type="字符" usedTag="n" required="n" validate="n" service="b" Ttype="text" id="90">
+	</column>
+	<column nick="自定义属性6" name="c_define6" type="字符" usedTag="n" required="n" validate="n" service="b" Ttype="text" id="91">
+	</column>
+	<column nick="自定义属性7" name="c_define7" type="字符" usedTag="n" required="n" validate="n" service="b" Ttype="text" id="92">
+	</column>
+	<column nick="自定义属性8" name="c_define8" type="字符" usedTag="n" required="n" validate="n" service="b" Ttype="text" id="93">
+	</column>
+	<column nick="自定义属性9" name="c_define9" type="字符" usedTag="n" required="n" validate="n" service="b" Ttype="text" id="94">
+	</column>
+	<column nick="自定义属性10" name="c_define10" type="字符" usedTag="n" required="n" validate="n" service="b" Ttype="text" id="95">
+	</column>
+	<column nick="自定义属性11" name="c_define11" type="字符" usedTag="n" required="n" validate="n" service="b" Ttype="text" id="96">
+	</column>
+	<column nick="自定义属性12" name="c_define12" type="字符" usedTag="n" required="n" validate="n" service="b" Ttype="text" id="97">
+	</column>
+	<column nick="自定义属性13" name="c_define13" type="时间" usedTag="n" required="n" validate="n" service="b" Ttype="datetime" id="98">
+	</column>
+	<column nick="自定义属性14" name="c_define14" type="时间" usedTag="n" required="n" validate="n" service="b" Ttype="datetime" id="99">
+	</column>
+	<column nick="自定义属性15" name="c_define15" type="时间" usedTag="n" required="n" validate="n" service="b" Ttype="datetime" id="100">
+	</column>
+	<column nick="自定义属性16" name="c_define16" type="数值" usedTag="n" required="n" validate="n" service="b" Ttype="decimal(30,10)" id="101">
+	</column>
+	<column nick="自定义属性17" name="c_define17" type="数值" usedTag="n" required="n" validate="n" service="b" Ttype="decimal(30,10)" id="102">
+	</column>
+	<column nick="自定义属性18" name="c_define18" type="数值" usedTag="n" required="n" validate="n" service="b" Ttype="decimal(30,10)" id="103">
+	</column>
+	<column nick="自定义属性19" name="c_define19" type="数值" usedTag="n" required="n" validate="n" service="b" Ttype="decimal(30,10)" id="104">
+	</column>
+	<column nick="自定义属性20" name="c_define20" type="数值" usedTag="n" required="n" validate="n" service="b" Ttype="decimal(30,10)" id="105">
+	</column>
+	<column nick="gar_tag" name="gar_tag" type="数值" Ttype="int(10) unsigned" usedTag="s" required="n" validate="n" service="t" id="106">
+	</column>
+	<column nick="used_tag" name="used_tag" type="数值" Ttype="int(10) unsigned" usedTag="s" required="n" validate="n" service="t" id="107">
+	</column>
+	<column nick="excel_batch_tag" name="excel_batch_tag" type="数值" Ttype="int(10) unsigned" usedTag="s" required="n" validate="n" service="t" id="108">
+	</column>
+</table>
+</config>

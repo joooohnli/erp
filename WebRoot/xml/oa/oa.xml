@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <table nick="协同办公" name="oa">
+    <column nick="oa_allright" name="oa_allright" service="t" />
+    <column nick="oa_check_table" name="oa_check_table" service="t" />
+    <column nick="oa_config_human_id_temp" name="oa_config_human_id_temp" service="t" />
+    <column nick="oa_config_public_char" name="oa_config_public_char" service="t" />
+    <column nick="oa_config_workflow" name="oa_config_workflow" service="t" />
+    <column nick="企业文化" name="oa_culture" service="b" key="culture_id"/>
+    <column nick="oa_culture_dig" name="oa_culture_dig" service="t" />
+    <column nick="外部消息" name="oa_intrmessage" service="b" key="intrmessage_id"/>
+    <column nick="oa_intrmessage_details" name="oa_intrmessage_details" service="t" />
+    <column nick="知识" name="oa_knowledge" service="b" key="knowledge_id"/>
+    <column nick="oa_knowledge_dig" name="oa_knowledge_dig" service="t" />
+    <column nick="会议" name="oa_meeting" service="b" key="meeting_id"/>
+    <column nick="oa_meeting_attend_details" name="oa_meeting_attend_details" service="t" />
+    <column nick="oa_meeting_dealwith_details" name="oa_meeting_dealwith_details" service="t" />
+    <column nick="内部消息" name="oa_message" service="b" key="message_id"/>
+    <column nick="oa_message_details" name="oa_message_details" service="t" />
+    <column nick="oa_messager" name="oa_messager" service="t" />
+    <column nick="计划" name="oa_planing" service="b" key="planing_id"/>
+    <column nick="宣传" name="oa_publicize" service="b" key="publicize_id"/>
+    <column nick="oa_publicize_dig" name="oa_publicize_dig" service="t" />
+    <column nick="制度" name="oa_regulation" service="b" key="regulation_id"/>
+    <column nick="oa_regulation_dig" name="oa_regulation_dig" service="t" />
+    <column nick="oa_report" name="oa_report" service="t" />
+    <column nick="oa_report_details" name="oa_report_details" service="t" />
+    <column nick="oa_tree" name="oa_tree" service="t" />
+    <column nick="oa_view" name="oa_view" service="t" />
+    <column nick="oa_workflow" name="oa_workflow" service="t" />
+  </table>
+</config>
+

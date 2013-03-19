@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+<table nick="质检项目" name="qcs_item">
+	<column nick="id" name="id" type="数值" usedTag="s" required="n" validate="n" service="t" Ttype="int(10) unsigned" id="1">
+	</column>
+	<column nick="项目编号" name="item_id" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(30)" id="2">
+	</column>
+	<column nick="项目名称" name="item_name" type="字符" usedTag="s" required="y" validate="y" service="b" Ttype="varchar(60)" id="3">
+	<depend name="required" />
+	<depend name="common" />
+	</column>
+	<column nick="分析方法" name="analyse_method" type="字符" usedTag="s" required="y" validate="y" service="b" Ttype="varchar(60)" id="4">
+	<depend name="required" />
+	<depend name="common" />
+	</column>
+	<column nick="首选质检依据" name="default_basis" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(60)" id="5">
+	</column>
+	<column nick="备选质检依据" name="ready_basis" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(60)" id="6">
+	</column>
+	<column nick="质检方法" name="quality_method" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(60)" id="7">
+	</column>
+	<column nick="质检设备" name="quality_equipment" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(60)" id="8">
+	</column>
+	<column nick="抽样标准" name="sampling_standard" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(60)" id="9">
+	</column>
+	<column nick="质量问题等级" name="defect_class" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(60)" id="10">
+	</column>
+	<column nick="是否重点检查" name="important" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(60)" id="11">
+	</column>
+	<column nick="制定人" name="designer" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(60)" id="12">
+	</column>
+	<column nick="登记人" name="register" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(60)" id="13">
+	</column>
+	<column nick="登记人编号" name="register_id" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(30)" id="14">
+	</column>
+	<column nick="审核人" name="checker" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(60)" id="15">
+	</column>
+	<column nick="审核人编号" name="checker_id" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(30)" id="16">
+	</column>
+	<column nick="变更人" name="changer" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(60)" id="17">
+	</column>
+	<column nick="变更人编号" name="changer_id" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(30)" id="18">
+	</column>
+	<column nick="审核时间" name="check_time" type="时间" usedTag="s" required="n" validate="n" service="b" Ttype="datetime" id="19">
+	</column>
+	<column nick="登记时间" name="register_time" type="时间" usedTag="s" required="n" validate="n" service="b" Ttype="datetime" id="20">
+	</column>
+	<column nick="变更时间" name="change_time" type="时间" usedTag="s" required="n" validate="n" service="b" Ttype="datetime" id="21">
+	</column>
+	<column nick="备注" name="remark" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="text" id="22">
+	</column>
+	<column nick="check_tag" name="check_tag" type="数值" usedTag="s" required="n" validate="n" service="t" Ttype="int(1)" id="23">
+	</column>
+	<column nick="excel_tag" name="excel_tag" type="数值" usedTag="s" required="n" validate="n" service="t" Ttype="int(1)" id="24">
+	</column>
+	<column nick="change_tag" name="change_tag" type="数值" usedTag="s" required="n" validate="n" service="t" Ttype="int(1)" id="25">
+	</column>
+	<column nick="附件" name="attachment1" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(100)" id="26">
+	</column>
+	<column nick="quality_value" name="quality_value" type="字符" usedTag="s" required="n" validate="n" service="t" Ttype="varchar(255)" id="27">
+	</column>
+	<column nick="gar_tag" name="gar_tag" type="数值" usedTag="s" required="n" validate="n" service="t" Ttype="int(10) unsigned" id="28">
+	</column>
+	<column nick="used_tag" name="used_tag" type="数值" usedTag="s" required="n" validate="n" service="t" Ttype="int(10) unsigned" id="29">
+	</column>
+	<column nick="excel_batch_tag" name="excel_batch_tag" type="数值" usedTag="s" required="n" validate="n" service="t" Ttype="int(10) unsigned" id="30">
+	</column>
+</table>
+</config>

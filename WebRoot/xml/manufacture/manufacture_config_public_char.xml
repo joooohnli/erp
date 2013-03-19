@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+<table nick="manufacture_config_public_char" name="manufacture_config_public_char">
+	<column nick="id" name="id" type="数值" Ttype="int(10) unsigned" usedTag="s" required="n" validate="n" service="t" id="1">
+	</column>
+	<column nick="类别" name="kind" type="字符" Ttype="varchar(60)" usedTag="s" required="n" validate="n" service="b" id="2">
+	</column>
+	<column nick="工序项目编号" name="type_id" type="字符" Ttype="varchar(60)" usedTag="s" required="y" validate="y" service="b" id="3">
+		<depend name="required" />
+        <depend name="common" />
+	</column>
+	<column nick="工序项目名称" name="type_name" type="字符" Ttype="varchar(60)" usedTag="s" required="y" validate="y" service="b" id="4">
+		<depend name="required" />
+        <depend name="common" />
+	</column>
+	<column nick="工序项目描述" name="describe1" type="字符" Ttype="varchar(255)" usedTag="s" required="n" validate="n" service="b" id="5">
+	</column>
+	<column nick="describe2" name="describe2" type="字符" Ttype="varchar(255)" usedTag="s" required="n" validate="n" service="t" id="6">
+	</column>
+	<column nick="register" name="register" type="字符" Ttype="text" usedTag="s" required="n" validate="n" service="t" id="7">
+	</column>
+	<column nick="负责人编号" name="register_id" type="字符" Ttype="text" usedTag="s" required="n" validate="n" service="b" id="8">
+	</column>
+	<column nick="类别编号" name="kind_id" type="字符" Ttype="varchar(10)" usedTag="s" required="n" validate="n" service="b" id="9">
+	</column>
+</table>
+</config>

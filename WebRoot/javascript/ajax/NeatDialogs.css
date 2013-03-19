@@ -1,0 +1,12 @@
+BODY {FONT-FAMILY: ????;FONT-SIZE: 9pt;}
+div.neat-dialog-cont { position: absolute; top: 0; left: 0; width: 100%;
+  height: 100%; z-index: 98; background: transparent }
+div.neat-dialog-bg { position: absolute; top: 0; left: 0; width: 100%; opacity: 0.4; z-index: -1; background-color:#80FF80;
+  filter: alpha(opacity=40) }
+div.neat-dialog { width: 30%;position: absolute;left: 35%;margin-left: auto; z-index: 99;
+  margin-right: auto; background-color: #fff; border: 1px solid #444 }
+div.neat-dialog-title { line-height: 1.2em; border-bottom: 1px solid #444;
+  margin: 0; padding: 0.1em 0.3em; position: relative; font-size: 9pt ;background:#3F5B8C;color:#ffffff}
+img.nd-cancel { position: absolute; top: 0.2em; right: 0.2em }
+
+div.neat-dialog p { padding: 0.2em; text-align: center }

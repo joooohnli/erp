@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <table nick="产品设计" name="design">
+    <column nick="产品档案" name="design_file" service="b" key="product_id"/>
+    <column nick="产品物料设计" name="design_module" service="b" key="design_id"/>
+    <column nick="design_allright" name="design_allright" service="t" />
+    <column nick="design_config_file_first_kind" name="design_config_file_first_kind" service="t" />
+    <column nick="design_config_file_kind" name="design_config_file_kind" service="t" />
+    <column nick="design_config_file_second_kind" name="design_config_file_second_kind" service="t" />
+    <column nick="design_config_file_third_kind" name="design_config_file_third_kind" service="t" />
+    <column nick="design_config_public_char" name="design_config_public_char" service="t" />
+    <column nick="design_config_responsibleperson" name="design_config_responsibleperson" service="t" />
+    <column nick="design_config_workflow" name="design_config_workflow" service="t" />
+    <column nick="design_file_dig" name="design_file_dig" service="t" />
+    <column nick="design_module_details" name="design_module_details" service="t" />
+    <column nick="design_tree" name="design_tree" service="t" />
+    <column nick="design_view" name="design_view" service="t" />
+    <column nick="design_workflow" name="design_workflow" service="t" />
+  </table>
+</config>
+

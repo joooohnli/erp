@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <table nick="系统安全" name="security">
+    <column nick="访问查询" name="security_alive_access" service="b" />
+    <column nick="security_allright" name="security_allright" service="t" />
+    <column nick="security_config_area_first" name="security_config_area_first" service="t" />
+    <column nick="security_config_area_fourth" name="security_config_area_fourth" service="t" />
+    <column nick="security_config_area_second" name="security_config_area_second" service="t" />
+    <column nick="security_config_area_third" name="security_config_area_third" service="t" />
+    <column nick="security_config_public_char" name="security_config_public_char" service="t" />
+    <column nick="security_counter" name="security_counter" service="t" />
+    <column nick="security_file_length" name="security_file_length" service="t" />
+    <column nick="用户许可证管理" name="security_license" service="b" />
+    <column nick="security_publicconfig_key" name="security_publicconfig_key" service="t" />
+    <column nick="security_task" name="security_task" service="t" />
+    <column nick="security_taskcycle" name="security_taskcycle" service="t" />
+    <column nick="security_tree" name="security_tree" service="t" />
+    <column nick="用户管理" name="security_users" service="b" />
+    <column nick="security_view" name="security_view" service="t" />
+    <column nick="security_workspace" name="security_workspace" service="t" />
+  </table>
+</config>
+

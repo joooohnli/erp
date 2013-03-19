@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tree-config css="../../css/include/nseer_cookie/xml-css.css">
+<table display-name="全部机构" name="design_config_file_kind" tree-name="Nseer_tree1" div-name="nseer1_0"
+		add-brother-node="div-add1.xml,div-add2.xml" 
+		add-child-node="div-add1.xml,div-add2.xml" 
+		delete-node="div-delete.xml"
+		change-node="div-change1.xml,div-change2.xml"
+		select-node-into="true"
+		first-length="2"
+		step-length="2">
+		<field display-name="序号" name="id">
+		</field>
+		<field display-name="节点ID" name="CATEGORY_ID" depend="required">
+		</field>
+		<field display-name="父节点ID" name="PARENT_CATEGORY_ID" depend="required">
+		</field>
+        <field display-name="节点显示文字" name="CATEGORY_NAME" depend="required">
+		</field>
+        <field display-name="是否有下级" name="DETAILS_TAG" depend="required">
+		</field>
+        <field display-name="分类编号" name="FILE_ID" depend="required">
+		<depend name="required" />
+		<depend name="duplicate" param0="design_config_file_kind@file_id@parent_category_id"/>
+		<depend name="stepNum" param0="2"/>
+		</field>
+        <field display-name="分类名称" name="FILE_NAME" depend="required">
+		<depend name="required" />
+		<depend name="duplicate" param0="design_config_file_kind@file_name@parent_category_id"/><!--以上六个字段为tree必须，名称可变上下顺序不能变-->
+		</field>
+		<field display-name="是否可删除" name="DELETE_TAG" depend="required">
+		</field>
+        <field display-name="分类简称" name="NICK_NAME" depend="nodeAttribute">
+		</field>
+        <field display-name="ID串" name="CHAIN_ID" depend="nodeAttribute">
+		</field>
+        <field display-name="name串" name="CHAIN_NAME" depend="nodeAttribute">
+		</field>
+</table>
+</tree-config>

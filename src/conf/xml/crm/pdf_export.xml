@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <tables>
+    <table nick="销售订单" name="crm_order">
+      <columns>
+        <column nick="订单编号" name="ORDER_ID" />
+        <column nick="订单状态" name="ORDER_STATUS" />
+        <column nick="产品分类编号" name="chain_id" />
+        <column nick="产品分类名称" name="chain_name" />
+        <column nick="客户编号" name="CUSTOMER_ID" />
+        <column nick="客户名称" name="CUSTOMER_NAME" />
+        <column nick="电话" name="DEMAND_CONTACT_PERSON_TEL" />
+        <column nick="预提货时间" name="DEMAND_PAY_TIME" />
+        <column nick="销售总价" name="SALE_PRICE_SUM" />
+        <column nick="成本总价" name="COST_PRICE_SUM" />
+        <column nick="订单登记时间" name="REGISTER_TIME" />
+        <column nick="订单审核时间" name="CHECK_TIME" />
+        <column nick="销售人" name="SALES_NAME" />
+        <column nick="订单登记人" name="REGISTER" />
+        <column nick="订单审核人" name="CHECKER" />
+        <column nick="销售人编号" name="SALES_ID" />
+        <column nick="订单登记人编号" name="REGISTER_ID" />
+        <column nick="订单审核人编号" name="CHECKER_ID" />
+        <column nick="备注" name="REMARK" />
+      </columns>
+    </table>
+  </tables>
+</config>
+

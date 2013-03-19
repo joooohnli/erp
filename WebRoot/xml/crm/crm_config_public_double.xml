@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+<table nick="crm_config_public_double" name="crm_config_public_double">
+	<column nick="id" name="id" type="数值" Ttype="int(10) unsigned" usedTag="s" required="n" validate="n" service="t" id="1">
+	</column>
+	<column nick="类别" name="kind" type="字符" Ttype="varchar(60)" usedTag="s" required="n" validate="n" service="b" id="2">
+	</column>
+	<column nick="type_id" name="type_id" Ttype="char(2)" usedTag="s" required="n" validate="n" service="t" id="3">
+	</column>
+	<column nick="输入内容" name="type_value" type="数值" Ttype="double(15,2)" usedTag="s" required="y" validate="y" service="b" id="4">
+	<depend name="required" />
+	<depend name="decimal" />
+	</column>
+	<column nick="请输入回款超期报警值" name="gather_expiry" type="数值" Ttype="double(15,2)" usedTag="s" required="y" validate="y" service="p" id="7">
+	<depend name="required" />
+	<depend name="decimal" />
+	</column>
+	<column nick="请输入欠款超额报警值" name="gather_limit" type="数值" Ttype="double(15,2)" usedTag="s" required="y" validate="y" service="p" id="8">
+	<depend name="required" />
+	<depend name="decimal" />
+	</column>
+	<column nick="请输入联络超期报警值" name="contact_expiry" type="数值" Ttype="double(15,2)" usedTag="s" required="y" validate="y" service="p" id="8">
+	<depend name="required" />
+	<depend name="decimal" />
+	</column>
+	<column nick="describe1" name="describe1" type="字符" Ttype="varchar(255)" usedTag="s" required="n" validate="n" service="t" id="5">
+	</column>
+	<column nick="describe2" name="describe2" type="字符" Ttype="varchar(255)" usedTag="s" required="n" validate="n" service="t" id="6">
+	</column>
+</table>
+</config>

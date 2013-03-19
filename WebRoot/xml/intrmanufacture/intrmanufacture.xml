@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <table nick="委外管理" name="intrmanufacture">
+    <column nick="intrmanufacture_alarm_contact_expiry" name="intrmanufacture_alarm_contact_expiry" service="t" />
+    <column nick="intrmanufacture_alarm_gather_expiry" name="intrmanufacture_alarm_gather_expiry" service="t" />
+    <column nick="intrmanufacture_alarm_gather_sum_limit" name="intrmanufacture_alarm_gather_sum_limit" service="t" />
+    <column nick="intrmanufacture_alarm_order_check_expiry" name="intrmanufacture_alarm_order_check_expiry" service="t" />
+    <column nick="intrmanufacture_alarm_return_sum_limit" name="intrmanufacture_alarm_return_sum_limit" service="t" />
+    <column nick="intrmanufacture_allright" name="intrmanufacture_allright" service="t" />
+    <column nick="intrmanufacture_analyse" name="intrmanufacture_analyse" service="t" />
+    <column nick="intrmanufacture_analyse_gather_period" name="intrmanufacture_analyse_gather_period" service="t" />
+    <column nick="委外申请" name="intrmanufacture_apply" service="t" key="apply_id"/>
+    <column nick="intrmanufacture_config_intrmanufacturer" name="intrmanufacture_config_intrmanufacturer" service="t" />
+    <column nick="intrmanufacture_config_public_char" name="intrmanufacture_config_public_char" service="t" />
+    <column nick="intrmanufacture_config_public_double" name="intrmanufacture_config_public_double" service="t" />
+    <column nick="intrmanufacture_config_public_int" name="intrmanufacture_config_public_int" service="t" />
+    <column nick="intrmanufacture_config_workflow" name="intrmanufacture_config_workflow" service="t" />
+    <column nick="委外厂商联络" name="intrmanufacture_contact" service="b" key="contact_id"/>
+    <column nick="委外执行单明细" name="intrmanufacture_details" service="b" />
+    <column nick="委外报价单" name="intrmanufacture_discussion" service="b" key="discussion_id"/>
+    <column nick="intrmanufacture_discussion_details" name="intrmanufacture_discussion_details" service="t" />
+    <column nick="委外厂商档案" name="intrmanufacture_file" service="b" key="provider_id"/>
+    <column nick="intrmanufacture_file_dig" name="intrmanufacture_file_dig" service="t" />
+    <column nick="委外执行单" name="intrmanufacture_intrmanufacture" service="b" key="intrmanufacture_id"/>
+    <column nick="intrmanufacture_monthly_result" name="intrmanufacture_monthly_result" service="t" />
+    <column nick="委外厂商推荐管理" name="intrmanufacture_product_providers_recommend" service="b" />
+    <column nick="intrmanufacture_product_providers_recommend_details" name="intrmanufacture_product_providers_recommend_details" service="t" />
+    <column nick="委外发票" name="intrmanufacture_purchasing" service="b" />
+    <column nick="intrmanufacture_tree" name="intrmanufacture_tree" service="t" />
+    <column nick="intrmanufacture_view" name="intrmanufacture_view" service="t" />
+    <column nick="intrmanufacture_workflow" name="intrmanufacture_workflow" service="t" />
+  </table>
+</config>

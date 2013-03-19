@@ -1,0 +1,172 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<META NAME="Generator" CONTENT="EditPlus">
+<META NAME="Author" CONTENT="">
+<META NAME="Keywords" CONTENT="">
+<META NAME="Description" CONTENT="">
+</HEAD>
+<link rel="stylesheet" type="text/css" media="all" href="menu.css">
+</head>
+<body onload="module_first()">
+
+<script>
+function module_first(){
+
+var menu=document.getElementById("module_first");
+
+menu.style.position='absolute';
+
+menu.style.bottom=0;
+
+}
+function menu_first(){
+
+var module_first=document.getElementById("module_first");
+
+var module_two=document.getElementById("module_two");
+
+module_two.style.position='absolute';
+
+var li = module_two.getElementsByTagName("li");
+
+module_two.style.left=parseInt(module_first.style.left)+parseInt(module_first.style.width);
+
+module_two.style.top=parseInt(window.event.y)-li.length*10;
+
+module_two.style.display=module_two.style.display=='block'?'none':'block';
+
+if(module_two.style.display=='none')
+
+{
+
+var module_three=document.getElementById("module_three");
+
+var module_four=document.getElementById("module_four");
+
+if(module_three!=null)module_three.style.display='none';
+
+if(module_four!=null)module_four.style.display='none';
+
+}
+
+}
+
+function menu_two(){
+
+var module_two=document.getElementById("module_two");
+
+var module_three=document.getElementById("module_three");
+
+module_three.style.position='absolute';
+
+module_three.style.left=parseInt(module_two.style.left)+parseInt(module_two.style.width);
+
+var li = module_three.getElementsByTagName("li");
+
+module_three.style.top=parseInt(window.event.y)-li.length*10;
+
+//alert(module_three.style.height);
+
+module_three.style.display=module_three.style.display=='block'?'none':'block';
+
+if(module_three.style.display=='none')
+{
+
+var module_four=document.getElementById("module_four");
+
+if(module_four!=null)module_four.style.display='none';
+
+}
+
+}
+
+
+function menu_three(num){
+
+//alert(num);
+
+//alert(menu3);
+
+var module_two=document.getElementById("module_three");
+
+var module_three=document.getElementById("module_four");
+
+module_four.style.position='absolute';
+
+module_four.style.left=parseInt(module_two.style.left)+parseInt(module_two.style.width);
+
+var li = module_four.getElementsByTagName("li");
+
+module_four.style.top=parseInt(window.event.y)-li.length*10;
+
+module_four.style.display=module_three.style.display=='block'?'none':'block';
+
+}
+</script>
+
+<div style="width:200px;position:absolute;left:0px;border-top:1px solid #d4d4d4;" id="module_first">
+                        <ul>
+                                <!-- CSS Tabs -->
+<li><a id="active" href="javascript:;" onclick="menu_first()">主页</a></li>
+<li><a href="Products.html">产品设计</a></li>
+<li><a href="Services.html">服务</a></li>
+<li><a href="Support.html">虑臣在此GGG</a></li>
+<li><a href="Order.html">生产管理</a></li>
+<li><a href="News.html">风险投资</a></li>
+<li><a href="About.html">关于公司</a></li>
+
+                        </ul>
+                </div>
+
+
+<div style="display:none;width:200px;" id=module_two>
+                        <ul>
+                                <!-- CSS Tabs -->
+<li><a id="active" href="javascript:;" onclick="menu_two()">主页</a></li>
+<li><a href="Products.html">产品设计</a></li>
+<li><a href="Services.html">服务</a></li>
+<li><a href="Support.html">虑臣在此t</a></li>
+<li><a href="Order.html">生产管理</a></li>
+<li><a href="News.html">风险投资</a></li>
+<li><a href="About.html">关于公司</a></li>
+
+                        </ul>
+                </div>
+
+
+
+
+<div style="display:none;width:200px;" id=module_three>
+                        <ul>
+                                <!-- CSS Tabs -->
+<li><a id="active" href="javascript:;" onclick="menu_three('1')">主页</a></li>
+<li><a href="javascript:;" onclick="menu_three('2')">产品设计</a></li>
+<li><a href="javascript:;" onclick="menu_three()">服务</a></li>
+<li><a href="javascript:;" onclick="menu_three()">虑臣在此t</a></li>
+<li><a href="javascript:;" onclick="menu_three()">生产管理</a></li>
+<li><a href="javascript:;" onclick="menu_three()">风险投资</a></li>
+<li><a href="javascript:;" onclick="menu_three()">关于公司</a></li>
+
+                        </ul>
+                </div>
+
+
+
+<div style="display:none;width:200px;" id=module_four>
+                        <ul>
+                                <!-- CSS Tabs -->
+<li><a id="active" href="#" >主页</a></li>
+<li><a href="Products.html">产品设计</a></li>
+<li><a href="Services.html">服务</a></li>
+<li><a href="Support.html">虑臣在此t</a></li>
+<li><a href="Order.html">生产管理</a></li>
+<li><a href="News.html">风险投资</a></li>
+<li><a href="About.html">关于公司</a></li>
+
+                        </ul>
+                </div>
+
+
+        </body>
+</html>

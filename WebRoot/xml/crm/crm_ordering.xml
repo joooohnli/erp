@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+<table nick="订单发票" name="crm_ordering">
+	<column nick="id" name="id" type="数值" usedTag="s" required="n" validate="n" service="t" Ttype="int(10) unsigned" id="1">
+	</column>
+	<column nick="reason" name="reason" type="字符" usedTag="s" required="n" validate="n" service="t" Ttype="varchar(100)" id="2">
+	</column>
+	<column nick="订单编号" name="reasonexact" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(30)" id="3">
+	</column>
+	<column nick="序号" name="details_number" type="数值" usedTag="s" required="n" validate="n" service="b" Ttype="int(10)" id="4">
+	</column>
+	<column nick="客户编号" name="customer_id" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(30)" id="5">
+	</column>
+	<column nick="客户名称" name="customer_name" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(60)" id="6">
+	</column>
+	<column nick="产品编号" name="product_id" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(30)" id="7">
+	</column>
+	<column nick="产品名称" name="product_name" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(60)" id="8">
+	</column>
+	<column nick="amount" name="amount" type="数值" usedTag="s" required="n" validate="n" service="t" Ttype="double(15,2)" id="9">
+	</column>
+	<column nick="单位" name="unit" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(30)" id="10">
+	</column>
+	<column nick="应开票额度" name="subtotal" type="数值" usedTag="s" required="n" validate="n" service="b" Ttype="double(15,2)" id="11">
+	</column>
+	<column nick="pay_ship_id" name="pay_ship_id" type="字符" usedTag="s" required="n" validate="n" service="t" Ttype="varchar(30)" id="12">
+	</column>
+	<column nick="invoice_info_id" name="invoice_info_id" type="字符" usedTag="s" required="n" validate="n" service="t" Ttype="varchar(30)" id="13">
+	</column>
+	<column nick="gather_id" name="gather_id" type="字符" usedTag="s" required="n" validate="n" service="t" Ttype="varchar(30)" id="14">
+	</column>
+	<column nick="real_customer_address" name="real_customer_address" type="字符" usedTag="s" required="n" validate="n" service="t" Ttype="varchar(200)" id="15">
+	</column>
+	<column nick="real_customer_mailing_address" name="real_customer_mailing_address" type="字符" usedTag="s" required="n" validate="y" service="t" Ttype="varchar(200)" id="16">
+	<depend name="common" />
+	</column>
+	<column nick="real_contact_person" name="real_contact_person" type="字符" usedTag="s" required="n" validate="y" service="t" Ttype="varchar(60)" id="17">
+	<depend name="common" />
+	</column>
+	<column nick="real_contact_person_tel" name="real_contact_person_tel" type="字符" usedTag="s" required="n" validate="y" service="t" Ttype="varchar(60)" id="18">
+	<depend name="common" />
+	</column>
+	<column nick="real_contact_person_fax" name="real_contact_person_fax" type="字符" usedTag="s" required="n" validate="y" service="t" Ttype="varchar(60)" id="19">
+	<depend name="common" />
+	</column>
+	<column nick="pay_amount" name="pay_amount" type="数值" usedTag="s" required="n" validate="n" service="t" Ttype="double(15,2)" id="20">
+	</column>
+	<column nick="invoice_group" name="invoice_group" type="字符" usedTag="s" required="n" validate="y" service="t" Ttype="varchar(255)" id="21">
+	<depend name="common" />
+	</column>
+	<column nick="本次开票额度" name="invoice_sum" type="数值" usedTag="s" required="n" validate="y" service="b" Ttype="double(15,2)" id="22">
+	<depend name="decimal" />
+	</column>
+	<column nick="gather_group" name="gather_group" type="字符" usedTag="s" required="n" validate="n" service="t" Ttype="varchar(255)" id="23">
+	</column>
+	<column nick="gather_sum" name="gather_sum" type="数值" usedTag="s" required="n" validate="n" service="t" Ttype="double(15,2)" id="24">
+	</column>
+	<column nick="开票时间" name="real_invoice_time" type="时间" usedTag="s" required="y" validate="y" service="b" Ttype="date" id="25">
+	<depend name="required" />
+	<depend name="date" param0="yyyy-mm-dd" />
+	</column>
+	<column nick="real_gather_time" name="real_gather_time" type="时间" usedTag="s" required="n" validate="n" service="t" Ttype="date" id="26">
+	</column>
+	<column nick="real_pay_time" name="real_pay_time" type="时间" usedTag="s" required="n" validate="n" service="t" Ttype="date" id="27">
+	</column>
+	<column nick="审核时间" name="check_time" type="时间" usedTag="s" required="n" validate="n" service="b" Ttype="datetime" id="28">
+	</column>
+	<column nick="real_gather_type" name="real_gather_type" type="字符" usedTag="s" required="n" validate="n" service="t" Ttype="varchar(60)" id="29">
+	</column>
+	<column nick="real_gather_method" name="real_gather_method" type="字符" usedTag="s" required="n" validate="n" service="t" Ttype="varchar(60)" id="30">
+	</column>
+	<column nick="real_pay_fee_type" name="real_pay_fee_type" type="字符" usedTag="s" required="n" validate="n" service="t" Ttype="varchar(60)" id="31">
+	</column>
+	<column nick="real_pay_fee_sum" name="real_pay_fee_sum" type="数值" usedTag="s" required="n" validate="n" service="t" Ttype="double(15,2)" id="32">
+	</column>
+	<column nick="real_pay_type" name="real_pay_type" type="字符" usedTag="s" required="n" validate="n" service="t" Ttype="varchar(60)" id="33">
+	</column>
+	<column nick="发票类型" name="real_invoice_type" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(60)" id="34">
+	</column>
+	<column nick="开票人" name="register" type="字符" usedTag="s" required="n" validate="y" service="b" Ttype="varchar(60)" id="35">
+	<depend name="common" />
+	</column>
+	<column nick="开票人编号" name="register_id" type="字符" usedTag="s" required="n" validate="y" service="b" Ttype="varchar(30)" id="36">
+	<depend name="common" />
+	</column>
+	<column nick="审核人" name="checker" type="字符" usedTag="s" required="n" validate="y" service="b" Ttype="varchar(60)" id="37">
+	<depend name="common" />
+	</column>
+	<column nick="审核人编号" name="checker_id" type="字符" usedTag="s" required="n" validate="y" service="b" Ttype="varchar(30)" id="38">
+	<depend name="common" />
+	</column>
+	<column nick="备注" name="remark" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(255)" id="39">
+	</column>
+	<column nick="check_tag" name="check_tag" type="数值" usedTag="s" required="n" validate="n" service="t" Ttype="int(10)" id="40">
+	</column>
+	<column nick="which_time" name="which_time" type="数值" usedTag="s" required="n" validate="n" service="t" Ttype="int(10) unsigned" id="41">
+	</column>
+	<column nick="登记时间" name="register_time" type="时间" usedTag="s" required="n" validate="n" service="b" Ttype="datetime" id="42">
+	</column>
+	<column nick="invoice_dra_tag" name="invoice_dra_tag" type="数值" Ttype="int(10) unsigned" usedTag="s" required="n" validate="n" service="t" id="43">
+	</column>
+	<column nick="excel_batch_tag" name="excel_batch_tag" type="数值" Ttype="int(10) unsigned" usedTag="s" required="n" validate="n" service="t" id="44">
+	</column>
+</table>
+</config>

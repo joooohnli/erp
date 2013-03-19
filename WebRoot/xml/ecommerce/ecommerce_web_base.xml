@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+<table nick="ecommerce_web_base" name="ecommerce_web_base">
+	<column nick="id" name="id" type="数值" usedTag="s" required="n" validate="n" service="t" Ttype="int(10) unsigned" id="1">
+	</column>
+	<column nick="单位简称" name="unit_id" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(255)" id="2">
+	</column>
+	<column nick="网站名称" name="name" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(255)" id="3">
+	</column>
+	<column nick="网站Title" name="title" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(255)" id="4">
+	</column>
+	<column nick="网站Logo" name="attachment1" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(255)" id="5">
+	</column>
+	<column nick="网站Banner" name="attachment2" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(255)" id="6">
+	</column>
+	<column nick="Banner广告语1" name="advertisement1" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(255)" id="7">
+	</column>
+	<column nick="Banner广告语2" name="advertisement2" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(255)" id="8">
+	</column>
+	<column nick="网站公告" name="content" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="mediumtext" id="9">
+	</column>
+	<column nick="版权信息" name="copyright" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="mediumtext" id="10">
+	</column>
+	<column nick="管理员Email" name="webmaster_email" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(255)" id="11">
+	</column>
+	<column nick="home_page" name="home_page" type="字符" usedTag="s" required="n" validate="n" service="t" Ttype="varchar(255)" id="12">
+	</column>
+	<column nick="common_page" name="common_page" type="字符" usedTag="s" required="n" validate="n" service="t" Ttype="varchar(255)" id="13">
+	</column>
+	<column nick="describe1" name="describe1" type="字符" usedTag="s" required="n" validate="n" service="t" Ttype="varchar(255)" id="14">
+	</column>
+	<column nick="describe2" name="describe2" type="字符" usedTag="s" required="n" validate="n" service="t" Ttype="varchar(255)" id="15">
+	</column>
+	<column nick="登记人编号" name="register_id" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(255)" id="16">
+	</column>
+	<column nick="登记人" name="register" type="字符" usedTag="s" required="n" validate="n" service="b" Ttype="varchar(255)" id="17">
+	</column>
+	<column nick="登记时间" name="register_time" type="时间" usedTag="s" required="n" validate="n" service="b" Ttype="datetime" id="18">
+	</column>
+</table>
+</config>
