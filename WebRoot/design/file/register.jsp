@@ -94,7 +94,7 @@ List returnList=OperateXML.returnList(file1,"name","mutiValidation","name","name
 				</tr>
 				<tr <%=TR_STYLE1%> class="TR_STYLE1">
 					<td <%=TD_STYLE4%> class="TD_STYLE1" width="11%">
-						<font color=red>*</font><%=demo.getLang("erp","产品名称")%></td>
+						<font color=red>*</font><%=demo.getLang("erp","药品名称")%></td>
 					<td <%=TD_STYLE21%> class="TD_STYLE2" width="37.4%">
 						<input id="validator_dup" type="text" <%=INPUT_STYLE1%>
 							class="INPUT_STYLE1" style="width: 80%" name="product_name">
@@ -102,10 +102,9 @@ List returnList=OperateXML.returnList(file1,"name","mutiValidation","name","name
 							href="javascript:ajax_validation('mutiValidation','validator_dup','design_file','product_name','../../vdf','product_ID','query.jsp',this)"
 							onMouseOver="toolTip('<%=demo.getLang("erp","该功能用于检验产品信息是否重复！")%>',this)"
 							onMouseOut="toolTip()"><img src="../../images/dup.gif"
-								width="15" height="14" align="center" border="0">
-						</a>
+								width="15" height="14" align="center" border="0"> </a>
 					</td>
-					<td <%=TD_STYLE4%> class="TD_STYLE1" width="11%"><%=demo.getLang("erp","制造商")%></td>
+					<td <%=TD_STYLE4%> class="TD_STYLE1" width="11%"><%=demo.getLang("erp","生产厂商")%></td>
 					<td <%=TD_STYLE21%> class="TD_STYLE2" width="37.4%">
 						<input type="text" <%=INPUT_STYLE1%> class="INPUT_STYLE1"
 							name="factory_name" style="width: 80%">
@@ -132,12 +131,68 @@ List returnList=OperateXML.returnList(file1,"name","mutiValidation","name","name
 					</td>
 				</tr>
 				<tr <%=TR_STYLE1%> class="TR_STYLE1">
+					<td <%=TD_STYLE4%> class="TD_STYLE1" width="11%">
+						<font color=red>*</font><%=demo.getLang("erp","市场单价(元)")%></td>
+					<td <%=TD_STYLE21%> class="TD_STYLE2" width="13%">
+						<input type="text" <%=INPUT_STYLE1%> class="INPUT_STYLE1"
+							name="list_price" style="width: 49%">
+					</td>
+					<td <%=TD_STYLE4%> class="TD_STYLE1" width="11%">
+						<font color=red>*</font><%=demo.getLang("erp","计划成本单价")%>
+					</td>
+					<td <%=TD_STYLE21%> class="TD_STYLE2" width="13%">
+						<input <%=INPUT_STYLE1%> class="INPUT_STYLE1" name="cost_price"
+							type="text" style="width: 49%">
+					</td>
+				</tr>
+
+				<!--
+				add by john
+				-->
+				<tr>
+					<td <%=TD_STYLE4%> class="TD_STYLE1" width="11%"><%=demo.getLang("erp","规格")%></td>
+					<td <%=TD_STYLE21%> class="TD_STYLE2" width="13%">
+						<input type="text" <%=INPUT_STYLE1%> class="INPUT_STYLE1"
+							name="product_specification" style="width: 49%">
+					</td>
+					<td <%=TD_STYLE4%> class="TD_STYLE1" width="11%"><%=demo.getLang("erp","批号")%></td>
+					<td <%=TD_STYLE21%> class="TD_STYLE2" width="13%">
+						<input type="text" <%=INPUT_STYLE1%> class="INPUT_STYLE1"
+							name="product_batch_number" style="width: 49%">
+					</td>
+				</tr>
+				<tr>
+					<td <%=TD_STYLE4%> class="TD_STYLE1" width="11%"><%=demo.getLang("erp","包装单位")%></td>
+					<td <%=TD_STYLE21%> class="TD_STYLE2" width="13%">
+						<input type="text" <%=INPUT_STYLE1%> class="INPUT_STYLE1"
+							name="product_packing_unit" style="width: 49%">
+					</td>
+					<td <%=TD_STYLE4%> class="TD_STYLE1" width="11%"><%=demo.getLang("erp","发药单位")%></td>
+					<td <%=TD_STYLE21%> class="TD_STYLE2" width="13%">
+						<input type="text" <%=INPUT_STYLE1%> class="INPUT_STYLE1"
+							name="product_dispensing_unit" style="width: 49%">
+					</td>
+				</tr>
+				<tr>
+					<td <%=TD_STYLE4%> class="TD_STYLE1" width="11%"><%=demo.getLang("erp","医疗保险类别")%></td>
+					<td <%=TD_STYLE21%> class="TD_STYLE2" width="13%">
+						<input type="text" <%=INPUT_STYLE1%> class="INPUT_STYLE1"
+							name="product_medical_insurance_categories" style="width: 49%">
+					</td>
+					<td <%=TD_STYLE4%> class="TD_STYLE1" width="11%"><%=demo.getLang("erp","处方标志")%></td>
+					<td <%=TD_STYLE21%> class="TD_STYLE2" width="13%">
+						<input type="text" <%=INPUT_STYLE1%> class="INPUT_STYLE1"
+							name="product_prescription_marks" style="width: 49%">
+					</td>
+				</tr>
+
+				<tr <%=TR_STYLE1%> class="TR_STYLE1">
 					<td <%=TD_STYLE4%> class="TD_STYLE1" width="11%"><%=demo.getLang("erp","用途类型")%></td>
 					<td <%=TD_STYLE21%> class="TD_STYLE2" width="13%">
 						<select <%=SELECT_STYLE1%> class="SELECT_STYLE1" name="type"
 							style="width: 49%">
 							<%
-  String field_type=(String)session.getAttribute("field_type");
+String field_type=(String)session.getAttribute("field_type");
 String sql4="";
 if(field_type.equals("0")){
 	sql4 = "select * from design_config_public_char where kind='产品用途' order by id";
@@ -181,27 +236,11 @@ design_db.close();
 							name="personal_value" style="width: 49%">
 					</td>
 				</tr>
-				<tr <%=TR_STYLE1%> class="TR_STYLE1">
-					<td <%=TD_STYLE4%> class="TD_STYLE1" width="11%">
-						<font color=red>*</font><%=demo.getLang("erp","市场单价(元)")%></td>
-					<td <%=TD_STYLE21%> class="TD_STYLE2" width="13%">
-						<input type="text" <%=INPUT_STYLE1%> class="INPUT_STYLE1"
-							name="list_price" style="width: 49%">
-					</td>
-					<td <%=TD_STYLE4%> class="TD_STYLE1" width="11%">
-						<font color=red>*</font><%=demo.getLang("erp","计划成本单价")%>
-					</td>
-					<td <%=TD_STYLE21%> class="TD_STYLE2" width="13%">
-						<input <%=INPUT_STYLE1%> class="INPUT_STYLE1" name="cost_price"
-							type="text" style="width: 49%">
-					</td>
-				</tr>
 				<tr style="background-image: url(../../images/line.gif)">
 					<td colspan="4">
 						<div style="width: 100%; height: 12; padding: 3px;"><%=demo.getLang("erp","辅助信息")%></div>
 					</td>
 				</tr>
-
 				<tr <%=TR_STYLE1%> class="TR_STYLE1">
 					<td <%=TD_STYLE4%> class="TD_STYLE1" width="11%"><%=demo.getLang("erp","保修期")%></td>
 					<td <%=TD_STYLE21%> class="TD_STYLE2" width="13%">
@@ -313,7 +352,7 @@ design_db.close();
 	<div id="nseer1" nseerDef="dragAble"
 		style="position: absolute; left: 300px; top: 100px; display: none; width: 450px; height: 300px; overflow: hidden; z-index: 1; background: #E8E8E8;">
 		<iframe src="javascript:false"
-			style="position: absolute; visibility: inherit; top: 0px; left: 0px; width: 100%; height: 100%; z-index: -1; filter ='progid: DXImageTransform.Microsoft.Alpha ( style = 0, opacity = 0 ) ';"></iframe>
+			style="position: absolute; visibility: inherit; top: 0px; left: 0px; width: 100%; height: 100%; z-index: -1; filter ='progid: DXImageTransform.Microsoft.Alpha (   style =   0, opacity =   0 ) ';"></iframe>
 		<TABLE width="100%" height="100%" border=0 cellPadding=0 cellSpacing=0>
 			<TBODY>
 				<TR>
