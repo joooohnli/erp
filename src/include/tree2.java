@@ -759,68 +759,70 @@ out.println("</object>");
 
 
 }
-if(mod.equals("stock")){
-int qq=0;
-int q=0;
-double max_amount=0.0d;
-double min_amount=0.0d;
+				if (mod.equals("stock")) {
+					int qq = 0;
+					int q = 0;
+					double max_amount = 0.0d;
+					double min_amount = 0.0d;
 
-String sql3="select * from stock_balance";
-ResultSet rs3=nseerdb.executeQuery(sql3);
-while(rs3.next()){
-	String sql2="select * from stock_cell where product_ID='"+rs3.getString("product_ID")+"'";
-ResultSet rs2=db.executeQuery(sql2);
-if(rs2.next()){
-	max_amount=rs2.getDouble("max_amount");
-	min_amount=rs2.getDouble("min_amount");
-}
-	if(rs3.getDouble("amount")>max_amount){
-	qq++;
-	}
-	if(rs3.getDouble("amount")<min_amount){
-	q++;
-	}
-}
-String sqll2="select * from stock_view where human_ID='"+human_ID+"' and file_name='"+"动态库存查询"+"'";
-ResultSet rss2=db.executeQuery(sqll2);
-if(rss2.next()){
-	if(qq!=0){
-v++;
-out.println("<object classid=\"clsid:D27CDB6E-AE6D-11cf-96B8-444553540000\" codebase=\"http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0\" width=\"6\" height=\"10\">");
-  out.println("<param name=\"movie\" value=\"images/re2.swf\">");
-  out.println("<param name=\"quality\" value=\"high\">");
-  out.println("<embed src=\"images/red.swf\" quality=\"high\" pluginspage=\"http://www.macromedia.com/go/getflashplayer\" type=\"application/x-shockwave-flash\" width=\"6\" height=\"10\"></embed>");
-out.println("</object>&nbsp;");
+					String sql3 = "select * from stock_balance";
+					ResultSet rs3 = nseerdb.executeQuery(sql3);
+					while (rs3.next()) {
+						String sql2 = "select * from stock_cell where product_ID='"
+								+ rs3.getString("product_ID") + "'";
+						ResultSet rs2 = db.executeQuery(sql2);
+						if (rs2.next()) {
+							max_amount = rs2.getDouble("max_amount");
+							min_amount = rs2.getDouble("min_amount");
+						}
+						if (rs3.getDouble("amount") > max_amount) {
+							qq++;
+						}
+						if (rs3.getDouble("amount") < min_amount) {
+							q++;
+						}
+					}
+					String sqll2 = "select * from stock_view where human_ID='"
+							+ human_ID + "' and file_name='" + "动态库存查询" + "'";
+					ResultSet rss2 = db.executeQuery(sqll2);
+					if (rss2.next()) {
+						if (qq != 0) {
+							v++;
+							out.println("<object classid=\"clsid:D27CDB6E-AE6D-11cf-96B8-444553540000\" codebase=\"http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0\" width=\"6\" height=\"10\">");
+							out.println("<param name=\"movie\" value=\"images/re2.swf\">");
+							out.println("<param name=\"quality\" value=\"high\">");
+							out.println("<embed src=\"images/red.swf\" quality=\"high\" pluginspage=\"http://www.macromedia.com/go/getflashplayer\" type=\"application/x-shockwave-flash\" width=\"6\" height=\"10\"></embed>");
+							out.println("</object>&nbsp;");
 
-	}else{
-v++;
-out.println("<object classid=\"clsid:D27CDB6E-AE6D-11cf-96B8-444553540000\" codebase=\"http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0\" width=\"6\" height=\"10\">");
-  out.println("<param name=\"movie\" value=\"images/green.swf\">");
-  out.println("<param name=\"quality\" value=\"high\">");
-  out.println("<embed src=\"images/green.swf\" quality=\"high\" pluginspage=\"http://www.macromedia.com/go/getflashplayer\" type=\"application/x-shockwave-flash\" width=\"6\" height=\"10\"></embed>");
-out.println("</object>&nbsp;");
+						} else {
+							v++;
+							out.println("<object classid=\"clsid:D27CDB6E-AE6D-11cf-96B8-444553540000\" codebase=\"http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0\" width=\"6\" height=\"10\">");
+							out.println("<param name=\"movie\" value=\"images/green.swf\">");
+							out.println("<param name=\"quality\" value=\"high\">");
+							out.println("<embed src=\"images/green.swf\" quality=\"high\" pluginspage=\"http://www.macromedia.com/go/getflashplayer\" type=\"application/x-shockwave-flash\" width=\"6\" height=\"10\"></embed>");
+							out.println("</object>&nbsp;");
 
-}
-if(q!=0){
-v++;
-out.println("<object classid=\"clsid:D27CDB6E-AE6D-11cf-96B8-444553540000\" codebase=\"http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0\" width=\"6\" height=\"10\">");
- out.println(" <param name=\"movie\" value=\"images/or1.swf\">");
-  out.println("<param name=\"quality\" value=\"high\">");
-  out.println("<embed src=\"images/orange.swf\" quality=\"high\" pluginspage=\"http://www.macromedia.com/go/getflashplayer\" type=\"application/x-shockwave-flash\" width=\"6\" height=\"10\"></embed>");
-out.println("</object>&nbsp;");
+						}
+						if (q != 0) {
+							v++;
+							out.println("<object classid=\"clsid:D27CDB6E-AE6D-11cf-96B8-444553540000\" codebase=\"http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0\" width=\"6\" height=\"10\">");
+							out.println(" <param name=\"movie\" value=\"images/or1.swf\">");
+							out.println("<param name=\"quality\" value=\"high\">");
+							out.println("<embed src=\"images/orange.swf\" quality=\"high\" pluginspage=\"http://www.macromedia.com/go/getflashplayer\" type=\"application/x-shockwave-flash\" width=\"6\" height=\"10\"></embed>");
+							out.println("</object>&nbsp;");
 
-	}else{
-v++;
-out.println("<object classid=\"clsid:D27CDB6E-AE6D-11cf-96B8-444553540000\" codebase=\"http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0\" width=\"6\" height=\"10\">");
-  out.println("<param name=\"movie\" value=\"images/green.swf\">");
-  out.println("<param name=\"quality\" value=\"high\">");
-  out.println("<embed src=\"images/green.swf\" quality=\"high\" pluginspage=\"http://www.macromedia.com/go/getflashplayer\" type=\"application/x-shockwave-flash\" width=\"6\" height=\"10\"></embed>");
-out.println("</object>");
+						} else {
+							v++;
+							out.println("<object classid=\"clsid:D27CDB6E-AE6D-11cf-96B8-444553540000\" codebase=\"http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0\" width=\"6\" height=\"10\">");
+							out.println("<param name=\"movie\" value=\"images/green.swf\">");
+							out.println("<param name=\"quality\" value=\"high\">");
+							out.println("<embed src=\"images/green.swf\" quality=\"high\" pluginspage=\"http://www.macromedia.com/go/getflashplayer\" type=\"application/x-shockwave-flash\" width=\"6\" height=\"10\"></embed>");
+							out.println("</object>");
 
-}
-}
+						}
+					}
 
-}
+				}
 
 		}
 
