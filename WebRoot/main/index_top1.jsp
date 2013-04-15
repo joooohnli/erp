@@ -55,9 +55,9 @@ String sqld="select * from document_main where value='开发管理' order by id"
 	
 	String sqla="";
 	if(field_type.equals("0")){
-	sqla = "select * from document_main where value!='开发管理' AND (reason='design' OR reason='stock' OR reason='drugstore' OR reason='security') order by id";
+	sqla = "select * from document_main where value!='开发管理' AND (reason='design' OR reason='stock' OR reason='drugstore') order by id";
 }else{
-	sqla = "select * from document_main where value!='开发管理' AND (reason='design' OR reason='stock' OR reason='drugstore' OR reason='security') and fieldType_tag='1' order by id";
+	sqla = "select * from document_main where value!='开发管理' AND (reason='design' OR reason='stock' OR reason='drugstore') and fieldType_tag='1' order by id";
 }
 	ResultSet rsa=db.executeQuery(sqla);
 	while(rsa.next()){
@@ -381,9 +381,9 @@ function setNull(){
  
   <%String sql="";
 	if(field_type.equals("0")){
-	sql = "select * from document_main where value!='开发管理' AND (reason='design' OR reason='stock' OR reason='drugstore' OR reason='security') order by id";
+	sql = "select * from document_main where value!='开发管理' AND (reason='design' OR reason='stock' OR reason='drugstore') order by id";
 }else{
-	sql = "select * from document_main where value!='开发管理' AND (reason='design' OR reason='stock' OR reason='drugstore' OR reason='security') and fieldType_tag='1' order by id";
+	sql = "select * from document_main where value!='开发管理' AND (reason='design' OR reason='stock' OR reason='drugstore') and fieldType_tag='1' order by id";
 }
 	ResultSet rs=db.executeQuery(sql);
 	for(int p=0;p<circle;p++){
