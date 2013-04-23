@@ -68,6 +68,12 @@ String[] max_capacity_amount=request.getParameterValues("max_capacity_amount");
 String[] details_number=request.getParameterValues("details_number");
 String[] available_amount=request.getParameterValues("available_amount");
 String[] serial_number_group=request.getParameterValues("serial_number_group");
+//john
+String[] date_in_produced = request.getParameterValues("date_in_produced");
+
+for (int i=0; i<date_in_produced.length; i++)
+	System.out.println(date_in_produced[i]);
+
 String sql6="select id from stock_workflow where object_ID='"+gather_ID+"' and gathering_time='"+gathering_time+"' and ((check_tag='0' and config_id<'"+config_id+"') or (check_tag='1' and config_id='"+config_id+"'))";
 ResultSet rs6=stock_db.executeQuery(sql6);
 if(!rs6.next()){
@@ -374,8 +380,19 @@ double amount333=0.0d;
 		}
 String sql5="select * from stock_balance where product_ID='"+product_ID[i]+"'"; 
 	ResultSet rs5=stock_db.executeQuery(sql5);
+	
+
+	//john
+//	//TODO 判断生产日期是否相同
+//	boolean product_with_new_date_flag = false;
+//	while(rs5.next()){
+//		if (date_in_produced[i].equals(rs5.getString("date_in_produced"))){
+//			product_with_new_date_flag = true;
+//			break;
+//		}
+//	}
 	if(rs5.next()){
-		
+
 		sql6="update stock_balance set amount='"+amount333+"',cost_price_sum='"+cost_price_sum333+"',cost_price='"+cost_price333+"',address_group='"+address_group+"' where id='"+rs5.getString("id")+"'";
 		stock_db.executeUpdate(sql6);
 		String sql24="update design_file set real_cost_price='"+cost_price333+"' where product_ID='"+product_ID[i]+"'";
@@ -396,7 +413,7 @@ String sql5="select * from stock_balance where product_ID='"+product_ID[i]+"'";
 			}
 					}
 	}else{
-		String sql7="insert into stock_balance(chain_id,chain_name,product_ID,product_name,amount,cost_price,cost_price_sum,address_group) values('"+chain_id+"','"+chain_name+"','"+product_ID[i]+"','"+product_name[i]+"','"+amount333+"','"+cost_price333+"','"+cost_price_sum333+"','"+address_group+"')";
+		String sql7="insert into stock_balance(chain_id,chain_name,product_ID,product_name,amount,cost_price,cost_price_sum,address_group,date_in_produced) values('"+chain_id+"','"+chain_name+"','"+product_ID[i]+"','"+product_name[i]+"','"+amount333+"','"+cost_price333+"','"+cost_price_sum333+"','"+address_group+"','"+date_in_produced[i]+"')";
 		stock_db.executeUpdate(sql7);
 		String sql25="update design_file set real_cost_price='"+cost_price333+"' where product_ID='"+product_ID[i]+"'";
 		stock_db.executeUpdate(sql25);

@@ -54,6 +54,13 @@ String[] stock_name=request.getParameterValues("stock_name");
 String[] amount=request.getParameterValues("amount");
 String[] serial_number=new String[stock_name.length];
 String[] product_ID=request.getParameterValues("product_ID");
+//john
+String[] date_in_produced = request.getParameterValues("date_in_produced");
+//暂行办法 
+for(int i=0;i<stock_name.length;i++){
+	date_in_produced[i] = date_in_produced[0];
+}
+
 int p=0;
 int lll=0;
 for(int i=0;i<stock_name.length;i++){
@@ -199,13 +206,13 @@ double cost_price_sum=0.0d;
 	double subtotal=Double.parseDouble(cost_price[i])*Double.parseDouble(amount[i]);
 	double amount22=Double.parseDouble(amount[i])+Double.parseDouble(gathered_amount[i]);
 	if(rsList.size()==0){
-		String sql4="insert into stock_paying_gathering(gather_ID,product_ID,details_number,product_name,amount,demand_amount,gathered_amount,cost_price,subtotal,gathered_subtotal,register,register_time,stock_ID,stock_name,max_capacity_amount,nick_name,serial_number,check_tag,gathering_time) values('"+gather_ID+"','"+product_ID[i]+"','"+details_number[i]+"','"+product_name[i]+"','"+amount[i]+"','"+demand_amount[i]+"','"+amount22+"','"+cost_price[i]+"','"+subtotal+"','"+gathered_subtotal[i]+"','"+register+"','"+register_time+"','"+stock_ID[i]+"','"+stock_name[i]+"','"+max_capacity_amount[i]+"','"+nick_name[i]+"','"+serial_number[i]+"','1','"+gathering_time+"')";
+		String sql4="insert into stock_paying_gathering(gather_ID,product_ID,details_number,product_name,amount,demand_amount,gathered_amount,cost_price,subtotal,gathered_subtotal,register,register_time,stock_ID,stock_name,max_capacity_amount,nick_name,serial_number,check_tag,gathering_time,date_in_produced) values('"+gather_ID+"','"+product_ID[i]+"','"+details_number[i]+"','"+product_name[i]+"','"+amount[i]+"','"+demand_amount[i]+"','"+amount22+"','"+cost_price[i]+"','"+subtotal+"','"+gathered_subtotal[i]+"','"+register+"','"+register_time+"','"+stock_ID[i]+"','"+stock_name[i]+"','"+max_capacity_amount[i]+"','"+nick_name[i]+"','"+serial_number[i]+"','1','"+gathering_time+"','"+date_in_produced[i]+"')";
 		//out.println(sql4);
 		stock_db.executeUpdate(sql4);
 		String sql="update stock_pre_gathering set gather_check_tag='0' where gather_ID='"+gather_ID+"' and product_ID='"+product_ID[i]+"' and stock_ID='"+stock_ID[i]+"'";
 		stock_db.executeUpdate(sql);
 	}else{
-		String sql4="insert into stock_paying_gathering(gather_ID,product_ID,details_number,product_name,amount,demand_amount,gathered_amount,cost_price,subtotal,gathered_subtotal,register,register_time,stock_ID,stock_name,max_capacity_amount,nick_name,serial_number,check_tag,gathering_time) values('"+gather_ID+"','"+product_ID[i]+"','"+details_number[i]+"','"+product_name[i]+"','"+amount[i]+"','"+demand_amount[i]+"','"+gathered_amount[i]+"','"+cost_price[i]+"','"+subtotal+"','"+gathered_subtotal[i]+"','"+register+"','"+register_time+"','"+stock_ID[i]+"','"+stock_name[i]+"','"+max_capacity_amount[i]+"','"+nick_name[i]+"','"+serial_number[i]+"','0','"+gathering_time+"')";
+		String sql4="insert into stock_paying_gathering(gather_ID,product_ID,details_number,product_name,amount,demand_amount,gathered_amount,cost_price,subtotal,gathered_subtotal,register,register_time,stock_ID,stock_name,max_capacity_amount,nick_name,serial_number,check_tag,gathering_time,date_in_produced) values('"+gather_ID+"','"+product_ID[i]+"','"+details_number[i]+"','"+product_name[i]+"','"+amount[i]+"','"+demand_amount[i]+"','"+gathered_amount[i]+"','"+cost_price[i]+"','"+subtotal+"','"+gathered_subtotal[i]+"','"+register+"','"+register_time+"','"+stock_ID[i]+"','"+stock_name[i]+"','"+max_capacity_amount[i]+"','"+nick_name[i]+"','"+serial_number[i]+"','0','"+gathering_time+"','"+date_in_produced[i]+"')";
 		//out.println(sql4);
 		stock_db.executeUpdate(sql4);
 		String sql="update stock_pre_gathering set gather_check_tag='1' where gather_ID='"+gather_ID+"' and product_ID='"+product_ID[i]+"' and stock_ID='"+stock_ID[i]+"'";

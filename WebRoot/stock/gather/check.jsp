@@ -21,6 +21,10 @@ String mod=request.getRequestURI();
 	 String handbook=demo.businessComment(mod,"您正在做的业务是：","document_main","reason","value");%>
 <script language="javascript" src="../../javascript/winopen/winopens.js"></script>
 <script language="javascript" src="../../javascript/stock/gather/gather.js"></script>
+
+<link rel="stylesheet" type="text/css" media="all" href="../../javascript/calendar/calendar-win2k-cold-1.css">
+<script type="text/javascript" src="../../javascript/calendar/cal.js"></script>
+
 <%
 try{
 
@@ -122,6 +126,8 @@ form.submit();
 	 <td width="12%" <%=TD_STYLE2%> class="TD_STYLE2"><%=demo.getLang("erp","库房名称")%> </td>
  <td width="11%" <%=TD_STYLE2%> class="TD_STYLE2"><%=demo.getLang("erp","应入库件数")%></td>
 	 <td width="11%" <%=TD_STYLE2%> class="TD_STYLE2"><%=demo.getLang("erp","已入库件数")%> </td>
+	   <td width="8%" <%=TD_STYLE2%> class="TD_STYLE2"><%=demo.getLang("erp","生产日期")%></td>
+	 
  <td width="11%" <%=TD_STYLE2%> class="TD_STYLE2"><%=demo.getLang("erp","本次入库数量")%> </td>
 	 <td width="13%" <%=TD_STYLE2%> class="TD_STYLE2"><%=demo.getLang("erp","审核序列号")%></td>
 	</tr>
@@ -156,10 +162,18 @@ String sql6="select * from stock_paying_gathering where gather_ID='"+gather_ID+"
 	 <td <%=TD_STYLE2%> class="TD_STYLE2"><%=exchange.toHtml(rs6.getString("product_name"))%>&nbsp;</td>
 	 <td <%=TD_STYLE2%> class="TD_STYLE2"><%=exchange.toHtml(rs6.getString("stock_name"))%>&nbsp;</td>
  <td <%=TD_STYLE2%> class="TD_STYLE2"><%=rs6.getDouble("demand_amount")%>&nbsp;</td>
-	 <td <%=TD_STYLE2%> class="TD_STYLE2"><%=rs6.getDouble("gathered_amount")%>&nbsp;</td>
+	 <td <%=TD_STYLE2%> class="TD_STYLE2"><%=rs6.getDouble("gathered_amount")%>&nbsp;</td><!--
+	 john
+	 --><td <%=TD_STYLE2%> class="TD_STYLE2"><input type="text" <%=INPUT_STYLE5%> value="<%=rs6.getString("date_in_produced")%>" class="INPUT_STYLE5" name="date_in_produced" onfocus="" id="date_start"></td>
+	 
  <td <%=TD_STYLE2%> class="TD_STYLE2"><input type="text" <%=INPUT_STYLE5%> class="INPUT_STYLE5" name="amount" value="<%=rs6.getDouble("amount")%>"></td>
 	 <td <%=TD_STYLE2%> class="TD_STYLE2"><%if(serial_number_tag==1){%><a href="check_serial_number.jsp?gather_ID=<%=gather_ID%>&&product_ID=<%=rs6.getString("product_ID")%>&&stock_ID=<%=rs6.getString("stock_ID")%>"><%=demo.getLang("erp","审核S/N")%><%}else if(serial_number_tag==2){%><a href="check_serial_number.jsp?gather_ID=<%=gather_ID%>&&product_ID=<%=rs6.getString("product_ID")%>&&stock_ID=<%=rs6.getString("stock_ID")%>"><%=demo.getLang("erp","审核B/N")%><%}else{%>&nbsp;<%}%></td>
  </tr>
+ 
+ <script type="text/javascript">
+Calendar.setup ({inputField : "date_start", ifFormat : "%Y-%m-%d", showsTime : false, button : "date_start", singleClick : true, step : 1});
+Calendar.setup ({inputField : "date_end", ifFormat : "%Y-%m-%d", showsTime : false, button : "date_end", singleClick : true, step : 1});
+</script>
 <%
 	}
 %>

@@ -29,6 +29,10 @@ String mod=request.getRequestURI();
 <script type="text/javascript" src="../../dwr/interface/multiLangValidate.js"></script>
 <script type="text/javascript" src="../../dwr/interface/validateV7.js"></script>
 <script type="text/javascript" src="../../javascript/include/validate/validation-framework.js"></script>
+
+<link rel="stylesheet" type="text/css" media="all" href="../../javascript/calendar/calendar-win2k-cold-1.css">
+<script type="text/javascript" src="../../javascript/calendar/cal.js"></script>
+
 <%
 
 int lll=0;
@@ -102,6 +106,8 @@ if(rs.next()){
  <td width="11%" <%=TD_STYLE2%> class="TD_STYLE2"><%=demo.getLang("erp","库房名称")%></td>
  <td width="8%" <%=TD_STYLE2%> class="TD_STYLE2"><%=demo.getLang("erp","应入库件数")%></td>
  <td width="8%" <%=TD_STYLE2%> class="TD_STYLE2"><%=demo.getLang("erp","已入库件数")%></td>
+  <td width="8%" <%=TD_STYLE2%> class="TD_STYLE2"><%=demo.getLang("erp","生产日期")%></td>
+ 
  <td width="10%" <%=TD_STYLE2%> class="TD_STYLE2"><%=demo.getLang("erp","本次入库数量")%></td>
  <td width="16%" <%=TD_STYLE2%> class="TD_STYLE2"><%=demo.getLang("erp","序列号")%></td>
  </tr>
@@ -141,6 +147,8 @@ if(stock_ID.indexOf(rs6.getString("stock_ID"))!= -1){
 	 <td <%=TD_STYLE2%> class="TD_STYLE2"><%=exchange.toHtml(rs6.getString("stock_name"))%>&nbsp;</td>	 
      <td <%=TD_STYLE2%> class="TD_STYLE2"><%=rs6.getDouble("amount")%>&nbsp;</td>	 
 	 <td <%=TD_STYLE2%> class="TD_STYLE2"><%=rs6.getDouble("gathered_amount")%>&nbsp;</td>
+	 <td <%=TD_STYLE2%> class="TD_STYLE2"><input type="text" <%=INPUT_STYLE5%> class="INPUT_STYLE5" name="date_in_produced" onfocus="" id="date_start"></td>
+	 
 <%if(rs6.getString("gather_check_tag").equals("0")&&!rs6.getString("gather_tag").equals("1")){%>
 	 <td <%=TD_STYLE2%> class="TD_STYLE2"><input type="text" <%=INPUT_STYLE5%> class="INPUT_STYLE5" id="amount" name="amount"></td>
 	 <td <%=TD_STYLE2%> class="TD_STYLE2">
@@ -154,6 +162,10 @@ if(stock_ID.indexOf(rs6.getString("stock_ID"))!= -1){
 	 <td <%=TD_STYLE2%> class="TD_STYLE2"><input name="serial_number" type="hidden" value="">&nbsp;</td>
 <%}%>
  </tr>
+<script type="text/javascript">
+Calendar.setup ({inputField : "date_start", ifFormat : "%Y-%m-%d", showsTime : false, button : "date_start", singleClick : true, step : 1});
+Calendar.setup ({inputField : "date_end", ifFormat : "%Y-%m-%d", showsTime : false, button : "date_end", singleClick : true, step : 1});
+</script>
 <%
 		}
 	}

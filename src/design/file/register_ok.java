@@ -100,6 +100,8 @@ public class register_ok extends HttpServlet {
 								.getParameter("product_medical_insurance_categories");
 						String product_prescription_marks = request
 								.getParameter("product_prescription_marks");
+						String quality_guarantee_period = request.getParameter("quality_guarantee_period");
+						
 
 						String product_class = request
 								.getParameter("product_class");
@@ -140,7 +142,7 @@ public class register_ok extends HttpServlet {
 							} else {
 								// added by john
 								String type = "采购";
-								String sql = "insert into design_file(type,chain_id,chain_name,product_ID,product_name,factory_name,product_class,product_specification,product_batch_number,product_packing_unit,product_dispensing_unit,product_medical_insurance_categories,product_prescription_marks,twin_name,twin_ID,personal_unit,personal_value,warranty,lifecycle,product_nick,list_price,cost_price,real_cost_price,register,register_time,provider_group,product_describe,check_tag,modify_tag,excel_tag,excel_tag2,excel_tag3,excel_tag4,responsible_person_name,responsible_person_ID,amount_unit) values ('"
+								String sql = "insert into design_file(type,chain_id,chain_name,product_ID,product_name,factory_name,product_class,product_specification,product_batch_number,product_packing_unit,product_dispensing_unit,product_medical_insurance_categories,product_prescription_marks,quality_guarantee_period,twin_name,twin_ID,personal_unit,personal_value,warranty,lifecycle,product_nick,list_price,cost_price,real_cost_price,register,register_time,provider_group,product_describe,check_tag,modify_tag,excel_tag,excel_tag2,excel_tag3,excel_tag4,responsible_person_name,responsible_person_ID,amount_unit) values ('"
 										+ type
 										+ "','"
 										+ chain_id
@@ -166,6 +168,8 @@ public class register_ok extends HttpServlet {
 										+ product_medical_insurance_categories
 										+ "','"
 										+ product_prescription_marks
+										+ "','"
+										+ quality_guarantee_period
 										+ "','"
 										+ twin_name
 										+ "','"

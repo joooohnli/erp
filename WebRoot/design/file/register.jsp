@@ -150,6 +150,14 @@ List returnList=OperateXML.returnList(file1,"name","mutiValidation","name","name
 				add by john
 				-->
 				<tr>
+					<td <%=TD_STYLE4%> class="TD_STYLE1" width="11%">
+					<font color=red>*</font><%=demo.getLang("erp","保质期(天)")%></td>
+					<td <%=TD_STYLE21%> class="TD_STYLE2" width="13%">
+						<input type="text" <%=INPUT_STYLE1%> class="INPUT_STYLE1"
+							name="quality_guarantee_period" style="width: 49%">
+					</td>
+				</tr>
+				<tr>
 					<td <%=TD_STYLE4%> class="TD_STYLE1" width="11%"><%=demo.getLang("erp","规格")%></td>
 					<td <%=TD_STYLE21%> class="TD_STYLE2" width="13%">
 						<input type="text" <%=INPUT_STYLE1%> class="INPUT_STYLE1"

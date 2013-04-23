@@ -65,6 +65,7 @@ if(rs2.next()){
 }
 }
 rs1 = stock_db.executeQuery(sql_search) ;
+System.out.println(sql_search);
 %>
 <%@include file="../../include/search_top.jsp"%>
 <table <%=TABLE_STYLE4%> style="width:98%;">
