@@ -55,7 +55,7 @@ while(i < link_div.length-1) {
 	j=j+1;
 }
 xxColor=new Array("#ccc","#b5cc88","#6B8E23","#3CB371","#f59d56","yellow","#d8d8d8","#708090","#4682B4","red","#ffc20e","#ccc","#b5cc88","#6B8E23","#3CB371","#f59d56","yellow","#d8d8d8","#708090","#4682B4","red","#ffc20e","#b5cc88","#6B8E23","#3CB371","#f59d56","yellow","#d8d8d8","#708090","#4682B4","red","#ffc20e","#ccc","#b5cc88","#6B8E23","#3CB371");	
-var pie=new Nseer_Pie_Div('pieChart',780,400,'药品动态分析图');
+var pie=new Nseer_Pie_Div('pieChart',780,400,'药品库存动态分析图');
 data_length=name.length;
 for(var i=0;i<data_length;i++){
 dcake=new Array(name[i],amount[i],xxColor[i],id[i]);

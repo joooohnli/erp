@@ -151,7 +151,7 @@ nseer_pie_pie.fillcolor='#afc';
 nseer_pie_pie.stroked='f';
 nseer_pie_pie.strokecolor='#000';
     fillStyle="<v:TextBox inset='2pt,0pt,0pt,0pt' style='font-size:10pt;'>"+
-                "<div align='left'><font color='#000'>药库药品总数(件):"+this.nseerSum+"</font></div></v:TextBox>";
+                "<div align='left'><font color='#000'>库存药品总数(件):"+this.nseerSum+"</font></div></v:TextBox>";
 nseer_pie_pie.innerHTML=fillStyle;
 nseer_div_pie.appendChild(nseer_pie);
 nseer_div_pie.appendChild(nseer_pie_area);
@@ -193,9 +193,9 @@ nseer_pie_xxDoc.style.height='800px';
 nseer_pie_xxDoc.filled='f';
 nseer_pie_xxDoc.stroked='f';
 if(i<this.nseerPieS.length-1){
-	fillStyle="<v:TextBox inset='0pt,3pt,0pt,0pt' style='font-size:10pt;'><div align='left'>"+this.nseerPieS[i][0]+"库存:"+this.nseerPieS[i][1]+"件</div></v:TextBox>";
+	fillStyle="<v:TextBox inset='0pt,3pt,0pt,0pt' style='font-size:10pt;'><div align='left'>"+this.nseerPieS[i][0]+"(件):"+this.nseerPieS[i][1]+"</div></v:TextBox>";
 }else{
-	fillStyle="<v:TextBox inset='0pt,3pt,0pt,0pt' style='font-size:10pt;'><div align='left'>"+this.nseerPieS[i][0]+"库存:"+this.nseerPieS[i][1]+"件</div></v:TextBox>";
+	fillStyle="<v:TextBox inset='0pt,3pt,0pt,0pt' style='font-size:10pt;'><div align='left'>"+this.nseerPieS[i][0]+"(件):"+this.nseerPieS[i][1]+"</div></v:TextBox>";
 }
 nseer_pie_xxDoc.innerHTML=fillStyle;
 nseer_div_pie.appendChild(nseer_pie_bgcolor);
@@ -246,7 +246,7 @@ if(this.nseerPieS[i][0]==0)height1='60px';
 nseer_make_pie.innerHTML+="<v:shape id='doc"+(i+1)+"' type='#3dtxt'  style='position:absolute;left:"+doc_xx+"px;top:"+doc_yy+"px;z-index:2000;display:none;width:100; height:"+height1+";'"+
                             " fillcolor='red' onmouseover='ontxt(cake"+(i+1)+","+(jj + iii / 14)+",doc"+(i+1)+",circle"+(i+1)+")'>"+
                             "<v:fill opacity='60293f' color2='fill lighten(120)' o:opacity2='60293f' rotate='t'  method='linear sigma' focus='100%' type='gradient'/>"+
-                            "<v:textpath style='v-text-kern:t;font-size:20pt;' trim='t' fitpath='t'  string='"+"药品："+this.nseerPieS[i][0]+" 的总件数:"+this.nseerPieS[i][1]+"，占比例:"+nseerMakeCircle(this.Percent[i]*100,2)+"%'/> "+
+                            "<v:textpath style='v-text-kern:t;font-size:20pt;' trim='t' fitpath='t'  string='"+this.nseerPieS[i][0]+" 的总件数:"+this.nseerPieS[i][1]+"，占比例:"+nseerMakeCircle(this.Percent[i]*100,2)+"%'/> "+
                            // "<o:extrusion v:ext='view' on='t' lightposition='0,0' lightposition2='0,0'/>"+
                             "</v:shape>";
                             //alert(nseer_make_pie.innerHTML)
