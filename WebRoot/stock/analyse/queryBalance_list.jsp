@@ -71,6 +71,10 @@ if(rs2.next()){
 rs1 = stock_db.executeQuery(sql_search);
 %>
 <%@include file="../../include/search_top.jsp"%>
+
+<div>
+	<input type="button" <%=BUTTON_STYLE1%> class="BUTTON_STYLE1" value="<%=demo.getLang("erp","图表显示")%>" onClick="winopen('../monitor/query.jsp')"/>
+</div>
 <div id="nseer_grid_div"></div>
 <script type="text/javascript">
 function id_link(link){
