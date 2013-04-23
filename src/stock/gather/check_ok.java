@@ -329,20 +329,30 @@ String sqln10="insert into stock_balance_details_details_for_cost(chain_id,chain
 		}
 		}
 	}
+	
+	//john
+	//按不同生产日期插入不同的行
 	String sql2="select * from stock_balance_details where product_ID='"+product_ID[i]+"' and stock_ID='"+stock_ID[i]+"'"; 
 	ResultSet rs2=stock_db.executeQuery(sql2);
-	if(rs2.next()){
+	boolean product_with_same_date_flag = false;
+	while(rs2.next()){
+		if (date_in_produced[i] != null && date_in_produced[i].equals(rs2.getString("date_in_produced"))) {
+			product_with_same_date_flag = true;
+			break;
+		}
+	}
+	if (product_with_same_date_flag) {
 		double amount2=rs2.getDouble("amount")+Double.parseDouble(amount[i]);
 		double subtotal2=rs2.getDouble("subtotal")+Double.parseDouble(cost_price[i])*Double.parseDouble(amount[i]);
 		double cost_price2=rs2.getDouble("cost_price");
 		if(amount2!=0){
 			cost_price2=subtotal2/amount2;
 		}
-		String sql3="update stock_balance_details set amount='"+amount2+"',subtotal='"+subtotal2+"',cost_price='"+cost_price2+"' where id='"+rs2.getString("id")+"'";
+		String sql3="update stock_balance_details set amount='"+amount2+"',subtotal='"+subtotal2+"',cost_price='"+cost_price2+"' where id='"+rs2.getString("id")+"' and stock_id='"+stock_ID[i]+"' and date_in_produced='"+date_in_produced[i]+"'";
 		stock_db.executeUpdate(sql3);
 	}else{
 		
-		String sql10="insert into stock_balance_details(chain_id,chain_name,product_ID,product_name,amount,cost_price,subtotal,stock_ID,stock_name,max_capacity_amount,nick_name) values('"+chain_id+"','"+chain_name+"','"+product_ID[i]+"','"+product_name[i]+"','"+amount[i]+"','"+cost_price[i]+"','"+subtotal+"','"+stock_ID[i]+"','"+stock_name[i]+"','"+max_capacity_amount[i]+"','"+nick_name[i]+"')";
+		String sql10="insert into stock_balance_details(chain_id,chain_name,product_ID,product_name,amount,cost_price,subtotal,stock_ID,stock_name,max_capacity_amount,nick_name,date_in_produced) values('"+chain_id+"','"+chain_name+"','"+product_ID[i]+"','"+product_name[i]+"','"+amount[i]+"','"+cost_price[i]+"','"+subtotal+"','"+stock_ID[i]+"','"+stock_name[i]+"','"+max_capacity_amount[i]+"','"+nick_name[i]+"','"+date_in_produced[i]+"')";
 		stock_db.executeUpdate(sql10);
 	}
 	if(!reason.equals("生产入库")&&!reason.equals("委外入库")&&!reason.equals("采购入库")&&!reason.equals("生产领料")&&!reason.equals("销售出库")&&!reason.equals("库存初始")){
