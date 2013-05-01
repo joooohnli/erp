@@ -2847,6 +2847,14 @@
     <url-pattern>/stock_config_stock_address_register_ok</url-pattern>
   </servlet-mapping>
   <servlet>
+    <servlet-name>drugstore_config_drugstore_address_register_ok</servlet-name>
+    <servlet-class>drugstore.config.drugstore.address_register_ok</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>drugstore_config_drugstore_address_register_ok</servlet-name>
+    <url-pattern>/drugstore_config_drugstore_address_register_ok</url-pattern>
+  </servlet-mapping>
+  <servlet>
     <servlet-name>stock_export_excel_locate_getpara</servlet-name>
     <servlet-class>stock.export.excel_locate_getpara</servlet-class>
   </servlet>

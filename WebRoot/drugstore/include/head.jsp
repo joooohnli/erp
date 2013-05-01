@@ -13,7 +13,7 @@
 %>
 <head>
 <%@ taglib uri="http://www.nseer.com/tag" prefix="app" %>
-<app:checkLogon database="stock"/>
+<app:checkLogon database="drugstore"/>
 <style>
 .nseerGround{
 	position:absolute;
