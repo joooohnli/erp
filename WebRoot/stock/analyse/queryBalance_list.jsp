@@ -7,7 +7,8 @@
  *as published by the Free Software Foundation; either
  *version 2 of the License, or (at your option) any later version.
  -->
-<%@page contentType="text/html; charset=UTF-8" language="java" import="java.sql.*,include.nseer_cookie.*" import="java.util.*" import="java.io.*" import="include.nseer_cookie.exchange" import ="include.nseer_db.*,java.text.*"%>
+<%@page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" language="java" import="java.sql.*,include.nseer_cookie.*" import="java.util.*" import="java.io.*" import="include.nseer_cookie.exchange" import ="include.nseer_db.*,java.text.*"%>
+<%request.setCharacterEncoding("UTF-8");%>
 <jsp:useBean id="validata" scope ="page" class ="validata.ValidataNumber"/>
 <%nseer_db stock_db = new nseer_db((String)session.getAttribute("unit_db_name"));%>
 <%nseer_db stock_db1 = new nseer_db((String)session.getAttribute("unit_db_name"));%>
@@ -82,22 +83,31 @@ function load_ajax() {
 	}
 	xmlhttp.onreadystatechange=function(){
 		if (xmlhttp.readyState==4 && xmlhttp.status==200){
-			alert(xmlhttp.responseText);
+			//alert(xmlhttp.responseText);
 			var jsonString=xmlhttp.responseText;
 			var data=eval("("+jsonString+")");
-			//alert("ok");
 			//alert(data[1]);
 			load_div_data(data);
 			//document.getElementById("ajax_text_div").innerHTML=xmlhttp.responseText;
 		}
 	}
-	xmlhttp.open("GET", "queryBalance_list_ajax.jsp", true);
+	var select_chain = document.getElementById("chain");
+	var chain_name=select_chain.options[select_chain.selectedIndex].text;
+	var select_stock = document.getElementById("stock");
+	var stock_name=select_stock.options[select_stock.selectedIndex].text
+	
+	//alert(chain_name+"  "+stock_name);
+	
+	xmlhttp.open("GET", "queryBalance_list_ajax.jsp?chain_name="+chain_name
+				+ "&&stock_name=" + stock_name, true);
 	xmlhttp.send();
 }
 
 function load_div_data(parse_json_data) {
 	var nseer_grid = new nseergrid();
 	nseer_grid.callname = "nseer_grid";
+	//clear the grid_div
+	document.getElementById('nseer_grid_div').innerHTML="";
 	nseer_grid.parentNode = nseer_grid.$("nseer_grid_div");
 	nseer_grid.columns =[
 					   {name: '<%=demo.getLang("erp","产品分类")%>'},
@@ -110,16 +120,68 @@ function load_div_data(parse_json_data) {
 	nseer_grid.column_width=[300,200,100,100,100,100];
 	nseer_grid.auto='<%=demo.getLang("erp","产品编号/名称")%>';
 	
+	for (var i=0;i<parse_json_data.length;i++){
+		var color="#000000";
+		if(Number(parse_json_data[i][2])>Number(parse_json_data[i][3])) {
+			color="red";
+		}
+		if(Number(parse_json_data[i][2])<Number(parse_json_data[i][4])) {
+			color="orange";
+		}
+		parse_json_data[i][2]="<div style=\"text-decoration : underline;color:#3366FF\" onclick=id_link(\"queryBalance.jsp?product_ID="+parse_json_data[i][1].split('/')[0]+"&&product_name="+parse_json_data[i][1].split('/')[1]+"\")><span style=\"color:'"+color+"'\">"+parse_json_data[i][2]+"</span></div>";
+	}
 	//nseer_grid.data need this!
 	parse_json_data.push(['']);
+	
 	nseer_grid.data = parse_json_data;
 	
 	nseer_grid.init();
 }
 </script>
 <table>
-  <tr>
-    <td><input type="text" onclick="load_ajax();"></td>
+	<tr>
+		<td <%=TD_STYLE1%> class="TD_STYLE8" width="9%"><%=demo.getLang("erp","药品种类")%>：</td>
+		<td <%=TD_STYLE2%> class="TD_STYLE2" width="10%">
+			<select <%=SELECT_STYLE1%> class="SELECT_STYLE1" id="chain" name="chain_name">
+				<option>--全部种类--</option>
+			<%nseer_db stock_db_s = new nseer_db((String)session.getAttribute("unit_db_name"));
+				String sql_s = "select * from design_config_file_kind;";
+				ResultSet rs_s = stock_db_s.executeQuery(sql_s);
+				while (rs_s.next()) {
+					if(!rs_s.getString("chain_name").equals("")) {
+			%>
+				<option><%=rs_s.getString("chain_name")%></option>
+			<%
+					}
+				}
+				stock_db_s.close();
+			%>
+			</select>
+		</td>
+		
+		<td <%=TD_STYLE1%> class="TD_STYLE8" width="9%"><%=demo.getLang("erp","库房")%>：</td>
+		<td <%=TD_STYLE2%> class="TD_STYLE2" width="10%">
+			<select <%=SELECT_STYLE1%> class="SELECT_STYLE1" id="stock" name="stock_name">
+				<option>--全部库房--</option>
+			<%nseer_db stock_db_t = new nseer_db((String)session.getAttribute("unit_db_name"));
+				String sql_t = "select * from stock_config_public_char where describe1='库房';";
+				ResultSet rs_t = stock_db_t.executeQuery(sql_t);
+				while (rs_t.next()) {
+			%>
+				<option><%=rs_t.getString("stock_name")%></option>
+			<%
+				}
+				stock_db_t.close();
+			%>
+			</select>
+		</td>
+	</tr>
+</table>
+<table <%=TABLE_STYLE3%> class="TABLE_STYLE3">
+  	<tr <%=TR_STYLE1%> class="TR_STYLE1">
+    <td <%=TD_STYLE6%> class="TD_STYLE6">
+    	<input type="button" class="BUTTON_STYLE1" value="<%=demo.getLang("erp","搜索")%>" onclick="load_ajax();">
+    </td>
   </tr>
 </table>
 

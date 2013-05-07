@@ -7,7 +7,7 @@
  *as published by the Free Software Foundation; either
  *version 2 of the License, or (at your option) any later version.
  -->
-<%@page contentType="text/html; charset=UTF-8" language="java" import="java.sql.*,include.nseer_cookie.*" import="java.util.*" import="java.io.*" import="include.nseer_cookie.exchange" import
+<%@page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" language="java" import="java.sql.*,include.nseer_cookie.*" import="java.util.*" import="java.io.*" import="include.nseer_cookie.exchange" import
 ="include.nseer_db.*,include.nseerdb.*,java.text.*"%>
 <%nseer_db stock_db = new nseer_db((String)session.getAttribute("unit_db_name"));%>
 <jsp:useBean id="getRateFromID" class="include.get_rate_from_ID.getRateFromID" scope="page"/>
@@ -31,7 +31,9 @@ String mod=request.getRequestURI();
 <%
 
 String product_ID=request.getParameter("product_ID") ;
-String product_name=exchange.unURL(request.getParameter("product_name")) ;
+//乱码待解决
+String product_name=request.getParameter("product_name"); 
+	product_name = new String(product_name.getBytes("iso-8859-1"),"gb2312"); 
 %>
 <%@include file="../include/paper_top.html"%>
 <table <%=TABLE_STYLE4%> class="TABLE_STYLE4">
@@ -54,7 +56,7 @@ String product_name=exchange.unURL(request.getParameter("product_name")) ;
 	 <td <%=TD_STYLE1%> class="TD_STYLE8" width="10%"><%=demo.getLang("erp","产品编号")%>：</td>
  <td <%=TD_STYLE2%> class="TD_STYLE2" width="40%"><%=product_ID%></td>
 	 <td <%=TD_STYLE1%> class="TD_STYLE8" width="10%"><%=demo.getLang("erp","产品名称")%>：</td>
- <td <%=TD_STYLE2%> class="TD_STYLE2" width="40%"><%=exchange.toHtml(product_name)%></td>
+ <td <%=TD_STYLE2%> class="TD_STYLE2" width="40%"><%=product_name%></td>
  </tr>
  </table>
 <table <%=TABLE_STYLE4%> class="TABLE_STYLE4">
