@@ -70,7 +70,61 @@ if(rs2.next()){
 }
 rs1 = stock_db.executeQuery(sql_search);
 %>
-<%@include file="../../include/search_top.jsp"%>
+
+<script type="text/javascript">
+function load_ajax() {
+	var xmlhttp;
+	if (window.XMLHttpRequest) {
+		xmlhttp=new XMLHttpRequest();
+	}
+	else {
+		xmlhttp=new ActiveObject("Microsotf.XMLHTTP");
+	}
+	xmlhttp.onreadystatechange=function(){
+		if (xmlhttp.readyState==4 && xmlhttp.status==200){
+			alert(xmlhttp.responseText);
+			var jsonString=xmlhttp.responseText;
+			var data=eval("("+jsonString+")");
+			//alert("ok");
+			//alert(data[1]);
+			load_div_data(data);
+			//document.getElementById("ajax_text_div").innerHTML=xmlhttp.responseText;
+		}
+	}
+	xmlhttp.open("GET", "queryBalance_list_ajax.jsp", true);
+	xmlhttp.send();
+}
+
+function load_div_data(parse_json_data) {
+	var nseer_grid = new nseergrid();
+	nseer_grid.callname = "nseer_grid";
+	nseer_grid.parentNode = nseer_grid.$("nseer_grid_div");
+	nseer_grid.columns =[
+					   {name: '<%=demo.getLang("erp","产品分类")%>'},
+                       {name: '<%=demo.getLang("erp","产品编号/名称")%>'},
+	                   {name: '<%=demo.getLang("erp","库存数量")%>'},
+                       {name: '<%=demo.getLang("erp","安全库存上限")%>'},
+	                   {name: '<%=demo.getLang("erp","安全库存下限")%>'},
+	                   {name: '<%=demo.getLang("erp","质检不合格数")%>'}
+	]
+	nseer_grid.column_width=[300,200,100,100,100,100];
+	nseer_grid.auto='<%=demo.getLang("erp","产品编号/名称")%>';
+	
+	//nseer_grid.data need this!
+	parse_json_data.push(['']);
+	nseer_grid.data = parse_json_data;
+	
+	nseer_grid.init();
+}
+</script>
+<table>
+  <tr>
+    <td><input type="text" onclick="load_ajax();"></td>
+  </tr>
+</table>
+
+<div id="ajax_text_div">
+</div>
 
 <div>
 	<input type="button" <%=BUTTON_STYLE1%> class="BUTTON_STYLE1" value="<%=demo.getLang("erp","图表显示")%>" onClick="winopen('../monitor/query.jsp')"/>
@@ -80,38 +134,6 @@ rs1 = stock_db.executeQuery(sql_search);
 function id_link(link){
 document.location.href=link;
 }
-var nseer_grid = new nseergrid();
-nseer_grid.callname = "nseer_grid";
-nseer_grid.parentNode = nseer_grid.$("nseer_grid_div");
-nseer_grid.columns =[
-					   {name: '<%=demo.getLang("erp","产品分类")%>'},
-                       {name: '<%=demo.getLang("erp","产品编号/名称")%>'},
-	                   {name: '<%=demo.getLang("erp","库存数量")%>'},
-                       {name: '<%=demo.getLang("erp","安全库存上限")%>'},
-	                   {name: '<%=demo.getLang("erp","安全库存下限")%>'},
-	                   {name: '<%=demo.getLang("erp","质检不合格数")%>'}
-]
-nseer_grid.column_width=[300,200,100,100,100,100];
-nseer_grid.auto='<%=demo.getLang("erp","产品编号/名称")%>';
-nseer_grid.data = [
-<page:pages rs="<%=rs1%>" strPage="<%=strPage%>"> 	
-['<%=rs1.getString("chain_id")%>/<%=exchange.toHtml(rs1.getString("chain_name"))%>','<%=rs1.getString("product_ID")%>/<%=exchange.toHtml(rs1.getString("product_name"))%>',
-<%
-String sql="select * from stock_cell where product_ID='"+rs1.getString("product_ID")+"'";
-ResultSet rs=stock_db1.executeQuery(sql);
-if(rs.next()){
-	String color="#000000";	
-	if(rs1.getDouble("amount")>rs.getDouble("max_amount")){
-	color="red";
-	}
-	if(rs1.getDouble("amount")<rs.getDouble("min_amount")){
-	color="orange";
-	}
-%>
-	'<div style="text-decoration : underline;color:#3366FF" onclick=id_link("queryBalance.jsp?product_ID=<%=rs1.getString("product_ID")%>&&product_name=<%=toUtf8String.utf8String(exchange.toURL(rs1.getString("product_name")))%>")><span style="color:<%=color%>"><%=rs1.getDouble("amount")%></span></div>','<span style="color:<%=color%>"><%=rs.getDouble("max_amount")%></span>','<span style="color:<%=color%>"><%=rs.getDouble("min_amount")%></span>'<%}%>,'<%=rs1.getDouble("unqualified_amount")%>'],
-</page:pages>
-['']];
-nseer_grid.init();
 </script>
 <div id="drag_div"></div>
 <div id="point_div_t"></div>
