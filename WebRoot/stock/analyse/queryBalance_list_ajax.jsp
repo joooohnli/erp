@@ -7,9 +7,13 @@
 	chain_name = new String(chain_name.getBytes("iso-8859-1"),"gb2312");  
 	String stock_name = request.getParameter("stock_name"); 
 	stock_name = new String(stock_name.getBytes("iso-8859-1"),"gb2312");   
+	String stock_num = request.getParameter("stock_num"); 
+	stock_num = new String(stock_num.getBytes("iso-8859-1"),"gb2312");
+	String drug_name = request.getParameter("drug_name"); 
+	drug_name = new String(drug_name.getBytes("iso-8859-1"),"gb2312");
 	String sql = "";
 	//test
-	System.out.println(chain_name+"  "+stock_name);
+	System.out.println(chain_name+"  "+stock_name+"   "+stock_num+"    "+drug_name);
 	
 	if (chain_name.equals("--全部种类--")&&stock_name.equals("--全部库房--")){	
 		sql="SELECT product_id, product_name, sum(amount) as amount FROM `stock_paying_gathering` GROUP BY  product_id;";

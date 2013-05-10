@@ -49,28 +49,6 @@ int k=1;
 condition=condition0;
 %>
 <%@include file="../../include/search_b.jsp"%>
-<%
-ResultSet rs1 = stock_db.executeQuery(sql_search);
-otherButtons="&nbsp;<input type=\"button\" "+BUTTON_STYLE1+" class=\"BUTTON_STYLE1\" id=\"select_all\" value=\""+demo.getLang("erp","打印")+"\"  onclick=\"javascript:winopen('queryBalance_list_print.jsp')\">";
-
-int n=0;
-int m=0;
-double amount=0.0d;
-while(rs1.next()){
-	amount+=rs1.getDouble("amount");
-String sql2="select min_amount,max_amount from stock_cell where product_ID='"+rs1.getString("product_ID")+"'";
-ResultSet rs2=stock_db1.executeQuery(sql2);
-if(rs2.next()){
-	if(rs1.getDouble("amount")>rs2.getDouble("max_amount")){
-	n++;
-	}
-	if(rs1.getDouble("amount")<rs2.getDouble("min_amount")){
-	m++;
-	}
-}
-}
-rs1 = stock_db.executeQuery(sql_search);
-%>
 
 <script type="text/javascript">
 function load_ajax() {
@@ -95,11 +73,17 @@ function load_ajax() {
 	var chain_name=select_chain.options[select_chain.selectedIndex].text;
 	var select_stock = document.getElementById("stock");
 	var stock_name=select_stock.options[select_stock.selectedIndex].text
+	var select_stock_num = document.getElementById("stock_num");
+	var stock_num = select_stock_num.options[select_stock_num.selectedIndex].text;
+	var input_drug = document.getElementById("drug");
+	var drug_name = input_drug.value;
 	
-	//alert(chain_name+"  "+stock_name);
+	//alert(stock_num+"   "+drug_name);
 	
 	xmlhttp.open("GET", "queryBalance_list_ajax.jsp?chain_name="+chain_name
-				+ "&&stock_name=" + stock_name, true);
+				+ "&&stock_name=" + stock_name
+				+ "&&stock_num=" + stock_num
+				+ "&&drug_name=" + drug_name, true);
 	xmlhttp.send();
 }
 
@@ -134,12 +118,41 @@ function load_div_data(parse_json_data) {
 	parse_json_data.push(['']);
 	
 	nseer_grid.data = parse_json_data;
-	
 	nseer_grid.init();
+}
+function id_link(link){
+document.location.href=link;
+
+function reset_search(){
+	alert("ok");
+	var select_chain = document.getElementById("chain");
+	select_chain.options[select_chain.selectedIndex-1].selected=true;
+	//var select_stock = document.getElementById("stock");
+	//select_stock.options[0].selected=true;
+	//var select_stock_num = document.getElementById("stock_num");
+	//select_stock_num.options[0].selected=true;
+	//var input_drug = document.getElementById("drug");
+	//input_drug.value="";
 }
 </script>
 <table>
 	<tr>
+		<td <%=TD_STYLE1%> class="TD_STYLE8" width="9%"><%=demo.getLang("erp","库房")%>：</td>
+		<td <%=TD_STYLE2%> class="TD_STYLE2" width="10%">
+			<select <%=SELECT_STYLE1%> class="SELECT_STYLE1" id="stock" name="stock_name">
+				<option>--全部库房--</option>
+			<%nseer_db stock_db_t = new nseer_db((String)session.getAttribute("unit_db_name"));
+				String sql_t = "select * from stock_config_public_char where describe1='库房';";
+				ResultSet rs_t = stock_db_t.executeQuery(sql_t);
+				while (rs_t.next()) {
+			%>
+				<option><%=rs_t.getString("stock_name")%></option>
+			<%
+				}
+				stock_db_t.close();
+			%>
+			</select>
+		</td>
 		<td <%=TD_STYLE1%> class="TD_STYLE8" width="9%"><%=demo.getLang("erp","药品种类")%>：</td>
 		<td <%=TD_STYLE2%> class="TD_STYLE2" width="10%">
 			<select <%=SELECT_STYLE1%> class="SELECT_STYLE1" id="chain" name="chain_name">
@@ -158,29 +171,37 @@ function load_div_data(parse_json_data) {
 			%>
 			</select>
 		</td>
-		
-		<td <%=TD_STYLE1%> class="TD_STYLE8" width="9%"><%=demo.getLang("erp","库房")%>：</td>
+	</tr>
+	<tr>
+		<td <%=TD_STYLE1%> class="TD_STYLE8" width="9%"><%=demo.getLang("erp","库存量")%>：</td>
 		<td <%=TD_STYLE2%> class="TD_STYLE2" width="10%">
-			<select <%=SELECT_STYLE1%> class="SELECT_STYLE1" id="stock" name="stock_name">
-				<option>--全部库房--</option>
-			<%nseer_db stock_db_t = new nseer_db((String)session.getAttribute("unit_db_name"));
-				String sql_t = "select * from stock_config_public_char where describe1='库房';";
-				ResultSet rs_t = stock_db_t.executeQuery(sql_t);
-				while (rs_t.next()) {
-			%>
-				<option><%=rs_t.getString("stock_name")%></option>
-			<%
-				}
-				stock_db_t.close();
-			%>
+			<select <%=SELECT_STYLE1%> class="SELECT_STYLE1" id="stock_num" name="stock_num_num">
+				<option>--全部库存--</option>
+				<option>0-50</option>
+				<option>50-100</option>
+				<option>100-500</option>
+				<option>500-1000</option>
+				<option>1000-2000</option>
+				<option>2000-5000</option>
+				<option>5000-10000</option>
+				<option>10000-20000</option>
+				<option>>20000</option>			
 			</select>
+		</td>
+		<td <%=TD_STYLE1%> class="TD_STYLE8" width="9%"><%=demo.getLang("erp","药品关键字")%>：</td>
+		<td <%=TD_STYLE2%> class="TD_STYLE2" width="10%">
+			<input <%=SELECT_STYLE1%> class="SELECT_STYLE1" type="text"  id="drug" name="drug_name">
 		</td>
 	</tr>
 </table>
 <table <%=TABLE_STYLE3%> class="TABLE_STYLE3">
   	<tr <%=TR_STYLE1%> class="TR_STYLE1">
     <td <%=TD_STYLE6%> class="TD_STYLE6">
-    	<input type="button" class="BUTTON_STYLE1" value="<%=demo.getLang("erp","搜索")%>" onclick="load_ajax();">
+    	<input type="button" class="BUTTON_STYLE1" value="<%=demo.getLang("erp","搜索")%>" onclick="load_ajax();"/>
+    	<input type="button" class="BUTTON_STYLE1" value="重置搜索条件" onClick="reset_search();"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    	
+		<input type="button"  class="BUTTON_STYLE1" value="<%=demo.getLang("erp","图表显示")%>" onClick="winopen('../monitor/query.jsp')"/>
+		<input type="button"  class="BUTTON_STYLE1" id="select_all" value=打印  onclick="javascript:winopen('queryBalance_list_print.jsp')"/>
     </td>
   </tr>
 </table>
@@ -188,15 +209,9 @@ function load_div_data(parse_json_data) {
 <div id="ajax_text_div">
 </div>
 
-<div>
-	<input type="button" <%=BUTTON_STYLE1%> class="BUTTON_STYLE1" value="<%=demo.getLang("erp","图表显示")%>" onClick="winopen('../monitor/query.jsp')"/>
-</div>
+
 <div id="nseer_grid_div"></div>
-<script type="text/javascript">
-function id_link(link){
-document.location.href=link;
-}
-</script>
+
 <div id="drag_div"></div>
 <div id="point_div_t"></div>
 <div id="point_div_b"></div>
