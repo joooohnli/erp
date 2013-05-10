@@ -33,7 +33,7 @@ String mod=request.getRequestURI();
 String product_ID=request.getParameter("product_ID") ;
 //乱码待解决
 String product_name=request.getParameter("product_name"); 
-	product_name = new String(product_name.getBytes("iso-8859-1"),"gb2312"); 
+	product_name = new String(product_name.getBytes("iso-8859-1"),"utf-8"); 
 %>
 <%@include file="../include/paper_top.html"%>
 <table <%=TABLE_STYLE4%> class="TABLE_STYLE4">

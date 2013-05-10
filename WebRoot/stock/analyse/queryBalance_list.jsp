@@ -94,15 +94,15 @@ function load_div_data(parse_json_data) {
 	document.getElementById('nseer_grid_div').innerHTML="";
 	nseer_grid.parentNode = nseer_grid.$("nseer_grid_div");
 	nseer_grid.columns =[
-					   {name: '<%=demo.getLang("erp","产品分类")%>'},
-                       {name: '<%=demo.getLang("erp","产品编号/名称")%>'},
+					   {name: '<%=demo.getLang("erp","药品分类")%>'},
+                       {name: '<%=demo.getLang("erp","药品编号/名称")%>'},
 	                   {name: '<%=demo.getLang("erp","库存数量")%>'},
                        {name: '<%=demo.getLang("erp","安全库存上限")%>'},
 	                   {name: '<%=demo.getLang("erp","安全库存下限")%>'},
 	                   {name: '<%=demo.getLang("erp","质检不合格数")%>'}
 	]
 	nseer_grid.column_width=[300,200,100,100,100,100];
-	nseer_grid.auto='<%=demo.getLang("erp","产品编号/名称")%>';
+	nseer_grid.auto='<%=demo.getLang("erp","药品编号/名称")%>';
 	
 	for (var i=0;i<parse_json_data.length;i++){
 		var color="#000000";
@@ -122,24 +122,29 @@ function load_div_data(parse_json_data) {
 }
 function id_link(link){
 document.location.href=link;
-
+}
 function reset_search(){
-	alert("ok");
 	var select_chain = document.getElementById("chain");
-	select_chain.options[select_chain.selectedIndex-1].selected=true;
-	//var select_stock = document.getElementById("stock");
-	//select_stock.options[0].selected=true;
-	//var select_stock_num = document.getElementById("stock_num");
-	//select_stock_num.options[0].selected=true;
-	//var input_drug = document.getElementById("drug");
-	//input_drug.value="";
+	select_chain.options[0].selected=true;
+	var select_stock = document.getElementById("stock");
+	select_stock.options[0].selected=true;
+	var select_stock_num = document.getElementById("stock_num");
+	select_stock_num.options[0].selected=true;
+	var input_drug = document.getElementById("drug");
+	input_drug.value="";
+	
+	//全搜索
+	search_button_click();
+}
+function search_button_click(){
+	load_ajax();
 }
 </script>
 <table>
 	<tr>
-		<td <%=TD_STYLE1%> class="TD_STYLE8" width="9%"><%=demo.getLang("erp","库房")%>：</td>
+		<td <%=TD_STYLE1%> class="TD_STYLE8" width="18%"><%=demo.getLang("erp","库房")%>：</td>
 		<td <%=TD_STYLE2%> class="TD_STYLE2" width="10%">
-			<select <%=SELECT_STYLE1%> class="SELECT_STYLE1" id="stock" name="stock_name">
+			<select <%=SELECT_STYLE1%> class="SELECT_STYLE1" id="stock" name="stock_name" onchange="search_button_click();">
 				<option>--全部库房--</option>
 			<%nseer_db stock_db_t = new nseer_db((String)session.getAttribute("unit_db_name"));
 				String sql_t = "select * from stock_config_public_char where describe1='库房';";
@@ -155,7 +160,7 @@ function reset_search(){
 		</td>
 		<td <%=TD_STYLE1%> class="TD_STYLE8" width="9%"><%=demo.getLang("erp","药品种类")%>：</td>
 		<td <%=TD_STYLE2%> class="TD_STYLE2" width="10%">
-			<select <%=SELECT_STYLE1%> class="SELECT_STYLE1" id="chain" name="chain_name">
+			<select <%=SELECT_STYLE1%> class="SELECT_STYLE1" id="chain" name="chain_name" onchange="search_button_click();">
 				<option>--全部种类--</option>
 			<%nseer_db stock_db_s = new nseer_db((String)session.getAttribute("unit_db_name"));
 				String sql_s = "select * from design_config_file_kind;";
@@ -175,9 +180,9 @@ function reset_search(){
 	<tr>
 		<td <%=TD_STYLE1%> class="TD_STYLE8" width="9%"><%=demo.getLang("erp","库存量")%>：</td>
 		<td <%=TD_STYLE2%> class="TD_STYLE2" width="10%">
-			<select <%=SELECT_STYLE1%> class="SELECT_STYLE1" id="stock_num" name="stock_num_num">
+			<select <%=SELECT_STYLE1%> class="SELECT_STYLE1" id="stock_num" name="stock_num_num" onchange="search_button_click();">
 				<option>--全部库存--</option>
-				<option>0-50</option>
+				<option><50</option>
 				<option>50-100</option>
 				<option>100-500</option>
 				<option>500-1000</option>
@@ -188,17 +193,16 @@ function reset_search(){
 				<option>>20000</option>			
 			</select>
 		</td>
-		<td <%=TD_STYLE1%> class="TD_STYLE8" width="9%"><%=demo.getLang("erp","药品关键字")%>：</td>
+		<td <%=TD_STYLE1%> class="TD_STYLE8" width="16%"><%=demo.getLang("erp","药品编号/名称(关键字)")%>：</td>
 		<td <%=TD_STYLE2%> class="TD_STYLE2" width="10%">
-			<input <%=SELECT_STYLE1%> class="SELECT_STYLE1" type="text"  id="drug" name="drug_name">
+			<input <%=SELECT_STYLE1%> class="SELECT_STYLE1" type="text"  id="drug" name="drug_name" onpropertychange="search_button_click();">
 		</td>
 	</tr>
 </table>
 <table <%=TABLE_STYLE3%> class="TABLE_STYLE3">
   	<tr <%=TR_STYLE1%> class="TR_STYLE1">
     <td <%=TD_STYLE6%> class="TD_STYLE6">
-    	<input type="button" class="BUTTON_STYLE1" value="<%=demo.getLang("erp","搜索")%>" onclick="load_ajax();"/>
-    	<input type="button" class="BUTTON_STYLE1" value="重置搜索条件" onClick="reset_search();"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    	<input type="button" class="BUTTON_STYLE1" value="重置搜索条件" onClick="reset_search();"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     	
 		<input type="button"  class="BUTTON_STYLE1" value="<%=demo.getLang("erp","图表显示")%>" onClick="winopen('../monitor/query.jsp')"/>
 		<input type="button"  class="BUTTON_STYLE1" id="select_all" value=打印  onclick="javascript:winopen('queryBalance_list_print.jsp')"/>
@@ -206,15 +210,15 @@ function reset_search(){
   </tr>
 </table>
 
-<div id="ajax_text_div">
-</div>
-
-
 <div id="nseer_grid_div"></div>
 
 <div id="drag_div"></div>
 <div id="point_div_t"></div>
 <div id="point_div_b"></div>
+<script type="text/javascript">
+search_button_click();
+</script>
+search_button_click();
 <%@include file="../../include/search_bottom.jsp"%>
 <page:updowntag num="<%=intRowCount%>" file="<%=fileName%>"/>
 <%
