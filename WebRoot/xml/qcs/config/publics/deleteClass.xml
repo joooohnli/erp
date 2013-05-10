@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<div-config title="恩信科技">
+<div-config title="川大科技">
 <div id="deleteRecords" class="nseer_div" nseerDef="dragAble">
 <div class="cssDiv1">
-<div class="cssDiv2">demo.getLang("erp","恩信科技")
+<div class="cssDiv2">demo.getLang("erp","川大科技")
 </div>
 </div>
 <div class="cssDiv3"  onclick="closeDiv('remove')"  onmouseover="mmcMouseStyle(this);"></div>

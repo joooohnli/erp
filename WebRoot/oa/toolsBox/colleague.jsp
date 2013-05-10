@@ -16,7 +16,7 @@
 <%nseer_db security_db = new nseer_db((String)session.getAttribute("unit_db_name"));%>
 <%nseer_db securitydb = new nseer_db((String)session.getAttribute("unit_db_name"));%>
 <jsp:useBean id="validata" scope ="page" class ="validata.ValidataNumber"/>
-<title><%=demo.getLang("erp","恩信科技开源ERP")%></title>
+<title><%=demo.getLang("erp","川大科技信息化平台")%></title>
 
 <%@ taglib uri="/WEB-INF/mytag.tld" prefix="page"%>
 <jsp:useBean id="query" scope="page" class="include.query.getRecordCount"/>

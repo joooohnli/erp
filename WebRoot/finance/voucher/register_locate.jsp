@@ -54,7 +54,7 @@ body,td,th {
 <img src="/erp/images/nseer_extend.gif" width="100" height="100" hspace="1">
 </td>
 <td <%=TD_STYLE3%> class="TD_STYLE3">
-这是您所设置的初始文件，具体功能需要您自行实现！如有任何问题请联系恩信科技<A HREF="http://www.nseer.com">www.nseer.com</A>
+这是您所设置的初始文件，具体功能需要您自行实现！如有任何问题请联系川大科技<A HREF="http://www.nseer.com">www.nseer.com</A>
 </td>
 </table>
 

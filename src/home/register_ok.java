@@ -109,7 +109,7 @@ InternetAddress from=new InternetAddress("nseerjava@188.com");
 message.setFrom(from);
 InternetAddress to=new InternetAddress(email);
 message.setRecipient(Message.RecipientType.TO,to);
-message.setSubject("请获取开源ERP管理员用户名和密码");	message.setText("您好，恩信科技已收到您的注册信息。您使用恩信科技开源ERP软件的管理员的用户名是"+name+"，密码是"+passwd);
+message.setSubject("请获取信息化平台管理员用户名和密码");	message.setText("您好，川大科技已收到您的注册信息。您使用川大科技信息化平台软件的管理员的用户名是"+name+"，密码是"+passwd);
 message.setSentDate(new java.util.Date());
 message.saveChanges();
 Transport transport=s.getTransport("smtp");

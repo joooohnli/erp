@@ -62,7 +62,7 @@ array1[i]=parseInt(href_text[i]);
 }
 
 xxColor=new Array("#ccc","#b5cc88","#6B8E23","#3CB371","#f59d56","yellow","#d8d8d8","#708090","#4682B4","red","#ffc20e","#ccc","#b5cc88","#6B8E23","#3CB371","#f59d56","yellow","#d8d8d8","#708090","#4682B4","red","#ffc20e","#b5cc88","#6B8E23","#3CB371","#f59d56","yellow","#d8d8d8","#708090","#4682B4","red","#ffc20e","#ccc","#b5cc88","#6B8E23","#3CB371");	
-var pie=new Nseer_Pie_Div('pieChart',780,400,'欢迎使用恩信科技系统访问分析图('+time1+')');
+var pie=new Nseer_Pie_Div('pieChart',780,400,'欢迎使用川大科技系统访问分析图('+time1+')');
 data_length=static_array.length
 for(var i=0;i<static_array.length;i++){
 

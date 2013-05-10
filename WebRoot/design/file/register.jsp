@@ -377,7 +377,7 @@ design_db.close();
 					<TD>
 						<div class="cssDiv1">
 							<div class="cssDiv2">
-								恩信科技开源ERP
+								川大科技信息化平台
 							</div>
 						</div>
 						<div class="cssDiv3" onclick="n_D.closeDiv('hidden')"

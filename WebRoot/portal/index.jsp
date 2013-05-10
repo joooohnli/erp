@@ -92,8 +92,8 @@ db_index.close();
           
            <tr>
              <td>
-		 <a target=blank href=http://wpa.qq.com/msgrd?V=1&amp;Uin=491438396&amp;Site=恩信科技&amp;Menu=yes><font style=font-size:12px;>491438396<img SRC=http://wpa.qq.com/pa?p=10:491438396:10 border=0 ></font></a><br>
-		 <a target=blank href=http://wpa.qq.com/msgrd?V=1&amp;Uin=772861935&amp;Site=恩信科技&amp;Menu=yes><font style=font-size:12px;>772861935<img SRC=http://wpa.qq.com/pa?p=10:772861935:10 border=0 ></font></a><br><br>
+		 <a target=blank href=http://wpa.qq.com/msgrd?V=1&amp;Uin=491438396&amp;Site=川大科技&amp;Menu=yes><font style=font-size:12px;>491438396<img SRC=http://wpa.qq.com/pa?p=10:491438396:10 border=0 ></font></a><br>
+		 <a target=blank href=http://wpa.qq.com/msgrd?V=1&amp;Uin=772861935&amp;Site=川大科技&amp;Menu=yes><font style=font-size:12px;>772861935<img SRC=http://wpa.qq.com/pa?p=10:772861935:10 border=0 ></font></a><br><br>
 		
 		  </td>
            </tr>

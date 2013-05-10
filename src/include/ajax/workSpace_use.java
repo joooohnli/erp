@@ -52,11 +52,11 @@ String file_path=rs.getString("file_path");
 
 int path_len=file_path.split("/").length;
 
-buff.append("style=\"background-image:url(images/mungg.gif);\" oncontextmenu=\"etv=event;right_click('"+chain_name+"','','"+view_tree_name+rs.getString("id")+"','"+rs.getString("CATEGORY_ID")+"','"+view_tree_name1+"')\"  href=\"javascript:menu_"+path_len+"('"+view_tree_name+"','"+rs.getString("CATEGORY_ID")+"','"+rs.getString("file_name")+"');\"  onmousemove=\"window.status='powered by nseer erp'\" onmouseover=\"window.status='powered by nseer erp'\">"+demo.getLang(groupName,rs.getString("file_name"))+"\n");
+buff.append("style=\"background-image:url(images/mungg.gif);\" oncontextmenu=\"etv=event;right_click('"+chain_name+"','','"+view_tree_name+rs.getString("id")+"','"+rs.getString("CATEGORY_ID")+"','"+view_tree_name1+"')\"  href=\"javascript:menu_"+path_len+"('"+view_tree_name+"','"+rs.getString("CATEGORY_ID")+"','"+rs.getString("file_name")+"');\"  onmousemove=\"window.status='科技强医'\" onmouseover=\"window.status='科技强医'\">"+demo.getLang(groupName,rs.getString("file_name"))+"\n");
 				
 }else{
 
-buf.append("style=\"background-image:url(images/muk.gif);\" oncontextmenu=\"etv=event;right_click('"+chain_name+"','"+rs.getString("file_path")+rs.getString("hreflink")+"','"+view_tree_name+rs.getString("id")+"','"+rs.getString("CATEGORY_ID")+"','"+view_tree_name1+"')\"  href=\"javascript:void(0)\"  onclick=\"open_blank('"+rs.getString("file_path")+rs.getString("hreflink")+"')\" onmouseover=\"window.status='powered by nseer erp';this.href='javascript:void(0)'; return true\">"+demo.getLang(groupName,rs.getString("file_name"))+"\n");
+buf.append("style=\"background-image:url(images/muk.gif);\" oncontextmenu=\"etv=event;right_click('"+chain_name+"','"+rs.getString("file_path")+rs.getString("hreflink")+"','"+view_tree_name+rs.getString("id")+"','"+rs.getString("CATEGORY_ID")+"','"+view_tree_name1+"')\"  href=\"javascript:void(0)\"  onclick=\"open_blank('"+rs.getString("file_path")+rs.getString("hreflink")+"')\" onmouseover=\"window.status='科技强医';this.href='javascript:void(0)'; return true\">"+demo.getLang(groupName,rs.getString("file_name"))+"\n");
 
 //加载模块（超连接路径）		
 				

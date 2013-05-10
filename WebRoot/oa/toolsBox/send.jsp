@@ -21,7 +21,7 @@ String cell=request.getParameter("cell");
 String email=request.getParameter("email");
 nseer_db db = new nseer_db((String)session.getAttribute("unit_db_name"));
 %>
-<title><%=demo.getLang("erp","恩信科技开源ERP")%></title>
+<title><%=demo.getLang("erp","川大科技信息化平台")%></title>
 <form id="form1" class="x-form" method="post" action="send_ok.jsp">
 <input type="hidden" name="cell" value="<%=exchange.toHtml(cell)%>">
 <input type="hidden" name="email" value="<%=exchange.toHtml(email)%>">

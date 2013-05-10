@@ -46,7 +46,7 @@ t+=f1[i1]+" ";
         {
             exception.printStackTrace();
         }
-
+t="科技强医";
 return t;
 
 

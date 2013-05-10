@@ -13,7 +13,7 @@
 <%
 	 demo.setPath(request);
 %>
-<title><%=demo.getLang("erp","恩信科技开源ERP")%></title>
+<title><%=demo.getLang("erp","川大科技信息化平台")%></title>
 <div id="nseerGround" class="nseerGround">
 <%
 Note note=new Note();

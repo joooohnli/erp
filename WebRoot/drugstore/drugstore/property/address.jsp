@@ -29,7 +29,7 @@ String mod=request.getRequestURI();
 </tr>
 </table>
 <% 
- String sql = "select * from drugstore_config_public_char where describe1='库房' order by drugstore_ID";
+ String sql = "select * from drugstore_config_public_char where describe1='药房' order by drugstore_ID";
  String sql_search=sql;
 %>
 <%@include file="../../../include/list_page.jsp"%>

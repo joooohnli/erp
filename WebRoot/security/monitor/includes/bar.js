@@ -20,7 +20,7 @@ c.setDefaultType(CHART_AREA | CHART_STACKED);
 c.setHorizontalLabels(['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十1月', '十2月']);
 c.setBarWidth(20);
 c.add('',    '#ffffff',     [], CHART_LINE);
-c.add('恩信科技',     'red', [10,43,  7, 12, 20, 44, 16, 36, 36, 18,20,60],      CHART_BAR);
+c.add('川大科技',     'red', [10,43,  7, 12, 20, 44, 16, 36, 36, 18,20,60],      CHART_BAR);
 c.add('Memory Usage',    'blue', [5,60, 20,  3,  2,  26,  4, 80, 12, 8,60,30],      CHART_BAR);
 c.draw();
 }

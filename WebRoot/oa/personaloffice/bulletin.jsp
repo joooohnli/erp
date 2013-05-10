@@ -12,7 +12,7 @@
 <%nseer_db oa_db = new nseer_db((String)session.getAttribute("unit_db_name"));%>
 <jsp:useBean id="demo" class="include.tree_index.businessComment" scope="page"/>
 <%@include file="../include/head1.jsp"%>
-<title><%=demo.getLang("erp","恩信科技开源ERP")%></title>
+<title><%=demo.getLang("erp","川大科技信息化平台")%></title>
 
 <%@ page import="include.nseer_cookie.isPrint"%>
 <%isPrint isPrint=new isPrint(request);%>

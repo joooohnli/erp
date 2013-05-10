@@ -16,8 +16,8 @@
  *along with this program; if not, write to the Free Software
  *Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  *
- *这个文件是恩信科技ERP软件的组成部分。
- *版权所有（C）2006-2010 北京恩信创业科技有限公司/http://www.nseer.com
+ *这个文件是川大科技ERP软件的组成部分。
+ *版权所有（C）2006-2010 四川大学计算机学院/http://www.nseer.com
  *
  *这一程序是自由软件，你可以遵照自由软件基金会出版的GNU通用公共许可
  *证条款来修改和重新发布这一程序。或者用许可证的第二版，或者（根据你的选

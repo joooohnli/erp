@@ -155,7 +155,7 @@ out.println("}}");
 
 out.println("var nowli;");
 out.println("function changeColor(obj,path){");
-out.println("window.status=\"powered by nseer erp \"");
+out.println("window.status=\"科技强医 \"");
 out.println("obj.href=path");
 out.println("obj.target=\"content\"");
 
@@ -842,7 +842,7 @@ out.println("</div>");
 out.println("</body>");
 out.println("<script>");
 out.println("window.onload=function (){");
-out.println("window.status=\"powered by nseer erp \"");
+out.println("window.status=\"科技强医 \"");
 out.println("document.getElementById('root1').style.width=document.body.clientWidth+'px';");
 out.println("}");
 out.println("window.onresize=function (){");

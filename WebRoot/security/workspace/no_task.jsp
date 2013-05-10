@@ -15,9 +15,9 @@ demo.setPath(request);
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title><%=demo.getLang("erp","欢迎使用恩信科技开源ERP")%></title>
+<title><%=demo.getLang("erp","欢迎使用川大科技信息化平台")%></title>
 </head>
-<font color="green" size="2"><%=demo.getLang("erp","欢迎使用恩信科技开源ERP")%></font>
+<font color="green" size="2"><%=demo.getLang("erp","欢迎使用川大科技信息化平台")%></font>
 <body>
 </body>
 </html>

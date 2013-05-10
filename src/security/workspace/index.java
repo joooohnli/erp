@@ -58,7 +58,7 @@ if(rs.next()){
       out.write("\r\n");
       out.write("<html>\r\n");
       out.write("<title>");
-      out.print(demo.getLang("erp","欢迎使用恩信科技开源ERP"));
+      out.print(demo.getLang("erp","欢迎使用川大科技信息化平台"));
       out.write("</title>\r\n");
       out.write("<head>\r\n");
       out.write("<link rel=\"stylesheet\" type=\"text/css\" media=\"all\" href=\"security/workspace/menu.css\">\r\n");
@@ -1036,7 +1036,7 @@ if(rs.next()){
       out.write("}\r\n");
       out.write("function div_top(num1){\r\n");
       out.write("\r\n");
-      out.write("window.status='powered by nseer erp';\r\n");
+      out.write("window.status='科技强医';\r\n");
       out.write("//this.href='javascript:void(0)';\r\n");
       out.write("//return true;\r\n");
       out.write("\r\n");
@@ -1107,7 +1107,7 @@ if(rs.next()){
       out.write("var str = xmlhttp.responseText.split(\"\\n\");\r\n");
       out.write("var suggest='<ul>'\r\n");
       out.write("for(i=0; i < str.length - 1; i++) {\r\n");
-      out.write(" suggest+= '<li onclick=\"div_top(this.offsetTop);\" onmousemove=\"window.status=\\'powered by nseer erp\\'\" onmouseover=\"window.status=\\'powered by nseer erp\\'\"><a id=\"active\" ' + str[i] + '</a></li>';\r\n");
+      out.write(" suggest+= '<li onclick=\"div_top(this.offsetTop);\" onmousemove=\"window.status=\\'科技强医\\'\" onmouseover=\"window.status=\\'科技强医\\'\"><a id=\"active\" ' + str[i] + '</a></li>';\r\n");
       out.write("}\r\n");
       out.write("suggest=suggest+'</ul>'\r\n");
       out.write("module_2.innerHTML=suggest;\r\n");
@@ -2342,7 +2342,7 @@ if(strhead.indexOf(browercheck.IE)!=-1){
       out.write("</div>\r\n");
       out.write("\r\n");
       out.write("<div style=\"display:none\" id=\"title_top\"><div style=\"background:#FFFFCC;padding: 2px 5px 2px 0.5em\"><font size=\"2\">");
-      out.print(demo.getLang("erp","单击这里开始运行恩信科技ERP软件"));
+      out.print(demo.getLang("erp","单击这里开始运行川大科技ERP软件"));
       out.write("</font></div></div>\r\n");
       out.write("<script>\r\n");
       out.write("function dd(){\r\n");
@@ -2358,7 +2358,7 @@ if(strhead.indexOf(browercheck.IE)!=-1){
       out.write("<ul>\r\n");
       out.write("<!-- dsgasdgasdgas -->\r\n");
       out.write("<li><a style=\"background-image:url(images/main.gif);\" href=\"http://www.nseer.com\" target=\"_blank\">");
-      out.print(demo.getLang("erp","欢迎使用恩信科技开源ERPV7.10"));
+      out.print(demo.getLang("erp","欢迎使用川大科技信息化平台V7.10"));
       out.write("</a></li>\r\n");
 java.util.Date  now  =  new  java.util.Date();
 	GregorianCalendar now1=new GregorianCalendar();
@@ -2382,7 +2382,7 @@ if(rs.getString("link").equals("")){
 
       out.write("\r\n");
       out.write("<!-- 绿色      -->\r\n");
-      out.write("<li onclick=\"div_top(this.offsetTop)\" onclick=\"div_top(this.offsetTop);\" onmousemove=\"window.status='powered by nseer erp'\" onmouseover=\"window.status='powered by nseer erp'\"><a style=\"background-image:url(images/mungg.gif);\"  href=\"javascript:menu_first('");
+      out.write("<li onclick=\"div_top(this.offsetTop)\" onclick=\"div_top(this.offsetTop);\" onmousemove=\"window.status='科技强医'\" onmouseover=\"window.status='科技强医'\"><a style=\"background-image:url(images/mungg.gif);\"  href=\"javascript:menu_first('");
       out.print(rs.getString("module_name"));
       out.write('\'');
       out.write(',');
@@ -2419,10 +2419,10 @@ if(rs.getString("link").equals("")){
 }}
       out.write("\r\n");
       out.write("<!-- dfasdfasdfasdfasdfasdf -->\r\n");
-      out.write("<li onclick=\"div_top(this.offsetTop)\" onclick=\"div_top(this.offsetTop);\" onmousemove=\"window.status='powered by nseer erp'\"><a style=\"background-image:url(images/main.gif);\" href=\"main/index1.jsp\"><font color=\"#000000\">");
+      out.write("<li onclick=\"div_top(this.offsetTop)\" onclick=\"div_top(this.offsetTop);\" onmousemove=\"window.status='科技强医'\"><a style=\"background-image:url(images/main.gif);\" href=\"main/index1.jsp\"><font color=\"#000000\">");
       out.print(demo.getLang("erp","时尚界面"));
       out.write("</font></a></li>\r\n");
-      out.write("<li  onclick=\"div_top(this.offsetTop)\" onclick=\"div_top(this.offsetTop);\" onmousemove=\"window.status='powered by nseer erp'\"><a style=\"background-image:url(images/main.gif);\" href=\"home/logout.jsp\"><font color=\"#000000\">");
+      out.write("<li  onclick=\"div_top(this.offsetTop)\" onclick=\"div_top(this.offsetTop);\" onmousemove=\"window.status='科技强医'\"><a style=\"background-image:url(images/main.gif);\" href=\"home/logout.jsp\"><font color=\"#000000\">");
       out.print(demo.getLang("erp","退出系统"));
       out.write("</font></a></li>\r\n");
       out.write("</ul>\r\n");
@@ -2518,21 +2518,21 @@ if(rs.getString("link").equals("")){
       out.write("<div id=\"queue\" style=\"position:absolute;z-index:100;bottom:0px;left:60px;width:26px;height:26px;\" onmouseover=\"queue_recover()\" onmouseout=\"queue_recover1()\"  onClick=\"queue()\"><img src=\"images/hh.gif\" width=22 height=22 onmouseover=\"img_change('c1','hh5.gif')\" onmouseout=\"img_change('c1','hh.gif')\" onMouseDown=\"img_change('c1','hh6.gif')\" onMouseUp=\"img_change('c1','hh.gif')\" name=\"c1\"></div>\r\n");
       out.write("\r\n");
       out.write("\r\n");
-      out.write("<div id=\"monitor\" style=\"position:absolute;z-index:100;bottom:0px;left:100px;width:26;height:26;\" onmouseover=\"monitor_recover()\" onmouseout=\"monitor_recover1()\"><a href=\"javascript:void(0)\"  onclick=\"open_blank('security/monitor/query.jsp')\" onmouseover=\"window.status='powered by nseer erp';this.href='javascript:void(0)'; return true\"><img src=\"images/monitor30.gif\" width=22 height=22 onmouseover=\"img_change('c2','monitor33.gif')\" onmouseout=\"img_change('c2','monitor30.gif')\" onMouseDown=\"img_change('c2','monitor32.gif')\" onMouseUp=\"img_change('c2','monitor30.gif')\" name=\"c2\" border=\"0\"></a></div>\r\n");
+      out.write("<div id=\"monitor\" style=\"position:absolute;z-index:100;bottom:0px;left:100px;width:26;height:26;\" onmouseover=\"monitor_recover()\" onmouseout=\"monitor_recover1()\"><a href=\"javascript:void(0)\"  onclick=\"open_blank('security/monitor/query.jsp')\" onmouseover=\"window.status='科技强医';this.href='javascript:void(0)'; return true\"><img src=\"images/monitor30.gif\" width=22 height=22 onmouseover=\"img_change('c2','monitor33.gif')\" onmouseout=\"img_change('c2','monitor30.gif')\" onMouseDown=\"img_change('c2','monitor32.gif')\" onMouseUp=\"img_change('c2','monitor30.gif')\" name=\"c2\" border=\"0\"></a></div>\r\n");
       out.write("\r\n");
       out.write("\r\n");
-      out.write("<div id=\"STOCK\" style=\"position:absolute;z-index:100;bottom:0px;left:140px;width:26;height:26;\" onmouseover=\"STOCK_recover()\" onmouseout=\"STOCK_recover1()\"><a href=\"javascript:void(0)\"  onclick=\"href_link(this,'portal/index.jsp')\" onmouseover=\"window.status='powered by nseer erp';this.href='javascript:void(0)'; return true\"><img src=\"images/STOCK30.gif\" width=22 height=22 onmouseover=\"img_change('c3','STOCK33.gif')\" onmouseout=\"img_change('c3','STOCK30.gif')\" onMouseDown=\"img_change('c3','STOCK32.gif')\" onMouseUp=\"img_change('c3','STOCK30.gif')\" name=\"c3\" border=\"0\"></a></div>\r\n");
+      out.write("<div id=\"STOCK\" style=\"position:absolute;z-index:100;bottom:0px;left:140px;width:26;height:26;\" onmouseover=\"STOCK_recover()\" onmouseout=\"STOCK_recover1()\"><a href=\"javascript:void(0)\"  onclick=\"href_link(this,'portal/index.jsp')\" onmouseover=\"window.status='科技强医';this.href='javascript:void(0)'; return true\"><img src=\"images/STOCK30.gif\" width=22 height=22 onmouseover=\"img_change('c3','STOCK33.gif')\" onmouseout=\"img_change('c3','STOCK30.gif')\" onMouseDown=\"img_change('c3','STOCK32.gif')\" onMouseUp=\"img_change('c3','STOCK30.gif')\" name=\"c3\" border=\"0\"></a></div>\r\n");
       out.write("\r\n");
       out.write("\r\n");
       out.write("<div id=\"bbs\" style=\"position:absolute;z-index:100;bottom:0px;left:180px;width:26;height:26;\" onmouseover=\"bbs_recover()\" onmouseout=\"bbs_recover1()\"><img src=\"images/bbs30.gif\" width=22 height=22 onmouseover=\"img_change('c4','bbs33.gif')\" onmouseout=\"img_change('c4','bbs30.gif')\" onMouseDown=\"img_change('c4','bbs32.gif')\" onMouseUp=\"img_change('c4','bbs30.gif')\" name=\"c4\" border=\"0\"></div>\r\n");
       out.write("\r\n");
       out.write("<div id=\"bbs1\" style=\"position:absolute;z-index:100;bottom:0px;left:180px;width:26;height:26;\" onmouseover=\"bbs_recover()\" onmouseout=\"bbs_recover1()\"><embed src=\"images/bbs.swf\" width=22 height=22 border=\"0\"></div>\r\n");
       out.write("\r\n");
-      out.write("<div id=\"search\" style=\"position:absolute;z-index:100;bottom:0px;left:220px;width:26;height:26;\" onmouseover=\"search_recover()\" onmouseout=\"search_recover1()\"><a href=\"javascript:void(0)\"  onclick=\"href_link(this,'oa/personaloffice/search.jsp')\" onmouseover=\"window.status='powered by nseer erp';this.href='javascript:void(0)'; return true\" ><img src=\"images/search30.gif\" width=22 height=22 onmouseover=\"img_change('c5','search33.gif')\" onmouseout=\"img_change('c5','search30.gif')\" onMouseDown=\"img_change('c5','search32.gif')\" onMouseUp=\"img_change('c5','search30.gif')\" name=\"c5\" border=\"0\"></a></div>\r\n");
+      out.write("<div id=\"search\" style=\"position:absolute;z-index:100;bottom:0px;left:220px;width:26;height:26;\" onmouseover=\"search_recover()\" onmouseout=\"search_recover1()\"><a href=\"javascript:void(0)\"  onclick=\"href_link(this,'oa/personaloffice/search.jsp')\" onmouseover=\"window.status='科技强医';this.href='javascript:void(0)'; return true\" ><img src=\"images/search30.gif\" width=22 height=22 onmouseover=\"img_change('c5','search33.gif')\" onmouseout=\"img_change('c5','search30.gif')\" onMouseDown=\"img_change('c5','search32.gif')\" onMouseUp=\"img_change('c5','search30.gif')\" name=\"c5\" border=\"0\"></a></div>\r\n");
       out.write("\r\n");
       out.write("\r\n");
       out.write("\r\n");
-      out.write("<div id=\"colleague\" style=\"position:absolute;z-index:100;bottom:0px;left:260px;width:26;height:26;\" onmouseover=\"colleague_recover()\" onmouseout=\"colleague_recover1()\"><a onclick=\"href_link(this,'oa/personaloffice/colleague.jsp')\" onmouseover=\"window.status='powered by nseer erp';this.href='javascript:void(0)'; return true\"><img src=\"images/colleague30.gif\" width=22 height=22 onmouseover=\"img_change('c6','colleague33.gif')\" onmouseout=\"img_change('c6','colleague30.gif')\" onMouseDown=\"img_change('c6','colleague32.gif')\" onMouseUp=\"img_change('c6','colleague30.gif')\" name=\"c6\" border=\"0\"></a></div>\r\n");
+      out.write("<div id=\"colleague\" style=\"position:absolute;z-index:100;bottom:0px;left:260px;width:26;height:26;\" onmouseover=\"colleague_recover()\" onmouseout=\"colleague_recover1()\"><a onclick=\"href_link(this,'oa/personaloffice/colleague.jsp')\" onmouseover=\"window.status='科技强医';this.href='javascript:void(0)'; return true\"><img src=\"images/colleague30.gif\" width=22 height=22 onmouseover=\"img_change('c6','colleague33.gif')\" onmouseout=\"img_change('c6','colleague30.gif')\" onMouseDown=\"img_change('c6','colleague32.gif')\" onMouseUp=\"img_change('c6','colleague30.gif')\" name=\"c6\" border=\"0\"></a></div>\r\n");
       out.write("\r\n");
       out.write("<div id=\"taskDiv\" style=\"position:absolute;z-index:100;bottom:0px;left:300px;width:26;height:26;\" onmouseover=\"task_recover()\" onmouseout=\"task_recover1()\"><img src=\"images/task30.gif\" width=22 height=22 onmouseover=\"img_change('c7','task33.gif')\" onmouseout=\"img_change('c7','task30.gif')\" name=\"c7\" border=\"0\"></div>\r\n");
       out.write("\r\n");

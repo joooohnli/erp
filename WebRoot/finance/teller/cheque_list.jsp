@@ -170,7 +170,7 @@ Calendar.setup ({inputField : a3, ifFormat : "%Y-%m-%d", showsTime : false, butt
     <TR>
       <TD  background="../../images/bg_03.gif"></TD>
  <TD>
-<div class="cssDiv1"><div class="cssDiv2"><%=demo.getLang("erp","恩信科技开源ERP")%></div></div>
+<div class="cssDiv1"><div class="cssDiv2"><%=demo.getLang("erp","川大科技信息化平台")%></div></div>
 <div class="cssDiv3"  onclick="n_D.closeDiv('hidden')"  onmouseover="n_D.mmcMouseStyle(this);"></div>
 <div id="nseer4_0" style="position:absolute;left:10px;top:40px;width:100%;height:89%;overflow:auto;">
 <script>

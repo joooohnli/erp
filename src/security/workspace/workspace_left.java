@@ -147,7 +147,7 @@ nseer_db db = new nseer_db((String)session.getAttribute("unit_db_name"));
       out.write("}}\r\n");
       out.write("var nowli;\r\n");
       out.write("function changeColor(obj,path){\r\n");
-      out.write("window.status=\"powered by nseer erp \"\r\n");
+      out.write("window.status=\"科技强医 \"\r\n");
       out.write("obj.href=path\r\n");
       out.write("obj.target=\"content\"\r\n");
       out.write("if(nowli!=null)\r\n");

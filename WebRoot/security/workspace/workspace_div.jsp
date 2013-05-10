@@ -44,7 +44,7 @@ if(session.getAttribute("human_IDD")==null) response.sendRedirect("../../home/lo
 <META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
 <META HTTP-EQUIV="Expires" CONTENT="0">
 
-<title><%=demo.getLang("erp","欢迎进入恩信科技ERP系统")%></title>
+<title><%=demo.getLang("erp","欢迎进入川大科技ERP系统")%></title>
 
 <%
 String human_ID=(String)session.getAttribute("human_IDD");

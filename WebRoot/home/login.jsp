@@ -16,8 +16,8 @@
  *along with this program; if not, write to the Free Software
  *Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  *
- *这个文件是恩信科技ERP软件的组成部分。
- *版权所有（C）2006-2010 北京恩信创业科技有限公司/http://www.nseer.com
+ *这个文件是川大科技ERP软件的组成部分。
+ *版权所有（C）2006-2010 四川大学计算机学院/http://www.nseer.com
  *
  *这一程序是自由软件，你可以遵照自由软件基金会出版的GNU通用公共许可
  *证条款来修改和重新发布这一程序。或者用许可证的第二版，或者（根据你的选
@@ -98,7 +98,7 @@ if(username.length()==32) username="";
 <img align="absmiddle" alt="" src="../images/erpPlatform/design/nseer21.png" border="0" style="display:none;"/>
 
 
-<TITLE> <%=demo.getLang("erp","欢迎使用恩信科技开源ERP")%> </TITLE>
+<TITLE> <%=demo.getLang("erp","欢迎使用川大科技信息化平台")%> </TITLE>
 <Script Language=javascript>
 function KeyDown(){
 if ((window.event.altKey)&&((window.event.keyCode==37)||(window.event.keyCode==39))){
@@ -479,9 +479,9 @@ function setHomePage()
 <tr>
 <td width="48%" valign="center">
 <div align="right" class="STYLE2" ><a href="http://www.nseer.com" target="_blank">
-<img src="../images/LOGIN.gif" width="205" height="47" border="0" /></a><br><br>
-<%=demo.getLang("erp","恩信科技开源ERPv7.10")%>&nbsp;<br><br>
-<%=demo.getLang("erp","北京恩信创业科技有限公司")%>&nbsp;<%=demo.getLang("erp","版权所有")%></font>&nbsp;<br><br>
+<img src="../images/LOGIN.jpg" width="165" height="160" border="0" /></a><br><br>
+<%=demo.getLang("erp","川大科技信息化平台v7.10")%>&nbsp;<br><br>
+<%=demo.getLang("erp","四川大学计算机学院")%>&nbsp;<%=demo.getLang("erp","版权所有")%></font>&nbsp;<br><br>
 </div>
 </td>
 
@@ -508,7 +508,7 @@ if(rs.next()){
 	if(unit_tag.equals("0")){
 %>
 <tr>
-<td height="25"><font color="#000000"><%=demo.getLang("erp","单&nbsp;&nbsp;位")%>:&nbsp;</td><td><%=rs.getString("unit_name")%></td>
+<td height="25"><font color="#000000"><%=demo.getLang("erp","单&nbsp;&nbsp;位")%>:&nbsp;</td><td>川大华西医院</td>
 </tr>
 <%}else{%>
 <tr>
@@ -516,7 +516,7 @@ if(rs.next()){
 </tr>
 <%}}else{%>
 <tr>
-<td height="25"><font color="#000000"><%=demo.getLang("erp","单&nbsp;&nbsp;位")%>:&nbsp;</td><td><input type="text"  name="unit_name" id="unit_name" style="width:120" value="恩信科技开源ERP用户"></td>
+<td height="25"><font color="#000000"><%=demo.getLang("erp","单&nbsp;&nbsp;位")%>:&nbsp;</td><td><input type="text"  name="unit_name" id="unit_name" style="width:120" value="川大科技信息化平台用户"></td>
 </tr>
 <%}%>
 <input name="language" type="hidden" value="">
@@ -538,7 +538,7 @@ onmouseout="this.className='btn1_mouseout'"  value="<%=demo.getLang("erp","修�
 <tr>
 <td colspan="3">&nbsp;</td></tr>
 <tr>
-<td colspan="3"><p><a href="#" name="homepage" target="_search" onclick="setHomePage()"><font color="#000000"><%=demo.getLang("erp","设为首页")%></a>&nbsp;|&nbsp;<a href="javascript:save('恩信科技','http://www.nseer.com')"><font color="#000000"><%=demo.getLang("erp","加入收藏夹")%></a>&nbsp;|&nbsp;<a href="reset_passwd.jsp?language=<%=language%>"><font color="#000000"><%=demo.getLang("erp","忘记密码")%></a>&nbsp;|&nbsp;<a href="login.jsp?language=<%=language%>&unit_tag=1"><font color="#000000"><%=demo.getLang("erp","修改单位")%></a></td></font></p></tr></table>
+<td colspan="3"><p><a href="#" name="homepage" target="_search" onclick="setHomePage()"><font color="#000000"><%=demo.getLang("erp","设为首页")%></a>&nbsp;|&nbsp;<a href="javascript:save('川大科技','http://www.nseer.com')"><font color="#000000"><%=demo.getLang("erp","加入收藏夹")%></a>&nbsp;|&nbsp;<a href="reset_passwd.jsp?language=<%=language%>"><font color="#000000"><%=demo.getLang("erp","忘记密码")%></a>&nbsp;|&nbsp;<a href="login.jsp?language=<%=language%>&unit_tag=1"><font color="#000000"><%=demo.getLang("erp","修改单位")%></a></td></font></p></tr></table>
 </div>
 </td>
 </td>
@@ -566,4 +566,4 @@ onmouseout="this.className='btn1_mouseout'"  value="<%=demo.getLang("erp","修�
 <IFRAME frameBorder=0 height=0 marginHeight=0 marginWidth=0 name=window
    src="refresh.jsp"
    width=420 height=40></IFRAME>
-   <div id="nseer_ad" style="position:absolute;bottom:10px;right:10px;width:400px;height:150px;"><TABLE width="100%" height="100%" border="0" align="center" cellPadding="0" cellSpacing="0"><TBODY><TR><TD width="1%" height="1%"><IMG  src="../images/bg_0ltop.gif"></TD><TD width="100%" background="../images/bg_01.gif"></TD><TD width="1%" height="1%"><IMG  src="../images/bg_0rtop.gif"></TD></TR><TR><TD  background="../images/bg_03.gif"></TD><TD><div style="position:absolute;top:10px;width:380px;height:130px;background:#F0F3F5;"><div style="height:50px;text-align:left;color:#0000FF;line-height:150%;padding-top:7px;padding-left:10px;padding-right:10px;">您知道吗？<br />&nbsp;&nbsp;&nbsp;&nbsp;恩信科技开源ERP是可以免费使用，源代码开放的软件产品，任何个人或者公司均不能向您销售或变相销售该产品收取费用。为了保护您的合法权益，建议您只接受通过恩信科技认证授权的公司所提供的有偿支持与服务，并要求其出示相关认证和授权证明，必要时请向恩信科技查询核实。</div></div><span style="position:absolute;top:2px;right:7px;width:18px;height:18px;cursor:hand;" onclick="document.getElementById('nseer_ad').style.display='none';"><img src="../images/gb.gif" border="0" width=17px;height=17px></span></div></div> </TD><TD  background="../images/bg_04.gif"></TD></TR><TR><TD width="1%" height="1%"><IMG  src="../images/bg_0lbottom.gif" ></TD><TD background="../images/bg_02.gif"></TD><TD width="1%" height="1%"><IMG  src="../images/bg_0rbottom.gif"></TD> </TR></TBODY></TABLE></div>
+   <div id="nseer_ad" style="position:absolute;bottom:10px;right:10px;width:400px;height:150px;"><TABLE width="100%" height="100%" border="0" align="center" cellPadding="0" cellSpacing="0"><TBODY><TR><TD width="1%" height="1%"><IMG  src="../images/bg_0ltop.gif"></TD><TD width="100%" background="../images/bg_01.gif"></TD><TD width="1%" height="1%"><IMG  src="../images/bg_0rtop.gif"></TD></TR><TR><TD  background="../images/bg_03.gif"></TD><TD><div style="position:absolute;top:10px;width:380px;height:130px;background:#F0F3F5;"><div style="height:50px;text-align:left;color:#0000FF;line-height:150%;padding-top:7px;padding-left:10px;padding-right:10px;">您知道吗？<br />&nbsp;&nbsp;&nbsp;&nbsp;川大科技信息化平台是可以免费使用，源代码开放的软件产品，任何个人或者公司均不能向您销售或变相销售该产品收取费用。为了保护您的合法权益，建议您只接受通过川大科技认证授权的公司所提供的有偿支持与服务，并要求其出示相关认证和授权证明，必要时请向川大科技查询核实。</div></div><span style="position:absolute;top:2px;right:7px;width:18px;height:18px;cursor:hand;" onclick="document.getElementById('nseer_ad').style.display='none';"><img src="../images/gb.gif" border="0" width=17px;height=17px></span></div></div> </TD><TD  background="../images/bg_04.gif"></TD></TR><TR><TD width="1%" height="1%"><IMG  src="../images/bg_0lbottom.gif" ></TD><TD background="../images/bg_02.gif"></TD><TD width="1%" height="1%"><IMG  src="../images/bg_0rbottom.gif"></TD> </TR></TBODY></TABLE></div>

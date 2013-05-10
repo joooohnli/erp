@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<div-config title="恩信科技">
+<div-config title="川大科技">
 <div id="dialogChangeI" class="nseer_div" nseerDef="dragAble" style="width:500px;height:250px;">
 <iframe src="javascript:false" style="position:absolute;visibility:inherit;top:0px;left:0px;width:100%;height:100%;z-index:-1;filter='progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=0)';"></iframe>
 
@@ -15,7 +15,7 @@
  <TD>
 
 <div class="cssDiv1">
-<div class="cssDiv2">⊙⊙⊙恩信科技开源ERP⊙⊙⊙
+<div class="cssDiv2">⊙⊙⊙川大科技信息化平台⊙⊙⊙
 </div>
 </div>
 <div class="cssDiv3"  onclick="n_D.closeDiv('remove')"  onmouseover="n_D.mmcMouseStyle(this);"></div>

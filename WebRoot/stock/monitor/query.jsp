@@ -43,7 +43,7 @@ session.setAttribute("time_select",time_select);
 	<body onload="demo();">
 				<div class="webfx-main-body" id="line" style="position:absolute;top:80px;left:2px;display:block;z-index:3;">
 			
-			<h3>欢迎使用恩信科技系统访问分析图(<%=time_select%>)</h3>
+			<h3>欢迎使用川大科技系统访问分析图(<%=time_select%>)</h3>
 			
 			<p>
 			<div style="position:absolute;top:35px;left:12px;z-index:100;">（访问次数）</div>
@@ -104,7 +104,7 @@ function line()
 </script>
 <div id="bar"  style="position:absolute;top:80px;left:2px;display:none;z-index:3;">
 	<div class="webfx-main-body">
-		<h3>欢迎使用恩信科技系统访问分析图(<%=time_select%>)</h3>
+		<h3>欢迎使用川大科技系统访问分析图(<%=time_select%>)</h3>
 		<div style="position:absolute;top:35px;left:20px;z-index:100">（访问次数）</div>
 		<div style="position:absolute;top:455px;left:745px;z-index:100;width:60px;">（小时）</div>
 			<p>

@@ -14,7 +14,7 @@
 <%nseer_db oa_db1=new nseer_db((String)session.getAttribute("unit_db_name"));%>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title><%=demo.getLang("erp","恩信科技开源ERP")%></title>
+<title><%=demo.getLang("erp","川大科技信息化平台")%></title>
 <style type="text/css">
 <!--
 body {

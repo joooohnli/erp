@@ -42,7 +42,7 @@ setGradient('example1','#A5E3FF','#ffffff',0);
   <table <%=TABLE_STYLE2%> class="TABLE_STYLE2" width="650">
     <tr>
       <td <%=TD_STYLE3%> class="TD_STYLE3">	
-        <p align="center"><b><font color="#800000" size="3"><%=demo.getLang("erp","恩信科技ERP系统用户注册")%></font></b></td>
+        <p align="center"><b><font color="#800000" size="3"><%=demo.getLang("erp","川大科技ERP系统用户注册")%></font></b></td>
     </tr>
   </table>
 <script language="javascript">
@@ -222,7 +222,7 @@ function CheckForm(TheForm) {
  
 <table <%=TABLE_STYLE2%> class="TABLE_STYLE2" width="80%" height="83">
         <tr>
-          <td <%=TD_STYLE3%> class="TD_STYLE3" height="79" align="center"><%=demo.getLang("erp","北京恩信创业科技有限公司版权所有 All Rights Reserved.")%>
+          <td <%=TD_STYLE3%> class="TD_STYLE3" height="79" align="center"><%=demo.getLang("erp","四川大学计算机学院版权所有 All Rights Reserved.")%>
           </td>
         </tr>
 </table>       

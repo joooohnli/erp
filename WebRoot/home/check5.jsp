@@ -44,7 +44,7 @@ setGradient('example1','#A5E3FF','#ffffff',0);
  <TBODY> 
  <tr <%=TR_STYLE1%> class="TR_STYLE1"> 
  <td vAlign=middle width="80%"> 
- <p align="center"><b><font color="#800000" size="4"><%=demo.getLang("erp","恩信科技ERP系统")%></b></td></tr></TBODY></TABLE> 
+ <p align="center"><b><font color="#800000" size="4"><%=demo.getLang("erp","川大科技ERP系统")%></b></td></tr></TBODY></TABLE> 
 <P> 
 <SCRIPT language=javascript>function smilie(smilietext) { document.FORM.inpost.value=document.FORM.inpost.value+' :'+smilietext+': '; }</SCRIPT> 
  

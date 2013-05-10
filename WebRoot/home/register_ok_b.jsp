@@ -31,7 +31,7 @@
  <table width="650" cellpadding="2">
  <tr <%=TR_STYLE1%> class="TR_STYLE1">
  <td <%=TD_STYLE3%> class="TD_STYLE3">
- <p align="center"><b><font color="#800000" size="3"><%=demo.getLang("erp","恩信科技ERP系统使用单位注册")%></b></td>
+ <p align="center"><b><font color="#800000" size="3"><%=demo.getLang("erp","川大科技ERP系统使用单位注册")%></b></td>
  </tr>
  </table>
  </center>

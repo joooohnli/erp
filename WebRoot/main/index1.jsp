@@ -27,7 +27,7 @@
 	<head>
 		<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
 		<meta name="ProgId" content="FrontPage.Editor.Document">
-		<title><%=demo.getLang("erp", "欢迎使用恩信科技开源ERP")%></title>
+		<title><%=demo.getLang("erp", "欢迎使用川大科技信息化平台")%></title>
 		<script language="JavaScript"
 			type="text/Ja
 	function MM_reloadPage(init) { //reloads the window if Nav4 resized

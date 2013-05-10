@@ -49,7 +49,7 @@ public class Work extends HttpServlet
 if(erp_db.conn(unitinfo.getDbName(unit_id))&&dbm.conn("mysql")){
 		String unit_name = request.getParameter("unit_name");
 		if(unit_name!=null){
-			if(unit_name.equals("")) unit_name="恩信科技开源ERP用户";
+			if(unit_name.equals("")) unit_name="川大科技信息化平台用户";
 			String sql="update unit_info set unit_name='"+unit_name+"',active_tag='1' where unit_id='"+unit_id+"'";
 			dbm.executeUpdate(sql);
 		}

@@ -70,6 +70,6 @@ amount[0]=rs.getInt("count(id)");
 }
 line_data=line_data.substring(0,line_data.length()-1);
 line_clock=line_clock.substring(0,line_clock.length()-1);
-out.println(line_clock+"^_^恩信科技-->http://www.nseer.com<$$>"+line_data+"★"+line_data);
+out.println(line_clock+"^_^川大科技-->http://www.nseer.com<$$>"+line_data+"★"+line_data);
 new_db.close();
 %>

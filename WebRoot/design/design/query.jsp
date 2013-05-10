@@ -22,7 +22,7 @@ String mod=request.getRequestURI();
 <script type="text/javascript">
 function openDialog()
 {var sHTML =  document.getElementById("open").innerHTML;
-new NeatDialog(sHTML, "恩信科技", false);
+new NeatDialog(sHTML, "川大科技", false);
 }
 
 </script>

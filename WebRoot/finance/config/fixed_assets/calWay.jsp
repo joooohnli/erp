@@ -89,7 +89,7 @@ nseer_grid.init();
     <TR>
       <TD  background="../../../images/bg_03.gif"></TD>
  <TD>
-<div class="cssDiv1"><div class="cssDiv2"><%=demo.getLang("erp","恩信科技开源ERP")%></div></div>
+<div class="cssDiv1"><div class="cssDiv2"><%=demo.getLang("erp","川大科技信息化平台")%></div></div>
 <div class="cssDiv3"  onclick="n_D.closeDiv('hidden')"  onmouseover="n_D.mmcMouseStyle(this);"></div>
 <table style="width:100%;height:24px;background:#E8E8E8">
  <tr style="height:30px;">
@@ -142,7 +142,7 @@ nseer_grid.init();
     <TR>
       <TD  background="../../../images/bg_03.gif"></TD>
  <TD>
-<div class="cssDiv1"><div class="cssDiv2"><%=demo.getLang("erp","恩信科技开源ERP")%></div></div>
+<div class="cssDiv1"><div class="cssDiv2"><%=demo.getLang("erp","川大科技信息化平台")%></div></div>
 <div class="cssDiv3"  onclick="n_D.closeDiv('hidden')"  onmouseover="n_D.mmcMouseStyle(this);"></div>
 <table style="width:100%;height:22px;background:#E8E8E8">
  <tr>
@@ -199,7 +199,7 @@ item_group+="⊙";
  <TD>
 
 <div class="cssDiv1">
-<div class="cssDiv2"><%=demo.getLang("erp","恩信科技开源ERP")%>
+<div class="cssDiv2"><%=demo.getLang("erp","川大科技信息化平台")%>
 </div>
 </div>
 <div class="cssDiv3"  onclick="n_D.closeDiv('hidden')"  onmouseover="n_D.mmcMouseStyle(this);"></div>

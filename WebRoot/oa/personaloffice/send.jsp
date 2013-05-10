@@ -13,7 +13,7 @@
 <jsp:useBean id="validata" scope ="page" class ="validata.ValidataNumber"/>
 <jsp:useBean id="demo" class="include.tree_index.businessComment" scope="page"/>
 <%@include file="../include/head1.jsp"%>
-<title><%=demo.getLang("erp","恩信科技开源ERP")%></title>
+<title><%=demo.getLang("erp","川大科技信息化平台")%></title>
 
 <%
 	 demo.setPath(request);

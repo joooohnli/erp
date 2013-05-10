@@ -21,7 +21,7 @@ String mod=request.getRequestURI();
 <script type="text/javascript">
 function openDialog1()
 {var sHTML =  document.getElementById("open1").innerHTML;
-new NeatDialog(sHTML, "恩信科技", false);
+new NeatDialog(sHTML, "川大科技", false);
 }
 </script>
 <div id=open1 style="display:none"><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p><A HREF="query_report_one_down_excel.jsp"><font color=#6600FF><img src="../../images/down.jpg" width=20 height=20 style="border:   0;"><%=demo.getLang("erp","点击下载")%></font></A></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p><input type="button" <%=BUTTON_STYLE1%> class="BUTTON_STYLE1" value="关闭" onclick="window.neatDialog.close()"></p></div>

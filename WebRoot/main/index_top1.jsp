@@ -367,7 +367,7 @@ function setNull(){
 
 <table>
 <tr>
-<td height="33"><img src="../images/main/0427.gif"/>
+<td height="33"><img src="../images/main/main.png"/>
 </td>
 </tr>
 </table>
@@ -402,7 +402,7 @@ function setNull(){
 	if(rs1.next()&&!rs.getString("reason").equals("erpPlatform")&&!rs.getString("reason").equals("draft")&&!rs.getString("reason").equals("garbage")){
 	x++;
 	%>
-<li><a href="javascript:void(0)" onclick="selectM(this,'../<%=table%>/include/index_middle1.jsp?mod_c=<%=demo.getLang("erp",rs.getString("value"))%>&&main_code=<%=rs.getString("main_code")%>');" name="nseer_mod" nseer1="<%=rs.getString("reason")%>" target="a" onmouseover="window.status='powered by nseer erp';this.href='javascript:void(0)'; return true"><span><font color="#FFFFFF"><%=demo.getLang("erp",rs.getString("value"))%></span></a></li>
+<li><a href="javascript:void(0)" onclick="selectM(this,'../<%=table%>/include/index_middle1.jsp?mod_c=<%=demo.getLang("erp",rs.getString("value"))%>&&main_code=<%=rs.getString("main_code")%>');" name="nseer_mod" nseer1="<%=rs.getString("reason")%>" target="a" onmouseover="window.status='科技强医';this.href='javascript:void(0)'; return true"><span><font color="#FFFFFF"><%=demo.getLang("erp",rs.getString("value"))%></span></a></li>
     
 <%
 }

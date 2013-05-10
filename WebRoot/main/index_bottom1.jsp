@@ -16,7 +16,7 @@ demo.setPath(request);
 
 <html>
 <head>
-<title><%=demo.getLang("erp","恩信科技开源ERP")%></title>
+<title><%=demo.getLang("erp","川大科技信息化平台")%></title>
 
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
 <link rel="stylesheet" href="images/CSS.CSS" type="text/css">

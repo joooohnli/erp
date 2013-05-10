@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<div-config title="⊙⊙⊙恩信科技开源ERP⊙⊙⊙">
+<div-config title="⊙⊙⊙川大科技信息化平台⊙⊙⊙">
 <div id="apply_ok" class="nseer_div" nseerDef="dragAble">
 <div class="cssDiv1">
-<div class="cssDiv2">⊙⊙⊙恩信科技开源ERP⊙⊙⊙
+<div class="cssDiv2">⊙⊙⊙川大科技信息化平台⊙⊙⊙
 </div>
 </div>
 <div class="cssDiv3"  onclick="closeDiv('hidden')"  onmouseover="mmcMouseStyle(this);"></div>

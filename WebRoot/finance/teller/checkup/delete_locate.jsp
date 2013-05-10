@@ -71,7 +71,7 @@ finance_db.close();
  <TD>
 
 <div class="cssDiv1">
-<div class="cssDiv2"><%=demo.getLang("erp","恩信科技开源ERP")%>
+<div class="cssDiv2"><%=demo.getLang("erp","川大科技信息化平台")%>
 </div>
 </div>
 <div class="cssDiv3"  onclick="n_D.closeDiv('hidden')"  onmouseover="n_D.mmcMouseStyle(this);"></div>
@@ -125,7 +125,7 @@ finance_db.close();
  <TD>
 
 <div class="cssDiv1">
-<div class="cssDiv2"><%=demo.getLang("erp","恩信科技开源ERP")%>
+<div class="cssDiv2"><%=demo.getLang("erp","川大科技信息化平台")%>
 </div>
 </div>
 <div class="cssDiv3"  onclick="n_D.closeDiv('hidden')"  onmouseover="n_D.mmcMouseStyle(this);"></div>

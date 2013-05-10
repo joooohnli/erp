@@ -6,7 +6,7 @@ function nseergrid() {
 	this.useTag = null;
 	this.sortTag = 0;
 	this.scroll_w = 21;
-	this.title_alt = '恩信科技开源ERP';
+	this.title_alt = '川大科技信息化平台';
 	this.magin_h = w() || '85%';
 	this.magin_w = '98%';
 	this.imgPath = null;

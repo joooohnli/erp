@@ -55,21 +55,21 @@ while(rs.next()){
   <%if(!rs.getString("qq1").equals("")) {%>
 <tr <%=TR_STYLE1%> class="TR_STYLE1">
  <td <%=TD_STYLE3%> class="TD_STYLE3"><%=demo.getLang("erp","QQ:")%></td>
- <td <%=TD_STYLE3%> class="TD_STYLE3"><a target=blank href=http://wpa.qq.com/msgrd?V=1&amp;Uin=<%=rs.getString("qq1")%>&amp;Site=恩信科技&amp;Menu=yes><font style=font-size:12px;>&nbsp;<%=rs.getString("qq1")%><img SRC=http://wpa.qq.com/pa?p=10:<%=rs.getString("qq1")%>:10 border=0 ></font></a></td>
+ <td <%=TD_STYLE3%> class="TD_STYLE3"><a target=blank href=http://wpa.qq.com/msgrd?V=1&amp;Uin=<%=rs.getString("qq1")%>&amp;Site=川大科技&amp;Menu=yes><font style=font-size:12px;>&nbsp;<%=rs.getString("qq1")%><img SRC=http://wpa.qq.com/pa?p=10:<%=rs.getString("qq1")%>:10 border=0 ></font></a></td>
  </tr>
  
   <%}
   if(!rs.getString("qq2").equals("")) {%>
 <tr <%=TR_STYLE1%> class="TR_STYLE1">
  <td <%=TD_STYLE3%> class="TD_STYLE3"><%=demo.getLang("erp","QQ:")%></td>
- <td <%=TD_STYLE3%> class="TD_STYLE3"><a target=blank href=http://wpa.qq.com/msgrd?V=1&amp;Uin=<%=rs.getString("qq2")%>&amp;Site=恩信科技&amp;Menu=yes><font style=font-size:12px;>&nbsp;<%=rs.getString("qq2")%><img SRC=http://wpa.qq.com/pa?p=10:<%=rs.getString("qq2")%>:10 border=0 ></font></a></td>
+ <td <%=TD_STYLE3%> class="TD_STYLE3"><a target=blank href=http://wpa.qq.com/msgrd?V=1&amp;Uin=<%=rs.getString("qq2")%>&amp;Site=川大科技&amp;Menu=yes><font style=font-size:12px;>&nbsp;<%=rs.getString("qq2")%><img SRC=http://wpa.qq.com/pa?p=10:<%=rs.getString("qq2")%>:10 border=0 ></font></a></td>
  </tr>
  <%}%>
 
  <%if(!rs.getString("qq3").equals("")) {%>
  <tr <%=TR_STYLE1%> class="TR_STYLE1">
  <td <%=TD_STYLE3%> class="TD_STYLE3"><%=demo.getLang("erp","QQ:")%></td>
- <td <%=TD_STYLE3%> class="TD_STYLE3"><a target=blank href=http://wpa.qq.com/msgrd?V=1&amp;Uin=<%=rs.getString("qq3")%>&amp;Site=恩信科技&amp;Menu=yes><font style=font-size:12px;>&nbsp;<%=rs.getString("qq3")%><img SRC=http://wpa.qq.com/pa?p=10:<%=rs.getString("qq3")%>:10 border=0 ></font></a></td>
+ <td <%=TD_STYLE3%> class="TD_STYLE3"><a target=blank href=http://wpa.qq.com/msgrd?V=1&amp;Uin=<%=rs.getString("qq3")%>&amp;Site=川大科技&amp;Menu=yes><font style=font-size:12px;>&nbsp;<%=rs.getString("qq3")%><img SRC=http://wpa.qq.com/pa?p=10:<%=rs.getString("qq3")%>:10 border=0 ></font></a></td>
  </tr>
 <%}%>
 
@@ -80,7 +80,7 @@ if(!rs.getString("qq4").equals("")) {%>
 
  <tr <%=TR_STYLE1%> class="TR_STYLE1">
  <td <%=TD_STYLE3%> class="TD_STYLE3"><%=demo.getLang("erp","QQ:")%></td>
- <td <%=TD_STYLE3%> class="TD_STYLE3"><a target=blank href=http://wpa.qq.com/msgrd?V=1&amp;Uin=<%=rs.getString("qq4")%>&amp;Site=恩信科技&amp;Menu=yes><font style=font-size:12px;>&nbsp;<%=rs.getString("qq4")%><img SRC=http://wpa.qq.com/pa?p=10:<%=rs.getString("qq4")%>:10 border=0 ></font></a></td>
+ <td <%=TD_STYLE3%> class="TD_STYLE3"><a target=blank href=http://wpa.qq.com/msgrd?V=1&amp;Uin=<%=rs.getString("qq4")%>&amp;Site=川大科技&amp;Menu=yes><font style=font-size:12px;>&nbsp;<%=rs.getString("qq4")%><img SRC=http://wpa.qq.com/pa?p=10:<%=rs.getString("qq4")%>:10 border=0 ></font></a></td>
  </tr>
  
  <%}%>

@@ -18,7 +18,7 @@
 <META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
 <META HTTP-EQUIV="Expires" CONTENT="0">
 
-<title>欢迎使用恩信科技ERP系统</title>
+<title>欢迎使用川大科技ERP系统</title>
 <STYLE>
 A:visited {
 	TEXT-DECORATION: none

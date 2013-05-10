@@ -10,7 +10,7 @@
 <%@page contentType="text/html; charset=UTF-8" language="java" import="java.sql.*" import="java.util.*" import="java.io.*" import="include.nseer_cookie.*" import ="include.nseer_db.*,include.nseerdb.*,java.text.*"%>
 <jsp:useBean id="demo" class="include.tree_index.businessComment" scope="page"/>
 <%@include file="../include/head1.jsp"%>
-<title><%=demo.getLang("erp","恩信科技开源ERP")%></title>
+<title><%=demo.getLang("erp","川大科技信息化平台")%></title>
 <div id="nseerGround" class="nseerGround">
 <%
 Note note=new Note();

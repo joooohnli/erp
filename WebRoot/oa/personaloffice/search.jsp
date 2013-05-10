@@ -16,7 +16,7 @@
 demo.setPath(request);
 %>
 
-<title><%=demo.getLang("erp","恩信科技开源ERP")%></title>
+<title><%=demo.getLang("erp","川大科技信息化平台")%></title>
 <div id="nseerGround" class="nseerGround">
 <form id="form1" class="x-form" method="post" action="search_ok.jsp">
 <table <%=TABLE_STYLE2%> class="TABLE_STYLE2">
@@ -26,7 +26,7 @@ demo.setPath(request);
 </table>
 <table <%=TABLE_STYLE2%> class="TABLE_STYLE2">
 <tr <%=TR_STYLE1%> class="TR_STYLE1">
-<td <%=TD_STYLE3%> class="TD_STYLE3" colspan="5"><input type="text" <%=INPUT_STYLE1%> class="INPUT_STYLE1" name="keyword" style="width:19%" value="恩信科技"></td>
+<td <%=TD_STYLE3%> class="TD_STYLE3" colspan="5"><input type="text" <%=INPUT_STYLE1%> class="INPUT_STYLE1" name="keyword" style="width:19%" value="川大科技"></td>
 </tr>
 <tr <%=TR_STYLE1%> class="TR_STYLE1">
 <td <%=TD_STYLE3%> class="TD_STYLE3" colspan="5"><input <%=RADIO_STYLE1%> class="RADIO_STYLE1" type="radio" name="tool" value="http://www.google.com/search?hl=zh-CN&ie=UTF-8&oe=UTF-8&q=" checked>Google</td>

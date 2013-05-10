@@ -50,7 +50,7 @@ public class UserLimitedFilter implements Filter {
           out.println("<META HTTP-EQUIV=\"Pragma\" CONTENT=\"no-cache\">");
           out.println("<META HTTP-EQUIV=\"Cache-Control\" CONTENT=\"no-cache\">");
           out.println("<META HTTP-EQUIV=\"Expires\" CONTENT=\"0\">");
-          out.println("<title>欢迎进入恩信科技客户关系管理系统</title>");
+          out.println("<title>欢迎进入川大科技客户关系管理系统</title>");
           out.println("<STYLE>");
           out.println("A:visited {");
           out.println("	TEXT-DECORATION: none");

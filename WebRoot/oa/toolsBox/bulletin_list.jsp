@@ -22,7 +22,7 @@
 	 demo.setPath(request);
 %>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title><%=demo.getLang("erp","恩信科技开源ERP")%></title>
+<title><%=demo.getLang("erp","川大科技信息化平台")%></title>
 
 
  <table <%=TABLE_STYLE2%> class="TABLE_STYLE2">
